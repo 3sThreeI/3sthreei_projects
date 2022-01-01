@@ -10,7 +10,10 @@ type formErrorsProps = {
     url?: string[],
     project_type?: string[]
 }
-export default function FormContactCompt() {
+export default function FormContactCompt({message}:{message:any}) {
+    console.log("formContact.tsx rendered")
+    console.log("message ", message)
+    const t = message || null
     const [formValues, SetFormValues] = useState({
         fullname: '',
         email: '',
@@ -28,10 +31,10 @@ export default function FormContactCompt() {
         if (!formValues.fullname && !formValues.email && !formValues.message && !formValues.phoneNumber) {
             return
         }
-        
+
         // Validate current form values
         const result = contactSchema.safeParse(formValues)
-        
+
         if (!result.success) {
             setErrors(result.error.flatten().fieldErrors)
         } else {
@@ -81,22 +84,22 @@ export default function FormContactCompt() {
             <div className={style.card}>
                 {/* Header Section */}
                 <div className={style.header}>
-                    <h1 className={style.title}>Let's Build Something Amazing</h1>
-                    <p className={style.subtitle}>Tell us about your project and we'll get back to you within 24 hours</p>
+                    <h1 className={style.title}>{t.formContact.headTitle}</h1>
+                    <p className={style.subtitle}>{t.formContact.subTitle}</p>
                 </div>
 
                 <form onSubmit={HandleSubmit} aria-label="contact-form-for-building-project" className={style.form}>
                     {/* Full Name */}
                     <div className={style.formGroup}>
-                        <label htmlFor="fullname" className={style.label}>Full Name</label>
+                        <label htmlFor="fullname" className={style.label}>{t.formContact.formInput.labelInput1.L}</label>
                         <input
                             type="text"
                             id="fullname"
                             name="fullname"
                             value={formValues.fullname}
                             onChange={(e) => inputHandleFn(e)}
-                            placeholder="e.g.ex:full name"
-                            title="type your first Name and Last Name"
+                            placeholder={t.formContact.formInput.labelInput1.P}
+                            title={t.formContact.formInput.labelInput1.T}
                             className={style.input}
                             required
                         />
@@ -105,49 +108,49 @@ export default function FormContactCompt() {
                     {/* Email and Phone */}
                     <div className={style.grid}>
                         <div className={style.formGroup}>
-                            <label htmlFor="email" className={style.label}>Email Address</label>
+                            <label htmlFor="email" className={style.label}>{t.formContact.formInput.labelInput2.L}</label>
                             <input
                                 type="email"
                                 id="email"
                                 name="email"
                                 value={formValues.email}
                                 onChange={(e) => inputHandleFn(e)}
-                                placeholder="you@example.com"
-                                title="type your email"
+                                placeholder={t.formContact.formInput.labelInput2.P}
+                                title={t.formContact.formInput.labelInput2.T}
                                 className={style.input}
                                 required
                             />
                             {errors?.email?.[0] && <p className="text-red-500 text-sm">{errors?.email[0]}</p>}
                         </div>
+                        {/* Phone number input */}
                         <div className={style.formGroup}>
-                            <label htmlFor="phoneNumber" className={style.label}>Phone Number</label>
+                            <label htmlFor="phoneNumber" className={style.label}>{t.formContact.formInput.labelInput3.L}</label>
                             <input
                                 type="tel"
                                 id="phoneNumber"
                                 name="phoneNumber"
                                 value={formValues.phoneNumber}
                                 onChange={(e) => inputHandleFn(e)}
-                                placeholder="+233 0000000"
-                                title="type your phone number"
+                                placeholder={t.formContact.formInput.labelInput3.P}
+                                title={t.formContact.formInput.labelInput3.T}
                                 className={style.input}
                                 required
                             />
                             {errors?.phoneNumber?.[0] && <p className="text-red-500 text-sm">{errors?.phoneNumber[0]}</p>}
-
                         </div>
                     </div>
 
                     {/* Website URL */}
                     <div className={style.formGroup}>
-                        <label htmlFor="website" className={style.label}>Website <span className={style.optional}>(Optional)</span></label>
+                        <label htmlFor="website" className={style.label}>{t.formContact.formInput.labelInput4.L}<span className={style.optional}>(Optional)</span></label>
                         <input
                             type="url"
                             id="website"
                             name="url"
                             value={formValues.url}
                             onChange={(e) => inputHandleFn(e)}
-                            placeholder="https://yourwebsite.com"
-                            title="please type your website url"
+                            placeholder={t.formContact.formInput.labelInput4.P}
+                            title={t.formContact.formInput.labelInput4.T}
                             className={style.input}
                         />
                         {errors?.url?.[0] && <p className="text-red-500 text-sm">{errors.url[0]}</p>}
@@ -155,7 +158,7 @@ export default function FormContactCompt() {
 
                     {/* Project Type */}
                     <div className={style.formGroup}>
-                        <label htmlFor="projectType" className={style.label}>Project Type</label>
+                        <label htmlFor="projectType" className={style.label}>{t.formContact.formSelect.labelSelect1.L}</label>
                         <select
                             id="projectType"
                             name="project_type"
@@ -163,29 +166,28 @@ export default function FormContactCompt() {
                             onChange={inputHandleFn}
                             className={style.select}
                             required
-                            title="your project type"
+                            title={t.formContact.formSelect.labelSelect1.T}
                         >
-                            <option value="">Select a project type...</option>
-                            <option value="web">Web Site</option>
-                            <option value="application">Application (Mobile, Desktop)</option>
-                            <option value="design">Design</option>
-                            <option value="gaming">Gaming</option>
-                            <option value="audit">Audit your site</option>
-                            <option value="marketing">Marketing</option>
+                            {/* option of select */}
+                            {
+                                t?.formContact?.formSelect?.labelSelect1?.Opt?.map((opt:any, index:number)=> (
+                                    <option key={index} value={opt.key}>{opt.value}</option>
+                                ))
+                            }
                         </select>
                         {errors?.project_type?.[0] && <p className="text-red-500 text-sm">{errors?.project_type[0]}</p>}
                     </div>
 
                     {/* Message */}
                     <div className={style.formGroup}>
-                        <label htmlFor="message" className={style.label}>Project Details</label>
+                        <label htmlFor="message" className={style.label}>{t.formContact.formTextarea.labelTextarea1.L}</label>
                         <textarea
                             id="message"
                             name="message"
                             value={formValues.message}
                             onChange={inputHandleFn}
-                            placeholder="Tell us more about your project..."
-                            title="describe your project"
+                            placeholder={t.formContact.formTextarea.labelTextarea1.P}
+                            title={t.formContact.formTextarea.labelTextarea1.T}
                             className={style.textarea}
                             rows={5}
                             required
@@ -202,7 +204,7 @@ export default function FormContactCompt() {
                                 </svg>
                             </span> :
                             <div>
-                                <span className={style.btnText}>Send Message</span>
+                                <span className={style.btnText}>{t.formContact.btn}</span>
                                 <span className={style.btnIcon}>→</span> </div>
                         }
                     </button>
