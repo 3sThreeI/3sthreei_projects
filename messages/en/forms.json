@@ -1,0 +1,122 @@
+{
+    "formContact": {
+        "headTitle": "Let's Build Something Amazing",
+        "subTitle": "Tell us about your project and we'll get back to you within 24 hours",
+        "formInput": {
+            "labelInput1": {
+                "L": "Full Name",
+                "P": "e.g.ex:full name",
+                "T": "type your first Name and Last Name"
+            },
+            "labelInput2": {
+                "L": "Email Address",
+                "P": "you@example.com",
+                "T": "type your email"
+            },
+            "labelInput3": {
+                "L": "Phone Number",
+                "P": "+233 0000000",
+                "T": "type your phone number"
+            },
+            "labelInput4": {
+                "L": "Website",
+                "P": "https://yourwebsite.com",
+                "T": "please type your website url"
+            },
+            "labelInput5": {
+                "L": "Email Address",
+                "P": "you@example.com",
+                "T": "type your email"
+            }
+        },
+        "formSelect": {
+            "labelSelect1": {
+                "L": "Project Type",
+                "T": "your project type",
+                "Opt": [
+                    {
+                        "key": "",
+                        "value": "Select a project type..."
+                    },
+                    {
+                        "key": "web",
+                        "value": "Web Site"
+                    },
+                    {
+                        "key": "design",
+                        "value": "Design"
+                    },
+                    {
+                        "key": "gaming",
+                        "value": "Gaming"
+                    },
+                    {
+                        "key": "audit",
+                        "value": "Audit your site"
+                    },
+                    {
+                        "key": "marketing",
+                        "value": "Marketing"
+                    }
+                ]
+            }
+        },
+        "formTextarea": {
+            "labelTextarea1": {
+                "L": "Project Details",
+                "P": "Tell us more about your project...",
+                "T": "describe your project"
+            }
+        },
+        "btn": "Send Message"
+    },
+    "formAudit": {
+        "headTitle": "Services",
+        "subTitle": "check your site spend, performance web and audit with 3sthreei without 0 cost",
+        "formInput": {
+            "labelInput1": {
+                "L": "Company Name",
+                "P": "e.g.ex:3sthreei",
+                "T": "type your company name"
+            },
+            "labelInput2": {
+                "L": "Email Address",
+                "P": "you@example.com",
+                "T": "type your email"
+            },
+            "labelInput4": {
+                "L": "Website",
+                "P": "https://yourwebsite.com",
+                "T": "please type your website url"
+            }
+        },
+        "formSelect": {
+            "labelSelect1": {
+                "L": "Project Type",
+                "T": "type your servie ",
+                "Opt": [
+                    {
+                        "key": "",
+                        "value": "Select a service..."
+                    },
+                    {
+                        "key": "audit web site",
+                        "value": "Audit my site web"
+                    },
+                    {
+                        "key": "audit and fix",
+                        "value": "Audit and fix my site web"
+                    }
+                ]
+            }
+        },
+        "formTextarea": {
+            "labelTextarea1": {
+                "L": "What can we help you ?",
+                "P": "Tell us more about ...",
+                "T": "describe your project"
+            }
+        },
+        "btn": "Submit"
+    }
+}

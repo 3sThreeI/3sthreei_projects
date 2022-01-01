@@ -1,0 +1,73 @@
+{
+    "formContact": {
+        "headTitle": "Construisons quelque chose d’extraordinaire",
+        "subTitle": "Parlez-nous de votre projet et nous vous répondrons sous 24 heures",
+        "formInput": {
+            "labelInput1": {
+                "L": "Nom complet",
+                "P": "ex. : prénom et nom",
+                "T": "saisissez votre prénom et votre nom"
+            },
+            "labelInput2": {
+                "L": "Adresse e-mail",
+                "P": "vous@exemple.com",
+                "T": "saisissez votre adresse e-mail"
+            },
+            "labelInput3": {
+                "L": "Numéro de téléphone",
+                "P": "+233 0000000",
+                "T": "saisissez votre numéro de téléphone"
+            },
+            "labelInput4": {
+                "L": "Site web",
+                "P": "https://votresite.com",
+                "T": "veuillez saisir l’URL de votre site web"
+            },
+            "labelInput5": {
+                "L": "Adresse e-mail",
+                "P": "vous@exemple.com",
+                "T": "saisissez votre adresse e-mail"
+            }
+        },
+        "formSelect": {
+            "labelSelect1": {
+                "L": "Type de projet",
+                "T": "votre type de projet",
+                "Opt": [
+                    {
+                        "key": "",
+                        "value": "Sélectionnez un type de projet..."
+                    },
+                    {
+                        "key": "web",
+                        "value": "Site web"
+                    },
+                    {
+                        "key": "design",
+                        "value": "Design"
+                    },
+                    {
+                        "key": "gaming",
+                        "value": "Jeux vidéo"
+                    },
+                    {
+                        "key": "audit",
+                        "value": "Audit de votre site"
+                    },
+                    {
+                        "key": "marketing",
+                        "value": "Marketing"
+                    }
+                ]
+            }
+        },
+        "formTextarea": {
+            "labelTextarea1": {
+                "L": "Détails du projet",
+                "P": "Parlez-nous davantage de votre projet...",
+                "T": "décrivez votre projet"
+            }
+        },
+        "btn": "Envoyer le message"
+    }
+}
