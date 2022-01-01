@@ -45,7 +45,7 @@
                 "Support à la publication"
             ],
             "button": "Voir plus",
-            "buttonUrl": "/services/updating"
+            "buttonUrl": "/unavailable"
         },
         "design": {
             "title": "UI/UX",
@@ -58,7 +58,7 @@
                 "Supports visuels marketing"
             ],
             "button": "Voir plus",
-            "buttonUrl": "/services/updating"
+            "buttonUrl": "/unavailable"
         }
     },
     "workingWith": {
