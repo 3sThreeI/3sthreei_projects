@@ -4,7 +4,7 @@ import AbouHero from "../../assets/about/aboutHero/aboutHero";
 import AboutUs from "../../assets/about/aboutUs/aboutUs";
 import { NextIntlClientProvider } from "next-intl";
 
-interface Props {
+export interface ParamProps {
     params: Promise<{ locale: string }>;
 }
 export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
@@ -26,7 +26,7 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
         },
     }
 }
-export default async function AboutUS({ params }: Props) {
+export default async function AboutUS({ params }: ParamProps) {
     const { locale } = await params
     const message = (await import(`@/messages/${locale}/about.json`)).default;
     console.log("**********about page is has been rendere************")
