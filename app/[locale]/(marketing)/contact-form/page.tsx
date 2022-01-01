@@ -3,6 +3,7 @@ import style from "./projectContactFom.module.css"
 import { Metadata } from "next"
 import { getTranslations } from "next-intl/server"
 import FormContactCompt from "@/components/customComponent/formContact/formContact"
+import { ParamProps } from "../about/page"
 export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale, namespace: "contactForm" })
@@ -21,11 +22,13 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
         }
     }
 }
-export default function ProjectContactForm() {
-
+// ParamProps is importing from about page.tsx
+export default async function ProjectContactForm({params}:ParamProps) {
+    const {locale} = await params
+    const message = (await import(`@/messages/${locale}/forms.json`)).default
     return (
         <div className={style.container}>
-            <FormContactCompt />
+            <FormContactCompt message={message}/>
         </div>
     )
 }

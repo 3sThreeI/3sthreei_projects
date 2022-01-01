@@ -31,7 +31,6 @@
 /* Card Container */
 .card {
     background: white;
-    
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
     padding: 60px 40px;
@@ -59,7 +58,7 @@
 }
 
 .title {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     color: #1a202c;
     margin: 0 0 12px 0;
