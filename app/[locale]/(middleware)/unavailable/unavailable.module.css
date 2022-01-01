@@ -1,0 +1,29 @@
+@reference "tailwindcss";
+
+.container{
+    @apply mx-0 px-5
+}
+.logo{
+    @apply text-center  flex justify-center gap-5 items-center
+}
+.TextLogo{
+    @apply text-[2rem]
+}
+.TextLogo .span{
+    @apply text-[3.5rem] text-(--nav-text-color) font-[merriweather]
+}
+.content{
+    @apply text-center space-y-5 
+}
+.content .icon{
+    @apply text-[90px] mx-auto mt-14 
+}
+.text{
+    @apply text-[1.5rem] mb-14 font-[lora]
+}
+.btnBox{
+    @apply text-center mx-auto text-lg mt-5
+}
+.btnBox .btn{
+    @apply font-[poppins] shadow-[-1px_1px_17px_-10px_var(--nav-shadow-color)] hover:shadow-[-1px_1px_10px_-3px_var(--nav-shadow-color)] px-10 py-2 rounded-full hover:text-(--nav-text-color) transition duration-500 ease-in cursor-pointer
+}

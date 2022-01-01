@@ -21,7 +21,7 @@ export default async function Hero() {
                                 {t('herobtn1')}
                             </Link>
                         {/* courses button */}
-                            <Link href={t('herobtn2Url')} className={style.secondaryBtn}>
+                            <Link href="/unavailable" className={style.secondaryBtn}>
                                 {t('herobtn2')}
                             </Link>
                         </div>
