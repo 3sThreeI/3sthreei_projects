@@ -1,7 +1,9 @@
 import { z } from "zod";
 
 export const contactSchema = z.object({
-    fullname: z.string().min(2, 'Name must be at least 2 characters'),
+    fullname: z.string()
+    .min(5, 'Name must be at least 5 characters')
+    .regex(/^[A-Z][a-z]+\s+[A-Z][a-z]+$/, "please type a validate Name, no space at the end" ),
     email: z.string().email("Invalid Email"),
     phoneNumber: z.string()
         .min(7, "Phone number is too short")
