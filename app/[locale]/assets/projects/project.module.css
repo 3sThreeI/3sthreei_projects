@@ -1,5 +1,37 @@
 @reference "tailwindcss";
-
-.heroContainer{
-    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-[#61DAFB] h-[50vh]
+.section{
+    @apply relative overflow-hidden bg-slate-950 text-white
 }
+.bg1{
+    @apply pointer-events-none absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-[#61DAFB] opacity-25 blur-3xl
+}
+.bg2{
+    @apply pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-blue-600 opacity-20 blur-3xl
+}
+.bg3{
+    @apply pointer-events-none absolute bottom-0 left-1/2 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-cyan-400 opacity-10 blur-3xl
+}
+.heroCard{
+    @apply relative bg-gradient-to-b from-slate-900 via-[#0b1220] to-slate-950
+}
+.heroCard .card{
+    @apply mx-auto flex min-h-[70vh]  flex-col items-center justify-center px-3 sm:px-6 text-center
+}
+.heroCard .headText{
+    @apply text-4xl text-center font-bold tracking-tight sm:text-6xl
+}
+.heroCard .subText{
+    @apply mt-6 max-w-2xl text-slate-300 text-lg
+}
+.card_btn{
+    @apply mt-10
+}
+.card_btn .btn{
+    @apply rounded-xl py-3 px-3 border-b-2 border-t text-(--nav-text-color) border-(--nav-text-color)  font-semibold  transition duration-300 ease-in hover:opacity-90
+}
+.card_btn .btn:hover{
+    @apply bg-(--nav-text-color) text-slate-900
+}
+/* .heroContainer{
+    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-(--nav-text-color) h-[50vh]
+} */
