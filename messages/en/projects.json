@@ -2,7 +2,39 @@
     "ProjectHero": {
         "headText": "Ours Works speak for itshelf",
         "subText": "explore how we help startup and businesses turn ideas into powerful digital products",
-
-        "CallToAction": "Call to action"
-    }
+        "CallToAction": "Contact-us for free"
+    },
+    "filters": ["Mobile Application", "Web Site", "design", "Gaming"],
+    "portfolio": [
+        {
+            "img": "/project1.png",
+            "alt": "this project show the portfolio of my work",
+            "bgText": "this is the text display for gackground"
+        },
+        {
+            "img": "/project1.png",
+            "alt": "this project show the portfolio of my work",
+            "bgText": "this is the text display for gackground"
+        },
+        {
+            "img": "/project1.png",
+            "alt": "this project show the portfolio of my work",
+            "bgText": "this is the text display for gackground"
+        },
+        {
+            "img": "/project1.png",
+            "alt": "this project show the portfolio of my work",
+            "bgText": "this is the text display for gackground"
+        },
+        {
+            "img": "/project1.png",
+            "alt": "this project show the portfolio of my work",
+            "bgText": "this is the text display for gackground"
+        },
+        {
+            "img": "/project1.png",
+            "alt": "this project show the portfolio of my work",
+            "bgText": "this is the text display for gackground"
+        }
+    ]
 }
