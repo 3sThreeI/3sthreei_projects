@@ -146,5 +146,10 @@
     "contactForm": {
         "title": "Hire a Web, Mobile App & Desktop Developer in Ghana",
         "description":" Full-stack developer in Ghana specializing in web, mobile app & desktop development. Expert in React, Flutter, Laravel, Next.js. Get a free quote today"
+    },
+    "unavailable": {
+        "title": "Unavailable the page is currently under contrustion 3sthreei",
+        "description": "Build custom web, mobile, desktop, game and design start your project ",
+        "keywords": []
     }
 }
