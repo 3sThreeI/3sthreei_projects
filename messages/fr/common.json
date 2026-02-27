@@ -1,0 +1,38 @@
+{
+  "common": {
+    "title": "Bienvenue chez 3SThreeA",
+    "description": "Créez des applications, jeux, web apps et apprenez avec nous.",
+    "keywords": [
+      "3SThreeA",
+      "plateforme SaaS",
+      "développement d'applications",
+      "développement de jeux",
+      "développement web",
+      "design UI/UX",
+      "cours en ligne",
+      "solutions logicielles"
+    ],
+    "sitename": "3SThreeA"
+  },
+  "courses": {
+    "title": "Cours",
+    "description": "Cours professionnels en développement d'applications, jeux et web.",
+    "keywords": [
+      "cours",
+      "cours d'applications",
+      "cours de jeux",
+      "cours développement web"
+    ]
+  },
+  "navbar": {
+    "home": "Accueil",
+    "course": "Cours",
+    "project": "Projets",
+    "signin": "Connexion",
+    "signup": "S'inscrire",
+    "contact": "Contact",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "about": "À propos"
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "common": {
+        "title": "Welcome to 3SThreeA",
+        "description": "Build apps, games, web apps, and learn with us.",
+        "keywords": [
+            "3SThreeA",
+            "SaaS platform",
+            "app development",
+            "game development",
+            "web app development",
+            "UI/UX design",
+            "tech courses",
+            "software solutions"
+        ],
+        "sitename": "3SThreeA"
+    },
+    "courses": {
+        "title": "Courses",
+        "description": "Professional courses in app, game, and web development.",
+        "keywords": [
+            "courses",
+            "app courses",
+            "game courses",
+            "web development courses"
+        ]
+    },
+    "navbar": {
+        "home": "Home",
+        "course": "courses",
+        "project": "Projects",
+        "signin": "Sign-in",
+        "signup": "Sign Up",
+        "contact": "Contact",
+        "blog": "Blog",
+        "faq": "FAQ",
+        "about": "About Us"
+    }
+}
