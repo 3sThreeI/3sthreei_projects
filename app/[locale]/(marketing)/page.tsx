@@ -1,0 +1,40 @@
+import { getTranslations } from 'next-intl/server';
+import { Metadata } from 'next';
+import Navbar from '@/components/customComponent/Navbar';
+
+type Props = {
+  params: { locale: string };
+};
+
+export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'common' })
+  return {
+    title: t('title'),
+    description: t('description'),
+    keywords: t.raw('keywords').join(', '),
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      siteName: t('sitename'),
+      url: `${process.env.NEXT_PUBLIC_API_URL}/${locale}`,
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-en.png`,
+          width: 1200,
+          height: 630,
+          alt: t('sitename')
+        }
+      ]
+    }
+  }
+}
+
+export default async function MarketingPage() {
+  const t = await getTranslations('common')
+  return (
+    <main>
+      <h1>Marketing Page <br /> {t('description')}</h1>
+    </main>
+  );
+}

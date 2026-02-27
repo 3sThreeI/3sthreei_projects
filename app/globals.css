@@ -1,0 +1,11 @@
+@import "tailwindcss";
+/* @import "tw-animate-css"; */
+@import "shadcn/tailwind.css";
+
+:root{
+  --nav-bg-color: rgb(126, 34, 206);
+  --nav-text-color: rgb(126, 34, 206);
+  --nav-text-color-hover: rgb(255,255,255);
+  --theme-btn-color: rgb(126, 34, 206);
+  --theme-btn-color2: rgb(255,255,255);
+}
