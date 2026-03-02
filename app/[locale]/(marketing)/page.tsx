@@ -1,6 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
-import Navbar from '@/components/customComponent/Navbar';
+//  -----------Our import 
+import Hero from '../assets/hero/hero';
+import OurService from '@/components/customComponent/servicesSection/services';
 
 type Props = {
   params: { locale: string };
@@ -34,7 +36,11 @@ export default async function MarketingPage() {
   const t = await getTranslations('common')
   return (
     <main>
-      <h1>Marketing Page <br /> {t('description')}</h1>
+      <Hero />
+      {/*---------------------------- Services Section ---------------------------- */}
+      <section>
+        <OurService />
+      </section>
     </main>
   );
 }
