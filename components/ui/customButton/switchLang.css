@@ -1,9 +1,12 @@
-
+@reference "tailwindcss";
+.themeBtn{
+    @apply border border-(--nav-text-color) h-6 w-12 bg-(--nav-text-color) rounded-full text-center cursor-pointer
+}
 .btn{
     /* h-5 w-5 bg-(--theme-btn-color2) mt-px rounded-full pb-2 relative */
     height: 20px;
     width: 20px;
-    background: var(--theme-btn-color2);
+    background:white;
     border-radius: 100%;
     margin-top: 1px;
     transition: all 0.5s ease ;
@@ -16,5 +19,7 @@
 }
 .btn.disactive{
     margin-left: 0;
-
+}
+.themeText{
+    @apply text-(--nav-text-color) text-sm absolute left-0.5 font-bold
 }
