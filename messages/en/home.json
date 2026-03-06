@@ -9,24 +9,26 @@
         "website": {
             "title": "Website",
             "subtitle": "High-performing websites built for impact.",
-             "contents": [
+            "contents": [
                 "Custom Business Websites",
                 "E-commerce Solutions",
                 "SaaS Platforms",
                 "SEO Optimized",
                 "Fast & Secure"
-            ]
+            ],
+            "button": "View more"
         },
         "mobile": {
             "title": "Mobile Apps",
             "subtitle": "iOS & Android apps built to grow your business.",
-             "contents": [
+            "contents": [
                 "Native & Cross-Platform Apps",
                 "UI/UX Optimized",
                 "API Integration",
                 "API Integration",
                 "Ongoing Maintenance"
-            ]
+            ],
+            "button": "View more"
         },
         "game": {
             "title": "Game Apps",
@@ -37,7 +39,8 @@
                 "In-App Monetization",
                 "Game UI/UX Design",
                 "Publishing Support"
-            ]
+            ],
+            "button": "View more"
         },
         "design": {
             "title": "UI/UX",
@@ -48,7 +51,68 @@
                 "Product Design",
                 "Prototyping (Figma)",
                 "Marketing Visuals"
-            ]
+            ],
+            "button": "View more"
         }
+    },
+    "workingWith": {
+        "individual": {
+            "title": "Startups & Individual Founders",
+            "contents": [
+                "MVP development",
+                "Product validation & technical consulting",
+                "Rapid prototyping (UI/UX & functional)",
+                "Scalable backend architecture",
+                "Secure authentication systems",
+                "Cloud-ready infrastructure",
+                "Technical roadmap planning",
+                "Post-launch scaling & ongoing support"
+            ],
+            "button": "Analyze your website speed for free"
+        },
+        "entreprise": {
+            "title": "Enterprises & Growing Companies",
+            "contents": [
+                "Dedicated cross-functional teams",
+                "Enterprise-grade system architecture",
+                "Role-Based Access Control (RBAC)",
+                "Advanced data protection & encryption",
+                "NDA & strict confidentiality",
+                "Compliance-ready development",
+                "DevOps & CI/CD pipelines",
+                "Long-term maintenance & SLA support"
+            ],
+            "button": "Audit and Fix Your Website for Free"
+        }
+    },
+    "whyChooseUs": [
+          {
+        "headText": "All-in-One Digital Partner",
+        "text": "Web, apps, games, and design — everything under one roof."
+    },
+    {
+        "headText": "Expert Team",
+        "text": "Experienced developers and designers delivering high-quality digital solutions."
+    },
+    {
+        "headText": "Transparent Communication",
+        "text": "Regular updates and clear pricing — no surprises."
+    },
+    {
+        "headText": "Ongoing Support",
+        "text": "We stay with you after launch to provide updates, maintenance, and growth support."
+    },
+    {
+        "headText": "Enterprise-Grade Security",
+        "text": "We apply modern security standards to protect your platform, users, and business data."
+    },
+    {
+        "headText": "Advanced Threat Protection",
+        "text": "Continuous monitoring, secure authentication, and protection against modern cyber threats."
+    },
+    {
+        "headText": "Reliable Data Protection",
+        "text": "Secure backups, encryption, and best practices to keep your data safe and always accessible."
     }
+    ]
 }
