@@ -86,33 +86,157 @@
         }
     },
     "whyChooseUs": [
-          {
-        "headText": "All-in-One Digital Partner",
-        "text": "Web, apps, games, and design — everything under one roof."
-    },
-    {
-        "headText": "Expert Team",
-        "text": "Experienced developers and designers delivering high-quality digital solutions."
-    },
-    {
-        "headText": "Transparent Communication",
-        "text": "Regular updates and clear pricing — no surprises."
-    },
-    {
-        "headText": "Ongoing Support",
-        "text": "We stay with you after launch to provide updates, maintenance, and growth support."
-    },
-    {
-        "headText": "Enterprise-Grade Security",
-        "text": "We apply modern security standards to protect your platform, users, and business data."
-    },
-    {
-        "headText": "Advanced Threat Protection",
-        "text": "Continuous monitoring, secure authentication, and protection against modern cyber threats."
-    },
-    {
-        "headText": "Reliable Data Protection",
-        "text": "Secure backups, encryption, and best practices to keep your data safe and always accessible."
+        {
+            "headText": "All-in-One Digital Partner",
+            "text": "Web, apps, games, and design — everything under one roof."
+        },
+        {
+            "headText": "Expert Team",
+            "text": "Experienced developers and designers delivering high-quality digital solutions."
+        },
+        {
+            "headText": "Transparent Communication",
+            "text": "Regular updates and clear pricing — no surprises."
+        },
+        {
+            "headText": "Ongoing Support",
+            "text": "We stay with you after launch to provide updates, maintenance, and growth support."
+        },
+        {
+            "headText": "Enterprise-Grade Security",
+            "text": "We apply modern security standards to protect your platform, users, and business data."
+        },
+        {
+            "headText": "Advanced Threat Protection",
+            "text": "Continuous monitoring, secure authentication, and protection against modern cyber threats."
+        },
+        {
+            "headText": "Reliable Data Protection",
+            "text": "Secure backups, encryption, and best practices to keep your data safe and always accessible."
+        }
+    ],
+    "workFlow": [
+        {
+            "header": "Features",
+            "content": [
+                "Pages",
+                "Responsive Design",
+                "SEO",
+                "Animations",
+                "CMS",
+                "Authentication",
+                "API Integration"
+            ]
+        },
+        {
+            "header": "Launch Pad",
+            "content": [
+                "1",
+                "Yes",
+                "Basic",
+                "No",
+                "No",
+                "No",
+                "No"
+            ]
+        },
+        {
+            "header": "Business Presence",
+            "content": [
+                "5",
+                "Yes",
+                "Advanced",
+                "Yes",
+                "Basic",
+                "No",
+                "No"
+            ]
+        },
+        {
+            "header": "Interactive",
+            "content": [
+                "10",
+                "Yes",
+                "Advanced",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Basic"
+            ]
+        },
+        {
+            "header": "Custom Platform",
+            "content": [
+                "Unlimited",
+                "Yes",
+                "Advanced",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Full"
+            ]
+        }
+    ],
+    "workFlow2": {
+        "launch": {
+            "headText": "Launch Pad",
+            "title": "Starting Price",
+            "price": "23 000",
+            "btn": "Start Project",
+            "content": [
+                "1-5 Landing Page",
+                "Responsive (Mobile/Tablet)",
+                "Contact Form",
+                "Basic SEO Setup",
+                "Performance optimization",
+                "Delivery in 3–5 days"
+            ]
+        },
+        "business": {
+            "headText": "Business Presence",
+            "title": "Starting Price",
+            "price": "25 000",
+            "btn" : "Start Project",
+            "content": [
+                "Up to 10 Pages",
+                "Responsive Design",
+                "SEO Optimization",
+                "Contact Forms",
+                "Blog / Content Pages",
+                "Performance Optimization",
+                "Animations"
+            ]
+        },
+        "interactive": {
+            "headText": "Interactive",
+            "title": "Starting Price",
+            "btn" : "Start Project",
+            "price": "23 000",
+            "content": [
+                "Up to 10 Pages",
+                "Custom UI/UX Design",
+                "CMS (Editable Content)",
+                "Advanced Animations",
+                "API Integration",
+                "Performance Optimization",
+                "Security Setup"
+            ]
+        },
+        "custom": {
+            "headText": "Custom Platform",
+            "title": "Starting Price",
+            "price": "25 000",
+            "btn": "Start Project",
+            "content": [
+                "Unlimited Pages",
+                "Full Web Application",
+                "User Authentication",
+                "Dashboard / Admin Panel",
+                "Database Integration",
+                "API Development",
+                "Payment Systems",
+                "Cloud Deployment"
+            ]
+        }
     }
-    ]
 }
