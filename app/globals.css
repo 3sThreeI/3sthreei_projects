@@ -8,6 +8,7 @@
   --nav-bg-color: rgb(126, 34, 206);
   --nav-text-color: rgb(126, 34, 206);
   --nav-text-color-hover: rgb(255, 255, 255);
+  --nav-shadow-color: rgba(126, 34, 206, 0.396);
   /* --theme-btn-color: rgb(126, 34, 206);
   --theme-btn-color2: rgb(255,255,255); */
   /* --btn-color-hover: rgb(255,255,255); */
@@ -19,6 +20,7 @@
   --bg-color: rgb(17, 24, 39);
   /* background color*/
   --card-bg-color: rgb(30, 41, 59);
+  --card-bg-color-deep: rgb(8, 47, 73);
   /* card color*/
 }
 
@@ -26,6 +28,7 @@
   --nav-bg-color: rgb(97, 218, 251);
   --nav-text-color: rgb(97, 218, 251);
   --nav-text-color-hover: rgb(255, 255, 255);
+  --nav-shadow-color: rgb(97, 218, 251);
   --bg-hero-color1: rgb(17, 24, 39);
   --bg-hero-color2: rgb(15, 23, 42);
   --text-color: rgb(255, 255, 255);
@@ -33,6 +36,7 @@
   --bg-color: rgb(17, 24, 39);
   /* background color*/
   --card-bg-color: rgb(30, 41, 59);
+  --card-bg-color-deep: rgba(255, 255, 255, 0.188);
   /* card color*/
 }
 
