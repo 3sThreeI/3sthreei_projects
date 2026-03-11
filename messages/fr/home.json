@@ -114,5 +114,151 @@
             "headText": "Protection Fiable des Données",
             "text": "Sauvegardes sécurisées, chiffrement et meilleures pratiques pour protéger vos données."
         }
-    ]
+    ],
+    "workFlow": [
+         {
+            "header": "Fonctionnalités",
+            "content": []
+        },
+         {
+            "header": "Essentiel",
+            "content": []
+        },
+         {
+            "header": "Professionnel",
+            "content": []
+        },
+         {
+            "header": "Performance",
+            "content": []
+        },
+        {
+            "header": "Sur Mesure",
+            "content": []
+        }
+    ],
+    "workFlow": [
+    {
+        "header": "Fonctionnalités",
+        "content": [
+            "Pages",
+            "Design Responsive",
+            "SEO",
+            "Animations",
+            "CMS",
+            "Authentification",
+            "Intégration d’API"
+        ]
+    },
+    {
+        "header": "Launch Pad",
+        "content": [
+            "1",
+            "Oui",
+            "Basique",
+            "Non",
+            "Non",
+            "Non",
+            "Non"
+        ]
+    },
+    {
+        "header": "Présence Business",
+        "content": [
+            "5",
+            "Oui",
+            "Avancé",
+            "Oui",
+            "Basique",
+            "Non",
+            "Non"
+        ]
+    },
+    {
+        "header": "Interactif",
+        "content": [
+            "10",
+            "Oui",
+            "Avancé",
+            "Oui",
+            "Oui",
+            "Oui",
+            "Basique"
+        ]
+    },
+    {
+        "header": "Plateforme Personnalisée",
+        "content": [
+            "Illimité",
+            "Oui",
+            "Avancé",
+            "Oui",
+            "Oui",
+            "Oui",
+            "Complet"
+        ]
+    }
+],
+"workFlow2": {
+    "launch": {
+        "headText": "Launch Pad",
+        "title": "Prix de départ",
+        "price": "23 000",
+        "btn": "Démarrer le projet",
+        "content": [
+            "1 à 5 pages (Landing Page)",
+            "Responsive (Mobile/Tablette)",
+            "Formulaire de contact",
+            "Configuration SEO de base",
+            "Optimisation des performances",
+            "Livraison en 3 à 5 jours"
+        ]
+    },
+    "business": {
+        "headText": "Présence Business",
+        "title": "Prix de départ",
+        "price": "25 000",
+        "btn": "Démarrer le projet",
+        "content": [
+            "Jusqu’à 10 pages",
+            "Design responsive",
+            "Optimisation SEO",
+            "Formulaires de contact",
+            "Blog / Pages de contenu",
+            "Optimisation des performances",
+            "Animations"
+        ]
+    },
+    "interactive": {
+        "headText": "Interactif",
+        "title": "Prix de départ",
+        "btn": "Démarrer le projet",
+        "price": "23 000",
+        "content": [
+            "Jusqu’à 10 pages",
+            "Design UI/UX personnalisé",
+            "CMS (contenu modifiable)",
+            "Animations avancées",
+            "Intégration d’API",
+            "Optimisation des performances",
+            "Configuration de la sécurité"
+        ]
+    },
+    "custom": {
+        "headText": "Plateforme Personnalisée",
+        "title": "Prix de départ",
+        "price": "25 000",
+        "btn": "Démarrer le projet",
+        "content": [
+            "Pages illimitées",
+            "Application web complète",
+            "Authentification des utilisateurs",
+            "Tableau de bord / Panneau d’administration",
+            "Intégration de base de données",
+            "Développement d’API",
+            "Systèmes de paiement",
+            "Déploiement cloud"
+        ]
+    }
+}
 }
