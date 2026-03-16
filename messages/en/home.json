@@ -238,5 +238,27 @@
                 "Cloud Deployment"
             ]
         }
-    }
+    },
+    "portfolio" :[
+        {
+            "img" : "/project1.png",
+            "alt" : "this project show the portfolio of my work",
+            "bgText": "this is the text display for gackground"
+        },
+        {
+            "img" : "/project1.png",
+            "alt" : "this project show the portfolio of my work",
+            "bgText": "this is the text display for gackground"
+        },
+        {
+            "img" : "/project1.png",
+            "alt" : "this project show the portfolio of my work",
+            "bgText": "this is the text display for gackground"
+        },
+        {
+            "img" : "/project1.png",
+            "alt" : "this project show the portfolio of my work",
+            "bgText": "this is the text display for gackground"
+        }
+    ]
 }
