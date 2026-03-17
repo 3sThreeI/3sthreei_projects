@@ -13,7 +13,7 @@
 }
 
 .cards .card {
-    @apply border-2 border-(--card-bg-color) relative rounded-xl md:rounded-3xl p-3 md:px-5 md:py-3 h-123 transition duration-300 ease-in-out
+    @apply border-2 border-(--card-bg-color) relative rounded-xl md:rounded-3xl p-3 md:px-5 md:py-3 max-w-86 mx-auto h-123 transition duration-300 ease-in-out
 }
 .cards .card:hover {
     @apply border border-y-4 border-(--nav-bg-color) cursor-cell ;
