@@ -13,13 +13,14 @@ export default async function Portfolio() {
     return (
         <>
             <div className={style.container}>
-                <h1 className={style.title}>Our Work</h1>
+                <h1 className={style.title}>Some Works</h1>
                 <div className={style.cards}>
                     {
                         items.map((item, index) => (
                             <div key={index} className={style.card}>
                                 <div className={style.background}>
                                     <FaEye className={style.icon}/>
+                                    <p className={style.bgText}>{item.bgText}</p>
                                 </div>
                                 {
                                     item.img ?
