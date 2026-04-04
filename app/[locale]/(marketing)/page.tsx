@@ -5,9 +5,9 @@ import Hero from '../assets/hero/hero';
 import OurService from '@/components/customComponent/servicesSection/services';
 import WorkingWith from '@/components/customComponent/workingWith/workingWith';
 import WhyChooseUs from '@/components/customComponent/whyChoose/chooseUs';
-import WorkingFlow from '@/components/customComponent/workFlow/workingFlow';
+import WorkingFlow from '@/components/customComponent/workFlow/workingPricing';
 import Portfolio from '@/components/customComponent/portfolio/portfolio';
-
+import WorkingProcess from '@/components/customComponent/process/process';
 type Props = {
   params: { locale: string };
 };
@@ -53,11 +53,15 @@ export default async function MarketingPage() {
        <section >
         {/* <WhyChooseUs /> */}
        </section>
+       {/*---------------------------- Process Section ---------------------------- */}
+       <section>
+        <WorkingProcess />
+       </section>
        {/*---------------------------- WorkFlow Section ---------------------------- */}
        <section>
         <WorkingFlow />
        </section>
-       {/*---------------------------- WorkFlow Section ---------------------------- */}
+       {/*---------------------------- Portfolio Section ---------------------------- */}
        <section>
         <Portfolio />
        </section>
