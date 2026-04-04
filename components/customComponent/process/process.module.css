@@ -1,0 +1,163 @@
+@reference "tailwindcss";
+
+@keyframes spin360 {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.container {
+    @apply w-full px-5 text-center my-10
+}
+
+.container>.title {
+    @apply mt-15 sm:mb-10 text-2xl opacity-20 text-(--nav-text-color)
+}
+
+/* ----------laptop and tablet screen */
+
+.cards {
+    @apply relative max-w-300 mx-auto h-175;
+}
+
+.cards:hover {
+    animation: none;
+}
+
+.card {
+    @apply relative text-[0.9rem] h-36 w-72
+}
+
+.card .title {
+    @apply bg-[var(--card-bg-color)] border-[var(--nav-bg-color)] shadow-[0px_1px_5px_var(--nav-bg-color)] rounded-sm py-1 absolute -top-5 left-1/2 -translate-x-1/2 w-62 font-bold
+}
+
+.cards .card.card0 .title {
+    /* @apply top-0 */
+}
+
+.card .content {
+    @apply bg-(--card-bg-color) text-start shadow-[0px_1px_10px_var(--card-bg-color)] text-(--nav-text-color-hover) font-semibold overflow-y-scroll h-28 rounded-lg px-3 pt-7 pb-3 transition duration-300 hover:bg-[var(--card-bg-color)]
+}
+
+.card .icon {
+    @apply absolute -top-[60px] shadow-[0px_1px_10px_var(--nav-bg-color)] w-10 h-10 p-1 rounded-full left-1/2 -translate-x-1/2 hover:rotate-180 text-gray-600 transition duration-300
+}
+
+.card:hover .icon, .card:active .icon,
+.card:focus .icon {
+    @apply text-blue-600 shadow-[0px_1px_10px_rgb(59,130,246)] rotate-360
+}
+
+.cards .card.card0 {
+    @apply absolute top-8 left-1/2 -translate-x-1/2 right-1/2;
+    /* animation: spin360 6s linear infinite; */
+}
+
+.cards .card.card1 {
+    @apply absolute top-43 right-20
+}
+
+.cards .card.card2 {
+    @apply absolute top-112 right-20
+}
+
+.cards .card.card3 {
+    @apply absolute -bottom-8 left-1/2 -translate-x-1/2 right-1/2
+}
+
+.cards .card.card4 {
+    @apply absolute top-112 left-20
+}
+
+.cards .card.card5 {
+    @apply absolute top-43 left-20
+}
+
+.cards .card.card6 {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-10
+}
+
+/* ----------Phone screen */
+.Phonecards{
+    @apply hidden px-10
+}
+.carousel{
+    @apply max-w-130 min-w-50 mx-auto 
+}
+.Phonecard{
+    @apply w-full  relative my-20
+}
+.Phonecard .icon {
+    @apply absolute -top-[60px] text-blue-600 shadow-[0px_1px_10px_rgb(59,130,246)] w-10 h-10 p-1 rounded-full left-1/2 -translate-x-1/2 hover:rotate-180  transition duration-300
+}
+.Phonecard .title {
+    @apply bg-[var(--card-bg-color)] border-[var(--nav-bg-color)] shadow-[0px_1px_5px_var(--nav-bg-color)] rounded-sm py-1 absolute -top-5 left-1/2 -translate-x-1/2 w-62 font-bold
+}
+.Phonecard .content{
+    @apply bg-(--card-bg-color) text-start shadow-[0px_1px_10px_var(--card-bg-color)] text-(--nav-text-color-hover) font-semibold overflow-y-scroll h-38 rounded-lg px-3 pt-7 pb-3 transition duration-300 hover:bg-[var(--card-bg-color)]
+}
+@media (max-width:880px) {
+    .cards .card.card1 {
+        @apply right-0
+    }
+
+    .cards .card.card2 {
+        @apply right-0
+    }
+
+    .cards .card.card4 {
+        @apply left-0
+    }
+
+    .cards .card.card5 {
+        @apply left-0
+    }
+
+    .cards .card .icon {
+        @apply text-blue-600 shadow-[0px_1px_10px_rgb(59,130,246)] rotate-360
+    }
+}
+
+@media(max-width:700px) {
+    .cards {
+        display: none;
+    }
+
+    .Phonecards {
+        display: block;
+    }
+}
+
+/* scoll progress design  */
+
+#scroll {
+    width: 100vw;
+    max-width: 400px;
+    position: relative;
+}
+
+#scroll #progress {
+    position: absolute;
+    top: -65px;
+    left: -15px;
+    transform: rotate(-90deg);
+}
+
+#scroll .bg {
+    stroke: #0b1011;
+}
+
+#scroll #progress circle {
+    stroke-dashoffset: 0;
+    stroke-width: 10%;
+    fill: none;
+}
+
+#progress .indicator {
+    stroke: var(--accent);
+}
