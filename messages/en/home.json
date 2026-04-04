@@ -270,5 +270,35 @@
             "alt": "this project show the portfolio of my work",
             "bgText": "this is the text display for gackground"
         }
+    ],
+    "process": [
+        {
+            "title": "Discovery & Alignment",
+            "content": "Kickoff meeting to understand your vision, business goals, audience needs, and what true success means for you. Through targeted workshops and sharp research, we map opportunities, study the competition, and lock in a focused direction"
+        }, 
+        {
+            "title": "Planning & Strategy",
+            "content": "We turn your vision into a concrete plan. We define every feature, user journey, technical backbone, and timeline. Early wireframes let us test ideas quickly and make smart decisions before the real build begins"
+        },
+        {
+            "title": "Design & Prototyping",
+            "content": "This is where your product comes to life visually and emotionally. We craft intuitive, high-impact interfaces and interactive prototypes that feel alive whether it’s a sleek dashboard, mobile flow, stunning visual system, or an engaging game universe"
+        },
+        {
+            "title": "Development & Momentum",
+            "content": "We bring everything to life in focused sprints. Clean, future-proof code powers the experience while you review live progress and share feedback. From powerful backends to fluid gameplay loops, we build with precision and speed"
+        },
+        {
+            "title": "Testing & Quality Assurance",
+            "content": "We put the product through its final layers of testing — functionality, speed, security, and real-user feedback. For games, we run dedicated playtests to perfect balance and joy. Every detail is tuned until it shines"
+        },
+        {
+            "title": "Launch & Deployment",
+            "content": "We deploy everything seamlessly — servers, app stores, monitoring, and handover. Your team gets full training so you can take the wheel immediately, with our team right beside you on launch day"
+        },
+        {
+            "title": "Momentum & Partnership",
+            "content": "The launch is the start of the real journey. We stay with you 30–90 days free support & maintenance, performance tracking, feature expansions, and continuous improvements helping your product evolve and grow stronger over time"
+        }
     ]
 }
