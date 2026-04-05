@@ -14,7 +14,7 @@ export default async function Navbar() {
             </div>
             {/* -------------------------- huge screee */}
             <ul className={style.navlink}>
-                <li> <Link href='/home'>{t('home')}</Link></li>
+                <li> <Link href='/'>{t('home')}</Link></li>
                 <li> <Link href='/courses'>{t('course')}</Link></li>
                 <li> <Link href='/projects'>{t('project')}</Link></li>
                 <li> <Link href='/about'>{t('about')}</Link></li>
