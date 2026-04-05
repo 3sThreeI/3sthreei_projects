@@ -34,7 +34,7 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
       ]
     },
     alternates: {
-    canonical: '/',
+    canonical: `/${locale}`,
   },
   }
 }

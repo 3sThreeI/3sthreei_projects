@@ -23,7 +23,7 @@ export default async function Hero() {
                             </button>
                         </div>
                     </div>
-                    <div className="h-full w-full">
+                    <div className="h-full w-full z-0">
                         <HeroSVG />
                     </div>
                 </div>

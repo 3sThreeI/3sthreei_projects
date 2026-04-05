@@ -2,10 +2,10 @@
 @reference "tailwindcss";
 
 .container {
-    @apply w-full h-127 flex items-center bg-linear-to-l from-(--bg-hero-color1) to-(--bg-hero-color2) text-(--text-color) relative
+    @apply w-full h-127 pt-30 flex items-center bg-linear-to-l from-(--bg-hero-color1) to-(--bg-hero-color2) text-(--text-color) relative z-30
 }
 .heroCard {
-    @apply  md:grid grid-cols-2 h-full
+    @apply  md:grid grid-cols-2 h-full 
 }
 .cardText {
     @apply content-center px-5 w-full
@@ -14,13 +14,24 @@
     @apply   sm:text-[1.3rem] font-[Meriweather] text-(--nav-text-color) font-bold;
 } 
 .buttons {
-    @apply mt-8 flex gap-4 justify-evenly w-full;
+    @apply mt-8 flex flex-wrap gap-4 justify-evenly w-full;
 }
 .primaryBtn {
-    @apply border text-sm sm:text-[1.1rem] border-(--nav-text-color) px-3 py-1 rounded-full text-(--nav-text-color) hover:text-(--text-color) hover:bg-(--nav-text-color) transition duration-300 ease-in cursor-pointer
+    @apply border z-50 text-sm sm:text-[1.1rem] border-(--nav-text-color) px-3 py-1 rounded-full text-(--nav-text-color) hover:text-(--text-color) hover:bg-(--nav-text-color) transition duration-300 ease-in cursor-pointer
 }
 
 .secondaryBtn {
-    @apply border text-sm sm:text-[1.1rem] border-(--nav-text-color) px-3 py-1 rounded-full text-(--nav-text-color) hover:text-(--text-color) hover:bg-(--nav-text-color) transition duration-300 ease-in cursor-pointer
+    @apply border z-50 text-sm sm:text-[1.1rem] border-(--nav-text-color) px-3 py-1 rounded-full text-(--nav-text-color) hover:text-(--text-color) hover:bg-(--nav-text-color) transition duration-300 ease-in cursor-pointer
 }
 
+@media (min-width:768px){
+.container {
+    @apply pt-0
+}   
+}
+@media (max-width:907px) {
+    .heroCard {
+        @apply grid-cols-1 max-w-[700px] min-w-[100px] mx-auto
+    }
+
+}
