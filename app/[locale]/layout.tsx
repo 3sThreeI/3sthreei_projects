@@ -53,9 +53,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "3SThreeA | SaaS for Apps, Games & Learning",
+    title: "3SThreeI | SaaS for Apps, Games & Learning",
     description:
-      "Apps, games, web solutions, creative design, and tech education — powered by 3SThreeA.",
+      "Apps, games, web solutions, creative design, and tech education — powered by 3SThreeI.",
     images: [`${siteUrl}/og-image.png`],
   },
 

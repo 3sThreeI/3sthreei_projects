@@ -32,7 +32,10 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
           alt: t('sitename')
         }
       ]
-    }
+    },
+    alternates: {
+    canonical: '/',
+  },
   }
 }
 
