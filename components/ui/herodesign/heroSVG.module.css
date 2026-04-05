@@ -1,4 +1,3 @@
-
 .wrapper {
     position: relative;
     /* overflow:hidden; */
@@ -10,109 +9,164 @@
     position: absolute;
     font-size: 28px;
 }
-.icons{
-    z-index: 0 ;
-    opacity: 0.5;
+
+.icons {
+    z-index: 0;
+    opacity: 0.3;
 }
 
 /* Half-circle layout */
-.icon1 {font-size:30px; left: 120px;top: 50px; color:rgb(104, 160, 99);}
- .circle1{
-     animation: moveAlongLine 3s infinite  ease-in-out;
+.icon1 {
+    font-size: 30px;
+    left: 120px;
+    top: 50px;
+    color: rgb(104, 160, 99);
 }
-@keyframes moveAlongLine{
-    0%{
+
+.circle1 {
+    animation: moveAlongLine 3s infinite ease-in-out;
+}
+
+@keyframes moveAlongLine {
+    0% {
         transform: translate(0px, 0px);
     }
-    100%{
+
+    100% {
         transform: translate(357px, 185px)
     }
 }
+
 /* ----------------- cirle 2 --------------- */
-.icon2 { font-size:30px; left: 60px;top: 150px; color:rgb(97, 218, 251);}
-.circle2{
-    animation: Circle2_move 3s infinite ease-in ;
+.icon2 {
+    font-size: 30px;
+    left: 60px;
+    top: 150px;
+    color: rgb(97, 218, 251);
 }
-@keyframes Circle2_move{
-    0%{
+
+.circle2 {
+    animation: Circle2_move 3s infinite ease-in;
+}
+
+@keyframes Circle2_move {
+    0% {
         transform: translate(0px, 0px);
     }
-    100%{
+
+    100% {
         transform: translate(400px, 85px);
     }
 }
 
 /* ------------------Circle 3 -------------- */
-.icon3 { font-size:30px; left: 50px;top: 250px; color:rgb(221, 0, 49); animation: Angular  0.5s alternate infinite ease  ;}
-@keyframes Angular{
-    0%{
+.icon3 {
+    font-size: 30px;
+    left: 50px;
+    top: 250px;
+    color: rgb(221, 0, 49);
+    animation: Angular 0.5s alternate infinite ease;
+}
+
+@keyframes Angular {
+    0% {
         transform: scale(1);
     }
-     100%{
+
+    100% {
         transform: scale(1.3);
     }
 }
-.circle3{
+
+.circle3 {
     animation: Circle3_move 3s infinite ease-in-out
 }
-@keyframes Circle3_move{
-      0%{
+
+@keyframes Circle3_move {
+    0% {
         transform: translate(0px, 0px);
     }
-    100%{
+
+    100% {
         transform: translate(425px, -10px);
     }
 }
+
 /* -----------------Circle4----------------- */
-.icon4 { font-size:30px; left: 60px; top: 350px; animation: NextJs  1s alternate infinite ease  ;}
-@keyframes NextJs{
-     0%{
+.icon4 {
+    font-size: 30px;
+    left: 60px;
+    top: 350px;
+    animation: NextJs 1s alternate infinite ease;
+}
+
+@keyframes NextJs {
+    0% {
         transform: scale(1.3);
     }
-     100%{
+
+    100% {
         transform: scale(1);
     }
 }
-.circle4{
+
+.circle4 {
     animation: Circle4_move 2s infinite ease-out;
 }
-@keyframes Circle4_move{
-     0%{
+
+@keyframes Circle4_move {
+    0% {
         transform: translate(0px, 0px);
     }
-    100%{
+
+    100% {
         transform: translate(420px, -110px);
     }
 }
+
 /* -----------------Circle5----------------- */
-.icon5 {font-size:30px; left: 120px;top: 450px; color: rgb(2, 86, 155); animation: Flutter  1s alternate infinite ease  ;}
-@keyframes Flutter{
-     0%{
-        transform: translate(5px, -2px) ;
+.icon5 {
+    font-size: 30px;
+    left: 120px;
+    top: 450px;
+    color: rgb(2, 86, 155);
+    animation: Flutter 1s alternate infinite ease;
+}
+
+@keyframes Flutter {
+    0% {
+        transform: translate(5px, -2px);
     }
-     100%{
-        transform:  translateX(0px, 0);
+
+    100% {
+        transform: translateX(0px, 0);
     }
 }
-.circle5{
+
+.circle5 {
     animation: Circle5_move 3s infinite ease-out;
 }
-@keyframes Circle5_move{
-     0%{
+
+@keyframes Circle5_move {
+    0% {
         transform: translate(0px, 0px);
     }
-    100%{
+
+    100% {
         transform: translate(358px, -205px);
     }
 }
-.Circle{
-     animation: CirclePoint 1s infinite alternate ease-out;
+
+.Circle {
+    animation: CirclePoint 1s infinite alternate ease-out;
 }
-@keyframes CirclePoint{
-     0%{
-        transform: translate(1px, 0px) ;
+
+@keyframes CirclePoint {
+    0% {
+        transform: translate(1px, 0px);
     }
-     100%{
+
+    100% {
         transform: translate(-5px, 0px);
     }
 }
@@ -120,35 +174,40 @@
 
 /*  second design start here */
 
-.NodeJs{
+.NodeJs {
     top: 150px;
     font-size: 80px;
     left: 100px;
     animation: globale 2s infinite alternate ease-in-out;
-    color:rgb(104, 160, 99);
+    color: rgb(104, 160, 99);
 }
-.NextJs{
+
+.NextJs {
     top: 300px;
     font-size: 80px;
     left: 200px;
     animation: globale 1.5s infinite alternate ease-in-out;
     color: rgb(2, 86, 155);
 }
-.Angular{
+
+.Angular {
     top: 90px;
     font-size: 80px;
     left: 300px;
     animation: globale 2.3s infinite alternate ease-in-out;
-     color:rgb(221, 0, 49);
+    color: rgb(221, 0, 49);
+    z-index: 0;
 }
-.React{
+
+.React {
     bottom: 90px;
     font-size: 80px;
     right: 70px;
     animation: globale 2.2s infinite alternate ease-in-out;
-    color:rgb(97, 218, 251);
+    color: rgb(97, 218, 251);
 }
-.Fluter{
+
+.Fluter {
     bottom: 240px;
     font-size: 80px;
     right: 100px;
@@ -156,18 +215,67 @@
     opacity: 1;
     color: rgb(2, 86, 155);
 }
+
 @keyframes globale {
-    0%{
+    0% {
         transform: translateY(20px);
     }
-    100%{
+
+    100% {
         transform: translateY(-20px);
     }
 }
 
-@media (max-width:768px){
-.wrapper {
-    position: static;
-}   
+@media (max-width:907px) {
+    .wrapper {
+        position: static;
+    }
+}
 
+@media (min-width:907px) {
+    .icons {
+        opacity: 100;
+    }
+}
+
+@media (max-width:440px) {
+    .NodeJs {
+        top: 150px;
+        left: 50px;
+        z-index: 10;
+
+    }
+
+    .NextJs {
+        top: 300px;
+        font-size: 80px;
+        left: 20px;
+        z-index: 10;
+
+    }
+
+    .Angular {
+        top: 90px;
+        font-size: 80px;
+        left: auto;
+        right: 50px;
+        z-index: 10;
+
+    }
+
+    .React {
+        bottom: 90px;
+        font-size: 80px;
+        right: 70px;
+        z-index: 10;
+
+    }
+
+    .Fluter {
+        bottom: 240px;
+        font-size: 80px;
+        right: 150px;
+        z-index: 10;
+
+    }
 }
