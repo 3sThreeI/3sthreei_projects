@@ -8,6 +8,7 @@ import WhyChooseUs from '@/app/[locale]/assets/whyChoose/chooseUs';
 import WorkingFlow from '@/app/[locale]/assets/workFlow/workingPricing';
 import Portfolio from '@/app/[locale]/assets/portfolio/portfolio';
 import WorkingProcess from '@/app/[locale]/assets/process/process';
+import Testimonial from '../assets/testimonial/testimonial';
 type Props = {
   params: { locale: string };
 };
@@ -67,6 +68,9 @@ export default async function MarketingPage() {
        {/*---------------------------- Portfolio Section ---------------------------- */}
        <section>
         <Portfolio />
+       </section>
+       <section>
+        <Testimonial />
        </section>
     </main>
   );
