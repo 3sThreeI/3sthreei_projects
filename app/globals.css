@@ -4,6 +4,11 @@
 /* @import "tw-animate-css"; */
 @import "shadcn/tailwind.css";
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .roote3{
   --nav-bg-color: rgb(126, 34, 206);
   --nav-text-color: rgb(126, 34, 206);
