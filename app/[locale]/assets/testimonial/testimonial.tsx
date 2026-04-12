@@ -14,7 +14,7 @@ export default function Testimonial() {
             <div className={style.container}>
                 <div className={style.logoContainer}>
                     <h1 className={style.logo}>3SThreeI</h1>
-                    <h2 className={style.subtitle}>What Our Clients Say About Us</h2>
+                    <h2 className={style.subtitle}>{t('testimonialTitle')}</h2>
                 </div>
                 <Carousel className={style.carousel} opts={{
                         align: "start",
