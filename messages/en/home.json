@@ -304,22 +304,27 @@
     "testimonial": [
         {
             "imgUrl": "",
+            "name": "Aboubacar Coulibaly",
             "text": "Very easy to use and build my site, The design looks clean and modern. I’m really happy with the result"
         },
         {
             "imgUrl": "",
+            "name": "Aboubacar Coulibaly",
             "text": "I created my website in no time, It saved me both time and money.Great experience overall."
         },
         {
             "imgUrl": "",
+            "name": "Aboubacar Coulibaly",
             "text": "The tools are simple but powerful, My site works perfectly on all devices.It looks very professional"
         },
         {
             "imgUrl": "",
+            "name": "Aboubacar Coulibaly",
             "text": "Smooth and stress-free process, Everything was easy to understand.I’d definitely recommend it"
         },
         {
             "imgUrl": "",
+            "name": "Aboubacar Coulibaly",
             "text": "Perfect for beginners like me, No coding skills needed at all. I love my new website"
         }
     ]
