@@ -41,9 +41,14 @@
 }
 
 .card .content {
-    @apply bg-(--card-bg-color) text-start shadow-[0px_1px_10px_var(--card-bg-color)] text-(--nav-text-color-hover) font-semibold overflow-y-scroll h-28 rounded-lg px-3 pt-7 pb-3 transition duration-300 hover:bg-[var(--card-bg-color)]
+    @apply  bg-(--card-bg-color) text-start shadow-[0px_1px_10px_var(--card-bg-color)] text-(--nav-text-color-hover) font-semibold overflow-y-scroll h-28 rounded-lg px-3 pt-7 pb-3 transition duration-300 hover:bg-[var(--card-bg-color)]
 }
-
+.content .ArrowDown{
+    @apply absolute bg-white/20 text-(--nav-bg-color) px-1 rounded-full  top-20 text-2xl right-5 hover:animate-none animate-bounce
+}
+.content.phone .ArrowDown{
+    @apply absolute bg-white/20 text-(--nav-bg-color) px-1 rounded-full  top-30 text-2xl right-3 hover:animate-none animate-bounce
+}
 .card .icon {
     @apply absolute -top-[60px] shadow-[0px_1px_10px_var(--nav-bg-color)] w-10 h-10 p-1 rounded-full left-1/2 -translate-x-1/2 hover:rotate-180 text-gray-600 transition duration-300
 }
