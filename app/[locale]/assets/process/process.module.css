@@ -90,7 +90,7 @@
     @apply max-w-130 min-w-50 mx-auto 
 }
 .Phonecard{
-    @apply w-full  relative my-20
+    @apply w-full relative my-20
 }
 .Phonecard .icon {
     @apply absolute -top-[60px] text-blue-600 shadow-[0px_1px_10px_rgb(59,130,246)] w-10 h-10 p-1 rounded-full left-1/2 -translate-x-1/2 hover:rotate-180  transition duration-300
