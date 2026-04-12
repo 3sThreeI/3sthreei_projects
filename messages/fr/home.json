@@ -300,7 +300,7 @@
     },
     {
         "title": "Planification & Stratégie",
-        "content": "Nous transformons votre vision en un plan concret : fonctionnalités, parcours utilisateur, architecture technique et planning. Des wireframes précoces nous permettent de tester et valider les idées rapidement."
+        "content": "Nous transformons votre vision en un plan concret, fonctionnalités, parcours utilisateur, architecture technique et planning. Des wireframes précoces nous permettent de tester et valider les idées rapidement."
     },
     {
         "title": "Conception & Prototypage",
@@ -322,5 +322,34 @@
         "title": "Élan & Partenariat",
         "content": "Après le lancement, nous vous accompagnons 30–90 jours avec support gratuit, maintenance, suivi de performance et améliorations continues."
     }
+    ],
+    "testimonialTitle": "Ce que notre clients disent de nous",
+    "testimonial": [
+
+        {
+            "imgUrl": "",
+            "name": "Aboubacar Coulibaly",
+            "text": "Very easy to use and build my site, The design looks clean and modern. I’m really happy with the result"
+        },
+        {
+            "imgUrl": "",
+            "name": "Aboubacar Coulibaly",
+            "text": "I created my website in no time, It saved me both time and money.Great experience overall."
+        },
+        {
+            "imgUrl": "",
+            "name": "Aboubacar Coulibaly",
+            "text": "The tools are simple but powerful, My site works perfectly on all devices.It looks very professional"
+        },
+        {
+            "imgUrl": "",
+            "name": "Aboubacar Coulibaly",
+            "text": "Smooth and stress-free process, Everything was easy to understand.I’d definitely recommend it"
+        },
+        {
+            "imgUrl": "",
+            "name": "Aboubacar Coulibaly",
+            "text": "Perfect for beginners like me, No coding skills needed at all. I love my new website"
+        }
     ]
 }
