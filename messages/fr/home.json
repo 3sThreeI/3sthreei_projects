@@ -354,6 +354,28 @@
     ],
     "mediaMarketing": {
         "contentText":"3SThreeI est une entreprise spécialisée dans la création d’applications mobiles, de logiciels desktop, de jeux, de sites web et de designs numériques pour tous les types d’appareils. Nous mettons l’accent sur des solutions sécurisées, bien structurées et responsives, adaptées à vos besoins. Notre équipe travaille de manière collaborative avec un processus clair et efficace afin de garantir des résultats de haute qualité. Au-delà du développement, nous vous accompagnons sur le long terme grâce à la maintenance et au suivi continu de vos projets La vidéo ci-dessous présente 3SThreeI et montre comment nous travaillons en équipe et organisons notre workflow Déjà adoptée par de nombreuses entreprises à travers le monde, 3SThreeI continue de se démarquer par son innovation et sa fiabilité. Cliquez sur le bouton ci-dessous pour commencer à discuter de votre projet avec nous.",
-        "videoURL": ""
+        "videoURL": "/e-commerce",
+        "cta": "Lancez votre projet"
+    },
+    "footer": {
+        "tagline": "Excellence Numérique & Innovation",
+        "description": "Nous transformons les idées en solutions numériques puissantes. Des sites d'entreprise aux applications mobiles, en passant par des designs époustouflants et des jeux engageants, nous partenaires avec les startups et les entreprises pour construire l'avenir.",
+        "services_title": "Services",
+        "service_web": "Développement Web",
+        "service_mobile": "Applications Mobiles",
+        "service_game": "Développement de Jeux",
+        "service_design": "Design UI/UX",
+        "company_title": "Entreprise",
+        "about": "À Propos",
+        "portfolio": "Portefeuille",
+        "process": "Notre Processus",
+        "contact": "Contact",
+        "contact_title": "Nous Contacter",
+        "email": "info@3sthreei.com",
+        "phone": "+1 (555) 123-4567",
+        "location": "Dakar, Sénégal",
+        "rights_reserved": "Tous Droits Réservés. Construit avec excellence.",
+        "privacy": "Politique de Confidentialité",
+        "terms": "Conditions d'Utilisation"
     }
 }

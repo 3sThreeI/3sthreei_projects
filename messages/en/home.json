@@ -330,7 +330,30 @@
         }
     ],
     "mediaMarketing": {
-        "contentText": "3SThreeI is an enterprise dedicated to creating high-quality mobile applications, desktop software, games, websites, and digital designs for all devices. We focus on building secure, well-structured, and responsive solutions tailored to your needs.Our team works collaboratively with a clear and efficient workflow to ensure every project is delivered with excellence. Beyond development, we stay with you for ongoing maintenance and long-term support, helping your project grow and succeed over timeThe video below introduces 3SThreeI and shows how we work as a team and organize our processTrusted by many companies worldwide, 3SThreeI continues to stand out through innovation and reliabilityClick the button below to start discussing your project with us.",
-        "videoURL": ""
+        "contentText": "3SThreeI is an enterprise dedicated to creating high-quality mobile applications, desktop software, games, websites, and digital designs for all devices. We focus on building secure, well-structured, and responsive solutions tailored to your needs. Our team works collaboratively with a clear and efficient workflow to ensure every project is delivered with excellence. Beyond development, we stay with you for ongoing maintenance and long-term support, helping your project grow and succeed over timeThe video below introduces 3SThreeI and shows how we work as a team and organize our process Trusted by many companies worldwide, 3SThreeI continues to stand out through innovation and reliability Click the button below to start discussing your project with us.",
+        "videoURL": "/e-commerce",
+        "cta": "Start Your Project"
+    },
+    },
+    "footer": {
+        "tagline": "Digital Excellence & Innovation",
+        "description": "We transform ideas into powerful digital solutions. From enterprise websites and mobile apps to stunning designs and engaging games, we partner with startups and enterprises to build the future.",
+        "services_title": "Services",
+        "service_web": "Web Development",
+        "service_mobile": "Mobile Apps",
+        "service_game": "Game Development",
+        "service_design": "UI/UX Design",
+        "company_title": "Company",
+        "about": "About Us",
+        "portfolio": "Portfolio",
+        "process": "Our Process",
+        "contact": "Contact",
+        "contact_title": "Get In Touch",
+        "email": "info@3sthreei.com",
+        "phone": "+1 (555) 123-4567",
+        "location": "Dakar, Senegal",
+        "rights_reserved": "All Rights Reserved. Built with excellence.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
     }
 }
