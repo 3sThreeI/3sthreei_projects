@@ -32,7 +32,10 @@ export const metadata: Metadata = {
   description:
     "3SThreeA is a SaaS platform where we build apps, games, web applications, design solutions, and provide professional tech courses.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: '/favicon.ico', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon1.png', sizes: '32x32', type: 'image/png' },
+    ],
   },
 
   openGraph: {
@@ -89,7 +92,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <Navbar />
+        <Navbar />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
