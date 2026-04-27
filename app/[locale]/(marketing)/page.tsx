@@ -18,12 +18,12 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'common' })
   return {
-    title: t('title'),
-    description: t('description'),
-    keywords: t.raw('keywords').join(', '),
+    title: t('home.title'),
+    description: t('home.description'),
+    keywords: t.raw('home.keywords').join(', '),
     openGraph: {
-      title: t('title'),
-      description: t('description'),
+      title: t('home.title'),
+      description: t('home.description'),
       siteName: t('sitename'),
       url: `${process.env.NEXT_PUBLIC_API_URL}/${locale}`,
       images: [
@@ -66,15 +66,17 @@ export default async function MarketingPage() {
        <section>
         <WorkingFlow />
        </section>
+       {/*---------------------------- video Section ---------------------------- */}
+       <section>
+        <VideoMarketing />
+       </section>
        {/*---------------------------- Portfolio Section ---------------------------- */}
        <section>
         <Portfolio />
        </section>
+       {/*---------------------------- Testimonial Section ---------------------------- */}
        <section>
         <Testimonial />
-       </section>
-       <section>
-        <VideoMarketing />
        </section>
     </main>
   );
