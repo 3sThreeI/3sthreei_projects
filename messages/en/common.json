@@ -1,17 +1,28 @@
 {
     "common": {
-        "title": "Welcome to 3SThreeI",
-        "description": "Build apps, games, web apps, and learn with us.",
+        "home": {
+            "title": "Web & Mobile App Development Company in Ghana ",
+        "description": "3SThreeI is a web & mobile app development company in Ghana delivering custom websites, scalable apps,  software solutions for businesses and intuitive UI/UX design",
         "keywords": [
-            "3SThreeI",
-            "SaaS platform",
-            "app development",
-            "game development",
-            "web app development",
-            "UI/UX design",
-            "tech courses",
-            "software solutions"
-        ],
+            "affordable web development company in Ghana",
+            "best mobile app developers in Ghana Ghana",
+            "custom business website development Ghana",
+            "scalable web application development Ghana",
+            "hire web developers in Ghana",
+            "eCommerce website development Ghana",
+            "startup app development company Ghana"
+        ]
+        },
+        "about": {
+            "title": "About 3SThreeI | Web & Mobile App Development Company in Accra",
+            "description": "Discover 3SThreeI in Accra, a team of developers and designers creating modern websites, web apps, mobile apps, and UI/UX solutions for businesses.",
+            "keywords": []
+        },
+        "project": {
+            "title": "About 3SThreeI | Web & Mobile App Development Company in Accra",
+            "description": "Discover 3SThreeI in Accra, a team of developers and designers creating modern websites, web apps, mobile apps, and UI/UX solutions for businesses.",
+            "keywords": []
+        },
         "sitename": "3SThreeI"
     },
     "courses": {
@@ -35,10 +46,10 @@
         "faq": "FAQ",
         "about": "About Us"
     },
-    "hero":{
+    "hero": {
         "headline": "From Idea to Launch — We Build & Teach Digital Excellence",
         "subheadline": "Enterprise websites, Mobile apps, Games, UI/UX design. while teaching your team how to scale them.",
-        "herobtn1" :"Start Your Project",
-        "herobtn2" :"Explore Courses"
+        "herobtn1": "Start Your Project",
+        "herobtn2": "Explore Courses"
     }
 }
