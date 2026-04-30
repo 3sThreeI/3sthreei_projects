@@ -1,0 +1,72 @@
+@reference "tailwindcss";
+
+.container {
+    @apply px-5
+}
+
+.title {
+    @apply ml-5 text-xl sm:text-3xl text-(--nav-text-color) relative my-10 font-[lora] transition-all duration-500 ease-in-out
+}
+
+.container .desc {
+    @apply mx-auto max-w-190 min-w-[200px] mt-24 border-b border-b-5 md:border-b-0 md:border-l md:border-l-5 rounded-xl border-(--nav-text-color) px-2
+}
+
+.title::before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    background-color: var(--nav-text-color);
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.cards {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto w-[230px] sm:w-[500px] md:w-[700px] gap-3 sm:gap-5 mt-[100px] sm:mt-[200px]
+}
+
+.cards .card {
+    @apply max-w-[250px] min-w-[150px] sm:min-w-[220px] rounded-md overflow-hidden
+}
+
+.card .img {
+    @apply w-full overflow-hidden h-[200px]
+}
+
+.cardText {
+    @apply shadow-[0px_02px_3px_white] mx-1 px-3 py-3 space-y-2.5 mb-1 rounded-b-lg cursor-default
+}
+
+.cardText .Name {
+    position: relative;
+    transition: all 0.5s ease;
+    font-size: 1.2rem;
+    font-family: poppins;
+}
+
+.cardText .Name::before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    background-color: var(--nav-text-color);
+    width: 0;
+    height: 4px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover .Name::before {
+    width: 100%;
+}
+.card .founder{
+    @apply text-white transition duration-300 ease-in text-sm
+}
+.card:hover .founder{
+    @apply text-(--nav-text-color)
+}
+@media(max-width:600px){
+    .card .founder{
+    @apply text-(--nav-text-color)
+}
+}
