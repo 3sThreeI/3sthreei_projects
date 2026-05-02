@@ -1,0 +1,31 @@
+{
+    "abouthero": {
+        "heroImageUrl": "/abouthero.jpg",
+        "heroImageAlt": "showing our vision 3sthreei",
+        "heroText": "L’équipe derrière votre croissance digitale"
+    },
+    "about": {
+        "title": "À propos de 3SThreeI ",
+        "description": "Fondée à Accra, 3SThreeI est une équipe de développeurs et de designers passionnés, unis par une vision commune : rendre la technologie simple, utile et accessible. Nous créons des sites web modernes, des applications web et mobiles évolutives, des expériences de jeu engageantes et des interfaces UI/UX intuitives qui répondent à de vrais besoins pour les entreprises et les particuliers. Notre force repose sur la combinaison de l’expertise technique et de la créativité. Nous abordons chaque projet en mettant l’accent sur la performance, l’ergonomie et l’évolutivité afin de fournir des solutions digitales à la fois esthétiques, efficaces et prêtes pour l’avenir. Chez 3SThreeI, nous comprenons que chaque entreprise est unique. C’est pourquoi nous prenons le temps de comprendre les objectifs de nos clients avant de concevoir des solutions flexibles qui évoluent avec eux. Des startups aux entreprises établies, nous concevons des systèmes faciles à utiliser, à gérer et à faire évoluer. Nous nous considérons comme des partenaires à long terme, en accompagnant et en améliorant continuellement les solutions que nous créons afin de permettre à nos clients de se développer dans un monde numérique en constante évolution.",
+        "founderCard": [
+            {
+                "imgUrl": "/founder/abzar.jpg",
+                "imgAlt": "3sThreeI Co-fondateur",
+                "name": "Hamidou N'Diaye",
+                "description": "Co-fondateur"
+            }, 
+            {
+                "imgUrl": "/founder/abzar.jpg",
+                "imgAlt": "3sThreeI Co-fondateur",
+                "name": "Modibo Doumbia",
+                "description": "Co-fondateur"
+            }, 
+            {
+                "imgUrl": "/founder/abzar.jpg",
+                "imgAlt": "3sThreeI Co-fondateur",
+                "name": "Abzar Camara",
+                "description": "Co-fondateur"
+            }
+        ]
+    }
+}
