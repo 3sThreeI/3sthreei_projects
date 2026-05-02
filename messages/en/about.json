@@ -1,0 +1,31 @@
+{
+    "abouthero": {
+        "heroImageUrl": "/abouthero.jpg",
+        "heroImageAlt": "showing our vision 3sthreei",
+        "heroText": "The Team Behind Your Digital Growth"
+    },
+    "about": {
+        "title": "About 3SThreeI ",
+        "description": "Founded in Accra, 3SThreeI is a team of passionate developers and designers united by a shared vision to make technology simple, useful, and accessible. We build modern websites, scalable web and mobile applications, engaging game experiences, and intuitive UI/UX designs that solve real problems for businesses and individuals. Our strength comes from combining technical expertise with creative thinking. We approach every project with a focus on performance, usability, and scalability to deliver digital solutions that are not only visually appealing but also efficient and future-ready. At 3SThreeI, we understand that every business is unique. That’s why we take time to understand our clients’ goals before crafting flexible solutions that grow with them. From startups to established companies, we design systems that are easy to use, easy to manage, and easy to expand. We see ourselves as long-term partners, supporting and improving the solutions we create so our clients can continue to grow in an ever-evolving digital world.",
+        "founderCard": [
+            {
+                "imgUrl": "/founder/abzar.jpg",
+                "imgAlt": "3SthreeI Co-Founder",
+                "name": "Hamidou N'Diaye",
+                "description": "Co-Founder"
+            },
+            {
+                "imgUrl": "/founder/abzar.jpg",
+                "imgAlt": "3SthreeI Co-Founder",
+                "name": "Modibo Doumbia",
+                "description": "Co-Founder"
+            },
+            {
+                "imgUrl": "/founder/abzar.jpg",
+                "imgAlt": "3SthreeI Co-Founder",
+                "name": "Abzar Camara",
+                "description": "Co-Founder"
+            }
+        ]
+    }
+}
