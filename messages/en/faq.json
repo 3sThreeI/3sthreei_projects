@@ -1,0 +1,47 @@
+{
+    "faq": {
+        "headText": "3SThreeI FAQ: Web, Mobile, Gaming & Design Services Ghana Mali",
+        "questions": [
+            {
+                "question": "How much does website development cost in Ghana or Mali?",
+                "answer": "Custom websites start at GHS 5,000–20,000 depending on features (e-commerce, booking systems). We offer flexible packages—contact for a tailored quote."
+            },
+            {
+                "question": "What is the timeline for mobile app development?",
+                "answer": "Basic apps take 4-8 weeks; complex ones (payment integration, offline mode) 3-6 months. Optimized for Ghana/Mali networks."
+            },
+            {
+                "question": "Do you develop games for Android/iOS in West Africa?",
+                "answer": "Yes, casual games to multiplayer titles. Optimized for low-data Mali/Ghana networks with Unity/Unreal Engine."
+            },
+            {
+                "question": "What payment methods do you accept in Ghana/Mali?",
+                "answer": "Mobile Money (MTN, Vodafone, Orange), bank transfers, PayPal, and local cards. Multi-currency quotes available."
+            },
+            {
+                "question": "Do you offer maintenance after project completion?",
+                "answer": "Yes, monthly plans from GHS 500 for updates, security, hosting. 24/7 support for critical issues."
+            },
+            {
+                "question": "Are your websites mobile-friendly for Ghana users?",
+                "answer": "100% responsive design tested on popular Ghana devices (Tecno, Infinix, Samsung A-series)."
+            },
+            {
+                "question": "What technologies do you use for web development?",
+                "answer": "WordPress, React/Next.js, Laravel, Node.js. SEO-optimized and crawlable for Google Ghana rankings."
+            },
+            {
+                "question": "Can you redesign existing websites?",
+                "answer": "Yes, full redesigns keeping content while improving speed, mobile UX, and SEO performance."
+            },
+            {
+                "question": "Do you provide hosting services in Ghana?",
+                "answer": "Local Ghana servers + Cloudflare CDN for 3x faster loading. SSL certificates included."
+            },
+            {
+                "question": "How do I get started with 3SThreeI?",
+                "answer": "Free 30-min consultation → project brief → custom quote within 24h → development starts."
+            }
+        ]
+    }
+}

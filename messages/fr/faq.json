@@ -1,0 +1,47 @@
+{
+    "faq": {
+        "headText": " 3SThreeI FAQ: Web, Mobile, Gaming & Design Services Ghana Mali ",
+        "questions": [
+            {
+                "question": "Quel est le coût de développement web au Mali ou Ghana ?",
+                "answer": "Sites sur mesure dès 5 000 FCFA–20 000 FCFA selon fonctionnalités (e-commerce, réservation). Forfaits flexibles — contactez pour devis personnalisé."
+            },
+            {
+                "question": "Quel est le délai pour développer une app mobile ?",
+                "answer2": "Apps simples : 4-8 semaines ; complexes (paiement, mode offline) : 3-6 mois. Optimisées pour réseaux Mali/Ghana."
+            },
+            {
+                "question": "Développez-vous des jeux Android/iOS en Afrique de l'Ouest ?",
+                "answer": "Oui, jeux casual à multijoueurs. Optimisés pour réseaux faible bande passante Mali/Ghana avec Unity/Unreal."
+            },
+            {
+                "question": "Quels moyens de paiement acceptez-vous au Mali/Ghana ?",
+                "answer": "Mobile Money (Orange, MTN, Moov), virements bancaires, PayPal, cartes locales. Devis multi-devises."
+            },
+            {
+                "question": "Proposez-vous maintenance après livraison du projet ?",
+                "answer": "Oui, forfaits mensuels dès 500 FCFA pour mises à jour, sécurité, hébergement. Support 24/7 urgences."
+            },
+            {
+                "question": "Vos sites sont-ils adaptés mobile pour utilisateurs Ghana ?",
+                "answer": "100% responsive testé sur appareils populaires Ghana (Tecno, Infinix, Samsung A-series)."
+            },
+            {
+                "question": "Quelles technologies utilisez-vous pour le web ?",
+                "answer": "WordPress, React/Next.js, Laravel, Node.js. Optimisés SEO et crawlables pour Google rankings Ghana."
+            },
+            {
+                "question": "Pouvez-vous refaire un site web existant ?",
+                "answer": "Oui, refontes complètes conservant contenu tout améliorant vitesse, UX mobile et performances SEO."
+            },
+            {
+                "question": "Proposez-vous hébergement au Ghana ?",
+                "answer": "Serveurs locaux Ghana + Cloudflare CDN pour x3 vitesse chargement. Certificats SSL inclus."
+            },
+            {
+                "question": "Comment commencer avec 3SThreeI ?",
+                "answer": "Consultation gratuite 30min → brief projet → devis personnalisé sous 24h → développement démarre."
+            }
+        ]
+    }
+}
