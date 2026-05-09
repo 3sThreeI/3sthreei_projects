@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url>
-    <loc>https://3sthreei.com/en</loc>
-    <priority>1</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://3sthreei.com/en"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://3sthreei.com/fr"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://3sthreei.com/en"/>
-</url>
-<url>
-    <loc>https://3sthreei.com/fr</loc><priority>1</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://3sthreei.com/fr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://3sthreei.com/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://3sthreei.com/en"/>
-</url>
+<url><loc>https://3sthreei.com/en/about</loc><lastmod>2026-05-09T07:30:40.263Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="en" href="https://3sthreei.com/en/en/about"/><xhtml:link rel="alternate" hreflang="fr" href="https://3sthreei.com/fr/en/about"/></url>
+<url><loc>https://3sthreei.com/fr/about</loc><lastmod>2026-05-09T07:30:40.265Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="en" href="https://3sthreei.com/en/fr/about"/><xhtml:link rel="alternate" hreflang="fr" href="https://3sthreei.com/fr/fr/about"/></url>
+<url><loc>https://3sthreei.com/en/faq</loc><lastmod>2026-05-09T07:30:40.265Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="en" href="https://3sthreei.com/en/en/faq"/><xhtml:link rel="alternate" hreflang="fr" href="https://3sthreei.com/fr/en/faq"/></url>
+<url><loc>https://3sthreei.com/fr/faq</loc><lastmod>2026-05-09T07:30:40.265Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="en" href="https://3sthreei.com/en/fr/faq"/><xhtml:link rel="alternate" hreflang="fr" href="https://3sthreei.com/fr/fr/faq"/></url>
+<url><loc>https://3sthreei.com/en/projects</loc><lastmod>2026-05-09T07:30:40.265Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="en" href="https://3sthreei.com/en/en/projects"/><xhtml:link rel="alternate" hreflang="fr" href="https://3sthreei.com/fr/en/projects"/></url>
+<url><loc>https://3sthreei.com/fr/projects</loc><lastmod>2026-05-09T07:30:40.265Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority><xhtml:link rel="alternate" hreflang="en" href="https://3sthreei.com/en/fr/projects"/><xhtml:link rel="alternate" hreflang="fr" href="https://3sthreei.com/fr/fr/projects"/></url>
+<url><loc>https://3sthreei.com/en</loc><priority>1</priority></url>
+<url><loc>https://3sthreei.com/fr</loc><priority>1</priority></url>
 </urlset>
