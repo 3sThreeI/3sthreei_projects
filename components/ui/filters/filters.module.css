@@ -1,0 +1,68 @@
+@reference "tailwindcss";
+.filterContainer{
+@apply mt-14
+}
+.filters{
+    @apply max-w-[750px] flex flex-wrap gap-5 mx-auto justify-around 
+}
+.filters .filter{
+    @apply  border-2 border-(--nav-bg-color)/20  text-(--nav-text-color)  rounded-full px-5 py-2 hover:border-(--nav-bg-color) transition-all duration-300 ease-in cursor-pointer relative
+}
+.filters .filter.active{
+    @apply  font-bold rounded-full px-5 py-2 bg-(--nav-bg-color) border-(--nav-bg-color) text-black
+}
+
+
+/* -------------------------Porfolio---------------------- */
+
+.cards{
+    @apply flex justify-around flex-wrap gap-7 my-5
+}
+.card{
+    @apply relative z-0 transition duration-300 ease-linear w-[350px] h-[200px] overflow-hidden rounded-sm
+}
+.card .img{
+     @apply w-full h-full transition duration-300 ease-linear rounded-sm
+}
+.card:hover .img{
+    transform: scale(1.2); 
+}
+.card .background{
+    @apply absolute hidden w-full h-full bg-transparent z-10 top-0 cursor-pointer rounded-sm content-center
+}
+.card:hover .background{
+    @apply  bg-gray-300/30 block
+}
+.icon{
+    @apply ml-[150px] text-5xl 
+}
+.card:hover .icon{
+    @apply ml-[150px] text-5xl 
+}
+.background .bgText{
+    @apply absolute bottom-5 left-3 right-3
+}
+.skeleton {
+  height: 200px;
+  width: 350px;
+  background: linear-gradient(90deg,#d4d3d3,#e9e7e7,#d4d3d3);
+  animation: loading 2s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+/* .cards{
+    @apply flex flex-wrap justify-center gap-3 md:gap-7 my-5
+}
+.cards .card {
+    @apply  bg-(--card-bg-color-deep) px-3 pt-3 w-[300px] shadow-[-2px_2px_5px_2px_var(--card-bg-color-deep)] border border-transparent relative text-white/90 font-extrabold rounded-lg md:rounded-xl  md:px-5 md:py-3 h-125 transition duration-500 ease-out
+}
+.cards .card.cardActive{
+    @apply bg-transparent
+} */
