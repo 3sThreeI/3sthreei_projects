@@ -6,6 +6,12 @@
 .navlink{
     @apply flex justify-between gap-5 border border-(--nav-bg-color) text-(--nav-text-color) px-5 py-2 rounded-full 
 }
+.navlink .li{
+    @apply flex justify-center items-center cursor-pointer
+}
+.navlink .li .icon{
+    @apply text-[18px] mt-1
+}
 .PhoneNav{
     @apply hidden flex 
 }
