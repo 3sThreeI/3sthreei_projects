@@ -1,26 +1,35 @@
 {
     "common": {
         "home": {
-            "title": "Web & Mobile App Development Company in Ghana ",
-        "description": "3SThreeI is a web & mobile app development company in Ghana delivering custom websites, scalable apps,  software solutions for businesses and intuitive UI/UX design",
-        "keywords": [
-            "affordable web development company in Ghana",
-            "best mobile app developers in Ghana Ghana",
-            "custom business website development Ghana",
-            "scalable web application development Ghana",
-            "hire web developers in Ghana",
-            "eCommerce website development Ghana",
-            "startup app development company Ghana"
-        ]
+            "title": "Top Web, Mobile App, Gaming & Design Services | Ghana  ",
+            "description": " Leading web development, mobile apps, gaming & UI/UX design in Ghana . Custom solutions for businesses—fast, affordable, mobile-first. Get a free quote today!",
+            "keywords": [
+                "affordable web development company in Ghana",
+                "best mobile app developers in Ghana Ghana",
+                "custom business website development Ghana",
+                "scalable web application development Ghana",
+                "hire web developers in Ghana",
+                "eCommerce website development Ghana",
+                "startup app development company Ghana"
+            ]
         },
         "about": {
-            "title": "About 3SThreeI | Web & Mobile App Development Company in Accra",
-            "description": "Discover 3SThreeI in Accra, a team of developers and designers creating modern websites, web apps, mobile apps, and UI/UX solutions for businesses.",
+            "title": "About 3SThreeI | Web & App Development Experts Ghana",
+            "description1": "Discover 3SThreeI in Accra, a team of developers and designers creating modern websites, web apps, mobile apps, and UI/UX solutions for businesses.",
+            "description": "Meet 3SThreeI—Ghana-based web, mobile app, gaming & design agency serving Mali businesses. 5+ years delivering scalable digital solutions. Learn our story!",
             "keywords": []
         },
         "project": {
             "title": "About 3SThreeI | Web & Mobile App Development Company in Accra",
-            "description": "Discover 3SThreeI in Accra, a team of developers and designers creating modern websites, web apps, mobile apps, and UI/UX solutions for businesses.",
+            "description2": "Discover 3SThreeI in Accra, a team of developers and designers creating modern websites, web apps, mobile apps, and UI/UX solutions for businesses.",
+            "description": "View 3SThreeI portfolio: custom websites, mobile apps, games & UI designs for West Africa clients. See case studies, tech stacks, results. New projects welcome!",
+            "keywords": []
+        },
+        "faq": {
+            "title1": "Web, Mobile App, Gaming & Design Services Ghana Mali",
+            "title": "3SThreeI FAQ | Web Development Costs, Timelines Ghana",
+            "description1": "Common questions on web development, mobile apps, gaming & design costs, timelines in Ghana and Mali. Get quick answers—free consultations available!",
+            "description": "3SThreeI answers: website/app development costs, timelines, process in Ghana & Mali. Pricing, tech stacks, SEO services explained. Ask us anything!",
             "keywords": []
         },
         "sitename": "3SThreeI"
@@ -37,7 +46,7 @@
     },
     "navbar": {
         "home": "Home",
-        "course": "Courses",
+        "service": "services",
         "project": "Projects",
         "signin": "Sign-in",
         "signup": "Sign Up",
