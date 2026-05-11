@@ -1,12 +1,17 @@
 "use client"
 import style from "../navbar/navbar.module.css"
 import Link from "next/link"
-import { FaBars } from "react-icons/fa";
-import { useTranslations } from "next-intl";
+import { FaBars, FaCode, FaGamepad, FaMobileAlt, FaPalette } from "react-icons/fa";
+import { TiArrowSortedDown } from "react-icons/ti";
 import { useState } from "react"
-export default function PhoneNavbar({home, service, project, about, faq, blog, signin}:any) {
+import { NavbarProps } from "./Navbar";
+export default function PhoneNavbar({home, keyService, servicesValue, project, about, faq, blog, signin}: NavbarProps) {
     // const t = useTranslations();
     const [is_active, setIs_active] = useState(false)
+    const [openServices, setOpenServices] = useState(false)
+    const serviceFn = () => {
+        setOpenServices(!openServices)
+    }
     const expand = () => {
         setIs_active((prev)=> !prev)
     }
@@ -16,7 +21,29 @@ export default function PhoneNavbar({home, service, project, about, faq, blog, s
             {
                 <ul className={`${style.PhoneNavlink} ${is_active && style.active}`}>
                     <li> <Link href='/'>{home}</Link></li>
-                    <li> <Link href='/service'>{service}</Link></li>
+                    <div className={style.li} onClick={serviceFn}>
+                    {/* <Link href='/service' > */}
+                    {keyService} <TiArrowSortedDown className={`${style.icon} ${openServices ? style.open : ''}`} />
+                    {
+                        openServices && (
+                            <div className={`${style.ServiceDropdown} ${openServices ? style.open : ''}`}>
+                                {
+                                    servicesValue.map((service, index) => {
+                                        const icons = [<FaCode />, <FaMobileAlt />, <FaGamepad />, <FaPalette />];
+                                        return (
+                                            <li key={service} className={style.serviceItem}>
+                                                <Link href='/projects' className={style.serviceLink}>
+                                                    {icons[index]} {service}
+                                                </Link>
+                                            </li>
+                                        );
+                                    })
+                                }
+                            </div>
+                        )
+                    }
+                    {/* </Link> */}
+                </div>
                     <li> <Link href='/projects'>{project}</Link></li>
                     <li> <Link href='/about'>{about}</Link></li>
                     <li> <Link href='/faq'>{faq}</Link></li>
