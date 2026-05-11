@@ -1,41 +1,72 @@
 @reference "tailwindcss";
 
-.nav{
+.nav {
     @apply flex justify-between px-5 py-2 relative font-[open+sans]
 }
-.navlink{
-    @apply flex justify-between gap-5 border border-(--nav-bg-color) text-(--nav-text-color) px-5 py-2 rounded-full 
+
+.navlink {
+    @apply flex justify-between gap-5 border border-(--nav-bg-color) text-(--nav-text-color) px-5 py-2 rounded-full
 }
-.navlink .li{
-    @apply flex justify-center items-center cursor-pointer
+
+.navlink .li {
+    @apply flex justify-center items-center cursor-pointer relative
 }
-.navlink .li .icon{
-    @apply text-[18px] mt-1
+
+.navlink .li .ServiceDropdown {
+    @apply absolute top-[25px] z-50 -left-16 px-3 rounded-lg text-white py-3 w-[200px] bg-gradient-to-br from-(--card-bg-color) to-gray-900 shadow-xl border border-gray-600 space-y-2 opacity-0 transform -translate-y-2 transition-all duration-300 ease-out pointer-events-none
 }
-.PhoneNav{
-    @apply hidden flex 
+
+.navlink .li .ServiceDropdown.open {
+    @apply opacity-100 transform translate-y-0 pointer-events-auto
 }
-.button{
+
+.navlink .serviceItem {
+    @apply  max-w-[175px] py-2 rounded-lg hover:bg-gray-600 hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer text-center flex items-center justify-start gap-2
+}
+
+.navlink .serviceLink {
+    @apply text-white no-underline pl-1 hover:text-gray-200 transition-colors duration-200 flex items-center gap-2
+}
+ .li .icon {
+    @apply text-[18px] mt-1 transition duration-300 ease-out
+}
+ .li .icon.open{
+    margin-top:0px;
+    margin-bottom:2px;
+    transform: rotate(180deg);
+}
+
+.PhoneNav {
+    @apply hidden flex
+}
+
+.button {
     @apply pt-3 text-center flex gap-5
 }
+
 /* -----------------phone view */
-.btnMenu{
+.btnMenu {
     @apply flex items-center justify-center text-xl cursor-pointer text-[var(--nav-text-color)] hover:opacity-80 transition duration-200 ease-in-out
 }
-.PhoneNavlink{
-    @apply absolute z-50 top-15  left-0 right-0 text-[var(--nav-text-color)]  font-bold  bg-[var(--card-bg-color)] space-y-3 py-5 w-0 opacity-0 h-0 overflow-hidden transition duration-300 ease-in
+
+.PhoneNavlink {
+    @apply absolute z-50 top-15 left-0 right-0 text-[var(--nav-text-color)] font-bold bg-[var(--card-bg-color)] space-y-3 py-5 w-0 opacity-0 h-0 overflow-hidden transition duration-300 ease-in
 }
-.PhoneNavlink li{
+
+.PhoneNavlink li {
     /* @apply  */
 }
-.PhoneNavlink.active{
+
+.PhoneNavlink.active {
     @apply h-auto opacity-100 w-full z-50
 }
-@media(max-width:670px){
-.navlink{
-    @apply hidden
-}
-.PhoneNav{
-    @apply block z-50
-}
+
+@media(max-width:670px) {
+    .navlink {
+        @apply hidden
+    }
+
+    .PhoneNav {
+        @apply block z-50
+    }
 }
