@@ -1,0 +1,20 @@
+
+@reference "tailwindcss";
+.Hero_Container{
+    @apply my-5
+}
+.Hero_Container .title{
+    @apply text-[1.5rem] md:text-[2.5rem] text-center font-light text-[poppins]
+}
+.title .small{
+    @apply text-[0.8rem] sm:text-[1rem]
+}
+.Hero_Container .subtitle{
+    @apply text-[1rem] sm:text-[1.5rem] text-center text-(--nav-text-color) font-extrabold font-[lora]
+}
+.Hero_Container .cta{
+    @apply text-center mx-auto my-7
+}
+.cta .btn{
+    @apply  border-r-2 border-l-2 px-5 py-2 rounded-md border-(--nav-text-color) hover:px-10 text-[1.2rem] hover:border-1  hover:text-(--nav-text-color) transition-all duration-300 ease-in-out
+}
