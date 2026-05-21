@@ -10,6 +10,7 @@ import Portfolio from '@/app/[locale]/assets/portfolio/portfolio';
 import WorkingProcess from '@/app/[locale]/assets/process/process';
 import Testimonial from '../assets/testimonial/testimonial';
 import VideoMarketing from '../assets/videoMarketing/videoMarketing';
+import { useTranslations } from 'next-intl';
 type Props = {
   params: { locale: string };
 };
@@ -43,6 +44,7 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
 }
 
 export default async function MarketingPage() {
+  // const t = await useTranslations()
   return (
     <main>
       <Hero />
@@ -64,6 +66,7 @@ export default async function MarketingPage() {
        </section>
        {/*---------------------------- WorkFlow Section ---------------------------- */}
        <section>
+        {/* working flow is the table and the card of price of website and features */}
         <WorkingFlow />
        </section>
        {/*---------------------------- video Section ---------------------------- */}
