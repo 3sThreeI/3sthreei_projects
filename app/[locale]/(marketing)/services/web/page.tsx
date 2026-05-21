@@ -2,7 +2,6 @@ import ServicesHero from "@/components/customComponent/servicesHero/ServicesHero
 import { NextIntlClientProvider } from "next-intl";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import OurService from "@/app/[locale]/assets/servicesSection/services";
 import WorkingFlow from "@/app/[locale]/assets/workFlow/workingPricing";
 
 export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
@@ -24,23 +23,20 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
         }
     }
 }
-interface ParamsProps {
+export interface ParamsPropsServices {
     params: {locale:string}
 }
-export default async function Web({params}:ParamsProps) {
+export default async function Web({params}:ParamsPropsServices) {
     const {locale} = await params
-    const message = { 
-        ...(await import(`@/messages/${locale}/common.json`)).default
-        ...(await import(`@/messages/${locale}/services/web.json`)).default
-        }
+    const messages = (await import(`@/messages/${locale}/services/web.json`)).default
     return (
         <>
-        <NextIntlClientProvider locale={locale} messages={message}>
+        <NextIntlClientProvider messages={messages}>
             <section>
-                <ServicesHero />
+                <ServicesHero messages={messages}/>
             </section>
             <section>
-                <WorkingFlow />
+                <WorkingFlow messages={messages}/>
             </section>
         </NextIntlClientProvider>
         </>
