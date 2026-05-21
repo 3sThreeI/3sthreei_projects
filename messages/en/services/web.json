@@ -1,0 +1,130 @@
+{
+    "servicesHero": {
+        "title": "Custom Web Development for SaaS, Startups & E‑commerce in Ghana and Beyond",
+        "headtitle":"Custom Web Development for Africa & Global –React • Next.js • Angular • Laravel websites • NodeJS"
+    },
+     "workFlow": [
+        {
+            "header": "Feature###",
+            "content": [
+                "Pages",
+                "Responsive Design",
+                "SEO",
+                "Animations",
+                "CMS",
+                "Authentication",
+                "API Integration"
+            ]
+        },
+        {
+            "header": "Launch Pad###",
+            "content": [
+                "1",
+                "Yes",
+                "Basic",
+                "No",
+                "No",
+                "No",
+                "No"
+            ]
+        },
+        {
+            "header": "Business Presence",
+            "content": [
+                "5",
+                "Yes",
+                "Advanced",
+                "Yes",
+                "Basic",
+                "No",
+                "No"
+            ]
+        },
+        {
+            "header": "Interactive",
+            "content": [
+                "10",
+                "Yes",
+                "Advanced",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Basic"
+            ]
+        },
+        {
+            "header": "Custom Platform",
+            "content": [
+                "Unlimited",
+                "Yes",
+                "Advanced",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Full"
+            ]
+        }
+    ],
+    "workFlow2": {
+        "launch": {
+            "headText": "Launch Pad",
+            "title": "Starting Price",
+            "price": "23 000",
+            "btn": "Start Project",
+            "content": [
+                "1-5 Landing Page",
+                "Responsive (Mobile/Tablet)",
+                "Contact Form",
+                "Basic SEO Setup",
+                "Performance optimization",
+                "Delivery in 3–5 days"
+            ]
+        },
+        "business": {
+            "headText": "Business Presence",
+            "title": "Starting Price",
+            "price": "25 000",
+            "btn": "Start Project",
+            "content": [
+                "Up to 10 Pages",
+                "Responsive Design",
+                "SEO Optimization",
+                "Contact Forms",
+                "Blog / Content Pages",
+                "Performance Optimization",
+                "Animations"
+            ]
+        },
+        "interactive": {
+            "headText": "Interactive",
+            "title": "Starting Price",
+            "btn": "Start Project",
+            "price": "23 000",
+            "content": [
+                "Up to 10 Pages",
+                "Custom UI/UX Design",
+                "CMS (Editable Content)",
+                "Advanced Animations",
+                "API Integration",
+                "Performance Optimization",
+                "Security Setup"
+            ]
+        },
+        "custom": {
+            "headText": "Custom Platform",
+            "title": "Starting Price",
+            "price": "25 000",
+            "btn": "Start Project",
+            "content": [
+                "Unlimited Pages",
+                "Full Web Application",
+                "User Authentication",
+                "Dashboard / Admin Panel",
+                "Database Integration",
+                "API Development",
+                "Payment Systems",
+                "Cloud Deployment"
+            ]
+        }
+    }
+}
