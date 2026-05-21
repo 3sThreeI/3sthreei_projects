@@ -1,0 +1,68 @@
+{
+    "servicesHero": {
+        "title": "Développement web sur mesure pour entreprises au Mali et en Afrique de l'Ouest",
+        "headtitle": "Développement web sur mesure – Angular • React • Next.js • Laravel • Node.js"
+    },
+     "workFlow2": {
+        "launch": {
+            "headText": "Launch Pad",
+            "title": "Prix de départ",
+            "price": "23 000",
+            "btn": "Démarrer le projet",
+            "content": [
+                "1 à 5 pages (Landing Page)",
+                "Responsive (Mobile/Tablette)",
+                "Formulaire de contact",
+                "Configuration SEO de base",
+                "Optimisation des performances",
+                "Livraison en 3 à 5 jours"
+            ]
+        },
+        "business": {
+            "headText": "Présence Business",
+            "title": "Prix de départ",
+            "price": "25 000",
+            "btn": "Démarrer le projet",
+            "content": [
+                "Jusqu’à 10 pages",
+                "Design responsive",
+                "Optimisation SEO",
+                "Formulaires de contact",
+                "Blog / Pages de contenu",
+                "Optimisation des performances",
+                "Animations"
+            ]
+        },
+        "interactive": {
+            "headText": "Interactif",
+            "title": "Prix de départ",
+            "btn": "Démarrer le projet",
+            "price": "23 000",
+            "content": [
+                "Jusqu’à 10 pages",
+                "Design UI/UX personnalisé",
+                "CMS (contenu modifiable)",
+                "Animations avancées",
+                "Intégration d’API",
+                "Optimisation des performances",
+                "Configuration de la sécurité"
+            ]
+        },
+        "custom": {
+            "headText": "Plateforme Personnalisée",
+            "title": "Prix de départ",
+            "price": "25 000",
+            "btn": "Démarrer le projet",
+            "content": [
+                "Pages illimitées",
+                "Application web complète",
+                "Authentification des utilisateurs",
+                "Tableau de bord / Panneau d’administration",
+                "Intégration de base de données",
+                "Développement d’API",
+                "Systèmes de paiement",
+                "Déploiement cloud"
+            ]
+        }
+    }
+}
