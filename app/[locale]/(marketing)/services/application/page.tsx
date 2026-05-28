@@ -2,6 +2,8 @@ import ServicesHero from "@/components/customComponent/servicesHero/ServicesHero
 import { ParamsPropsServices } from "../web/page";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import ProblemSolving from "@/app/[locale]/assets/servicesComp/web/ProblemSolving";
+import WorkingFlow from "@/app/[locale]/assets/workFlow/workingPricing";
 
 export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
     const { locale } = await params
@@ -34,6 +36,12 @@ export default async function Application({ params }: ParamsPropsServices) {
         <>
             <section>
                 <ServicesHero messages={messages} />
+            </section>
+            <section>
+                <ProblemSolving messages={messages} type="app"/>
+            </section>
+            <section>
+                <WorkingFlow messages={messages}/>
             </section>
         </>
     )
