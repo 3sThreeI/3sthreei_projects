@@ -1,6 +1,33 @@
 {
     "servicesHero": {
-         "title": "Custom mobile and deskop application",
-        "headtitle":"Flutter • FireBase • React Native • ElectronJS • JAVA"
+        "title": "Solutions d’applications mobiles et desktop au Ghana",
+        "headtitle": "Nous concevons des applications sur mesure pour les startups, les PME et les entreprises au Ghana",
+        "cta": "Commencer gratuitement"
+    },
+    "problemSolving": {
+        "subtitle": "Pourquoi c’est important",
+        "text": "Nous accordons une grande importance aux retours des utilisateurs, à la sécurité des applications et aux performances à long terme. Nous aidons les entreprises à développer des applications fiables capables de supporter des milliers d’utilisateurs sans ralentissement, tout en garantissant stabilité, évolutivité et une expérience utilisateur fluide. Chaque projet inclut également 6 mois de maintenance gratuite afin de garder votre application à jour, sécurisée et performante.",
+        "problemCards": [
+            {
+                "title": "Flux de travail lents",
+                "text": "Nous développons des applications qui automatisent les tâches et améliorent l’efficacité."
+            },
+            {
+                "title": "Mauvaise expérience",
+                "text": "Nous concevons des applications intuitives, simples à utiliser et engageantes."
+            },
+            {
+                "title": "Accessibilité limitée",
+                "text": "Nous créons des applications mobiles et desktop fonctionnant parfaitement sur tous les appareils."
+            },
+            {
+                "title": "Gestion des opérations",
+                "text": "Nous créons des outils simples pour gérer les clients, les tâches et les opérations quotidiennes."
+            }
+        ]
+    },
+    "marketing": {
+        "title": "We Manage Growth, Not Just Websites",
+        "text": "Your website and app should do more than exist — they should work for your business. We manage the technology, marketing, and growth side so you can focus on results."
     }
 }

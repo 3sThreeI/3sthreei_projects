@@ -1,6 +1,5 @@
 {
     "sitename": "3SThreeI",
-
     "navbar": {
         "home": "Home",
         "keyservice": "services",
@@ -62,7 +61,7 @@
         "keywords": []
     },
     "faq": {
-        "title1": "Web, Mobile App, Gaming & Design Services Ghana Mali",
+        "title1": "Web, Mobile App, Gaming & Design Services Ghana",
         "title": "3SThreeI FAQ | Web Development Costs, Timelines Ghana",
         "description1": "Common questions on web development, mobile apps, gaming & design costs, timelines in Ghana and Mali. Get quick answers—free consultations available!",
         "description": "3SThreeI answers: website/app development costs, timelines, process in Ghana & Mali. Pricing, tech stacks, SEO services explained. Ask us anything!",
@@ -79,25 +78,74 @@
         ]
     },
     "services": {
-    "web": {
-      "title": "Custom Web Development Ghana Mali USA | React, NextJs, Angular, NodeJS, Laravel",
-      "description": "Professional web development: React/Next.js, Angular, Laravel. E-commerce, SaaS, portfolios. Ghana-based team serving global clients. From GHS 5,000. Free quote.",
-      "keywords": []
-    },
-    "application": {
-      "title": "",
-      "description": "",
-      "keywords": []
-    },
-    "game": {
-      "title": "",
-      "description": "",
-      "keywords": []
-    },
-    "design": {
-      "title": "",
-      "description": "",
-      "keywords": []
+        "web": {
+            "title": "Custom Web Development Ghana & Global Businesses | React, NextJs, Angular, NodeJS, Laravel",
+            "description": "Professional web development: React/Next.js, Angular, Laravel. E-commerce, SaaS, portfolios. Ghana-based team serving global clients. From GHS 5,000. Free quote.",
+            "keywords": [
+                "web development Ghana",
+                "custom web development Ghana",
+                "React web development Ghana",
+                "Next.js website development",
+                "Angular web app development",
+                "Laravel PHP development",
+                "Node.js backend development",
+                "e-commerce website Ghana",
+                "SaaS web application",
+                "portfolio website development",
+                "web development agency Ghana",
+                "web development services Africa",
+                "web development for global clients"
+            ]
+        },
+        "application": {
+            "title": "Custom desktop and mobile Application Development in Ghana Global Businesses | Flutter, ElectronJS, React Native, FireBase, Node.js",
+            "description": "Custom application Mobile and Desktop development for startups and businesses using Flutter, Java,  React Native, ElectronJS,  FireBase , and Node.js. Dashboard apps, SaaS platforms, admin panels, and internal tools built for performance, security, and scalability.",
+            "keywords": [
+                "web application development",
+                "custom web application",
+                "mobile web application",
+                "responsive web application",
+                "React web application",
+                "Next.js web app",
+                "Angular web application",
+                "Node.js web application",
+                "SaaS application development",
+                "dashboard application development",
+                "admin panel development",
+                "web app development Ghana",
+                "web app development for startups",
+                "web apps for mobile and desktop"
+            ]
+        },
+        "game": {
+            "title": "Browser Game & Web Game Development in Ghana and Global Businesses | Godot, C++, Three.js, Java, JavaScript",
+            "description": "Custom browser game and web game development with Godot, JavaScript, Three.js, C++, Java . Simple mini‑games, interactive experiences, and marketing games for brands and websites. Built for performance and cross‑device play.",
+            "keywords": [
+                "web game development",
+                "browser game development",
+                "HTML5 game development",
+                "JavaScript game development",
+                "interactive web game",
+                "marketing game development",
+                "online game for website",
+                "custom game development",
+                "desktop Game development"
+            ]
+        },
+        "design": {
+            "title": "Website & UI/UX Design for Web and  Apps in Ghana and Global Businesses  | Figma, Design XS",
+            "description": "Modern website and UI/UX design services for web apps, SaaS, and e‑commerce. Figma‑based designs, responsive layouts, and React‑ready interfaces to speed up development and improve user experience.",
+            "keywords": [
+                "UI UX design",
+                "website design Ghana",
+                "web app design",
+                "Figma UI design",
+                "responsive website design",
+                "SaaS UI design",
+                "e-commerce website design",
+                "mobile‑first web design",
+                "React‑ready design"
+            ]
+        }
     }
-  }
 }

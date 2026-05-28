@@ -118,28 +118,6 @@
     "workFlow": [
         {
             "header": "Fonctionnalités",
-            "content": []
-        },
-        {
-            "header": "Essentiel",
-            "content": []
-        },
-        {
-            "header": "Professionnel",
-            "content": []
-        },
-        {
-            "header": "Performance",
-            "content": []
-        },
-        {
-            "header": "Sur Mesure",
-            "content": []
-        }
-    ],
-    "workFlow": [
-        {
-            "header": "Fonctionnalités",
             "content": [
                 "Pages",
                 "Design Responsive",

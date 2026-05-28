@@ -1,7 +1,8 @@
 {
     "servicesHero": {
         "title": "Custom Web Development for SaaS, Startups & E‑commerce in Ghana and Beyond",
-        "headtitle":"Custom Web Development for Africa & Global –React • Next.js • Angular • Laravel websites • NodeJS"
+        "headtitle":"Custom Web Development for Africa & Global –React • Next.js • Angular • Laravel websites • NodeJS",
+        "cta": "Start for Free"
     },
      "workFlow": [
         {
@@ -126,5 +127,27 @@
                 "Cloud Deployment"
             ]
         }
+    },
+    "problemSolving": {
+        "subtitle": "What this service solves",
+        "text": "Many businesses struggle to look professional online, get leads, and convert visitors into customers.Our web development service is designed to fix that with a fast, modern, and user-friendly website",
+        "problemCards": [
+            {
+                "title": "Outdated Online Presence",
+                "text": "We create a modern website that builds trust and improves your brand image."
+            },
+            {
+                "title": "Low Customer Inquiries",
+                "text": "We design your site to guide visitors toward contacting you or requesting a quote"
+            },
+            {
+                "title": "Poor Mobile Experience",
+                "text": "We make sure your website works perfectly on phones, tablets, and desktops"
+            }
+        ]
+    },
+    "marketing": {
+        "title": "We Manage Growth, Not Just Websites",
+        "text": "Your website and app should do more than exist — they should work for your business. We manage the technology, marketing, and growth side so you can focus on results."
     }
 }

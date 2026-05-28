@@ -1,9 +1,72 @@
 {
     "servicesHero": {
         "title": "Développement web sur mesure pour entreprises au Mali et en Afrique de l'Ouest",
-        "headtitle": "Développement web sur mesure – Angular • React • Next.js • Laravel • Node.js"
+        "headtitle": "Développement web sur mesure – Angular • React • Next.js • Laravel • Node.js",
+        "cta": "Commencez gratuitement"
     },
-     "workFlow2": {
+    "workFlow": [
+        {
+            "header": "Fonctionnalités",
+            "content": [
+                "Pages",
+                "Design Responsive",
+                "SEO",
+                "Animations",
+                "CMS",
+                "Authentification",
+                "Intégration d’API"
+            ]
+        },
+        {
+            "header": "Launch Pad",
+            "content": [
+                "1",
+                "Oui",
+                "Basique",
+                "Non",
+                "Non",
+                "Non",
+                "Non"
+            ]
+        },
+        {
+            "header": "Présence Business",
+            "content": [
+                "5",
+                "Oui",
+                "Avancé",
+                "Oui",
+                "Basique",
+                "Non",
+                "Non"
+            ]
+        },
+        {
+            "header": "Interactif",
+            "content": [
+                "10",
+                "Oui",
+                "Avancé",
+                "Oui",
+                "Oui",
+                "Oui",
+                "Basique"
+            ]
+        },
+        {
+            "header": "Plateforme Personnalisée",
+            "content": [
+                "Illimité",
+                "Oui",
+                "Avancé",
+                "Oui",
+                "Oui",
+                "Oui",
+                "Complet"
+            ]
+        }
+    ],
+    "workFlow2": {
         "launch": {
             "headText": "Launch Pad",
             "title": "Prix de départ",
@@ -64,5 +127,27 @@
                 "Déploiement cloud"
             ]
         }
+    },
+    "problemSolving": {
+        "subtitle": "Ce que nous résolvons",
+        "text": "De nombreuses entreprises ont du mal à avoir une présence professionnelle en ligne, à générer des prospects et à convertir les visiteurs en clients. Notre service de développement web est conçu pour résoudre ces problèmes grâce à un site web rapide, moderne et convivial.",
+        "problemCards": [
+            {
+                "title": "Présence dépassée",
+                "text": "Nous créons un site web moderne qui inspire confiance et améliore l’image de votre marque."
+            },
+            {
+                "title": "Peu de contacts",
+                "text": "Nous concevons votre site pour guider les visiteurs à vous contacter ou à demander un devis."
+            },
+            {
+                "title": "Mauvaise expérience mobile",
+                "text": "Nous veillons à ce que votre site web fonctionne parfaitement sur les téléphones, tablettes et ordinateurs."
+            }
+        ]
+    },
+    "marketing": {
+        "title": "Nous gérons la croissance, pas seulement les sites web",
+        "text": "Votre site web et votre application doivent faire plus qu’exister — ils doivent travailler pour votre entreprise. Nous gérons la technologie, le marketing et la croissance afin que vous puissiez vous concentrer sur les résultats."
     }
 }

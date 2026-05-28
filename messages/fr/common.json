@@ -87,24 +87,72 @@
   },
   "services": {
     "web": {
-      "title": "",
-      "description": "",
-      "keywords": []
+      "title": "Développement web sur mesure pour le Mali & clients internationaux | React, Next.js, Angular, Node.js, Laravel",
+      "description": "Développement web professionnel avec React/Next.js, Angular et Laravel. Sites e‑commerce, SaaS, portfolios. Équipe basée au Mali, Ghana, clientèle internationale. Demandez un devis gratuit.",
+      "keywords": [
+        "développement web Mali",
+        "développement web sur mesure Mali",
+        "développement web Ghana",
+        "développement React Mali",
+        "développement Next.js",
+        "développement Angular Mali",
+        "développement Laravel Mali",
+        "développement Node.js Mali",
+        "site e‑commerce Mali",
+        "application SaaS web",
+        "développement portfolio web",
+        "agence web développement Ghana",
+        "services développement web Afrique"
+      ]
     },
     "application": {
-      "title": "",
-      "description": "",
-      "keywords": []
+      "title": "Développement d’applications mobiles et de bureau au Mali | Flutter, ElectronJS, React Native, Firebase, Node.js",
+      "description": "Développement d’applications sur mesure pour startups et entreprises, compatibles mobile et desktop. Utilisation de Flutter, Java, React Native, ElectronJS, Firebase et Node.js pour tableaux de bord, plateformes SaaS, panneaux d’administration et outils internes, avec performance, sécurité et évolutivité.",
+      "keywords": [
+        "développement d'applications Mali",
+        "application mobile Mali",
+        "application de bureau ElectronJS",
+        "Flutter application mobile",
+        "React Native Mali",
+        "Firebase backend Mali",
+        "Node.js Mali",
+        "application SaaS web",
+        "dashboard application Mali",
+        "panneau d'administration",
+        "développement application mobile et desktop",
+        "développement application startups Mali"
+      ]
     },
     "game": {
-      "title": "",
-      "description": "",
-      "keywords": []
+      "title": "Développement de jeux web et navigateur au Mali | Godot, C++, Three.js, Java, JavaScript",
+      "description": "Développement de jeux web et navigateur avec Godot, JavaScript, Three.js, C++ et Java. Mini‑jeux simples, expériences interactives et jeux marketing pour marques et sites web. Conçus pour performance et compatibilité multi‑appareils.",
+      "keywords": [
+        "développement jeu web Mali",
+        "jeu navigateur Mali",
+        "jeu HTML5 Mali",
+        "jeu JavaScript Mali",
+        "jeu Godot Mali",
+        "Three.js Mali",
+        "développement jeu marketing",
+        "jeu en ligne pour site web",
+        "jeu bureau Mali",
+        "développement jeu interactif"
+      ]
     },
     "design": {
-      "title": "",
-      "description": "",
-      "keywords": []
+      "title": "Conception web & UI/UX pour sites et applications au Mali et internationaux | Figma, Design responsif",
+      "description": "Services de conception web et UI/UX modernes pour sites, applications web et e‑commerce. Maquettes Figma, interfaces responsives mobile et ordinateur, prêtes pour React, afin d’accélérer le développement et d’améliorer l’expérience utilisateur.",
+      "keywords": [
+        "UI UX design Mali",
+        "design site web Mali",
+        "design application web Mali",
+        "design Figma",
+        "site web responsive Mali",
+        "design SaaS Mali",
+        "design e‑commerce Mali",
+        "design mobile first Mali",
+        "design React‑ready Mali"
+      ]
     }
   }
 }

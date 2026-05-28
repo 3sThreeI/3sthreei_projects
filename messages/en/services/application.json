@@ -1,6 +1,157 @@
 {
     "servicesHero": {
-        "title": "Custom mobile and deskop application",
-        "headtitle":"Flutter • FireBase • React Native • ElectronJS • JAVA"
+        "title": "Mobile and Desktop App Development for Businesses in Ghana",
+        "headtitle": "We create custom mobile and desktop applications for startups, SMEs, and enterprises in Ghana",
+        "cta": "Start for free"
+    },
+    "problemSolving": {
+        "subtitle": "Why it matters",
+        "text": "We care about user feedback, application security, and long-term performance. We help businesses build reliable applications that can support thousands of users without lagging, while ensuring stability, scalability, and a smooth user experience. Every project also includes 6 months of free maintenance to keep your application updated, secure, and performing at its best",
+        "problemCards": [
+            {
+                "title": "Slow Workflows",
+                "text": "We build applications that automate tasks and improve workflow efficiency."
+            },
+            {
+                "title": "Poor User Experience",
+                "text": "We design intuitive applications that are easy to use and keep users engaged."
+            },
+            {
+                "title": "Limited Accessibility",
+                "text": "We create mobile and desktop applications that work smoothly across devices and platforms."
+            },
+            {
+                "title": "Hard to Manage Operations",
+                "text": "We build tools that simplify tasks, customer management, and daily workflows."
+            }
+        ]
+    },
+    "marketing": {
+        "title": "We Manage Growth, Not Just Websites",
+        "text": "Your website and app should do more than exist — they should work for your business. We manage the technology, marketing, and growth side so you can focus on results."
+    },
+ "workFlows": [
+        {
+            "header": "Feature",
+            "content": [
+                "Pages",
+                "Responsive Design",
+                "SEO",
+                "Animations",
+                "CMS",
+                "Authentication",
+                "API Integration"
+            ]
+        },
+        {
+            "header": "Launch Pad",
+            "content": [
+                "1",
+                "Yes",
+                "Basic",
+                "No",
+                "No",
+                "No",
+                "No"
+            ]
+        },
+        {
+            "header": "Business Presence",
+            "content": [
+                "5",
+                "Yes",
+                "Advanced",
+                "Yes",
+                "Basic",
+                "No",
+                "No"
+            ]
+        },
+        {
+            "header": "Interactive",
+            "content": [
+                "10",
+                "Yes",
+                "Advanced",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Basic"
+            ]
+        },
+        {
+            "header": "Custom Platform",
+            "content": [
+                "Unlimited",
+                "Yes",
+                "Advanced",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Full"
+            ]
+        }
+    ],
+    "workFlow2": {
+        "launch": {
+            "headText": "Launch Pad",
+            "title": "Starting Price",
+            "price": " 000",
+            "btn": "Start Project",
+            "content": [
+                "1-5 Landing Page",
+                "Responsive (Mobile/Tablet)",
+                "Contact Form",
+                "Basic SEO Setup",
+                "Performance optimization",
+                "Delivery in 3–5 days"
+            ]
+        },
+        "business": {
+            "headText": "Business Presence",
+            "title": "Starting Price",
+            "price": " 000",
+            "btn": "Start Project",
+            "content": [
+                "Up to 10 Pages",
+                "Responsive Design",
+                "SEO Optimization",
+                "Contact Forms",
+                "Blog / Content Pages",
+                "Performance Optimization",
+                "Animations"
+            ]
+        },
+        "interactive": {
+            "headText": "Interactive",
+            "title": "Starting Price",
+            "btn": "Start Project",
+            "price": "23 000",
+            "content": [
+                "Up to 10 Pages",
+                "Custom UI/UX Design",
+                "CMS (Editable Content)",
+                "Advanced Animations",
+                "API Integration",
+                "Performance Optimization",
+                "Security Setup"
+            ]
+        },
+        "custom": {
+            "headText": "Custom Platform",
+            "title": "Starting Price",
+            "price": "25 000",
+            "btn": "Start Project",
+            "content": [
+                "Unlimited Pages",
+                "Full Web Application",
+                "User Authentication",
+                "Dashboard / Admin Panel",
+                "Database Integration",
+                "API Development",
+                "Payment Systems",
+                "Cloud Deployment"
+            ]
+        }
     }
 }
