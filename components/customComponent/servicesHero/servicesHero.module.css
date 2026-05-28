@@ -1,16 +1,16 @@
 
 @reference "tailwindcss";
 .Hero_Container{
-    @apply my-5
+    @apply my-5 pt-14
 }
 .Hero_Container .title{
-    @apply text-[1.5rem] md:text-[2.5rem] text-center font-light text-[poppins]
+    @apply text-[1.5rem] text-center font-light text-[poppins]
 }
 .title .small{
-    @apply text-[0.8rem] sm:text-[1rem]
+    @apply text-[0.8rem] sm:text-[0.9rem] mb-14
 }
 .Hero_Container .subtitle{
-    @apply text-[1rem] sm:text-[1.5rem] text-center text-(--nav-text-color) font-extrabold font-[lora]
+    @apply text-[1rem] sm:text-[1.1rem] mt-5 mb-7 text-center text-(--nav-text-color) font-extrabold font-[lora]
 }
 .Hero_Container .cta{
     @apply text-center mx-auto my-7
