@@ -1,0 +1,89 @@
+@reference "tailwindcss";
+/* -----------------problem solving */
+/* servicesHero.module.css */
+
+.ProblemSection {
+  padding: 2rem 1.5rem;
+  max-width: 768px;
+  margin: 0 ;
+  text-align: center;
+}
+
+.Subtitle {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+
+.Text {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  line-height: 1.6;
+  color: #cccccc;
+  margin: 0 auto;
+}
+/* Problem cards */
+
+.Problemcards{
+  @apply  flex flex-wrap gap-5 justify-center items-center
+}
+.Problemcards .card{
+  @apply max-w-[270px] relative z-10 shadow-[0px_1px_2px_var(--text-color)] rounded-[15px] px-3 py-2 bg-gray-50/5 transition-all duration-300 ease-in-out;
+  transform-style: preserve-3d;
+}
+.Problemcards .card:hover{
+  transform: translateY(-10px) rotate(2deg) scale(1.05);
+  
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+ .Problemcards .card .title{
+  @apply mb-5 text-[1.1rem] font-bold
+}
+.Problemcards .card .text{
+  @apply text-[0.9rem] opacity-80
+}
+.Problemcards .card .icons{
+  @apply absolute -top-[39px]  left-1/2 bg-gray-50/5 -translate-x-1/2 border-t rounded-full p-1 text-3xl
+}
+.Problemcards .card .icons .icon1{
+  @apply text-yellow-500
+}
+.Problemcards .card .icons .icon2{
+  @apply text-red-500
+}
+.Problemcards .card .icons .icon3{
+  @apply text-green-500
+}
+.Problemcards .app1 {
+  color: #3B82F6;
+}
+
+.Problemcards .app2 {
+  color: #8B5CF6;
+}
+
+.Problemcards .app3 {
+  color: #10B981;
+}
+
+.Problemcards .app4 {
+  color: #F59E0B;
+}
+/* ---------------------------------MArketing sectio------------------- */
+.marketing_container{
+  @apply my-7 grid grid-cols-1 md:grid-cols-2 px-5
+}
+/* responsiveness */
+
+@media (min-width: 768px) {
+  .ProblemSection {
+    text-align: left;
+    padding: 4rem 1.5rem;
+  }
+  .Subtitle {
+    text-align: left;
+  }
+  .Text {
+    text-align: left;
+  }
+}
