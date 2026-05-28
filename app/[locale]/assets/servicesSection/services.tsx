@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server"
 import style from "./serviceStyle.module.css"
 import Link from "next/link"
-
+// this page is home component services
 export default async function OurService() {
     const t = await getTranslations('serviceSection')
     return (
