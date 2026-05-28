@@ -40,7 +40,7 @@ export default function WorkingFlowCard() {
                         </div>
                         <ul className={style.content}>
                             {
-                                t.raw('workFlow2.launch.content').map((item: any, index: number) => (
+                                t .raw('workFlow2.launch.content').map((item: any, index: number) => (
                                     <li key={index} className={style.content_text}><FaCircleCheck className={style.icon} />  {item}</li>
                                 ))
                             }
