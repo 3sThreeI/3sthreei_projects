@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import ProblemSolving from "@/app/[locale]/assets/servicesComp/web/ProblemSolving";
 import WorkingFlow from "@/app/[locale]/assets/workFlow/workingPricing";
+import { NextIntlClientProvider } from "next-intl";
 
 export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
     const { locale } = await params
@@ -31,9 +32,10 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
 
 export default async function Application({ params }: ParamsPropsServices) {
     const { locale } = await params
-    const messages = (await import(`@/messages/${locale}/services/application.json`))
+    const messages = (await import(`@/messages/${locale}/services/application.json`)).default
     return (
         <>
+        <NextIntlClientProvider locale={locale} messages={messages}>
             <section>
                 <ServicesHero messages={messages} />
             </section>
@@ -43,6 +45,7 @@ export default async function Application({ params }: ParamsPropsServices) {
             <section>
                 <WorkingFlow messages={messages}/>
             </section>
+            </NextIntlClientProvider>
         </>
     )
 }
