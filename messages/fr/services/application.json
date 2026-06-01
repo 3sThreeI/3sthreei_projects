@@ -29,5 +29,136 @@
     "marketing": {
         "title": "We Manage Growth, Not Just Websites",
         "text": "Your website and app should do more than exist — they should work for your business. We manage the technology, marketing, and growth side so you can focus on results."
+    },
+    "workFlow": [
+    {
+      "header": "Fonctionnalité",
+      "content": [
+        "Pages",
+        "Design Responsive",
+        "SEO",
+        "Animations",
+        "CMS / Tableau de Bord",
+        "Authentification",
+        "Intégration API",
+        "Intégration IA / LLM"
+      ]
+    },
+    {
+      "header": "Plan Basique",
+      "content": [
+        "1 à 5 Pages",
+        "Oui",
+        "Configuration SEO de Base",
+        "Non",
+        "Non",
+        "Non",
+        "Non",
+        "Non"
+      ]
+    },
+    {
+      "header": "Standard",
+      "content": [
+        "5 à 10 Pages",
+        "Oui",
+        "Optimisation SEO Avancée",
+        "Oui",
+        "CMS / Tableau de Bord Basique",
+        "Authentification Basique",
+        "Intégration API Basique",
+        "Non"
+      ]
+    },
+    {
+      "header": "Premium",
+      "content": [
+        "Plus de 15 Pages",
+        "Oui",
+        "SEO Avancé",
+        "Oui",
+        "CMS / Tableau de Bord Complet",
+        "Authentification JWT",
+        "Intégration API Avancée",
+        "Fonctionnalités IA de Base"
+      ]
+    },
+    {
+      "header": "Entreprise",
+      "content": [
+        "Pages Illimitées",
+        "Oui",
+        "SEO Avancé + Données Structurées (Schema)",
+        "Oui",
+        "CMS Personnalisé + Tableau de Bord Administrateur",
+        "JWT, OAuth et 2FA",
+        "Intégrations Entreprise",
+        "RAG, Agents IA et Solutions LLM"
+      ]
+    }
+    ],
+    "workFlow2": {
+        "launch": {
+            "headText": "Basique Plan",
+            "title": "Prix",
+            "price": "50 000 - 100 000 FCFA",
+            "btn": "Commencez le Project",
+            "content": [
+                " Pages limitées (5–10)",
+                "Design responsive (Mobile/Tablet/Desktop)",
+                "Pas de backend complexe",
+                "Formulaire de contact",
+                "Basic SEO Setup",
+                "Performance optimization"
+            ]
+        },
+        "business": {
+            "headText": "Standard",
+            "title": " Prix",
+            "price": "150 000 – 400 000 FCFA",
+            "btn": "Commencez le Project",
+            "content": [
+                "Design moderne et responsive",
+                "Authentication",
+                "SEO Optimization",
+                "API simple ou base de données légère",
+                "Dashboard utilisateur simple",
+                "Performance Optimization",
+                "Fonctionnalités intermédiaires",
+                "Google Analytics de base"
+            ]
+        },
+        "interactive": {
+            "headText": "Premium",
+            "title": "Prix",
+            "btn": "Commencez le Project",
+            "price": "400 000 – 1 000 000 FCFA",
+            "content": [
+                "Backend + base de données avancée",
+                "Dashboard administrateur complet",
+                "Sécurité renforcée (HTTPS, chiffrement)",
+                "Intégration API externe (paiement, SMS, email)",
+                "Authentification avancée (JWT, OAuth, 2FA)",
+                "Rôles & permissions (admin, utilisateur)",
+                "SEO avancé (optimisation contenu, vitesses, schema)",
+                "Analytics + suivi de performance"
+            ]
+        },
+        "custom": {
+            "headText": "Entreprise (sur Mesure)",
+            "title": "Prix",
+            "price": "1 000 000 FCFA et plus ",
+            "btn": "Start Project",
+            "content": [
+                "Architecture avancée (microservices, cloud robuste)",
+                "Haute sécurité (RBAC, MFA, audit trail, protection DDoS)",
+                "Support technique dédié (SLA, monitoring 24/7)",
+                "Scalabilité (grand trafic, milliers d’utilisateurs)",
+                "Chatbot RAG + recherche vectorielle",
+                "IA intégrée (chatbot, automatisation, génération de contenu)",
+                "déploiement automatisé + tests automatisés",
+                "Formation de ton équipe + documentation complète"
+            ]
+        }
     }
 }
