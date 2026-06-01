@@ -30,128 +30,135 @@
         "title": "We Manage Growth, Not Just Websites",
         "text": "Your website and app should do more than exist — they should work for your business. We manage the technology, marketing, and growth side so you can focus on results."
     },
- "workFlows": [
-        {
-            "header": "Feature",
-            "content": [
-                "Pages",
-                "Responsive Design",
-                "SEO",
-                "Animations",
-                "CMS",
-                "Authentication",
-                "API Integration"
-            ]
-        },
-        {
-            "header": "Launch Pad",
-            "content": [
-                "1",
-                "Yes",
-                "Basic",
-                "No",
-                "No",
-                "No",
-                "No"
-            ]
-        },
-        {
-            "header": "Business Presence",
-            "content": [
-                "5",
-                "Yes",
-                "Advanced",
-                "Yes",
-                "Basic",
-                "No",
-                "No"
-            ]
-        },
-        {
-            "header": "Interactive",
-            "content": [
-                "10",
-                "Yes",
-                "Advanced",
-                "Yes",
-                "Yes",
-                "Yes",
-                "Basic"
-            ]
-        },
-        {
-            "header": "Custom Platform",
-            "content": [
-                "Unlimited",
-                "Yes",
-                "Advanced",
-                "Yes",
-                "Yes",
-                "Yes",
-                "Full"
-            ]
-        }
-    ],
-    "workFlow2": {
-        "launch": {
-            "headText": "Launch Pad",
-            "title": "Starting Price",
-            "price": " 000",
-            "btn": "Start Project",
-            "content": [
-                "1-5 Landing Page",
-                "Responsive (Mobile/Tablet)",
-                "Contact Form",
-                "Basic SEO Setup",
-                "Performance optimization",
-                "Delivery in 3–5 days"
-            ]
-        },
-        "business": {
-            "headText": "Business Presence",
-            "title": "Starting Price",
-            "price": " 000",
-            "btn": "Start Project",
-            "content": [
-                "Up to 10 Pages",
-                "Responsive Design",
-                "SEO Optimization",
-                "Contact Forms",
-                "Blog / Content Pages",
-                "Performance Optimization",
-                "Animations"
-            ]
-        },
-        "interactive": {
-            "headText": "Interactive",
-            "title": "Starting Price",
-            "btn": "Start Project",
-            "price": "23 000",
-            "content": [
-                "Up to 10 Pages",
-                "Custom UI/UX Design",
-                "CMS (Editable Content)",
-                "Advanced Animations",
-                "API Integration",
-                "Performance Optimization",
-                "Security Setup"
-            ]
-        },
-        "custom": {
-            "headText": "Custom Platform",
-            "title": "Starting Price",
-            "price": "25 000",
-            "btn": "Start Project",
-            "content": [
-                "Unlimited Pages",
-                "Full Web Application",
-                "User Authentication",
-                "Dashboard / Admin Panel",
-                "Database Integration",
-                "API Development",
-                "Payment Systems",
-                "Cloud Deployment"
-            ]
-        }
+    "workFlow": [
+    {
+      "header": "Feature",
+      "content": [
+        "Pages",
+        "Responsive Design",
+        "SEO",
+        "Animations",
+        "CMS / Dashboard",
+        "Authentication",
+        "API Integration",
+        "AI / LLM Integration"
+      ]
+    },
+    {
+      "header": "Basic Plan",
+      "content": [
+        "1-5 Pages",
+        "Yes",
+        "Basic SEO Setup",
+        "No",
+        "No",
+        "No",
+        "No",
+        "No"
+      ]
+    },
+    {
+      "header": "Standard",
+      "content": [
+        "5–10 Pages",
+        "Yes",
+        "Advanced SEO Optimization",
+        "Yes",
+        "Basic CMS / Dashboard",
+        "Basic Authentication",
+        "Basic API Integration",
+        "No"
+      ]
+    },
+    {
+      "header": "Premium",
+      "content": [
+        "15 + Pages",
+        "Yes",
+        "Advanced SEO",
+        "Yes",
+        "Full CMS / Dashboard",
+        "JWT Authentication",
+        "Advanced API Integration",
+        "Basic AI Features"
+      ]
+    },
+    {
+      "header": "Enterprise",
+      "content": [
+        "Unlimited Pages",
+        "Yes",
+        "Advanced SEO + Schema Markup",
+        "Yes",
+        "Custom CMS + Admin Dashboard",
+        "JWT, OAuth & 2FA",
+        "Enterprise Integrations",
+        "RAG, AI Agents & LLM Solutions"
+      ]
     }
+  ],
+    "workFlow2": {
+    "launch": {
+      "headText": "Basic Plan",
+      "title": "Price",
+      "price": "$85 - $170",
+      "btn": "Start Project",
+      "content": [
+        "Limited Pages (5–10)",
+        "Responsive Design (Mobile, Tablet & Desktop)",
+        "No Complex Backend",
+        "Contact Form",
+        "Basic SEO Setup",
+        "Performance Optimization"
+      ]
+    },
+    "business": {
+      "headText": "Standard",
+      "title": "Price",
+      "price": "$255 - $680",
+      "btn": "Start Project",
+      "content": [
+        "Modern Responsive Design",
+        "User Authentication",
+        "SEO Optimization",
+        "Basic API Integration or Lightweight Database",
+        "Simple User Dashboard",
+        "Performance Optimization",
+        "Intermediate Features",
+        "Basic Google Analytics"
+      ]
+    },
+    "interactive": {
+      "headText": "Premium",
+      "title": "Price",
+      "price": "$680 - $1,700",
+      "btn": "Start Project",
+      "content": [
+        "Advanced Backend & Database",
+        "Full Admin Dashboard",
+        "Enhanced Security (HTTPS & Encryption)",
+        "External API Integrations (Payments, SMS, Email)",
+        "Advanced Authentication (JWT, OAuth, 2FA)",
+        "Roles & Permissions (Admin, User, Staff)",
+        "Advanced SEO (Content, Performance & Schema Markup)",
+        "Analytics & Performance Tracking"
+      ]
+    },
+    "custom": {
+      "headText": "Enterprise (Custom)",
+      "title": "Price",
+      "price": "$1,700+",
+      "btn": "Start Project",
+      "content": [
+        "Advanced Architecture (Microservices & Cloud Infrastructure)",
+        "Enterprise Security (RBAC, MFA, Audit Logs & DDoS Protection)",
+        "Dedicated Technical Support (SLA & 24/7 Monitoring)",
+        "High Scalability (Large Traffic & Thousands of Users)",
+        "RAG Chatbots & Vector Search",
+        "AI Integration (Chatbots, Automation & Content Generation)",
+        "Automated Deployment & Testing Pipelines",
+        "Team Training & Complete Documentation"
+      ]
+    }
+  }
 }
