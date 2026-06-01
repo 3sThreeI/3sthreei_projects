@@ -1,130 +1,195 @@
 {
     "servicesHero": {
         "title": "Custom Web Development for SaaS, Startups & E‑commerce in Ghana and Beyond",
-        "headtitle":"Custom Web Development for Africa & Global –React • Next.js • Angular • Laravel websites • NodeJS",
+        "headtitle": "Custom Web Development for Africa & Global –React • Next.js • Angular • Laravel websites • NodeJS",
         "cta": "Start for Free"
     },
-     "workFlow": [
+    "workFlow": [
         {
-            "header": "Feature###",
-            "content": [
-                "Pages",
-                "Responsive Design",
-                "SEO",
-                "Animations",
-                "CMS",
-                "Authentication",
-                "API Integration"
-            ]
-        },
-        {
-            "header": "Launch Pad###",
-            "content": [
-                "1",
-                "Yes",
-                "Basic",
-                "No",
-                "No",
-                "No",
-                "No"
-            ]
-        },
-        {
-            "header": "Business Presence",
-            "content": [
-                "5",
-                "Yes",
-                "Advanced",
-                "Yes",
-                "Basic",
-                "No",
-                "No"
-            ]
-        },
-        {
-            "header": "Interactive",
-            "content": [
-                "10",
-                "Yes",
-                "Advanced",
-                "Yes",
-                "Yes",
-                "Yes",
-                "Basic"
-            ]
-        },
-        {
-            "header": "Custom Platform",
-            "content": [
-                "Unlimited",
-                "Yes",
-                "Advanced",
-                "Yes",
-                "Yes",
-                "Yes",
-                "Full"
-            ]
-        }
+        "header": "Feature###",
+        "content": [
+            "Pages",
+            "Responsive Design",
+            "SEO",
+            "GEO + AEO Optimization",
+            "Animations",
+            "CMS",
+            "Authentication / Login System",
+            "Dashboard",
+            "AI Agent / Chatbot",
+            "API Integration",
+            "Payment Integration",
+            "Analytics & Reporting",
+            "Email / SMS / WhatsApp Integration",
+            "Security Configuration",
+            "Performance Optimization",
+            "Deployment & Hosting",
+            "Multi-Currency Support"
+        ]
+    },
+    {
+        "header": "Basic",
+        "content": [
+            "1–5",
+            "Yes",
+            "Basic",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No",
+            "Basic (Setup Only)",
+            "No",
+            "Basic",
+            "Yes",
+            "Basic Deployment",
+            "No"
+        ]
+    },
+    {
+        "header": "Standard",
+        "content": [
+            "5–10",
+            "Yes",
+            "Advanced",
+            "Basic GEO",
+            "Yes",
+            "Basic CMS",
+            "No",
+            "Basic Dashboard",
+            "Yes (Basic AI Agent)",
+            "No",
+            "Basic (Stripe/Paystack)",
+            "Basic Analytics",
+            "Basic Email",
+            "Basic Security",
+            "Yes",
+            "Standard Deployment",
+            "No"
+        ]
+    },
+    {
+        "header": "Premium",
+        "content": [
+            "10–15",
+            "Yes",
+            "Advanced",
+            "Advanced GEO + AEO",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Advanced Dashboard",
+            "Yes",
+            "Basic–Mid API",
+            "Yes",
+            "Advanced Analytics",
+            "Email + WhatsApp + SMS",
+            "Strong Security",
+            "Yes",
+            "Optimized Deployment",
+            "Basic Multi-Currency"
+        ]
+    },
+    {
+        "header": "Custom Platform",
+        "content": [
+            "Unlimited",
+            "Yes",
+            "Advanced",
+            "Full GEO + AEO",
+            "Yes (Advanced)",
+            "Yes (Full CMS)",
+            "Yes (Advanced Auth)",
+            "Real-Time Dashboard",
+            "Advanced AI System",
+            "Full API Integrations",
+            "Advanced Payment System",
+            "Real-Time Analytics",
+            "Full Omnichannel (Email/SMS/WhatsApp/Newsletter)",
+            "Enterprise Security",
+            "Yes (Max Optimized)",
+            "Cloud + Scalable Infra",
+            "Crypto + Fiat Multi-Currency"
+        ]
+    }
     ],
     "workFlow2": {
         "launch": {
-            "headText": "Launch Pad",
-            "title": "Starting Price",
-            "price": "23 000",
+            "headText": "Basic",
+            "title": "Price",
+            "price": "$144 – $270",
             "btn": "Start Project",
             "content": [
-                "1-5 Landing Page",
-                "Responsive (Mobile/Tablet)",
+                "1 to 5 pages",
+                "Responsive Design (Mobile, Tablet, Desktop)",
                 "Contact Form",
-                "Basic SEO Setup",
-                "Performance optimization",
-                "Delivery in 3–5 days"
+                "SEO Setup",
+                "Performance Optimization",
+                "Delivery in 3 to 5 days"
             ]
         },
         "business": {
-            "headText": "Business Presence",
-            "title": "Starting Price",
-            "price": "25 000",
+            "headText": "Standard",
+            "title": "Price",
+            "price": "$270 – $540",
             "btn": "Start Project",
             "content": [
-                "Up to 10 Pages",
+                "5 to 10 Pages",
                 "Responsive Design",
-                "SEO Optimization",
-                "Contact Forms",
+                "Advanced SEO Optimization",
+                "AI Agent",
+                "Simple Dashboard",
                 "Blog / Content Pages",
                 "Performance Optimization",
-                "Animations"
+                "Animations",
+                "Basic Google Analytics",
+                "Basic Payment Integration"
             ]
         },
         "interactive": {
-            "headText": "Interactive",
-            "title": "Starting Price",
+            "headText": "Premium",
+            "title": "Price",
             "btn": "Start Project",
-            "price": "23 000",
+            "price": "$450 – $1,260",
             "content": [
-                "Up to 10 Pages",
+                "10 to 15 Pages",
                 "Custom UI/UX Design",
-                "CMS (Editable Content)",
+                "Analytics Dashboard & Reporting",
                 "Advanced Animations",
-                "API Integration",
+                "API Integrations",
                 "Performance Optimization",
-                "Security Setup"
+                "Security Configuration",
+                "AI Agent",
+                "Advanced SEO + GEO + AEO",
+                "Analytics & Reports",
+                "Email, WhatsApp SMS & Newsletter Integration",
+                "Secure Payment Integration via API (Stripe, Paystack, etc.)"
             ]
         },
         "custom": {
             "headText": "Custom Platform",
             "title": "Starting Price",
-            "price": "25 000",
+            "price": "$1,620+",
             "btn": "Start Project",
             "content": [
                 "Unlimited Pages",
-                "Full Web Application",
-                "User Authentication",
-                "Dashboard / Admin Panel",
-                "Database Integration",
-                "API Development",
-                "Payment Systems",
-                "Cloud Deployment"
+                "CMS (Editable Content)",
+                "Dashboard with Real-Time Payment Tracking",
+                "Cloud Deployment",
+                "API Integrations",
+                "Performance Optimization",
+                "Security Configuration",
+                "Advanced SEO + GEO + AEO",
+                "AI Agent + Integrated AI (Chatbot, Automation)",
+                "Email, SMS, WhatsApp & Newsletter Integration",
+                "Secure Payment Integration via API (Stripe, Paystack, etc.)",
+                "Team Training",
+                "Multi-Currency Payments (Crypto & Fiat)",
+                "Enhanced Security",
+                "Real-Time Payment Tracking"
             ]
         }
     },
