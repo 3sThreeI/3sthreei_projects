@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
 export default function WorkingFlowCard() {
     const t = useTranslations()
-    const [cardActive, SetCardActive] = useState('interactive')
+    const [cardActive, SetCardActive] = useState(t('workFlow2.interactive.headText'))
     const SwitchCard = (value: string) => {
         SetCardActive(value)
     }
@@ -14,22 +14,22 @@ export default function WorkingFlowCard() {
         <>
             <div className={style.cardContainer}>
                 <div className={style.card_header}>
-                    <div onClick={() => SwitchCard('launch')} className={`${style.headText} ${cardActive === 'lauch' && style.active}`}>
+                    <div onClick={() => SwitchCard(t('workFlow2.launch.headText'))} className={`${style.headText} ${cardActive === t('workFlow2.launch.headText') && style.active}`}>
                         <h1>{t('workFlow2.launch.headText')}</h1>
                     </div>
-                    <div onClick={() => SwitchCard('business')} className={`${style.headText} ${cardActive === 'business' && style.active}`}>
+                    <div onClick={() => SwitchCard(t('workFlow2.business.headText'))} className={`${style.headText} ${cardActive === t('workFlow2.business.headText') && style.active}`}>
                         <h1>{t('workFlow2.business.headText')}</h1>
                     </div>
-                    <div onClick={() => SwitchCard('interactive')} className={`${style.headText} ${cardActive === 'interactive' && style.active}`}>
+                    <div onClick={() => SwitchCard(t('workFlow2.interactive.headText'))} className={`${style.headText} ${cardActive === t('workFlow2.interactive.headText') && style.active}`}>
                         <h1>{t('workFlow2.interactive.headText')}</h1>
                     </div>
-                    <div onClick={() => SwitchCard('custom')} className={`${style.headText} ${cardActive === 'custom' && style.active}`}>
+                    <div onClick={() => SwitchCard(t('workFlow2.custom.headText'))} className={`${style.headText} ${cardActive === t('workFlow2.custom.headText') && style.active}`}>
                         <h1>{t('workFlow2.custom.headText')}</h1>
                     </div>
                 </div>
                 <div className={style.cards}>
                     {/* ------------------------Launch-------------- */}
-                    <div className={`${style.card} ${cardActive === 'launch' && style.cardActive}`}>
+                    <div className={`${style.card} ${cardActive === t('workFlow2.launch.headText') && style.cardActive}`}>
                         <h1 className={style.cardHeader} > {t('workFlow2.launch.headText')} </h1>
                         <div className={style.headContent}>
                             <h1>{t('workFlow2.launch.title')}</h1>
@@ -47,7 +47,7 @@ export default function WorkingFlowCard() {
                         </ul>
                     </div>
                     {/* ------------------------business-------------- */}
-                    <div className={`${style.card} ${cardActive === 'business' && style.cardActive}`}>
+                    <div className={`${style.card} ${cardActive === t('workFlow2.business.headText') && style.cardActive}`}>
                         <h1 className={style.cardHeader} > {t('workFlow2.business.headText')} </h1>
                         <div className={style.headContent}>
                             <h2>{t('workFlow2.business.title')}</h2>
@@ -65,7 +65,7 @@ export default function WorkingFlowCard() {
                         </ul>
                     </div>
                     {/* ------------------------Interactive-------------- */}
-                    <div className={`${style.card} ${cardActive === 'interactive' && style.cardActive}`}>
+                    <div className={`${style.card} ${cardActive === t('workFlow2.interactive.headText') && style.cardActive}`}>
                         <div className={style.recommended}>Recommended</div>
                         <h1 className={style.cardHeader} > {t('workFlow2.interactive.headText')} </h1>
                         <div className={style.headContent}>
@@ -84,7 +84,7 @@ export default function WorkingFlowCard() {
                         </ul>
                     </div>
                     {/* ------------------------Custom-------------- */}
-                    <div className={`${style.card} ${cardActive === 'custom' && style.cardActive}`}>
+                    <div className={`${style.card} ${cardActive === t('workFlow2.custom.headText') && style.cardActive}`}>
                         <h1 className={style.cardHeader} > {t('workFlow2.custom.headText')} </h1>
                         <div className={style.headContent}>
                             <h2>{t('workFlow2.custom.title')}</h2>

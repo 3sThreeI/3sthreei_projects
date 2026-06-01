@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 
 .container{
-    @apply my-5 md:my-7 px-5 
+    @apply my-5 md:my-7 px-5 text-[0.9rem]
 }
 .tableContent{
     @apply w-full max-h-[700px] overflow-y-scroll
@@ -48,7 +48,7 @@
     @apply flex flex-wrap justify-center gap-3 md:gap-7 my-5
 }
 .cards .card {
-    @apply  bg-(--card-bg-color-deep) px-3 pt-3 w-[300px] shadow-[-2px_2px_5px_2px_var(--card-bg-color-deep)] border border-transparent relative text-white/90 font-extrabold rounded-lg md:rounded-xl  md:px-5 md:py-3 h-125 transition duration-500 ease-out
+    @apply  bg-(--card-bg-color-deep) px-3 pt-3 w-[270px] md:h-auto shadow-[-2px_2px_5px_2px_var(--card-bg-color-deep)] border border-transparent relative text-white/90 font-extrabold rounded-lg md:rounded-xl  md:px-5 md:py-3 transition duration-500 ease-out
 }
 .cards .card.cardActive{
     @apply bg-transparent
@@ -60,33 +60,33 @@
     @apply absolute right-0 top-0 bg-[rgb(21,128,61)] rounded-l-[5px] px-2 text-sm
 }
 .cards .card .cardHeader {
-    @apply text-xl text-(--nav-text-color) text-start font-bold font-[merriweather] mb-5
+    @apply text-xl text-(--nav-text-color) text-start font-bold font-[merriweather] mb-2
 }
 
 .headContent{
-    @apply text-xl font-normal font-[poppins]
+    @apply text-lg font-normal font-[poppins]
 }
 .headContent .cardPrice{
-    @apply ml-12 text-(--nav-text-color) text-[1.2rem]
+    @apply ml-12 text-(--nav-text-color) text-[1rem]
 }
 .headContent .headButton{
-    @apply w-full mt-3 mb-7
+    @apply w-full mt-3 mb-3
 }
 .headContent .headButton .btn{
-    @apply bg-(--nav-bg-color)/50 py-2 w-full rounded-full transition duration-500 ease-in-out
+    @apply bg-(--nav-bg-color)/50 py-1 w-full rounded-full transition duration-500 ease-in-out
 }
 .headContent .headButton .btn:hover{
     @apply bg-(--nav-bg-color) font-bold cursor-pointer
 }
 .content {
-    @apply pl-3 mt-3 opacity-80 
+    @apply pl-0 mt-1 opacity-80 
 }
 
 .content_text {
-    @apply text-left mb-2 text-[1rem] font-[--text-font] relative flex gap-2 
+    @apply text-left mb-2 text-[0.9rem] relative flex gap-2 
 }
 .content_text .icon{
-    @apply text-(--nav-text-color) mt-1 text-[1rem]
+    @apply text-(--nav-text-color) mt-1 shrink-0
 }
 @media (max-width:546px ){
 .cards .card.cardActive{
