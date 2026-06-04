@@ -154,5 +154,9 @@
         "design React‑ready Mali"
       ]
     }
-  }
+  },
+  "contactForm": {
+      "title": "Développeur Full-Stack au Mali | Web, Mobile et Desktop",
+      "description": "Développeur full-stack basé au Mali, spécialisé en applications web, mobiles et desktop. Expertise en React, Flutter, Laravel et Next.js. Demandez votre devis gratuit."
+    }
 }
