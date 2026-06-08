@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl || ' http://localhost:3000'),
   title: {
     default: "3SThreeI | Build. Design. Learn.",
-    template: "%s | 3SThreeI",
+    template: "3sthreeI | %s | 3si | 3sthree | 3SThreeI ",
   },
 
   description:
