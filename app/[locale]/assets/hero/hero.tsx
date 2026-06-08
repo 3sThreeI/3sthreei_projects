@@ -1,6 +1,7 @@
 import HeroSVG from "@/components/ui/herodesign/heroSvg";
 import style from "./hero.module.css"
 import { getTranslations } from "next-intl/server"
+import Link from "next/link";
 
 
 export default async function Hero() {
@@ -15,12 +16,14 @@ export default async function Hero() {
                             <p className={style.subheadline}>{t('subheadline')}</p>
                         </div>
                         <div className={style.buttons}>
-                            <button className={style.primaryBtn}>
+                        {/* start project button */}
+                            <Link href={t('herobtn1Url')} className={style.primaryBtn}>
                                 {t('herobtn1')}
-                            </button>
-                            <button className={style.secondaryBtn}>
+                            </Link>
+                        {/* courses button */}
+                            <Link href={t('herobtn2Url')} className={style.secondaryBtn}>
                                 {t('herobtn2')}
-                            </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="h-full w-full z-0">

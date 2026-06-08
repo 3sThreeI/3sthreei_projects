@@ -7,7 +7,7 @@ export default async function OurService() {
     return (
         <>
             <div className={style.container}>
-                <h1 className={style.title}>Ours Services</h1>
+                {/* <h1 className={style.title}>Ours Service</h1> */}
                 <div className={style.cards}>
                     {/* website */}
                     <div className={`${style.card} `}>
@@ -21,7 +21,7 @@ export default async function OurService() {
                             ))}
                         </ul>
                         <div className={style.btn}>
-                            <Link href='#' className={style.Link} >{t('website.button')}</Link>
+                            <Link href={t('website.buttonUrl')} className={style.Link} >{t('website.button')}</Link>
                         </div>
                     </div>
                     {/* mobile app */}
@@ -36,7 +36,7 @@ export default async function OurService() {
                             ))}
                         </ul>
                         <div className={style.btn}>
-                            <Link href='#' className={style.Link} >{t('mobile.button')}</Link>
+                            <Link href={t('mobile.buttonUrl')} className={style.Link} >{t('mobile.button')}</Link>
                         </div>
                     </div>
                     {/* gaming */}
@@ -51,7 +51,7 @@ export default async function OurService() {
                             ))}
                         </ul>
                         <div className={style.btn}>
-                            <Link href='#' className={style.Link} >{t('game.button')}</Link>
+                            <Link href={t('game.buttonUrl')} className={style.Link} >{t('game.button')}</Link>
                         </div>
                     </div>
                     {/* ui/ux */}
@@ -66,7 +66,7 @@ export default async function OurService() {
                             ))}
                         </ul>
                         <div className={style.btn}>
-                            <Link href='#' className={style.Link} >{t('design.button')}</Link>
+                            <Link href={t('design.buttonUrl')} className={style.Link} >{t('design.button')}</Link>
                         </div>
                     </div>
                 </div>
