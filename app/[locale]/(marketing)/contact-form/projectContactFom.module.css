@@ -5,7 +5,6 @@
 /* Container */
 .container {
     min-height: 100vh;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +31,7 @@
 /* Card Container */
 .card {
     background: white;
+    
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
     padding: 60px 40px;
