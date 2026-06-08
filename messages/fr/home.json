@@ -3,7 +3,9 @@
         "headline": "De l’idée au lancement — Nous créons et enseignons l’excellence digitale",
         "subheadline": "Sites web d’entreprise, applications mobiles, jeux, design UI/UX — tout en formant votre équipe à les développer et les faire évoluer.",
         "herobtn1": "Lancer votre projet",
-        "herobtn2": "Découvrir nos formations"
+        "herobtn1Url": "/contact-form",
+        "herobtn2": "Découvrir nos formations",
+        "herobtn2Url": "#"
     },
     "serviceSection": {
         "website": {
@@ -16,7 +18,8 @@
                 "Optimisation SEO",
                 "Rapide et sécurisé"
             ],
-            "button": "Voir plus"
+            "button": "Voir plus",
+            "buttonUrl": "/services/web"
         },
         "mobile": {
             "title": "Applications Mobiles",
@@ -28,7 +31,8 @@
                 "Connexion aux services externes",
                 "Maintenance continue"
             ],
-            "button": "Voir plus"
+            "button": "Voir plus",
+            "buttonUrl": "/services/application"
         },
         "game": {
             "title": "Jeux Vidéo",
@@ -40,7 +44,8 @@
                 "Design UI/UX pour jeux",
                 "Support à la publication"
             ],
-            "button": "Voir plus"
+            "button": "Voir plus",
+            "buttonUrl": "/services/updating"
         },
         "design": {
             "title": "UI/UX",
@@ -52,7 +57,8 @@
                 "Prototypage (Figma)",
                 "Supports visuels marketing"
             ],
-            "button": "Voir plus"
+            "button": "Voir plus",
+            "buttonUrl": "/services/updating"
         }
     },
     "workingWith": {

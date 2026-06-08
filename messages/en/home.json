@@ -3,7 +3,9 @@
         "headline": "From Idea to Launch — We Build & Teach Digital Excellence",
         "subheadline": "Enterprise websites, Mobile apps, Games, UI/UX design. while teaching your team how to scale them.",
         "herobtn1": "Start Your Project",
-        "herobtn2": "Explore Courses"
+        "herobtn1Url": "/contact-form",
+        "herobtn2": "Explore Courses",
+        "herobtn2Url": "#"
     },
     "serviceSection": {
         "website": {
@@ -16,7 +18,8 @@
                 "SEO Optimized",
                 "Fast & Secure"
             ],
-            "button": "View more"
+            "button": "View more",
+            "buttonUrl": "/services/web"
         },
         "mobile": {
             "title": "Mobile Apps",
@@ -28,7 +31,9 @@
                 "API Integration",
                 "Ongoing Maintenance"
             ],
-            "button": "View more"
+            "button": "View more",
+            "buttonUrl": "/services/application"
+
         },
         "game": {
             "title": "Game Apps",
@@ -40,7 +45,9 @@
                 "Game UI/UX Design",
                 "Publishing Support"
             ],
-            "button": "View more"
+            "button": "View more",
+            "buttonUrl": "/services/updating"
+
         },
         "design": {
             "title": "UI/UX",
@@ -52,7 +59,8 @@
                 "Prototyping (Figma)",
                 "Marketing Visuals"
             ],
-            "button": "View more"
+            "button": "View more",
+            "buttonUrl": "/services/updating"
         }
     },
     "workingWith": {
