@@ -30,9 +30,8 @@
 }
 
 .cta {
-    @apply w-full px-8 py-3 border border-(--nav-bg-color) hover:border-none text-(--nav-text-color) hover:text-white font-semibold rounded-lg hover:bg-gradient-to-r from-(--nav-bg-color) to-(--bg-color) transition-all duration-300 shadow-lg hover:shadow-xl;
+    @apply w-full px-8 py-3 text-center border border-(--nav-bg-color) hover:border-none text-(--nav-text-color) hover:text-white font-semibold rounded-lg hover:bg-gradient-to-r from-(--nav-bg-color) to-(--bg-color) transition duration-500 ease-in shadow-lg hover:shadow-xl;
 }
-
 .videoWrapper {
     @apply flex justify-center items-center;
 }

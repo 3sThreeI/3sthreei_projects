@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import style from "./testimonial.module.css"
+import TestimonialForm from "@/components/customComponent/formContact/formTestimonial"
 type TestimonialProps = {
     imgUrl: string | null,
     name: string,
@@ -54,6 +55,9 @@ export default function Testimonial() {
                     <CarouselNext />
                     <CarouselPrevious />
                 </Carousel>
+                <div className="">
+                    <TestimonialForm />
+                </div>
             </div>
         </>
     )
