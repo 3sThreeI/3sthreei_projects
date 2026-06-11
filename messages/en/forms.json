@@ -43,6 +43,10 @@
                         "value": "Web Site"
                     },
                     {
+                        "key": "app",
+                        "value": "Application(Mobile or Desktop)"
+                    },
+                    {
                         "key": "design",
                         "value": "Design"
                     },
@@ -59,6 +63,54 @@
                         "value": "Marketing"
                     }
                 ]
+            },
+            "labelSelect2": {
+                "L": "Price",
+                "T": "price range",
+                "OptWeb": [
+                    {
+                        "key": "",
+                        "value": "Select a price range..."
+                    },
+                    {
+                        "key": "$270",
+                        "value": "$144 - $270"
+                    },
+                    {
+                        "key": "$540",
+                        "value": "$270 - $540"
+                    },
+                    {
+                        "key": "$1 260",
+                        "value": "$540 - $1 260"
+                    },
+                    {
+                        "key": "$1 620+",
+                        "value": "$1 620 - plus"
+                    }
+                ],
+                "OptApp": [
+                    {
+                        "key": "",
+                        "value": "Select a price range..."
+                    },
+                    {
+                        "key": "$270",
+                        "value": "$144 - $270"
+                    },
+                    {
+                        "key": "$680",
+                        "value": "$255 - $680"
+                    },
+                    {
+                        "key": "$1 700",
+                        "value": "$680 - $1 700"
+                    },
+                    {
+                        "key": "$1 700+",
+                        "value": "$1 700 - plus"
+                    }
+                ]
             }
         },
         "formTextarea": {
@@ -72,7 +124,7 @@
     },
     "formAudit": {
         "headTitle": "Services",
-        "subTitle": "check your site spend, performance web and audit with 3sthreei without 0 cost",
+        "subTitle": "Get a FREE complete SEO audit of your website and discover how to boost your performance and Google ranking",
         "formInput": {
             "labelInput1": {
                 "L": "Company Name",
@@ -100,11 +152,11 @@
                         "value": "Select a service..."
                     },
                     {
-                        "key": "audit web site",
+                        "key": "audit",
                         "value": "Audit my site web"
                     },
                     {
-                        "key": "audit and fix",
+                        "key": "audit & fix",
                         "value": "Audit and fix my site web"
                     }
                 ]

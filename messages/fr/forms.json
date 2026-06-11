@@ -69,5 +69,54 @@
             }
         },
         "btn": "Envoyer le message"
+    },
+    "formAudit": {
+        "headTitle": "Services",
+        "subTitle": "Recevez gratuitement un audit complet de votre site web et découvrez les opportunités d'amélioration de ses performances",
+        "formInput": {
+            "labelInput1": {
+                "L": "Nom de l'entreprise",
+                "P": "Ex. : 3sthreei",
+                "T": "Saisissez le nom de votre entreprise"
+            },
+            "labelInput2": {
+                "L": "Adresse e-mail",
+                "P": "vous@exemple.com",
+                "T": "Saisissez votre adresse e-mail"
+            },
+            "labelInput4": {
+                "L": "Site web",
+                "P": "https://votresite.com",
+                "T": "Saisissez l'URL de votre site web"
+            }
+        },
+        "formSelect": {
+            "labelSelect1": {
+                "L": "Type de service",
+                "T": "Sélectionnez le service souhaité",
+                "Opt": [
+                    {
+                        "key": "",
+                        "value": "Choisissez un service..."
+                    },
+                    {
+                        "key": "audit",
+                        "value": "Auditer mon site web"
+                    },
+                    {
+                        "key": "audit & fix",
+                        "value": "Auditer et corriger mon site web"
+                    }
+                ]
+            }
+        },
+        "formTextarea": {
+            "labelTextarea1": {
+                "L": "Comment pouvons-nous vous aider ?",
+                "P": "Parlez-nous de votre projet...",
+                "T": "Décrivez votre projet"
+            }
+        },
+        "btn": "Envoyer"
     }
 }
