@@ -4,6 +4,7 @@ import style from "./workingPricing.module.css"
 import { FaCircleCheck } from "react-icons/fa6"
 import { useEffect, useState } from "react"
 import { useTranslations } from "next-intl"
+import Link from "next/link"
 export default function WorkingFlowCard() {
     const t = useTranslations()
     const [cardActive, SetCardActive] = useState(t('workFlow2.interactive.headText'))
@@ -35,7 +36,11 @@ export default function WorkingFlowCard() {
                             <h1>{t('workFlow2.launch.title')}</h1>
                             <p className={style.cardPrice}>{t('workFlow2.launch.price')}</p>
                             <div className={style.headButton}>
-                                <button type="button" className={style.btn}>{t('workFlow2.launch.btn')}</button>
+                                {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
+                                application the type=app
+                                 */}
+                                 {/* the price is getting by json file to depend of the component each component has is json file  */}
+                                <Link href={{pathname: "/contact-form", query:{price:t('workFlow2.launch.priceKey'), type:t('workFlow2.type')}}} className={style.btn}>{t('workFlow2.launch.btn')}</Link>
                             </div>
                         </div>
                         <ul className={style.content}>
@@ -53,7 +58,11 @@ export default function WorkingFlowCard() {
                             <h2>{t('workFlow2.business.title')}</h2>
                             <p className={style.cardPrice}>{t('workFlow2.business.price')}</p>
                             <div className={style.headButton}>
-                                <button type="button" className={style.btn}>{t('workFlow2.business.btn')}</button>
+                                {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
+                                application the type=app
+                                 */}
+                                 {/* the price is getting by json file to depend of the component each component has is json file  */}
+                                <Link href={{pathname: "/contact-form", query:{price:t('workFlow2.business.priceKey'), type:t('workFlow2.type')}}} className={style.btn}>{t('workFlow2.business.btn')}</Link>
                             </div>
                         </div>
                         <ul className={style.content}>
@@ -72,7 +81,11 @@ export default function WorkingFlowCard() {
                             <h2>{t('workFlow2.interactive.title')}</h2>
                             < p className={style.cardPrice}>{t('workFlow2.interactive.price')}</p>
                             <div className={style.headButton}>
-                                <button type="button" className={style.btn}>{t('workFlow2.interactive.btn')}</button>
+                              {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
+                                application the type=app
+                                 */}
+                                 {/* the price is getting by json file to depend of the component each component has is json file  */}
+                                <Link href={{pathname: "/contact-form", query:{price:t('workFlow2.interactive.priceKey').trim(), type:t('workFlow2.type')}}} className={style.btn}>{t('workFlow2.interactive.btn')}</Link>
                             </div>
                         </div>
                         <ul className={style.content}>
@@ -90,7 +103,11 @@ export default function WorkingFlowCard() {
                             <h2>{t('workFlow2.custom.title')}</h2>
                             <p className={style.cardPrice}>{t('workFlow2.custom.price')}</p>
                             <div className={style.headButton}>
-                                <button type="button" className={style.btn}>{t('workFlow2.custom.btn')}</button>
+                                {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
+                                application the type=app
+                                 */}
+                                 {/* the price is getting by json file to depend of the component each component has is json file  */}
+                                <Link href={{pathname: "/contact-form", query:{price:t('workFlow2.custom.priceKey'), type:t('workFlow2.type')}}} className={style.btn}>{t('workFlow2.custom.btn')}</Link>
                             </div>
                         </div>
                         <ul className={style.content}>
