@@ -121,52 +121,92 @@
             "text": "Sauvegardes sécurisées, chiffrement et meilleures pratiques pour protéger vos données."
         }
     ],
-    "workFlow": [
+     "workFlow": [
         {
             "header": "Fonctionnalités",
             "content": [
                 "Pages",
-                "Design Responsive",
-                "SEO",
+                "Design responsive",
+                "SEO + GEO + AEO",
                 "Animations",
                 "CMS",
-                "Authentification",
-                "Intégration d’API"
+                "Authentification / Connexion",
+                "Intégration d’API",
+                "Agent IA",
+                "Tableau de bord",
+                "Blog / Contenu",
+                "Système de paiement",
+                "Analytics & Reporting",
+                "Email / SMS / WhatsApp",
+                "Sécurité",
+                "Performance",
+                "Déploiement cloud",
+                "Multi-devises"
             ]
         },
         {
-            "header": "Launch Pad",
+            "header": "Basique",
             "content": [
-                "1",
+                "1–5",
                 "Oui",
                 "Basique",
                 "Non",
                 "Non",
                 "Non",
-                "Non"
-            ]
-        },
-        {
-            "header": "Présence Business",
-            "content": [
-                "5",
-                "Oui",
-                "Avancé",
-                "Oui",
+                "Non",
+                "Non",
+                "Non",
+                "Non",
+                "Non",
                 "Basique",
                 "Non",
+                "Basique",
+                "Oui",
+                "Basique",
                 "Non"
             ]
         },
         {
-            "header": "Interactif",
+            "header": "Standard",
             "content": [
-                "10",
+                "5–10",
                 "Oui",
                 "Avancé",
                 "Oui",
+                "Non",
                 "Oui",
+                "Non",
+                "Basique (IA)",
+                "Basique",
                 "Oui",
+                "Paiement simple",
+                "Basique",
+                "Email",
+                "Basique",
+                "Oui",
+                "Standard",
+                "Non"
+            ]
+        },
+        {
+            "header": "Premium",
+            "content": [
+                "10–15",
+                "Oui",
+                "Avancé",
+                "Oui",
+                "Non",
+                "Oui",
+                "Basique–Intermédiaire",
+                "Oui",
+                "Avancé",
+                "Oui",
+                "Paiement sécurisé (Stripe, Paystack)",
+                "Avancé",
+                "Email + SMS + WhatsApp + Newsletter",
+                "Sécurisé",
+                "Oui",
+                "Optimisé",
                 "Basique"
             ]
         },
@@ -179,69 +219,94 @@
                 "Oui",
                 "Oui",
                 "Oui",
-                "Complet"
+                "Complet",
+                "IA avancée (chatbot + automatisation)",
+                "Temps réel",
+                "Oui",
+                "Paiement avancé + multi-devises",
+                "Temps réel",
+                "Omnicanal complet",
+                "Sécurité renforcée",
+                "Optimisé max",
+                "Cloud scalable",
+                "Crypto + fiat"
             ]
         }
     ],
     "workFlow2": {
         "launch": {
-            "headText": "Launch Pad",
-            "title": "Prix de départ",
-            "price": "23 000",
+            "headText": "Basique",
+            "title": "Prix",
+            "price": "80 000 - 150 000 FCFA",
             "btn": "Démarrer le projet",
             "content": [
-                "1 à 5 pages (Landing Page)",
-                "Responsive (Mobile/Tablette)",
+                "1 à 5 pages",
+                "Responsive (Mobile-Tablette-Desktop)",
                 "Formulaire de contact",
-                "Configuration SEO de base",
+                "Configuration SEO ",
                 "Optimisation des performances",
                 "Livraison en 3 à 5 jours"
             ]
         },
         "business": {
-            "headText": "Présence Business",
-            "title": "Prix de départ",
-            "price": "25 000",
+            "headText": "Standard",
+            "title": "Prix",
+            "price": "150 000 – 300 000 FCFA",
             "btn": "Démarrer le projet",
             "content": [
-                "Jusqu’à 10 pages",
+                "5 à 10 Pages",
                 "Design responsive",
-                "Optimisation SEO",
-                "Formulaires de contact",
+                "Optimisation SEO avancée",
+                "Agent IA",
+                "Tableau de bord Simple",
                 "Blog / Pages de contenu",
                 "Optimisation des performances",
-                "Animations"
+                "Animations",
+                "Google Analytics de base",
+                "Intégration de paiement simple"
             ]
         },
         "interactive": {
-            "headText": "Interactif",
-            "title": "Prix de départ",
+            "headText": "Premium",
+            "title": "Prix",
             "btn": "Démarrer le projet",
-            "price": "23 000",
+            "price": "250 000 - 700 000 FCFA",
             "content": [
-                "Jusqu’à 10 pages",
+                "10 à 15 Pages",
                 "Design UI/UX personnalisé",
-                "CMS (contenu modifiable)",
+                "Tableau de bord d’analytique et reporting",
                 "Animations avancées",
                 "Intégration d’API",
                 "Optimisation des performances",
-                "Configuration de la sécurité"
+                "Configuration de la sécurité",
+                "Agent IA",
+                "SEO + GEO + AEO",
+                "Statistiques et rapports",
+                "Intégration Email, SMS via WhatsApp et Newsletter",
+                "Intégration sécurisée des paiements via API(Stripe, Paystack, etc)"
             ]
         },
         "custom": {
             "headText": "Plateforme Personnalisée",
-            "title": "Prix de départ",
-            "price": "25 000",
+            "title": "Prix",
+            "price": "900 000 FCFA et plus ",
             "btn": "Démarrer le projet",
             "content": [
                 "Pages illimitées",
-                "Application web complète",
-                "Authentification des utilisateurs",
-                "Tableau de bord / Panneau d’administration",
-                "Intégration de base de données",
-                "Développement d’API",
-                "Systèmes de paiement",
-                "Déploiement cloud"
+                "CMS (contenu modifiable)",
+                "Tableau de bord avec suivi des paiements en temps réel",
+                "Déploiement cloud",
+                "Intégration d’API",
+                "Optimisation des performances",
+                "Configuration de la sécurité",
+                "SEO + GEO + AEO avancés",
+                "Agent IA + IA intégrée (chatbot, automatisation)",
+                "Intégration Email, SMS, WhatsApp et Newsletter",
+                "Intégration sécurisée des paiements via API(stripe, paystack, etc)",
+                "Formation de votre équipe",
+                "Paiements multi-devises (crypto et fiat)",
+                "Sécurité renforcée",
+                "Suivi des paiements en temps réel"
             ]
         }
     },
