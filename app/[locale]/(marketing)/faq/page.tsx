@@ -20,7 +20,11 @@ export async function generateMetadata(params: Promise<Props>): Promise<Metadata
             url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/faq`
         },
         alternates: {
-            canonical: `/${locale}/faq`
+            canonical: `/${locale}/faq`,
+            languages:{
+                "fr": `${process.env.NEXT_PUBLIC_SITE_URL}/fr`,
+                "en": `${process.env.NEXT_PUBLIC_SITE_URL}/en`
+            }
         }
     }
 }

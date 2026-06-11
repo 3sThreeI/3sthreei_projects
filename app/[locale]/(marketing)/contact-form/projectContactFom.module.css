@@ -11,6 +11,13 @@
     padding: 20px;
     animation: fadeIn 0.6s ease-in-out;
 }
+.formTest{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 20px;
+    animation: fadeIn 0.6s ease-in-out;
+}
 
 @keyframes fadeIn {
     from {
@@ -25,18 +32,18 @@
 /* Wrapper for centering */
 .wrapper {
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 /* Card Container */
 .card {
-    background: white;
+    background: var(--card-bg-color);
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-    padding: 60px 40px;
+    box-shadow: 0px 2px 2px 1px rgba(198, 198, 198, 0.551);
+    padding: 30px 20px;
     animation: slideUp 0.6s ease-out;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.95);
+    /* backdrop-filter: blur(2px); */
+    /* border: 1px solid rgba(255, 255, 255, 0.95); */
 }
 
 @keyframes slideUp {
@@ -53,7 +60,7 @@
 
 /* Header Section */
 .header {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -63,7 +70,7 @@
     color: #1a202c;
     margin: 0 0 12px 0;
     letter-spacing: -0.5px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--nav-text-color), #764ba2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -71,7 +78,7 @@
 
 .subtitle {
     font-size: 16px;
-    color: #718096;
+    color: #a4b6d2;
     margin: 0;
     font-weight: 400;
     line-height: 1.6;
@@ -81,7 +88,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 14px;
 }
 
 /* Form Group */
@@ -94,7 +101,7 @@
 .label {
     font-size: 14px;
     font-weight: 600;
-    color: #2d3748;
+    color: #f3f3f3;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     display: flex;
@@ -134,7 +141,7 @@
 .select:focus,
 .textarea:focus {
     background: white;
-    border-color: #667eea;
+    border-color: var(--nav-text-color);
     box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
     transform: translateY(-2px);
 }
@@ -180,10 +187,10 @@
     padding: 14px 32px;
     font-size: 16px;
     font-weight: 600;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--nav-text-color) 0%, #6c96d4 100%);
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 8px;
@@ -214,12 +221,12 @@
 
 .submitBtn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 5px 20px -15px var(--nav-text-color);
 }
 
 .submitBtn:active {
     transform: translateY(0);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 12px var(--nav-text-color);
 }
 
 .btnText {
@@ -236,7 +243,7 @@
 }
 
 .submitBtn:hover .btnIcon {
-    transform: translateX(4px);
+    transform: translateX(5px);
 }
 
 /* Responsive Design */
@@ -309,7 +316,7 @@
 .select:focus-visible,
 .textarea:focus-visible,
 .submitBtn:focus-visible {
-    outline: 2px solid #667eea;
+    outline: 2px solid var(--nav-text-color);
     outline-offset: 2px;
 }
 
@@ -323,54 +330,6 @@
 .input:valid,
 .select:valid,
 .textarea:valid {
-    border-color: #9ae6b4;
+    border-color: #7df9a9;
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    .container {
-        background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-    }
-
-    .card {
-        background: #2d3748;
-        border-color: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    }
-
-    .title {
-        color: #e2e8f0;
-    }
-
-    .subtitle {
-        color: #cbd5e0;
-    }
-
-    .label {
-        color: #e2e8f0;
-    }
-
-    .input,
-    .select,
-    .textarea {
-        background: #1a202c;
-        border-color: #4a5568;
-        color: #e2e8f0;
-    }
-
-    .input::placeholder,
-    .textarea::placeholder {
-        color: #718096;
-    }
-
-    .input:focus,
-    .select:focus,
-    .textarea:focus {
-        background: #2d3748;
-        border-color: #667eea;
-    }
-
-    .select {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a0aec0' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
-    }
-}
