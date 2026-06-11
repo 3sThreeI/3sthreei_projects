@@ -22,7 +22,7 @@ export default async function WorkingWith() {
                             ))}
                         </ul>
                         <div className={style.btn}>
-                            <Link href='#' className={style.Link} >{t('individual.button')}</Link>
+                            <Link href={{ pathname:`/services/audit-web-site`, query:{type:"audit"}}} className={style.Link} >{t('individual.button')}</Link>
                         </div>
                     </div>
                     {/* mobile app */}
@@ -37,7 +37,7 @@ export default async function WorkingWith() {
                             ))}
                         </ul>
                         <div className={style.btn}>
-                            <Link href='#' className={style.Link} >{t('entreprise.button')}</Link>
+                            <Link href={{pathname: "/services/audit-web-site", query:{type: "audit & fix"} }} className={style.Link} >{t('entreprise.button')}</Link>
                         </div>
                     </div>
                 </div>
