@@ -13,6 +13,6 @@ export const contactSchema = z.object({
     message: z
         .string()
         .min(30, "Message must be at least 30 characters")
-        .max(1000, "Message must be less than 1000 characters"),
+        .max(250, "Message must be less than 250 characters")
 })
 export type ContactForm = z.infer<typeof contactSchema>
