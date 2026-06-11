@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react"
 import style from "@/app/[locale]/(marketing)/contact-form/projectContactFom.module.css"
 import { contactSchema } from "@/lib/validation/contact"
+import { useSearchParams } from "next/navigation"
 type formErrorsProps = {
     fullname?: string[],
     email?: string[],
@@ -10,7 +11,11 @@ type formErrorsProps = {
     url?: string[],
     project_type?: string[]
 }
-export default function FormContactCompt({message}:{message:any}) {
+export default function FormContactCompt({ message }: { message: any }) {
+    const searchparams = useSearchParams()
+    const Price: string = searchparams.get("price") ?? ""
+    const type: string = searchparams.get("type") ?? ""
+
     console.log("formContact.tsx rendered")
     console.log("message ", message)
     const t = message || null
@@ -20,7 +25,8 @@ export default function FormContactCompt({message}:{message:any}) {
         phoneNumber: '',
         message: '',
         url: '',
-        project_type: ''
+        project_type: type,
+        price: Price || ''
     })
     const [errors, setErrors] = useState<formErrorsProps>({})
     const [success, setSuccess] = useState(false)
@@ -55,17 +61,14 @@ export default function FormContactCompt({message}:{message:any}) {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formValues)
             })
-            console.log('📥 Response status:', resp.status)
-            console.log('📥 Response headers:', resp.headers)
             const data = await resp.json()
             if (!resp.ok) {
                 setErrors(data.details || { message: [data.error] } || { message: "Back-end failed" })
-                console.log("failed to submit data: ", data)
                 console.log('❌ Full error details:', data)
                 console.log('❌ Details object:', data.details)
             } else {
                 setSuccess(true)
-                SetFormValues({ fullname: '', email: '', message: '', phoneNumber: '', url: '', project_type: '' })
+                SetFormValues({ fullname: '', email: '', message: '', phoneNumber: '', url: '', project_type: '', price: "" })
                 console.log("successFull message: ", data.message)
             }
         } catch (error) {
@@ -157,25 +160,62 @@ export default function FormContactCompt({message}:{message:any}) {
                     </div>
 
                     {/* Project Type */}
-                    <div className={style.formGroup}>
-                        <label htmlFor="projectType" className={style.label}>{t.formContact.formSelect.labelSelect1.L}</label>
-                        <select
-                            id="projectType"
-                            name="project_type"
-                            value={formValues.project_type}
-                            onChange={inputHandleFn}
-                            className={style.select}
-                            required
-                            title={t.formContact.formSelect.labelSelect1.T}
-                        >
-                            {/* option of select */}
+                    <div className={`${ Price ? style.grid : ''}`}>
+
+                        <div className={style.formGroup}>
+                            <label htmlFor="projectType" className={style.label}>{t.formContact.formSelect.labelSelect1.L}</label>
+                            <select
+                                id="projectType"
+                                name="project_type"
+                                value={formValues.project_type}
+                                onChange={inputHandleFn}
+                                className={style.select}
+                                required
+                                title={t.formContact.formSelect.labelSelect1.T}
+                            >
+                                {/* option of select */}
+                                {
+                                    t?.formContact?.formSelect?.labelSelect1?.Opt?.map((opt: any, index: number) => (
+                                        <option key={index} value={opt.key}>{opt.value}</option>
+                                    ))
+                                }
+                            </select>
+                            {errors?.project_type?.[0] && <p className="text-red-500 text-sm">{errors?.project_type[0]}</p>}
+                        </div>
+                        <div className={style.formGroup}>
                             {
-                                t?.formContact?.formSelect?.labelSelect1?.Opt?.map((opt:any, index:number)=> (
-                                    <option key={index} value={opt.key}>{opt.value}</option>
-                                ))
+                                (Price) &&
+                                <>
+                                    <label htmlFor="price" className={style.label}>{t.formContact.formSelect.labelSelect2.L}</label>
+
+                                    <select
+                                        id="price"
+                                        name="price"
+                                        value={formValues.price}
+                                        onChange={inputHandleFn}
+                                        className={style.select}
+                                        required
+                                        title={t.formContact.formSelect.labelSelect2.T}
+                                    >
+                                        {/* option of select */}
+                                        {/* we are making the price dynamique in forms we have price for web(OtpWeb) et price for app(OtpApp) */}
+                                        {/* there price are difference same if we have for design and game  */}
+                                        {
+                                            type === "web" &&
+                                            t?.formContact?.formSelect?.labelSelect2?.OptWeb?.map((opt: any, index: number) => (
+                                                <option key={index} value={opt.key}>{opt.value}</option>
+                                            ))
+                                        }
+                                        {
+                                            type === "app" &&
+                                            t?.formContact?.formSelect?.labelSelect2?.OptApp?.map((opt: any, index: number) => (
+                                                <option key={index} value={opt.key}>{opt.value}</option>
+                                            ))
+                                        }
+                                    </select></>
                             }
-                        </select>
-                        {errors?.project_type?.[0] && <p className="text-red-500 text-sm">{errors?.project_type[0]}</p>}
+                            {/* {errors?.price?.[0] && <p className="text-red-500 text-sm">{errors?.price[0]}</p>} */}
+                        </div>
                     </div>
 
                     {/* Message */}
@@ -199,8 +239,8 @@ export default function FormContactCompt({message}:{message:any}) {
                     <button type="submit" disabled={pending} className={style.submitBtn} aria-label="submit contact form">
                         {pending ?
                             <span className={style.btnText}>
-                                <svg className={style.spinner} viewBox="0 0 24 24">
-                                    <circle cx="8" cy="8" r="3" stroke="currentColor" strokeWidth="1" fill="none" />
+                                <svg className={style.spinner} viewBox="0 0 24 24" width={24} height={24}>
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" />
                                 </svg>
                             </span> :
                             <div>
