@@ -98,9 +98,11 @@
     }
   ],
     "workFlow2": {
+      "type":"app",
     "launch": {
       "headText": "Basic Plan",
       "title": "Price",
+      "priceKey":"$270",
       "price": "$85 - $170",
       "btn": "Start Project",
       "content": [
@@ -115,6 +117,7 @@
     "business": {
       "headText": "Standard",
       "title": "Price",
+      "priceKey":"$680",
       "price": "$255 - $680",
       "btn": "Start Project",
       "content": [
@@ -131,7 +134,8 @@
     "interactive": {
       "headText": "Premium",
       "title": "Price",
-      "price": "$680 - $1,700",
+      "priceKey":"$1 700",
+      "price": "$680 - $1 700",
       "btn": "Start Project",
       "content": [
         "Advanced Backend & Database",
@@ -147,6 +151,7 @@
     "custom": {
       "headText": "Enterprise (Custom)",
       "title": "Price",
+      "priceKey":"$1 700+",
       "price": "$1,700+",
       "btn": "Start Project",
       "content": [

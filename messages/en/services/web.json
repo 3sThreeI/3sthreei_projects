@@ -117,9 +117,11 @@
     }
     ],
     "workFlow2": {
+        "type": "web",
         "launch": {
             "headText": "Basic",
             "title": "Price",
+            "priceKey":"$270",
             "price": "$144 – $270",
             "btn": "Start Project",
             "content": [
@@ -134,6 +136,7 @@
         "business": {
             "headText": "Standard",
             "title": "Price",
+            "priceKey":"$540",
             "price": "$270 – $540",
             "btn": "Start Project",
             "content": [
@@ -153,6 +156,7 @@
             "headText": "Premium",
             "title": "Price",
             "btn": "Start Project",
+            "priceKey":"$1 260",
             "price": "$450 – $1,260",
             "content": [
                 "10 to 15 Pages",
@@ -172,6 +176,7 @@
         "custom": {
             "headText": "Custom Platform",
             "title": "Starting Price",
+            "priceKey":"$1 620+",
             "price": "$1,620+",
             "btn": "Start Project",
             "content": [
