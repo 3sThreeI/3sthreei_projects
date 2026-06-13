@@ -20,7 +20,7 @@ export default async function ServicesHero({ messages }: { messages: any }) {
                 {t.servicesHero.headtitle}
             </p>
             <div className={style.cta}>
-                <Link href="#" className={style.btn}>{t.servicesHero.cta}</Link>
+                <Link href={{pathname:"/contact-form"}} className={style.btn}>{t.servicesHero.cta}</Link>
             </div>
         </div>
     )

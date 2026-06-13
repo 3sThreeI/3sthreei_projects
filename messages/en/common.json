@@ -151,5 +151,12 @@
         "title": "Unavailable the page is currently under contrustion 3sthreei",
         "description": "Build custom web, mobile, desktop, game and design start your project ",
         "keywords": []
+    },
+    "documentation":{
+        "e-commerce": {
+            "title":"e-commerce",
+            "description": "",
+            "keywords": []
+        }
     }
 }
