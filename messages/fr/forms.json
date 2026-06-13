@@ -43,6 +43,10 @@
                         "value": "Site web"
                     },
                     {
+                        "key": "app",
+                        "value": "Application (mobile ou de bureau)"
+                    },
+                    {
                         "key": "design",
                         "value": "Design"
                     },
@@ -57,6 +61,54 @@
                     {
                         "key": "marketing",
                         "value": "Marketing"
+                    }
+                ]
+            },
+            "labelSelect2": {
+                "L": "Prix",
+                "T": "Indiquez une fourchette de prix",
+                "OptWeb": [
+                    {
+                        "key": "",
+                        "value": "Choisissez un prix..."
+                    },
+                    {
+                        "key": "150 000F",
+                        "value": "80 000 - 150 000 FCFA"
+                    },
+                    {
+                        "key": "300 000F",
+                        "value": "150 000 – 300 000 FCFA"
+                    },
+                    {
+                        "key": "700 000F",
+                        "value": "250 000 - 700 000 FCFA"
+                    },
+                    {
+                        "key": "900 000F+",
+                        "value": "900 000 FCFA - plus"
+                    }
+                ],
+                "OptApp": [
+                    {
+                        "key": "",
+                        "value": "Choisissez un prix..."
+                    },
+                    {
+                        "key": "100 000F",
+                        "value": "50 000 - 100 000 FCFA"
+                    },
+                    {
+                        "key": "400 000F",
+                        "value": "150 000 – 400 000 FCFA"
+                    },
+                    {
+                        "key": "1 000 000F",
+                        "value": "400 000 – 1 000 000 FCFA"
+                    },
+                    {
+                        "key": "1 000 000F+",
+                        "value": "1 000 000 FCFA et plus"
                     }
                 ]
             }

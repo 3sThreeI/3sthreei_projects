@@ -121,7 +121,7 @@
             "text": "Sauvegardes sécurisées, chiffrement et meilleures pratiques pour protéger vos données."
         }
     ],
-     "workFlow": [
+    "workFlow": [
         {
             "header": "Fonctionnalités",
             "content": [
@@ -234,9 +234,11 @@
         }
     ],
     "workFlow2": {
+        "type": "web",
         "launch": {
             "headText": "Basique",
             "title": "Prix",
+            "priceKey": "150 000F",
             "price": "80 000 - 150 000 FCFA",
             "btn": "Démarrer le projet",
             "content": [
@@ -251,6 +253,7 @@
         "business": {
             "headText": "Standard",
             "title": "Prix",
+            "priceKey": "300 000F",
             "price": "150 000 – 300 000 FCFA",
             "btn": "Démarrer le projet",
             "content": [
@@ -269,6 +272,7 @@
         "interactive": {
             "headText": "Premium",
             "title": "Prix",
+            "priceKey": "700 000F",
             "btn": "Démarrer le projet",
             "price": "250 000 - 700 000 FCFA",
             "content": [
@@ -289,6 +293,7 @@
         "custom": {
             "headText": "Plateforme Personnalisée",
             "title": "Prix",
+            "priceKey": "900 000F+",
             "price": "900 000 FCFA et plus ",
             "btn": "Démarrer le projet",
             "content": [
@@ -344,37 +349,36 @@
     ],
     "process": [
         {
-        "title": "Découverte & Alignement",
-        "content": "Réunion de kickoff pour comprendre votre vision, vos objectifs business, les besoins de votre audience et ce que le succès signifie pour vous. Via des ateliers et recherches ciblés, nous cartographions les opportunités et définissons une direction claire."
-    },
-    {
-        "title": "Planification & Stratégie",
-        "content": "Nous transformons votre vision en un plan concret, fonctionnalités, parcours utilisateur, architecture technique et planning. Des wireframes précoces nous permettent de tester et valider les idées rapidement."
-    },
-    {
-        "title": "Conception & Prototypage",
-        "content": "Votre produit prend vie visuellement et émotionnellement. Nous créons des interfaces intuitives et des prototypes interactifs, qu’il s’agisse d’un dashboard, d’une app mobile, d’un système visuel ou d’un univers de jeu."
-    },
-    {
-        "title": "Développement & Élan",
-        "content": "Nous construisons en sprints efficaces avec un code propre et évolutif. Vous suivez l’avancement en direct, donnez votre feedback et voyez le produit prendre forme rapidement."
-    },
-    {
-        "title": "Tests & Assurance Qualité",
-        "content": "Nous réalisons des tests complets : fonctionnalité, performance, sécurité et retours utilisateurs. Pour les jeux, nous organisons des playtests pour perfectionner l’équilibre et le plaisir."
-    },
-    {
-        "title": "Lancement & Déploiement",
-        "content": "Déploiement fluide sur serveurs et stores, monitoring et formation complète de votre équipe. Nous restons à vos côtés pour un lancement réussi."
-    },
-    {
-        "title": "Élan & Partenariat",
-        "content": "Après le lancement, nous vous accompagnons 30–90 jours avec support gratuit, maintenance, suivi de performance et améliorations continues."
-    }
+            "title": "Découverte & Alignement",
+            "content": "Réunion de kickoff pour comprendre votre vision, vos objectifs business, les besoins de votre audience et ce que le succès signifie pour vous. Via des ateliers et recherches ciblés, nous cartographions les opportunités et définissons une direction claire."
+        },
+        {
+            "title": "Planification & Stratégie",
+            "content": "Nous transformons votre vision en un plan concret, fonctionnalités, parcours utilisateur, architecture technique et planning. Des wireframes précoces nous permettent de tester et valider les idées rapidement."
+        },
+        {
+            "title": "Conception & Prototypage",
+            "content": "Votre produit prend vie visuellement et émotionnellement. Nous créons des interfaces intuitives et des prototypes interactifs, qu’il s’agisse d’un dashboard, d’une app mobile, d’un système visuel ou d’un univers de jeu."
+        },
+        {
+            "title": "Développement & Élan",
+            "content": "Nous construisons en sprints efficaces avec un code propre et évolutif. Vous suivez l’avancement en direct, donnez votre feedback et voyez le produit prendre forme rapidement."
+        },
+        {
+            "title": "Tests & Assurance Qualité",
+            "content": "Nous réalisons des tests complets : fonctionnalité, performance, sécurité et retours utilisateurs. Pour les jeux, nous organisons des playtests pour perfectionner l’équilibre et le plaisir."
+        },
+        {
+            "title": "Lancement & Déploiement",
+            "content": "Déploiement fluide sur serveurs et stores, monitoring et formation complète de votre équipe. Nous restons à vos côtés pour un lancement réussi."
+        },
+        {
+            "title": "Élan & Partenariat",
+            "content": "Après le lancement, nous vous accompagnons 30–90 jours avec support gratuit, maintenance, suivi de performance et améliorations continues."
+        }
     ],
     "testimonialTitle": "Ce que notre clients disent de nous",
     "testimonial": [
-
         {
             "imgUrl": "",
             "name": "Aboubacar Coulibaly",
@@ -402,9 +406,32 @@
         }
     ],
     "mediaMarketing": {
-        "contentText":"3SThreeI est une entreprise spécialisée dans la création d’applications mobiles, de logiciels desktop, de jeux, de sites web et de designs numériques pour tous les types d’appareils. Nous mettons l’accent sur des solutions sécurisées, bien structurées et responsives, adaptées à vos besoins. Notre équipe travaille de manière collaborative avec un processus clair et efficace afin de garantir des résultats de haute qualité. Au-delà du développement, nous vous accompagnons sur le long terme grâce à la maintenance et au suivi continu de vos projets La vidéo ci-dessous présente 3SThreeI et montre comment nous travaillons en équipe et organisons notre workflow Déjà adoptée par de nombreuses entreprises à travers le monde, 3SThreeI continue de se démarquer par son innovation et sa fiabilité. Cliquez sur le bouton ci-dessous pour commencer à discuter de votre projet avec nous.",
+        "contentText": "3SThreeI est une entreprise spécialisée dans la création d’applications mobiles, de logiciels desktop, de jeux, de sites web et de designs numériques pour tous les types d’appareils. Nous mettons l’accent sur des solutions sécurisées, bien structurées et responsives, adaptées à vos besoins. Notre équipe travaille de manière collaborative avec un processus clair et efficace afin de garantir des résultats de haute qualité. Au-delà du développement, nous vous accompagnons sur le long terme grâce à la maintenance et au suivi continu de vos projets La vidéo ci-dessous présente 3SThreeI et montre comment nous travaillons en équipe et organisons notre workflow Déjà adoptée par de nombreuses entreprises à travers le monde, 3SThreeI continue de se démarquer par son innovation et sa fiabilité. Cliquez sur le bouton ci-dessous pour commencer à discuter de votre projet avec nous.",
         "videoURL": "/e-commerce",
         "cta": "Lancez votre projet"
+    },
+    "formTest": {
+        "headTitle": "Votre avis compte beaucoup",
+        "formInput": {
+            "labelInput1": {
+                "L": "Nom complet",
+                "P": "ex. : Prénom Nom",
+                "T": "saisissez votre nom complet"
+            },
+            "labelfile": {
+                "L": "Image",
+                "T": "veuillez téléverser votre fichier",
+                "P": "téléverser une image"
+            }
+        },
+        "formTextarea": {
+            "labelTextarea1": {
+                "L": "Message",
+                "P": "donnez-nous votre avis...",
+                "T": "saisissez votre avis"
+            }
+        },
+        "btn": "Envoyer"
     },
     "footer": {
         "tagline": "Excellence Numérique & Innovation",

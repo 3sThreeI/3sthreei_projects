@@ -117,9 +117,11 @@
         }
     ],
     "workFlow2": {
+        "type":"web",
         "launch": {
             "headText": "Basique",
             "title": "Prix",
+            "priceKey": "150 000F",
             "price": "80 000 - 150 000 FCFA",
             "btn": "Démarrer le projet",
             "content": [
@@ -134,6 +136,7 @@
         "business": {
             "headText": "Standard",
             "title": "Prix",
+            "priceKey": "300 000F",
             "price": "150 000 – 300 000 FCFA",
             "btn": "Démarrer le projet",
             "content": [
@@ -153,6 +156,7 @@
             "headText": "Premium",
             "title": "Prix",
             "btn": "Démarrer le projet",
+            "priceKey": "700 000F",
             "price": "250 000 - 700 000 FCFA",
             "content": [
                 "10 à 15 Pages",
@@ -172,6 +176,7 @@
         "custom": {
             "headText": "Plateforme Personnalisée",
             "title": "Prix",
+            "priceKey": "900 000F+",
             "price": "900 000 FCFA et plus ",
             "btn": "Démarrer le projet",
             "content": [
