@@ -11,7 +11,7 @@ interface ErrorsProps {
     file?: any
 }
 export default function TestimonialForm() {
-    const t = useTranslations("formTestimonial")
+    const t = useTranslations("formTest")
     // -----------------------my state
     const [errors, setErrors] = useState<ErrorsProps>({})
     const [success, setSuccess] = useState(false)
