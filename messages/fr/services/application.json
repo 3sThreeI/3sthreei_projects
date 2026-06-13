@@ -98,9 +98,11 @@
     }
     ],
     "workFlow2": {
+        "type": "app",
         "launch": {
             "headText": "Basique Plan",
             "title": "Prix",
+            "priceKey": "100 000F",
             "price": "50 000 - 100 000 FCFA",
             "btn": "Commencez le Project",
             "content": [
@@ -115,6 +117,7 @@
         "business": {
             "headText": "Standard",
             "title": " Prix",
+            "priceKey": "400 000F",
             "price": "150 000 – 400 000 FCFA",
             "btn": "Commencez le Project",
             "content": [
@@ -132,6 +135,7 @@
             "headText": "Premium",
             "title": "Prix",
             "btn": "Commencez le Project",
+            "priceKey": "1 000 000F",
             "price": "400 000 – 1 000 000 FCFA",
             "content": [
                 "Backend + base de données avancée",
@@ -147,6 +151,7 @@
         "custom": {
             "headText": "Entreprise (sur Mesure)",
             "title": "Prix",
+            "priceKey": "1 000 000F+",
             "price": "1 000 000 FCFA et plus ",
             "btn": "Start Project",
             "content": [
