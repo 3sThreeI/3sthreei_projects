@@ -412,13 +412,13 @@
         "videoURL": "/e-commerce",
         "cta": "Start Your Project"
     },
-    "formTestimonial": {
-        "headTitle": "Your feedback worth much",
+    "formTest": {
+        "headTitle": "We value your feedback",
         "formInput": {
             "labelInput1": {
                 "L": "Full Name",
-                "P": "e.g.ex:firstName LastName",
-                "T": "type your fullname"
+                "P": "e.g.ex: First Name Last Name",
+                "T": "type your Full Name"
             },
             "labelfile": {
                 "L": "Image",
