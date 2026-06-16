@@ -1,0 +1,109 @@
+{
+    "title": "E-commerce Documentation",
+    "projImgUrl": "/project1.png",
+    "projImgAlt": "E-commerce website designed to help customers grow their business",
+    "subtitle": "E-Commerce That Scales With You",
+    "desc": "Whether you're managing a small catalog or a large-scale storefront, this platform scales effortlessly with your business. Built for traffic surges, real-time inventory updates, and uninterrupted reliability, so your customers always enjoy a smooth shopping experience.",
+    "ProblemStat": {
+        "title": "Problem Statement",
+        "text1": "Businesses without an online store in Ghana are losing half their potential customers to competitors who go digital. Non-Ghanaians in Accra shop online regularly, but if your business isn't online, you're invisible to them",
+        "text2Special": "This e-commerce platform solves that ",
+        "text2": "by making it easy for any business to launch a professional online store, no technical skills needed.",
+        "WhoExp": {
+            "title": " Who Experiences This Problem? (And Why It Matters)",
+            "Exp": [
+                {
+                    "contentSubT": "Small Business Owners in Ghana",
+                    "ExpList": [
+                        "Limited resources for physical + online stores",
+                        "No technical knowledge to build e-commerce sites",
+                        "Too busy running the store, no time for digital growth",
+                        "Lose online sales to competitors"
+                    ]
+                },
+                {
+                    "contentSubT": "Retail Stores Going Online",
+                    "ExpList": [
+                        "Can't sync store inventory with online systems",
+                        "Data inconsistency between POS and e-commerce",
+                        "Sales staff stuck handling online orders",
+                        "Inventory mistakes, overselling, stockouts"
+                    ]
+                },
+                {
+                    "contentSubT": "Customers Who Want Online Shopping",
+                    "ExpList": [
+                        "80% research products online before buying",
+                        "Want 24/7 shopping without visiting stores",
+                        "Prefer digital convenience over traditional shopping",
+                        "Leave businesses without online stores"
+                    ]
+                },
+                {
+                    "contentSubT": "Businesses Managing Multi-Channel Inventory",
+                    "ExpList": [
+                        "Can't track product availability across channels",
+                        "Risk of overstocking or stockouts when unsynced",
+                        "Need real-time inventory updates",
+                        "Poor visibility = lost customers"
+                    ]
+                }
+            ]
+        },
+        "whyMatter": {
+            "title": "Why This Matters",
+            "solving": [
+                "50%+ of customers (61% of non-Ghanaians in Accra shop online)",
+                "Revenue from missed online sales",
+                "Trust from inventory errors",
+                "Ability to scale operations",
+                "Ground to competitors who go digital"
+            ]
+        }
+    },
+    "features": {
+        "title": "Feature",
+        "featureList": [
+            {
+                "key": "Product Management",
+                "value": [
+                    "Add products with required details like name, price, description, and stock",
+                    "Update products instantly to change price, stock, or information",
+                    "Delete products when they are no longer available or out of stock"
+                ]
+            },
+            {
+                "key": "Order Management",
+                "value": [
+                    "Accept orders with instant confirmation",
+                    "View order reports by week, month, or year",
+                    "Track shipping status in real time for customers"
+                ]
+            },
+            {
+                "key": "Secure Payment Gateway",
+                "value": [
+                    "Secure payments using Paystack with encryption and trust",
+                    "Flexible payment dashboard supporting Paystack or cash",
+                    "Automatic tracking of all payment transactions"
+                ]
+            },
+            {
+                "key": "User Authentication",
+                "value": [
+                    "Secure login system for admins and clients",
+                    "Manage users with roles, permissions, and access control",
+                    "Admin dashboard for full control of products, orders, and payments"
+                ]
+            },
+            {
+                "key": "Analytics (Weekly, Monthly, Yearly reports)",
+                "value": [
+                    "Monthly charts to track sales trends over time",
+                    "Yearly charts to analyze long-term growth",
+                    "Weekly charts to monitor short-term performance"
+                ]
+            }
+        ]
+    }
+}
