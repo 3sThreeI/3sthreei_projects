@@ -163,5 +163,21 @@
     "title": "Unavailable the page is currently under contrustion 3sthreei",
     "description": "Build custom web, mobile, desktop, game and design start your project ",
     "keywords": []
+  },
+  "documentation": {
+    "e-commerce": {
+      "title": "Documentation E-Commerce & Guide de Projet | Tutoriel Next.js Ecommerce",
+      "description": "Documentation complète du projet e-commerce par 3sthreei. Apprenez à installer, configurer et personnaliser votre panier d'achat Next.js avec des guides étape par étape et des exemples.",
+      "keywords": [
+        "documentation ecommerce",
+        "guide projet ecommerce",
+        "ecommerce next.js",
+        "tutoriel panier d'achat",
+        "configuration ecommerce",
+        "projet ecommerce 3sthreei",
+        "boilerplate ecommerce",
+        "template ecommerce nextjs"
+      ]
+    }
   }
 }
