@@ -1,0 +1,133 @@
+import { Metadata } from "next"
+import { getTranslations } from "next-intl/server"
+import style from "./docs.module.css"
+import Image from "next/image"
+import { MdLabelImportant } from "react-icons/md";
+import { SiOrigin } from "react-icons/si";
+import { VscError } from "react-icons/vsc";
+import FeatureCarousel from "@/app/[locale]/assets/docs/e-commerceCarousel";
+// import { useState } from "react";
+
+
+export async function generateMetadata({ params }: { params: { locale: string, documentation: string[] } }): Promise<Metadata> {
+    const { locale, documentation } = params
+    const file = documentation?.at(-1) || documentation?.[documentation.length - 1] || 'e-commerce'
+    const message = await getTranslations(`documentation.${file}`)
+    const t = message
+    const sitename = await getTranslations("sitename") as any
+    return {
+        title: t("title"),
+        description: t("description"),
+        keywords: t.raw("keywords").join(", "),
+        openGraph: {
+            title: t('title'),
+            description: t("description"),
+            siteName: sitename,
+            url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/projects/`,
+            type: "article",
+        },
+        alternates: {
+            canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/projects/`,
+            languages: {
+                fr: `${process.env.NEXT_PUBLIC_SITE_URL}/fr`,
+                en: `${process.env.NEXT_PUBLIC_SITE_URL}/en`,
+            }
+        },
+        robots: {
+            index: true,
+            follow: true,
+        },
+        authors: [{ name: "3sthreei" }],
+        creator: "3sthreei",
+    }
+}
+type ListExpProps = {
+    contentSubT: string,
+    ExpList: string[]
+}
+export default async function Documentation({ params }: { params: any }) {
+    const { locale, documentation } = await params
+    const file = documentation?.at(-1) || "1"
+    const message = (await import(`@/messages/${locale}/documentation/${file}.json`))
+    const t = await message
+    const ListExpt = t?.ProblemStat?.WhoExp?.Exp as ListExpProps[]
+    console.log(`documents ${file} page rendered`)
+    const openCard = () => {
+
+    }
+    return (
+        <main className={style.container}>
+            <section className={style.hero}>
+                <div className={style.card}>
+                    <h1 className={style.title}>{t.title}</h1>
+                </div>
+                <figure>
+                    <Image src={t.projImgUrl} alt={t.projImgAlt} width={900} height={400} loading="lazy" className={style.image} />
+                </figure>
+                <div className={style.heroText}>
+                    <h2 className={style.subtitle}>{t.subtitle}</h2>
+                    <p className={style.desc}>{t.desc}</p>
+                </div>
+            </section>
+            <article>
+                {/* Problem statement  */}
+                <section className={style.ProblemContainer}>
+                    <div className={style.ProblemStat}>
+                        <h2 className={style.subtitle}>{t.ProblemStat.title}</h2>
+                        <p className={style.contentText}> {t.ProblemStat.text1}</p>
+                        <p className={style.contentText2}>
+                            <label className={style.label}>{t.ProblemStat.text2Special}</label>{t.ProblemStat.text2}
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className={style.label}>
+                            <MdLabelImportant className={style.contentIcon} /> {t.ProblemStat.WhoExp.title}
+                        </h3>
+                        <div className={style.block}>
+                            {
+                                ListExpt?.map((L, I) => (
+                                    <div key={I}>
+                                        {L?.contentSubT && <h4 className={style.contentSubT}>{L.contentSubT}</h4>}
+                                        <ul className={style.ul}>
+                                            {
+                                                L?.ExpList?.map((l: string, i: number) => (
+                                                    <li key={i} className={style.li}>
+                                                        <SiOrigin className={style.subContentIcons} />
+                                                        {l}
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </div>
+                                ))
+                            }
+
+                        </div>
+                    </div>
+                    {/* why this matters */}
+                    <div>
+                        <h5 className={style.label}>
+                            <MdLabelImportant className={style.contentIcon} /> {t.ProblemStat.whyMatter.title}
+                        </h5>
+                        <div >
+                            {
+                                t.ProblemStat?.whyMatter?.solving?.map((l: string, i: number) => (
+                                    <ul className={style.ul} key={i}>
+                                        <li className={style.li}>
+                                            <VscError className={style.danger_icons} /> {l}
+                                        </li>
+                                    </ul>
+                                ))
+                            }
+                        </div>
+                    </div>
+                </section>
+                {/* feature secture and carouselle*/}
+                <section className={style.featureContainer}>
+                    {/* carousel */}
+                   <FeatureCarousel message={t.features}/>
+                </section>
+            </article>
+        </main>
+    )
+}

@@ -1,0 +1,84 @@
+@reference "tailwindcss";
+
+.container{
+    @apply px-5 my-0 
+}
+.hero{
+    @apply w-full space-y-7
+}
+.title{
+    @apply px-3 py-2 bg-green-300 max-w-[210px] rounded-full text-green-950 text-sm
+}
+.image{
+    @apply bg-cover object-cover mx-auto rounded-lg
+}
+.heroText{
+   @apply max-w-[700px] pl-3 bg-gray-700 text-white rounded-3xl py-3 shadow-[inset_3px_3px_8px_rgba(0,0,0,0.3),inset_-3px_-3px_8px_rgba(255,255,255,0.1)] space-y-3 mb-5
+}
+ .subtitle{
+    @apply font-bold sm:text-[1.3rem] text-[1.2rem] text-(--nav-text-color)
+}
+.heroText .desc{
+    @apply font-medium text-[0.9rem] sm:text-[1rem]
+}
+/* Problem statement */
+.ProblemContainer{
+    @apply max-w-full sm:ml-5 text-[0.9rem] sm:text-[1rem] space-y-7
+}
+.ProblemStat{
+    @apply max-w-[700px]
+}
+.block{
+    @apply sm:grid sm:grid-cols-2 mx-auto flex flex-wrap
+}
+.contentText{
+    @apply ml-5 opacity-85
+}
+.contentText2{
+    @apply ml-5 
+}
+.contentSubT{
+    @apply font-bold sm:text-[1.3rem] text-[1.2rem] pl-5 opacity-95 mt-3
+}
+.ul{
+    @apply opacity-90 pl-10 space-y-2
+}
+.contentIcon{
+    @apply inline text-2xl text-(--nav-text-color) 
+}
+.subContentIcons{
+    @apply inline text-[0.5rem] text-(--nav-text-color) mr-3 
+}
+.danger_icons{
+    @apply text-red-500 inline text-center text-[1rem] sm:text-[1.5rem]
+}
+.label{
+    @apply font-bold text-(--nav-text-color) opacity-90 items-center
+}
+
+/* ----------------feature ---------------*/
+.featureContainer{
+    @apply grid grid-cols-1 sm:grid-cols-2 justify-around my-5 px-3 gap-3
+}
+
+.feat_card{
+    @apply  cursor-pointer
+}
+.feat_card{
+    @apply mt-7
+}
+.feat_card .feat_li{
+    @apply mb-5 bg-gray-700 py-2 px-3 rounded-xl text-(--nav-text-color) font-bold content-center
+}
+.feat_Content{
+    @apply ml-3 opacity-80 text-white text-[0.9rem] 
+}
+.carouselWrapper{
+    @apply relative w-full content-center items-center px-14 overflow-hidden
+}
+.carouselItem{
+    @apply items-center px-0
+}
+.imgContainer{
+    @apply bg-gray-800 min-w-full min-h-[300px] 
+}
