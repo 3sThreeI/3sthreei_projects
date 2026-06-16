@@ -29,7 +29,6 @@
         "faq": "FAQ",
         "about": "About Us"
     },
-   
     "home": {
         "title": "Top Web, Mobile App, Gaming & Design Services | Ghana  ",
         "description": " Leading web development, mobile apps, gaming & UI/UX design in Ghana . Custom solutions for businesses—fast, affordable, mobile-first. Get a free quote today!",
@@ -145,18 +144,26 @@
     },
     "contactForm": {
         "title": "Hire a Web, Mobile App & Desktop Developer in Ghana",
-        "description":" Full-stack developer in Ghana specializing in web, mobile app & desktop development. Expert in React, Flutter, Laravel, Next.js. Get a free quote today"
+        "description": " Full-stack developer in Ghana specializing in web, mobile app & desktop development. Expert in React, Flutter, Laravel, Next.js. Get a free quote today"
     },
     "unavailable": {
         "title": "Unavailable the page is currently under contrustion 3sthreei",
         "description": "Build custom web, mobile, desktop, game and design start your project ",
         "keywords": []
     },
-    "documentation":{
+    "documentation": {
         "e-commerce": {
-            "title":"e-commerce",
-            "description": "",
-            "keywords": []
+            "title": "E-Commerce Documentation & Project Guide | Next.js Ecommerce Tutorial",
+            "description": "Complete e-commerce project documentation by 3sthreei. Learn how to install, configure, and customize your Next.js shopping cart with step-by-step guides and examples",
+            "keywords": [
+                "ecommerce documentation",
+                "ecommerce project guide",
+                "next.js ecommerce",
+                "shopping cart tutorial",
+                "ecommerce setup guide",
+                "3sthreei ecommerce project",
+                "ecommerce boilerplate"
+            ]
         }
     }
 }
