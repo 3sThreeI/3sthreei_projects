@@ -4,7 +4,7 @@
         "subText": "explore how we help startup and businesses turn ideas into powerful digital products",
         "CallToAction": "Contactez-nous gratuitement"
     },
-    "filters": ["Application Mobile", "Site Web", "Design", "Jeux Video"],
+    "filters": ["Application Mobile", "Site Web"],
     "portfolio": [
         {
             "img": "/project1.png",
