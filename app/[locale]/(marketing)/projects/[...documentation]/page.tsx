@@ -6,6 +6,8 @@ import { MdLabelImportant } from "react-icons/md";
 import { SiOrigin } from "react-icons/si";
 import { VscError } from "react-icons/vsc";
 import FeatureCarousel from "@/app/[locale]/assets/docs/e-commerceCarousel";
+import { FaServer, FaDatabase, FaCreditCard, FaBolt } from "react-icons/fa";
+import Link from "next/link";
 // import { useState } from "react";
 
 
@@ -14,6 +16,7 @@ export async function generateMetadata({ params }: { params: { locale: string, d
     const file = documentation?.at(-1) || documentation?.[documentation.length - 1] || 'e-commerce'
     const message = await getTranslations(`documentation.${file}`)
     const t = message
+
     const sitename = await getTranslations("sitename") as any
     return {
         title: t("title"),
@@ -46,6 +49,12 @@ type ListExpProps = {
     ExpList: string[]
 }
 export default async function Documentation({ params }: { params: any }) {
+    const TechIcons = [
+        FaServer,
+        FaDatabase,
+        FaCreditCard,
+        FaBolt
+    ]
     const { locale, documentation } = await params
     const file = documentation?.at(-1) || "1"
     const message = (await import(`@/messages/${locale}/documentation/${file}.json`))
@@ -125,9 +134,43 @@ export default async function Documentation({ params }: { params: any }) {
                 {/* feature secture and carouselle*/}
                 <section className={style.featureContainer}>
                     {/* carousel */}
-                   <FeatureCarousel message={t.features}/>
+                    <FeatureCarousel message={t.features} />
+                </section>
+                <section className={style.tech_use}>
+                    <div className={style.tech_inner}>
+                        <div className={style.tech_header}>
+                            <span className={style.techEyebrow}>Tech stack</span>
+                            <h2 className={style.subtitle}>{t.tech.title}</h2>
+                        </div>
+                        <div className={style.tecList_box}>
+                            {
+                                t.tech.list.map((L: any, I: number) => (
+                                    <article className={style.techCard} key={I}>
+                                        <div className={style.techCardHeader}>
+                                            <span className={style.techCategoryDot}></span>
+                                            <h3 className={style.techCategory}>{L.key}</h3>
+                                        </div>
+                                        <ul className={style.techItems}>
+                                            {
+                                                L.value.map((l: any, i: number) => (
+                                                    <li className={style.techItem} key={i}>
+                                                        <span className={style.techItemKey}>{l.key}</span>
+                                                        <p className={style.techItemValue}>{l.value}</p>
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </article>
+                                ))
+                            }
+                        </div>
+                    </div>
                 </section>
             </article>
+            {/* call to action */}
+            <section className={style.btn}>
+                <Link href="/contact-form" className={style.cta}>{t.cta}</Link>
+            </section>
         </main>
     )
 }
