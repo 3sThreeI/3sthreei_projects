@@ -14,11 +14,11 @@
             },
             {
                 "name": "Gaming",
-                "url": "/services/gaming"
+                "url": "/unavailable"
             },
             {
                 "name": "Web Design",
-                "url": "/services/design"
+                "url": "/unavailable"
             }
         ],
         "project": "Projects",

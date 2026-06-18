@@ -62,7 +62,7 @@ export default function PhoneNavbar({ home, keyService, servicesValue, project, 
                         <li> <Link href='/projects'>{project}</Link></li>
                         <li> <Link href='/about'>{about}</Link></li>
                         <li> <Link href='/faq'>{faq}</Link></li>
-                        <li> <Link href='/blog'>{blog}</Link></li>
+                        {/* <li> <Link href='/blog'>{blog}</Link></li> */}
                         <li> <Link href='/blog'>{signin}</Link></li>
                     </ul>
                 </div>
