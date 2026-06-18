@@ -105,5 +105,89 @@
                 ]
             }
         ]
-    }
+    },
+    "tech": {
+        "title": "Tech Stack",
+        "list": [
+            {
+                "key": "Frontend",
+                "value": [
+                    {
+                        "key": "React",
+                        "value": "Fast, modern UI with reusable components"
+                    }
+                ]
+            },
+            {
+                "key": "Backend",
+                "value": [
+                    {
+                        "key": "Node.js",
+                        "value": "Scalable server-side JavaScript"
+                    },
+                    {
+                        "key": "Express",
+                        "value": "Lightweight REST API framework"
+                    }
+                ]
+            },
+            {
+                "key": "Database",
+                "value": [
+                    {
+                        "key": "MySQL",
+                        "value": "Relational database (for structured data)"
+                    },
+                    {
+                        "key": "MongoDB",
+                        "value": "Flexible NoSQL database (for dynamic data)"
+                    },
+                    {
+                        "key": "User-selectable",
+                        "value": "Pick MySQL or MongoDB based on your needs"
+                    }
+                ]
+            },
+            {
+                "key": "Real-Time Features",
+                "value": [
+                    {
+                        "key": "Socket.io",
+                        "value": "Real-time communication & live updates"
+                    }
+                ]
+            },
+            {
+                "key": "Payments",
+                "value": [
+                    {
+                        "key": "Paystack",
+                        "value": "Secure payment gateway (cards, mobile money, cash)"
+                    }
+                ]
+            },
+            {
+                "key": "Additional Tools",
+                "value": [
+                    {
+                        "key": "Git",
+                        "value": "Version control"
+                    },
+                    {
+                        "key": "REST APIs",
+                        "value": "API communication"
+                    },
+                    {
+                        "key": "CORS",
+                        "value": "Cross-origin resource sharing"
+                    },
+                    {
+                        "key": "JWT Authentication",
+                        "value": "Authentication and authorization"
+                    }
+                ]
+            }
+        ]
+    },
+    "cta": "Get started"
 }

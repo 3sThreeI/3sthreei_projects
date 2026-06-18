@@ -321,32 +321,38 @@
         {
             "img": "/project1.png",
             "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
+            "bgText": "this is the text display for gackground",
+            "projectUrl": "/projects/view/docs/e-commerce"
         },
         {
             "img": "/project1.png",
             "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
+            "bgText": "this is the text display for gackground",
+            "projectUrl": "/projects/view/docs/e-commerce"
         },
         {
             "img": "/project1.png",
             "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
+            "bgText": "this is the text display for gackground",
+            "projectUrl": "/projects/view/docs/e-commerce"
         },
         {
             "img": "/project1.png",
             "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
+            "bgText": "this is the text display for gackground",
+            "projectUrl": "/projects/view/docs/e-commerce"
         },
         {
             "img": "/project1.png",
             "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
+            "bgText": "this is the text display for gackground",
+            "projectUrl": "/projects/view/docs/e-commerce"
         },
         {
             "img": "/project1.png",
             "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
+            "bgText": "this is the text display for gackground",
+            "projectUrl": "/projects/view/docs/e-commerce"
         }
     ],
     "process": [
@@ -445,13 +451,13 @@
         "service_design": "UI/UX Design",
         "company_title": "Company",
         "about": "About Us",
-        "portfolio": "Portfolio",
-        "process": "Our Process",
-        "contact": "Contact",
+        "project": "Project",
+        "faq": "FaQ",
+        "home": "Home",
         "contact_title": "Get In Touch",
         "email": "info@3sthreei.com",
         "phone": "+233 592 233 681 | +223 91-71-68-29",
-        "location": "Dakar, Senegal",
+        "location": "Ghana, Accra",
         "rights_reserved": "All Rights Reserved. Built with excellence.",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service"
