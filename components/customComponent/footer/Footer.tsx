@@ -26,10 +26,10 @@ export default async function Footer() {
                         <div className={styles.column}>
                             <h4 className={styles.columnTitle}>{t('services_title')}</h4>
                             <ul className={styles.links}>
-                                <li><Link href="#services">{t('service_web')}</Link></li>
-                                <li><Link href="#services">{t('service_mobile')}</Link></li>
-                                <li><Link href="#services">{t('service_game')}</Link></li>
-                                <li><Link href="#services">{t('service_design')}</Link></li>
+                                <li><Link href="/services/web">{t('service_web')}</Link></li>
+                                <li><Link href="/services/application">{t('service_mobile')}</Link></li>
+                                <li><Link href="/unavailable">{t('service_game')}</Link></li>
+                                <li><Link href="/unavailable">{t('service_design')}</Link></li>
                             </ul>
                         </div>
 
@@ -37,10 +37,10 @@ export default async function Footer() {
                         <div className={styles.column}>
                             <h4 className={styles.columnTitle}>{t('company_title')}</h4>
                             <ul className={styles.links}>
-                                <li><Link href="#about">{t('about')}</Link></li>
-                                <li><Link href="#portfolio">{t('portfolio')}</Link></li>
-                                <li><Link href="#process">{t('process')}</Link></li>
-                                <li><Link href="#contact">{t('contact')}</Link></li>
+                                <li><Link href="/about">{t('about')}</Link></li>
+                                <li><Link href="/projects">{t('project')}</Link></li>
+                                <li><Link href="/faq">{t('faq')}</Link></li>
+                                <li><Link href="/">{t('home')}</Link></li>
                             </ul>
                         </div>
 

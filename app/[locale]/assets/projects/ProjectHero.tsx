@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server"
 import style from "./project.module.css"
+import Link from "next/link"
 export default async function ProjectHero({message}:{message:any}) {
   const t = await message.ProjectHero
   return (
@@ -21,9 +22,9 @@ export default async function ProjectHero({message}:{message:any}) {
           </p>
 
           <div className={style.card_btn}>
-            <button className={style.btn}>
+            <Link href="/contact-form" className={style.btn}>
               {t.CallToAction}
-            </button>
+            </Link >
           </div>
         </div>
       </div>

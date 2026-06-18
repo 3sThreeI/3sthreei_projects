@@ -1,11 +1,13 @@
 import style from "./portfolio.module.css"
 import { getTranslations } from "next-intl/server"
+import Link from "next/link";
 import { FaEye } from "react-icons/fa";
 
 type PortfolioSchema = {
     img: string,
     alt: string,
-    bgText: string
+    bgText: string,
+    projectUrl:string
 }
 export default async function Portfolio() {
     const t = await getTranslations()
@@ -19,8 +21,10 @@ export default async function Portfolio() {
                         items.map((item, index) => (
                             <div key={index} className={style.card}>
                                 <div className={style.background}>
-                                    <FaEye className={style.icon}/>
-                                    <p className={style.bgText}>{item.bgText}</p>
+                                    <Link href={item.projectUrl}>
+                                        <FaEye className={style.icon} />
+                                        <p className={style.bgText}>{item.bgText}</p>
+                                    </Link>
                                 </div>
                                 {
                                     item.img ?
