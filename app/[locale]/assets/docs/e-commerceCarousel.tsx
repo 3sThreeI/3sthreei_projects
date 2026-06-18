@@ -10,6 +10,7 @@ interface listProps {
 }
 export default function FeatureCarousel(message: any) {
     const [open, setOpen] = useState(null)
+ 
     if (!message) return null
     const t = message.message
     const featureList = t.featureList as listProps[]
@@ -28,13 +29,13 @@ export default function FeatureCarousel(message: any) {
                 }}>
                     <CarouselContent className={style.cards}>
                         <CarouselItem className={style.carouselItem}>
-                                    {/* // if the image available we will display */}
-                                    <div className={style.imgContainer}>
-                                    </div>
+                            {/* // if the image available we will display */}
+                            <div className={style.imgContainer}>
+                            </div>
                         </CarouselItem>
                     </CarouselContent>
-                    <CarouselPrevious className={style.carouselBtn}/>
-                    <CarouselNext className={style.carouselBtn}/>
+                    <CarouselPrevious className={style.carouselBtn} />
+                    <CarouselNext className={style.carouselBtn} />
                 </Carousel>
             </div>
             <div className={style.feature}>
