@@ -1,5 +1,16 @@
 {
     "sitename": "3SThreeI",
+    "signIn": {
+        "title": "Sign-In",
+        "description": "Log in to your account to view the latest changes in your project",
+        "keywords": [
+            "3sthreei",
+            "3s3i",
+            "threeSthreeI",
+            "Sign-In",
+            "log-In"
+        ]
+    },
     "navbar": {
         "home": "Home",
         "keyservice": "services",
