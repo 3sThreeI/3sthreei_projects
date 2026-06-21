@@ -49,7 +49,7 @@ export default function FormContactCompt({ message }: { message: any }) {
     }, [formValues])
 
 
-    const HandleSubmit = async (e: React.FormEvent) => {
+    const HandleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
         e.preventDefault();
         setPending(true)
         setErrors({})
