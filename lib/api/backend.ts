@@ -3,7 +3,7 @@ export async function callBackend<T>(
     body:any,
     method: 'POST' | 'Get' | 'PUT' | 'DELETE' = 'POST'
 ):Promise<T>{
-    const resp = await fetch(`${process.env.BACKEND_URL}${path}`, {
+    const resp = await fetch(`http://localhost:8440${path}`, {
         method,
         headers:{
             'Content-Type': 'application/json',
