@@ -1,16 +1,20 @@
 "use client"
+import { ParamProps } from "@/app/[locale]/(marketing)/about/page"
 import style from "@/app/[locale]/assets/testimonial/testimonial.module.css"
 import { testimonialSchema } from "@/lib/validation/testimonial"
 import { useLocale, useTranslations } from "next-intl"
 import React, { useEffect, useState } from "react"
+import toast, { Toaster } from "react-hot-toast"
+import { any, file } from "zod"
 
 interface ErrorsProps {
     fullname?: string[],
     feedback?: string[],
     message?: string[],
-    file?: any
+    file?: string[0]
 }
 export default function TestimonialForm() {
+    // console.log("Locale: ", locale)
     const t = useTranslations("formTest")
     // -----------------------my state
     const [errors, setErrors] = useState<ErrorsProps>({})
@@ -19,8 +23,7 @@ export default function TestimonialForm() {
     const [formValues, SetFormValues] = useState({
         fullname: "",
         feedback: "",
-        message: "",
-        file: null
+        file: null as File | null
     })
     useEffect(() => {
         if (!formValues.fullname && !formValues.feedback && !formValues.file) return
@@ -38,25 +41,75 @@ export default function TestimonialForm() {
         setPending(true)
         setErrors({})
 
+        const formdata = new FormData()
+        // Object.entries(formValues).forEach(([key, value]) => {
+        //     if (key !== "file") {
+        //         if (value) formdata.append(key, value)
+        //     }
+        //     if (key == "file" && value) {
+        //         console.log("enterred here")
+        //         formdata.append("Img_url", value)
+        //     }
+        // })
+        formdata.append("fullname", formValues.fullname)
+        formdata.append("feedback", formValues.feedback)
+        formdata.append("Img_url", formValues.file!)
+        // console.log("JSON FORMAT OF FormData: ", JSON.parse(formdata))
         try {
-            const resp = await fetch("/api/testimonial", {
+            const resp = await fetch("/api/customers/feedback", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formValues)
+                headers: {"Accept-Language": "fr",},
+                body: formdata
             })
             const data = await resp.json()
 
             if (!resp.ok) {
-                setErrors(data.details || { message: [data.error] } || { message: "Back-end failed" })
-                console.log('❌ Details object:', data.details)
+                setErrors(data.details || { message: [data.errors || "Back-end failed"] })
+                // console.log('❌ Details object:', data)
+                toast.error(data.errors || data.details || "Back-end failed", {
+                    style: {
+                        border: '1px solid #713200',
+                        padding: '16px',
+                        color: '#713200',
+                    },
+                    iconTheme: {
+                        primary: '#713200',
+                        secondary: '#FFFAEE',
+                    },
+                });
             } else {
                 setSuccess(true)
-                SetFormValues({ fullname: '', feedback: '', file: null, message: "" })
-                console.log("successFull message: ", data.message)
+                SetFormValues({ fullname: '', feedback: '', file: null  })
+                // console.log("Sumbit successFully: ", data)
+                toast.success(data.message || data.data.message || "Successfully", {
+                style: {
+                    border: '1px solid green',
+                    padding: '16px',
+                    color: 'green',
+                },
+                iconTheme: {
+                    primary: 'green',
+                    secondary: 'white',
+                },
+            })
+            console.log('My image files : ', formValues)
             }
-        } catch (error) {
+            
+        } catch (error:any) {
             setErrors({ message: ['Network error'] })
-            console.log("NETWORK ERROR TRY LATER", error)
+            // console.log("NETWORK ERROR TRY LATER", error)
+            toast.error(error.message, {
+                duration: 10000,
+                style: {
+                    border: '1px solid #713200',
+                    padding: '16px',
+                    color: '#713200',
+                },
+                iconTheme: {
+                    primary: '#713200',
+                    secondary: '#FFFAEE',
+                },
+            });
         } finally {
             setPending(false)
         }
@@ -66,21 +119,21 @@ export default function TestimonialForm() {
     ) => {
         const { name, value } = e.target;
 
-        if (e.target instanceof HTMLInputElement && e.target.type === "file") {
-            SetFormValues(prev => ({
-                ...prev,
-                // file: e.target.files?.[0] || nullx
-            }));
-            return;
-        }
-
         SetFormValues(prev => ({
             ...prev,
             [name]: value
         }));
     };
+    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        console.log("event:", e.target)
+        SetFormValues(prev => ({
+            ...prev,
+            file: e.target.files?.[0] ?? null
+        }))
+    }
     return (
         <div className={style.formTest}>
+            <div><Toaster position="top-right" /></div>
             <form action="" onSubmit={HandleSubmit} className={style.formContainer}>
                 <h1 className={style.title}>Share Your Experience</h1>
                 <div className={style.formGroup}>
@@ -115,13 +168,13 @@ export default function TestimonialForm() {
                 <div className={style.formGroup}>
                     <label htmlFor="file" className={style.lable}>{t("formInput.labelfile.L")}</label>
                     <input type="file" name="file" id="file"
-                        onChange={inputHandleFn}
+                        onChange={handleFileChange}
                         placeholder={t("formInput.labelfile.P")}
                         title={t("formInput.labelfile.T")}
                         className={style.input}
                         required
                     />
-                    {errors?.file?.[0] && <p className="text-red-500 text-sm">{errors?.file[0]}</p>}
+                    {errors?.file?.[0] && <p className="text-red-500 text-sm">{errors?.file?.[0]}</p>}
                 </div>
                 <button type="submit" disabled={pending} className={style.submitBtn} aria-label="submit contact form">
                     {pending ?
