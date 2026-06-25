@@ -15,9 +15,9 @@ type Props = {
   params: { locale: string };
 };
 
-export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
+export async function generateMetadata(params:Promise<{locale:string}>): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale:locale, namespace: 'home' })
+  const t = await getTranslations({ locale: locale, namespace: 'home' })
   const sitename = await getTranslations('sitename') as any
   return {
     title: t('title'),
@@ -38,13 +38,36 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
       ]
     },
     alternates: {
-    canonical: `/${locale}`,
-  },
+      canonical: `/${locale}`,
+    },
   }
 }
+async function fetchTestimonials() {
+  console.log("Publick backend url", process.env.NEXT_PUBLIC_BACKEND_URL)
+  try {
+    const resp = await fetch(
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/customers/feedback/`,
+      {
+          next: { revalidate: 60 },
+      }
+    );
 
+    if (!resp.ok) {
+      console.log("getting tetimonial failed: ")
+      return [];
+    }
+
+    const data = await resp.json();
+    console.log("getting tetimonial successfully: ", data)
+    return data.response ?? [];
+  } catch (error) {
+    console.error("Failed to fetch testimonials:", error);
+    return [];
+  }
+}
 export default async function MarketingPage() {
-  // const t = await useTranslations()
+console.log("BACKEND:", process.env.NEXT_PUBLIC_BACKEND_URL);
+  const feedback = await fetchTestimonials()
   return (
     <main>
       <Hero />
@@ -56,31 +79,31 @@ export default async function MarketingPage() {
       <section>
         <WorkingWith />
       </section>
-       {/*---------------------------- why choose us Section ---------------------------- */}
-       <section >
+      {/*---------------------------- why choose us Section ---------------------------- */}
+      <section >
         {/* <WhyChooseUs /> */}
-       </section>
-       {/*---------------------------- Process Section ---------------------------- */}
-       <section>
+      </section>
+      {/*---------------------------- Process Section ---------------------------- */}
+      <section>
         <WorkingProcess />
-       </section>
-       {/*---------------------------- WorkFlow Section ---------------------------- */}
-       <section>
+      </section>
+      {/*---------------------------- WorkFlow Section ---------------------------- */}
+      <section>
         {/* working flow is the table and the card of price of website and features */}
         <WorkingFlow />
-       </section>
-       {/*---------------------------- video Section ---------------------------- */}
-       <section>
+      </section>
+      {/*---------------------------- video Section ---------------------------- */}
+      <section>
         <VideoMarketing />
-       </section>
-       {/*---------------------------- Portfolio Section ---------------------------- */}
-       <section>
+      </section>
+      {/*---------------------------- Portfolio Section ---------------------------- */}
+      <section>
         <Portfolio />
-       </section>
-       {/*---------------------------- Testimonial Section ---------------------------- */}
-       <section>
-        <Testimonial />
-       </section>
+      </section>
+      {/*---------------------------- Testimonial Section ---------------------------- */}
+      <section>
+        <Testimonial feedback={feedback} />
+      </section>
     </main>
   );
 }
