@@ -42,7 +42,7 @@ export default function SignUpComp(messages: any) {
             const data = await resp.json()
             if (!resp.ok) {
                 setSuccess(false)
-                console.log('❌ Full error details:', data.errors)
+                // console.log('❌ Full error details:', data.errors)
                 setError(data.errors)
                 toast.error(error, {
                     style: {
@@ -57,7 +57,7 @@ export default function SignUpComp(messages: any) {
                 });
                 return
             }
-            console.log("data", data)
+            // console.log("data", data)
             setSuccess(true)
             return toast.success(data.message, {
                 style: {
@@ -70,9 +70,11 @@ export default function SignUpComp(messages: any) {
                     secondary: 'white',
                 },
             })
-        } catch (err) {
-            console.log("NETWORK ERROR TRY LATER", err)
-            toast.error(error, {
+        } catch (err:any) {
+
+            // console.log("NETWORK ERROR TRY LATER", err)
+            setError(err.message)
+            toast.error(error || err.message, {
                 style: {
                     border: '1px solid red',
                     padding: '7px',
@@ -167,8 +169,7 @@ export default function SignUpComp(messages: any) {
                                     id="confirm_password"
                                     onChange={inputChange}
                                     required />
-                                {pwdType === "text" && <FaEye className={style.show} onClick={() => setpwdType('password')} />}
-                                {pwdType === "password" && <FaEyeSlash className={style.show} onClick={() => setpwdType('text')} />}
+                               
                             </div>
                         </div>
                         <div className={style.formBtn}>

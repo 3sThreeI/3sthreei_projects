@@ -38,7 +38,7 @@ export default function SignInComp(messages: any) {
             const data = await resp.json()
             if (!resp.ok) {
                 setSuccess(false)
-                console.log('❌ Full error details:', data)
+                // console.log('❌ Full error details:', data)
                 setError(data.errors)
                 toast.error(error, {
                     style: {
@@ -53,9 +53,9 @@ export default function SignInComp(messages: any) {
                 });
                 return
             }
-            console.log("data", data)
-            setSuccess(data.message)
-            return toast.success(data.data.message, {
+            // console.log("data", data)
+            setSuccess(data.data.message)
+            return toast.success(data.data.message || data.message, {
                 style: {
                     border: '1px solid green',
                     padding: '16px',
@@ -66,9 +66,10 @@ export default function SignInComp(messages: any) {
                     secondary: 'white',
                 },
             })
-        } catch (err) {
-            console.log("NETWORK ERROR TRY LATER", err)
-            toast.error(error, {
+        } catch (err:any) {
+            // console.log("NETWORK ERROR TRY LATER", err)
+            setError(err.message)
+            toast.error(error || err.message, {
                 style: {
                     border: '1px solid red',
                     padding: '7px',
