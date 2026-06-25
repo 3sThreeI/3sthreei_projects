@@ -28,7 +28,7 @@ export default async function ProjectContactForm({params}:ParamProps) {
     const message = (await import(`@/messages/${locale}/forms.json`)).default
     return (
         <div className={style.container}>
-            <FormAudit message={message} />
+            <FormAudit message={message} searchParams=""/>
         </div>
     )
 }

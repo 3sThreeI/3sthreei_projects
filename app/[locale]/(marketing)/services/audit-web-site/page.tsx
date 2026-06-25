@@ -23,12 +23,18 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
     }
 }
 // ParamProps is importing from about page.tsx
-export default async function ProjectContactForm({params}:ParamProps) {
+interface SearchProps{
+    params: Promise<{locale:string}>
+    searchParams: Promise<{type?:string}>
+}
+export default async function ProjectContactForm({params, searchParams}:SearchProps) {
     const {locale} = await params
+    const param = await searchParams
     const message = (await import(`@/messages/${locale}/forms.json`)).default
+
     return (
         <div className={style.container}>
-            <FormAudit message={message} />
+            <FormAudit message={message} searchParams={param.type ?? "" }/>
         </div>
     )
 }
