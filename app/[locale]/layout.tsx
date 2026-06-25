@@ -23,10 +23,10 @@ const geistMono = Geist_Mono({
 });
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL!
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl || ' http://localhost:3000'),
+  metadataBase: new URL(siteUrl || `${process.env.NEXT_PUBLIC_SITE_URL}`),
   title: {
     default: "3SThreeI | Build. Design. Learn.",
-    template: "3sthreeI | %s ",
+    template: "%s | 3sthreeI",
   },
 
   description:
