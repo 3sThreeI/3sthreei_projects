@@ -49,7 +49,10 @@
     @apply  mb-5 h-25 px-3 text-[1rem]
 }
 .imgContainer{
-    @apply border-t mt-3 px-3 border-white/10 h-[60px] absolute bottom-2 pt-2 w-full flex items-center gap-3 sm:gap-5
+    @apply border-t mt-3 px-3 border-white/10 h-[60px] w-full bg-cover absolute bottom-2 pt-2 flex items-center gap-3 sm:gap-5  overflow-hidden
+}
+.img{
+    @apply overflow-hidden bg-cover object-cover rounded-full h-full w-[50px]
 }
 .cardImage{
     @apply w-10 h-10 bg-white/20 rounded-full bg-cover object-cover

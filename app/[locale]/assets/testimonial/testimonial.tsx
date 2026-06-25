@@ -1,15 +1,18 @@
+
 import { useTranslations } from "next-intl"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import style from "./testimonial.module.css"
 import TestimonialForm from "@/components/customComponent/formContact/formTestimonial"
 type TestimonialProps = {
-    imgUrl: string | null,
-    name: string,
-    text: string
+    filename: string | null,
+    fullname: string,
+    message: string
 }
-export default function Testimonial() {
+export default function Testimonial(feedback: any) {
     const t = useTranslations()
-    const items = t.raw('testimonial') as TestimonialProps[]
+    // console.log("feedback: ", feedback)
+    const items = feedback ? feedback.feedback as TestimonialProps[] : null
+    const baseUrl = process.env.NEXT_PUBLIC_BACKEND_IMG_UPLOAD || "http://localhost:8440/uploads/testimonial"
     return (
         <>
             <div className={style.container}>
@@ -17,44 +20,46 @@ export default function Testimonial() {
                     <h1 className={style.logo}>3SThreeI</h1>
                     <h2 className={style.subtitle}>{t('testimonialTitle')}</h2>
                 </div>
-                <Carousel className={style.carousel} opts={{
+                {items && items.length > 0 &&
+                    <Carousel className={style.carousel} opts={{
                         align: "start",
                         loop: true,
                     }}>
-                    <CarouselContent className={style.cards}>
+                        <CarouselContent className={style.cards}>
                         {
                             items.map((item, index) => (
-                                <CarouselItem className={style.carouselItem} key={index}>
-                                    <div className={style.card}>
-                                        <div className={style.contentText}>
-                                            {item.text}
-                                        </div>
-                                        {
-                                            item.imgUrl && item.imgUrl.length > 0
-                                                ?
-                                                (
-                                                    <div className={style.imgContainer}>
-                                                        <img src="#" alt="" className={style.img}/>
-                                                         <p className={style.UserName}>{item.name}</p>
-                                                    </div>
-                                                ) :
-                                                // if the image is not available we will display empty card with design
-                                                (
-                                                    <div className={style.imgContainer}>
-                                                        <div className={style.cardImage}></div>
-                                                        <p className={style.UserName}>{item.name}</p>
-                                                    </div>
-                                                )
-                                        }
+                            <CarouselItem className={style.carouselItem} key={index}>
+                                <div className={style.card}>
+                                    <div className={style.contentText}>
+                                        {item.message}
                                     </div>
+                                    {
+                                        item.filename && item.filename.length > 0
+                                            ?
+                                            (
+                                                <div className={style.imgContainer}>
+                                                    <img src={`${baseUrl}/${item.filename}`} alt={item.filename} className={style.img} />
+                                                    <p className={style.UserName}>{item.fullname}</p>
+                                                </div>
+                                            ) :
+                                            // if the image is not available we will display empty card with design
+                                            (
+                                                <div className={style.imgContainer}>
+                                                    <div className={style.cardImage}></div>
+                                                    <p className={style.UserName}>{item.fullname}</p>
+                                                </div>
+                                            )
+                                    }
+                                </div>
 
-                                </CarouselItem>
+                            </CarouselItem>
                             ))
                         }
-                    </CarouselContent>
-                    <CarouselNext />
-                    <CarouselPrevious />
-                </Carousel>
+                        </CarouselContent>
+                        <CarouselNext />
+                        <CarouselPrevious />
+                    </Carousel>
+                }
                 <div className="">
                     <TestimonialForm />
                 </div>
