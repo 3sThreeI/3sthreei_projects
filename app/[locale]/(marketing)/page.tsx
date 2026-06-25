@@ -53,15 +53,15 @@ async function fetchTestimonials() {
     );
 
     if (!resp.ok) {
-      console.log("getting tetimonial failed: ")
+      // console.log("getting tetimonial failed: ")
       return [];
     }
 
     const data = await resp.json();
-    console.log("getting tetimonial successfully: ", data)
+    // console.log("getting tetimonial successfully: ", data)
     return data.response ?? [];
   } catch (error) {
-    console.error("Failed to fetch testimonials:", error);
+    // console.error("Failed to fetch testimonials:", error);
     return [];
   }
 }
