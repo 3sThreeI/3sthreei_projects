@@ -3,29 +3,28 @@ import React, { useEffect, useState } from "react"
 import style from "@/app/[locale]/(marketing)/contact-form/projectContactFom.module.css"
 import { contactSchema } from "@/lib/validation/contact"
 import { useSearchParams } from "next/navigation"
+import toast, { Toaster } from "react-hot-toast"
 type formErrorsProps = {
     fullname?: string[],
     email?: string[],
-    phoneNumber?: string[],
-    message?: string[],
+    phone_number?: string[],
+    description?: string[],
     url?: string[],
     project_type?: string[]
 }
-export default function FormContactCompt({ message }: { message: any }) {
-    const searchparams = useSearchParams()
-    const Price: string = searchparams.get("price") ?? ""
-    const type: string = searchparams.get("type") ?? ""
+export default function FormContactCompt({ message, searchParams }: { message: any, searchParams:any }) {
+    const Price: string = searchParams?.price ?? ""
+    const type: string = searchParams?.type ?? ""
 
-    console.log("formContact.tsx rendered")
-    console.log("message ", message)
+    console.log("formContact.tsx rendered", searchParams)
     const t = message || null
     const [formValues, SetFormValues] = useState({
         fullname: '',
         email: '',
-        phoneNumber: '',
-        message: '',
+        phone_number: '',
+        description: '',
         url: '',
-        project_type: type,
+        project_type: type || '',
         price: Price || ''
     })
     const [errors, setErrors] = useState<formErrorsProps>({})
@@ -34,7 +33,7 @@ export default function FormContactCompt({ message }: { message: any }) {
 
     useEffect(() => {
         // Skip if form is empty (initial load)
-        if (!formValues.fullname && !formValues.email && !formValues.message && !formValues.phoneNumber) {
+        if (!formValues.fullname && !formValues.email && !formValues.description && !formValues.phone_number) {
             return
         }
 
@@ -53,8 +52,8 @@ export default function FormContactCompt({ message }: { message: any }) {
         e.preventDefault();
         setPending(true)
         setErrors({})
-        console.log('🚀 Submitting form...')
-        console.log('Form data:', formValues)
+        // console.log('🚀 Submitting form...')
+        // console.log('Form data:', formValues)
         try {
             const resp = await fetch('/api/contact', {
                 method: 'POST',
@@ -63,17 +62,55 @@ export default function FormContactCompt({ message }: { message: any }) {
             })
             const data = await resp.json()
             if (!resp.ok) {
-                setErrors(data.details || { message: [data.error] } || { message: "Back-end failed" })
-                console.log('❌ Full error details:', data)
-                console.log('❌ Details object:', data.details)
+                setErrors(data.details || { description: [data.errors] } || { description: "Back-end failed" })
+                // console.log('❌ Full error details:', data)
+                // console.log('❌ Details object:', data.details)
+                toast.error( data.errors || data.data.message , {
+                     duration: 10000,
+                    style: {
+                        border: '1px solid #713200',
+                        padding: '16px',
+                        color: '#713200',
+                    },
+                    iconTheme: {
+                        primary: '#713200',
+                        secondary: '#FFFAEE',
+                    },
+                });
+                return
             } else {
                 setSuccess(true)
-                SetFormValues({ fullname: '', email: '', message: '', phoneNumber: '', url: '', project_type: '', price: "" })
-                console.log("successFull message: ", data.message)
+                SetFormValues({ fullname: '', email: '', description: '', phone_number: '', url: '', project_type: '', price: "" })
+                // console.log("successFull message: ", data.data.message)
+                toast.success(data.data.message, {
+                    duration: 15000,
+                    style: {
+                        border: '1px solid green',
+                        padding: '16px',
+                        color: 'green',
+                    },
+                    iconTheme: {
+                        primary: 'green',
+                        secondary: 'white',
+                    },
+                }
+                )
             }
-        } catch (error) {
-            setErrors({ message: ['Network error'] })
-            console.log("NETWORK ERROR TRY LATER", error)
+        } catch (error:any) {
+            setErrors({ description: ['Network error'] })
+            // console.log("NETWORK ERROR TRY LATER", error)
+            toast.error(error.message, {
+                duration: 10000,
+                style: {
+                    border: '1px solid #713200',
+                    padding: '16px',
+                    color: '#713200',
+                },
+                iconTheme: {
+                    primary: '#713200',
+                    secondary: '#FFFAEE',
+                },
+            });
         } finally {
             setPending(false)
         }
@@ -84,6 +121,7 @@ export default function FormContactCompt({ message }: { message: any }) {
     }
     return (
         <div className={style.wrapper}>
+            <div><Toaster position="top-right"/></div>
             <div className={style.card}>
                 {/* Header Section */}
                 <div className={style.header}>
@@ -127,19 +165,19 @@ export default function FormContactCompt({ message }: { message: any }) {
                         </div>
                         {/* Phone number input */}
                         <div className={style.formGroup}>
-                            <label htmlFor="phoneNumber" className={style.label}>{t.formContact.formInput.labelInput3.L}</label>
+                            <label htmlFor="phone_number" className={style.label}>{t.formContact.formInput.labelInput3.L}</label>
                             <input
                                 type="tel"
-                                id="phoneNumber"
-                                name="phoneNumber"
-                                value={formValues.phoneNumber}
+                                id="phone_number"
+                                name="phone_number"
+                                value={formValues.phone_number}
                                 onChange={(e) => inputHandleFn(e)}
                                 placeholder={t.formContact.formInput.labelInput3.P}
                                 title={t.formContact.formInput.labelInput3.T}
                                 className={style.input}
                                 required
                             />
-                            {errors?.phoneNumber?.[0] && <p className="text-red-500 text-sm">{errors?.phoneNumber[0]}</p>}
+                            {errors?.phone_number?.[0] && <p className="text-red-500 text-sm">{errors?.phone_number[0]}</p>}
                         </div>
                     </div>
 
@@ -160,7 +198,7 @@ export default function FormContactCompt({ message }: { message: any }) {
                     </div>
 
                     {/* Project Type */}
-                    <div className={`${ Price ? style.grid : ''}`}>
+                    <div className={`${Price ? style.grid : ''}`}>
 
                         <div className={style.formGroup}>
                             <label htmlFor="projectType" className={style.label}>{t.formContact.formSelect.labelSelect1.L}</label>
@@ -220,11 +258,11 @@ export default function FormContactCompt({ message }: { message: any }) {
 
                     {/* Message */}
                     <div className={style.formGroup}>
-                        <label htmlFor="message" className={style.label}>{t.formContact.formTextarea.labelTextarea1.L}</label>
+                        <label htmlFor="description" className={style.label}>{t.formContact.formTextarea.labelTextarea1.L}</label>
                         <textarea
-                            id="message"
-                            name="message"
-                            value={formValues.message}
+                            id="description"
+                            name="description"
+                            value={formValues.description}
                             onChange={inputHandleFn}
                             placeholder={t.formContact.formTextarea.labelTextarea1.P}
                             title={t.formContact.formTextarea.labelTextarea1.T}
@@ -232,7 +270,7 @@ export default function FormContactCompt({ message }: { message: any }) {
                             rows={5}
                             required
                         />
-                        {errors?.message?.[0] && <p className="text-red-500 text-sm">{errors?.message[0]}</p>}
+                        {errors?.description?.[0] && <p className="text-red-500 text-sm">{errors?.description[0]}</p>}
                     </div>
 
                     {/* Submit Button */}
