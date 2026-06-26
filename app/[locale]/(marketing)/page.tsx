@@ -10,7 +10,6 @@ import Portfolio from '@/app/[locale]/assets/portfolio/portfolio';
 import WorkingProcess from '@/app/[locale]/assets/process/process';
 import Testimonial from '../assets/testimonial/testimonial';
 import VideoMarketing from '../assets/videoMarketing/videoMarketing';
-import { useTranslations } from 'next-intl';
 type Props = {
   params: { locale: string };
 };
