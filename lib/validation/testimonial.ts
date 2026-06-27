@@ -7,7 +7,7 @@ export const testimonialSchema = z.object({
     feedback: z
         .string()
         .min(60, "Message must be at least 60 characters")
-        .max(150, "Message must be less than 150 characters"),
+        .max(180, "Message must be less than 150 characters"),
     Img_url: z.instanceof(File)
 })
 export type TestimonialSchema = z.infer<typeof testimonialSchema>

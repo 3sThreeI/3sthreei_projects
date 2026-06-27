@@ -4,7 +4,8 @@ export async function callBackend<T>(
     method: 'POST' | 'GET' | 'PUT' | 'DELETE' = 'POST'
 ): Promise<T> {
     const isFormData = body instanceof FormData
-    const BaseUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "https://threesthreei-back-end.onrender.com"
+    const BaseUrl = process.env.NEXT_PUBLIC_BACKEND_URL ||  "http://localhost:8440"
+    // console.log("BAck-end: ", BaseUrl,path) 
     const resp = await fetch(`${BaseUrl}${path}`, {
         method,
         headers: {

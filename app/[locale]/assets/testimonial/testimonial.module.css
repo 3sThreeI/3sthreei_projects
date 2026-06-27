@@ -46,7 +46,7 @@
     @apply rounded-xl my-5 pt-2 border-l-[5px] ml-3 border-(--nav-bg-color) bg-(--card-bg-color) relative  h-[180px] max-w-[350px] mx-auto
 }
 .carousel .card .contentText{
-    @apply  mb-5 h-25 px-3 text-[1rem]
+    @apply  mb-5 h-25 px-3 text-[1rem] overflow-y-scroll
 }
 .imgContainer{
     @apply border-t mt-3 px-3 border-white/10 h-[60px] w-full bg-cover absolute bottom-2 pt-2 flex items-center gap-3 sm:gap-5  overflow-hidden
