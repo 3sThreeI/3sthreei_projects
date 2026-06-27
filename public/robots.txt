@@ -1,6 +1,8 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /auth/
+Disallow: /api/
 
 # Host
 Host: https://3sthreei.com
