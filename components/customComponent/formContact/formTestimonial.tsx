@@ -58,14 +58,14 @@ export default function TestimonialForm() {
         try {
             const resp = await fetch("/api/customers/feedback", {
                 method: "POST",
-                headers: {"Accept-Language": "fr",},
+                headers: {"Accept-Language": "fr"},
                 body: formdata
             })
             const data = await resp.json()
-
+            // console.log('❌ Details object:', data)
             if (!resp.ok) {
                 setErrors(data.details || { message: [data.errors || "Back-end failed"] })
-                // console.log('❌ Details object:', data)
+                console.log('❌ Details object:', data)
                 toast.error(data.errors || data.details || "Back-end failed", {
                     style: {
                         border: '1px solid #713200',
