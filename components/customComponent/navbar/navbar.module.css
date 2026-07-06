@@ -33,8 +33,13 @@
 }
 
 .li .icon.open {
-    margin-top: 0px;
-    margin-bottom: 1px;
+    /* margin-top: 0px; */
+    /* margin-bottom: 1px; */
+    transform: rotate(180deg);
+}
+.icon.open {
+    /* margin-top: 0px; */
+    /* margin-bottom: 1px; */
     transform: rotate(180deg);
 }
 
@@ -61,23 +66,22 @@
     @apply h-[100vh] opacity-100;
     backdrop-filter: blur(1px);
 }
-
 .PhoneNav .PhonenavCard .li {
-    @apply flex relative
+    @apply flex relative w-[250px]
 }
 
 .PhonenavCard .PhoneNavlink {
-    @apply cursor-pointer opacity-[3px] bg-(--nav-Phone-bg-color) min-w-[150px] max-w-[250px] h-full px-2 pl-7 pt-14 space-y-3;
+    @apply cursor-pointer opacity-[3px] bg-(--nav-Phone-bg-color) min-w-[150px] max-w-[260px] h-full px-2 pl-5 pt-14 space-y-3;
     z-index: 100;
 }
 
 .PhonenavCard .li .PhoneServiceDropdown {
-    @apply absolute -left-25 top-5 font-light text-[0.8rem] my-5 pointer-events-none opacity-0 w-0 h-0 overflow-hidden;
+    @apply absolute -left-14 top-5 font-light text-[0.9rem]  my-5 pointer-events-none opacity-0 w-0 h-0 overflow-hidden;
     transition: all 0.5s ease-in-out;
 }
 
 .PhonenavCard .li .PhoneServiceDropdown.open {
-    @apply relative -left-10 opacity-100 transform translate-y-0 pointer-events-auto w-full h-auto block overflow-visible
+    @apply relative -left-18 opacity-100 transform translate-y-0 pointer-events-auto w-full h-auto block 
 }
 
 .PhonenavCard .li .PhoneServiceDropdown.open::before {
@@ -86,12 +90,15 @@
     height: 100%;
     width: 3px;
     background-color: var(--nav-text-color);
-    left: -20px;
+    left: -0px;
     opacity: 30%;
+    z-index: 100;
 }
-
+.PhoneserviceItem{
+    @apply flex gap-x-2 items-center ml-3 justify-start min-w-[180px] py-2 pl-1 max-w-[200px] 
+}
 .PhoneServiceLink {
-    @apply flex gap-x-2 justify-start items-center
+    @apply  text-[1rem]
 }
 
 @media(max-width:670px) {
@@ -102,8 +109,10 @@
     .PhoneNav {
         @apply block z-50;
     }
-    .li .icon.open {
-        margin-top: -5px;
-        font-size: 2.1rem;
-    }
+     .li .icon.open {
+        margin-top: -0px;
+        font-size: 1.7rem;
+        /* transform: translateX(10px); */
+        /* z-index: 100; */
+     } 
 }
