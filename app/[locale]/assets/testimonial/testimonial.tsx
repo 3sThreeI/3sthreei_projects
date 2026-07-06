@@ -8,6 +8,7 @@ type TestimonialProps = {
     fullname: string,
     message: string
 }
+
 export default function Testimonial(feedback: any) {
     const t = useTranslations()
     console.log("feedback: ", feedback)
