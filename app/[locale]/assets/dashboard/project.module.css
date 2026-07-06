@@ -1,0 +1,216 @@
+@reference "tailwindcss";
+
+
+
+.container {
+    @apply my-10 relative px-14
+}
+
+/*  for form testimoial  */
+.formTest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.formContainer {
+    max-width: 400px;
+    background: var(--card-bg-color);
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 1px rgba(198, 198, 198, 0.551);
+    padding: 30px 20px;
+    animation: slideUp 0.6s ease-out;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 5px 0;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--nav-text-color), #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Form Group */
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f3f3f3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.input,
+.select,
+.textarea {
+    padding: 10px 16px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    background: #f7fafc;
+    color: #2d3748;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none !important;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #cbd5e0;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    background: white;
+    border-color: var(--nav-text-color);
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    transform: translateY(-2px);
+}
+
+.input:hover,
+.select:hover,
+.textarea:hover {
+    border-color: #cbd5e0;
+}
+
+/* Select Dropdown */
+.select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23667eea' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+}
+
+.select option {
+    color: #2d3748;
+    background: white;
+    padding: 8px 0;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+/* Submit Button */
+.submitBtn {
+    padding: 3px 32px;
+    margin-left: auto;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--nav-text-color) 0%, #6c96d4 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.submitBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.submitBtn:hover::before {
+    left: 100%;
+}
+
+.submitBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px -15px var(--nav-text-color);
+}
+
+.submitBtn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px var(--nav-text-color);
+}
+
+.btnText {
+    position: relative;
+    z-index: 1;
+}
+
+.btnIcon {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.submitBtn:hover .btnIcon {
+    transform: translateX(4px);
+}
+
+.spinner {
+    display: inline-block;
+    animation: spin 1s linear infinite;
+    color: #fff;
+    /* currentColor fallback */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:473px) {
+    .container {
+        @apply px-3
+    }
+
+    .logoContainer {
+        @apply w-full
+    }
+
+    .logoContainer .subtitle {
+        @apply text-[1rem]
+    }
+
+    .carousel {
+        @apply mx-10
+    }
+}
