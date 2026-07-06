@@ -6,7 +6,7 @@ import { FaCode, FaMobileAlt, FaGamepad, FaPalette } from "react-icons/fa";
 import Link from "next/link"
 import { NavbarProps } from "./Navbar";
 import { useState } from "react";
-export default function LargeScreenNavbar({ home, keyService, servicesValue, project, about, faq, blog, signin }: NavbarProps) {
+export default function LargeScreenNavbar({ home, keyService, servicesValue, project, about, faq, blog, signin, user }: NavbarProps) {
     const [openServices, setOpenServices] = useState(false)
     const serviceFn = () => {
         setOpenServices(true)
@@ -42,7 +42,10 @@ export default function LargeScreenNavbar({ home, keyService, servicesValue, pro
                 <li> <Link href='/about'>{about}</Link></li>
                 <li> <Link href='/faq'>{faq}</Link></li>
                 {/* <li> <Link href='/blog'>{blog}</Link></li> */}
-                <li> <Link href='/auth/sign-in'>{signin}</Link></li>
+                {
+                    !user &&
+                    <li> <Link href='/auth/sign-in'>{signin}</Link></li>
+                }
             </ul>
         </>
     )
