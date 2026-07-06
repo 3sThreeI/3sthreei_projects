@@ -14,7 +14,7 @@ type Props = {
   params: { locale: string };
 };
 
-export async function generateMetadata(params:Promise<{locale:string}>): Promise<Metadata> {
+export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale: locale, namespace: 'home' })
   const sitename = await getTranslations('sitename') as any
@@ -47,7 +47,7 @@ async function fetchTestimonials() {
     const resp = await fetch(
       `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/customers/feedback/`,
       {
-          next: { revalidate: 60 },
+        next: { revalidate: 60 },
       }
     );
 
@@ -65,8 +65,9 @@ async function fetchTestimonials() {
   }
 }
 export default async function MarketingPage() {
-console.log("BACKEND:", process.env.NEXT_PUBLIC_BACKEND_URL);
+  console.log("BACKEND:", process.env.NEXT_PUBLIC_BACKEND_URL);
   const feedback = await fetchTestimonials()
+
   return (
     <main>
       <Hero />
