@@ -15,8 +15,14 @@ export async function POST(request: NextRequest) {
             }, { status: 400 })
         }
         //  if no error then send to proxy 
-        const data = await callBackend('/api/service/audit/add', validated.data)
-        return NextResponse.json({ success: true, data: data,  })
+        const BackendResp = await callBackend('/api/service/audit/add', validated.data)
+        const data = await BackendResp.json()
+        const cookies = BackendResp.headers.getSetCookie();
+        const response =  NextResponse.json({ success: true, data: data,  })
+        cookies.forEach((cookie) => {
+            response.headers.append("Set-Cookie", cookie);
+        });
+        return response
     } catch (error) {
         // console.log("Internal server Error")
         return NextResponse.json(
