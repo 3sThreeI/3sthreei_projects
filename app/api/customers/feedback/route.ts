@@ -21,13 +21,14 @@ export async function POST(request: NextRequest) {
         //         { status: 400 }
         //     )
         // }
-        const data = await callBackend("/api/customers/feedback/add", formData, "POST")
-        return NextResponse.json(
-            {
-                success: true,
-                data
-            }
-        )
+        const BackendResp = await callBackend("/api/customers/feedback/add", formData, false, "POST")
+        const data = await BackendResp.json()
+        const cookies = BackendResp.headers.getSetCookie();
+        const response = NextResponse.json({ success: true, data: data, })
+        cookies.forEach((cookie) => {
+            response.headers.append("Set-Cookie", cookie);
+        });
+        return response
     } catch (error: any) {
        return NextResponse.json(
             {
@@ -40,13 +41,14 @@ export async function POST(request: NextRequest) {
 }
 export async function GET() {
     try {
-        const resp = await callBackend("/api/customers/feedback/", null, "GET")
-        return NextResponse.json(
-            {
-                success: true,
-                data: resp
-            }
-        )
+        const BackendResp = await callBackend("/api/customers/feedback/", null, false, "GET")
+        const data = await BackendResp.json()
+        const cookies = BackendResp.headers.getSetCookie();
+        const response = NextResponse.json({ success: true, data: data, })
+        cookies.forEach((cookie) => {
+            response.headers.append("Set-Cookie", cookie);
+        });
+        return response
     } catch (error: any) {
        return NextResponse.json(
             {
