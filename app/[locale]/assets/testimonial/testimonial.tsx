@@ -4,13 +4,13 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import style from "./testimonial.module.css"
 import TestimonialForm from "@/components/customComponent/formContact/formTestimonial"
 type TestimonialProps = {
-    filename: string | null,
+    filename: string | any,
     fullname: string,
     message: string
 }
 export default function Testimonial(feedback: any) {
     const t = useTranslations()
-    // console.log("feedback: ", feedback)
+    console.log("feedback: ", feedback)
     const items = feedback ? feedback.feedback as TestimonialProps[] : null
     const baseUrl = process.env.NEXT_PUBLIC_BACKEND_IMG_UPLOAD || "http://localhost:8440/uploads/testimonial"
     return (
@@ -34,11 +34,11 @@ export default function Testimonial(feedback: any) {
                                         {item.message}
                                     </div>
                                     {
-                                        item.filename && item.filename.length > 0
+                                        item.filename.url || item.filename
                                             ?
                                             (
                                                 <div className={style.imgContainer}>
-                                                    <img src={`${baseUrl}/${item.filename}`} alt={item.filename} className={style.img} />
+                                                    <img src={typeof(item.filename) === "object" ? item.filename.url : `${baseUrl}/${item.filename}`} alt={typeof(item.filename) === "object" ? item.filename.url : item.filename} className={style.img} />
                                                     <p className={style.UserName}>{item.fullname}</p>
                                                 </div>
                                             ) :
