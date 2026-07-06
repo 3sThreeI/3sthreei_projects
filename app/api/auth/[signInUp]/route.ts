@@ -17,6 +17,7 @@ export async function POST(request: NextRequest) {
         cookies.forEach((cookie) => {
             response.headers.append("Set-Cookie", cookie);
         });
+        console.log("response", response)
         return response
     } catch (error: any) {
         return NextResponse.json(
