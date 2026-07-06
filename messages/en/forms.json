@@ -170,5 +170,41 @@
             }
         },
         "btn": "Submit"
+    },
+    "formProject": {
+        "headTitle": "New Project",
+        "subTitle": "Get a FREE complete SEO audit of your website and discover how to boost your performance and Google ranking",
+        "formInput": {
+            "labelInput1": {
+                "L": "Project Name:",
+                "P": "type project name...",
+                "T": "project name"
+            },
+            "labelInput2": {
+                "L": "Url:",
+                "P": "https://yourwebsite.com",
+                "T": "please type your website url"
+            },
+            "labelInput3": {
+                "L": "Type:",
+                "P": "project type...",
+                "T": "Project Type"
+            }
+        },
+        "formTextarea": {
+            "labelTextarea1": {
+                "L": "Description",
+                "P": "explain the project",
+                "T": "project url"
+            }
+        },
+        "formFile": {
+            "file1": {
+                "L": "Image",
+                "P": "upload image of project",
+                "T": "project image"
+            }
+        },
+        "btn": "Submit"
     }
 }
