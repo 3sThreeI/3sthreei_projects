@@ -47,8 +47,9 @@ export default function PhoneNavbar({ home, keyService, servicesValue, project, 
                                             const icons = [<FaCode />, <FaMobileAlt />, <FaGamepad />, <FaPalette />];
                                             return (
                                                 <li key={index} className={style.PhoneserviceItem}>
+                                                        {icons[index]}
                                                     <Link href={service.url} className={style.PhoneServiceLink}>
-                                                        {icons[index]} {service.name}
+                                                         {service.name}
                                                     </Link>
                                                 </li>
                                             );
@@ -63,7 +64,7 @@ export default function PhoneNavbar({ home, keyService, servicesValue, project, 
                         <li> <Link href='/about'>{about}</Link></li>
                         <li> <Link href='/faq'>{faq}</Link></li>
                         {/* <li> <Link href='/blog'>{blog}</Link></li> */}
-                        <li> <Link href='/blog'>{signin}</Link></li>
+                        <li> <Link href='/auth/sign-in'>{signin}</Link></li>
                     </ul>
                 </div>
 

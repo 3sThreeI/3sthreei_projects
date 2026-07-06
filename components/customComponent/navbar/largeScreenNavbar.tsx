@@ -42,7 +42,7 @@ export default function LargeScreenNavbar({ home, keyService, servicesValue, pro
                 <li> <Link href='/about'>{about}</Link></li>
                 <li> <Link href='/faq'>{faq}</Link></li>
                 {/* <li> <Link href='/blog'>{blog}</Link></li> */}
-                <li> <Link href='/blog'>{signin}</Link></li>
+                <li> <Link href='/auth/sign-in'>{signin}</Link></li>
             </ul>
         </>
     )
