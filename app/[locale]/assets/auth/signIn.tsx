@@ -55,6 +55,11 @@ export default function SignInComp(messages: any) {
             }
             // console.log("data", data)
             setSuccess(data.data.message)
+            // Forward all Set-Cookie headers from backend
+            const setCookies = resp.headers.getSetCookie?.() || [];
+            for (const cookie of setCookies) {
+                resp.headers.append('Set-Cookie', cookie);
+            }
             return toast.success(data.data.message || data.message, {
                 style: {
                     border: '1px solid green',
@@ -66,7 +71,7 @@ export default function SignInComp(messages: any) {
                     secondary: 'white',
                 },
             })
-        } catch (err:any) {
+        } catch (err: any) {
             // console.log("NETWORK ERROR TRY LATER", err)
             setError(err.message)
             toast.error(error || err.message, {
