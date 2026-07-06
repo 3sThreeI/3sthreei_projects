@@ -4,6 +4,7 @@ import style from "@/app/[locale]/(auth)/auth/sign-in/sign.module.css"
 import React, { useEffect, useState } from "react"
 import { FaEye, FaEyeSlash } from "react-icons/fa"
 import { success } from "zod"
+import { useRouter } from 'next/navigation';
 interface formProps {
     firstname?: string,
     lastname?: string,
@@ -12,6 +13,7 @@ interface formProps {
     role?: string
 }
 export default function SignInComp(messages: any) {
+    const route = useRouter()
     const [success, setSuccess] = useState<null | boolean>(null)
     const [error, setError] = useState<null | string>("null")
     const [pending, setPending] = useState(false)
@@ -53,12 +55,12 @@ export default function SignInComp(messages: any) {
                 });
                 return
             }
-            // console.log("data", data)
             setSuccess(data.data.message)
-            // Forward all Set-Cookie headers from backend
-            const setCookies = resp.headers.getSetCookie?.() || [];
-            for (const cookie of setCookies) {
-                resp.headers.append('Set-Cookie', cookie);
+            console.log("response", data)
+            if(data?.data?.response.role == "admin"){
+                route.replace('/')
+            }else{
+                 route.replace('/')
             }
             return toast.success(data.data.message || data.message, {
                 style: {
