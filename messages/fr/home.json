@@ -315,44 +315,6 @@
             ]
         }
     },
-    "portfolio": [
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground",
-            "projectUrl": "/projects/view/docs/e-commerce"
-        },
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground",
-            "projectUrl": "/projects/view/docs/e-commerce"
-        },
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground",
-            "projectUrl": "/projects/view/docs/e-commerce"
-        },
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground",
-            "projectUrl": "/projects/view/docs/e-commerce"
-        },
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground",
-            "projectUrl": "/projects/view/docs/e-commerce"
-        },
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground",
-            "projectUrl": "/projects/view/docs/e-commerce"
-        }
-    ],
     "process": [
         {
             "title": "Découverte & Alignement",
@@ -415,6 +377,10 @@
         "contentText": "3SThreeI est une entreprise spécialisée dans la création d’applications mobiles, de logiciels desktop, de jeux, de sites web et de designs numériques pour tous les types d’appareils. Nous mettons l’accent sur des solutions sécurisées, bien structurées et responsives, adaptées à vos besoins. Notre équipe travaille de manière collaborative avec un processus clair et efficace afin de garantir des résultats de haute qualité. Au-delà du développement, nous vous accompagnons sur le long terme grâce à la maintenance et au suivi continu de vos projets La vidéo ci-dessous présente 3SThreeI et montre comment nous travaillons en équipe et organisons notre workflow Déjà adoptée par de nombreuses entreprises à travers le monde, 3SThreeI continue de se démarquer par son innovation et sa fiabilité. Cliquez sur le bouton ci-dessous pour commencer à discuter de votre projet avec nous.",
         "videoURL": "/e-commerce",
         "cta": "Lancez votre projet"
+    },
+    "porfolio":{
+        "title":"Projets en vente",
+        "subtitle": "Découvrez nos projets disponibles à la vente. Ce sont les projets actuellement prêts à être achetés"
     },
     "formTest": {
         "headTitle": "Votre avis compte beaucoup",
