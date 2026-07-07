@@ -4,37 +4,9 @@
         "subText": "explore how we help startup and businesses turn ideas into powerful digital products",
         "CallToAction": "Contactez-nous gratuitement"
     },
-    "filters": ["Application Mobile", "Site Web"],
-    "portfolio": [
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
-        },
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
-        },
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
-        },
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
-        },
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
-        },
-        {
-            "img": "/project1.png",
-            "alt": "this project show the portfolio of my work",
-            "bgText": "this is the text display for gackground"
-        }
-    ]
+     "porfolio":{
+        "title":"Projets en vente",
+        "subtitle": "Découvrez nos projets disponibles à la vente. Ce sont les projets actuellement prêts à être achetés"
+    },
+    "filters": ["Tout", "Application Mobile", "Site Web"]
 }
