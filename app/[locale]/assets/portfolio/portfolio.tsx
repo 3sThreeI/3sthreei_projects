@@ -4,10 +4,14 @@ import Link from "next/link";
 import { FaEye } from "react-icons/fa";
 
 type PortfolioSchema = {
-    img: string,
-    alt: string,
-    bgText: string,
-    projectUrl:string
+    name: string,
+    url: string,
+    image: {
+        url: string,
+        publicId:string
+    },
+    description:string,
+    type:string
 }
 async function fetchProject(type?:string|null){
     const params = new URLSearchParams({
@@ -26,33 +30,37 @@ async function fetchProject(type?:string|null){
             return []
         }
         console.log("Project Fetch successfully", data)
+        return data.response
     } catch (error:any) {
         console.log("Project failed ", error.message)
         return []
     }
 }
-export default async function Portfolio(type:any) {
+export default async function Portfolio({type}:{type?:string}) {
     const t = await getTranslations()
-    const Project = await fetchProject()
-    console.log("Project ", Project)
-    const items = t.raw('portfolio') as PortfolioSchema[]
+    const Type =  type
+    console.log("******type", Type)
+    const Project = await fetchProject(type)
+    const items:PortfolioSchema[] = Project ? Project : null
     return (
         <>
             <div className={style.container}>
-                <h1 className={style.title}>Some Works</h1>
+                <h1 className={style.title}>{t("porfolio.title")}</h1>
+                <p className={style.subtitle}>{t("porfolio.subtitle")}</p>
                 <div className={style.cards}>
                     {
+                        Project &&
                         items.map((item, index) => (
                             <div key={index} className={style.card}>
                                 <div className={style.background}>
-                                    <Link href={item.projectUrl}>
+                                    <Link href={item.url}>
                                         <FaEye className={style.icon} />
-                                        <p className={style.bgText}>{item.bgText}</p>
+                                        <p className={style.bgText}>{item.description}</p>
                                     </Link>
                                 </div>
                                 {
-                                    item.img ?
-                                        <img className={style.img} src={item.img} alt={item.alt} height={200} width={350} loading="lazy" />
+                                    item?.image ?
+                                        <img className={style.img} src={item.image.url} alt={item.image.url} height={200} width={350} loading="lazy" />
                                         :
                                         <div className={style.skeleton}>
                                         </div>
