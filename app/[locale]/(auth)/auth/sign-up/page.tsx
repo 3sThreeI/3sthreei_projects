@@ -33,13 +33,13 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
 }
 export default async function SignIn({ params }: ParamProps) {
     const { locale } = await params
-    const t = (await import(`@/messages/${locale}/auth.json`))
+    const t = (await import(`@/messages/${locale}/auth.json`)).default
     return  redirect("/auth/sign-in");
     return (
         <main>
             <div className={style.container}>
                 <div className={style.wrapper}>
-                    <SignUpComp messages={t.forms} />
+                    {/* <SignUpComp messages={t.forms} /> */}
                     <div className={style.aside}>
                     </div>
                 </div>

@@ -3,6 +3,12 @@ import { getTranslations } from "next-intl/server";
 import style from "./sign.module.css"
 import SignInComp from "@/app/[locale]/assets/auth/signIn";
 import { ParamProps } from "@/app/[locale]/(marketing)/about/page";
+
+type Props = {
+  params: Promise<{
+    locale: string;
+  }>;
+};
 export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale, namespace: "signIn" })
@@ -30,9 +36,9 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
         }
     }
 }
-export default async function SignIn({ params }: ParamProps) {
+export default async function SignIn({ params }: Props) {
     const { locale } = await params
-    const t = (await import(`@/messages/${locale}/auth.json`))
+    const t = (await import(`@/messages/${locale}/auth.json`)).default
     return (
         <main>
             <div className={style.container}>
