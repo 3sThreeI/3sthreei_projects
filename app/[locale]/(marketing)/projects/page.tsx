@@ -6,6 +6,7 @@ import Projects from "../../assets/projects/projects";
 
 type Props = {
     params: { locale: string };
+    searchParams: Promise<{type?:string}>
 }
 export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
     const { locale } = await params;
@@ -26,7 +27,7 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
         }
     }
 }
-export default async function OurProjects({params}:Props) {
+export default async function OurProjects({params, searchParams}:Props) {
     const { locale } = await params 
     const message = (await import(`@/messages/${locale}/projects.json`)).default
     console.log("***********__project page rendered")
@@ -36,7 +37,7 @@ export default async function OurProjects({params}:Props) {
                 <ProjectHero message={message}/>
             </section>
             <section>
-                <Projects message={message} />
+                <Projects searchParams={searchParams} message={message} />
             </section>
         </NextIntlClientProvider>
     )
