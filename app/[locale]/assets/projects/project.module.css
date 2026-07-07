@@ -32,6 +32,17 @@
 .card_btn .btn:hover{
     @apply bg-(--nav-text-color) text-slate-900
 }
+/* ----------------------filter */
 /* .heroContainer{
     @apply bg-gradient-to-br from-slate-900 via-slate-800 to-(--nav-text-color) h-[50vh]
 } */
+
+.filters{
+    @apply max-w-[750px] flex flex-wrap gap-5 mx-auto justify-around  mt-14
+}
+.filters .filter{
+    @apply  border-2 border-(--nav-bg-color)/20  text-(--nav-text-color)  rounded-full px-5 py-2 hover:border-(--nav-bg-color) transition-all duration-300 ease-in cursor-pointer relative
+}
+.filters .filter.active{
+    @apply  font-bold rounded-full px-5 py-2 bg-(--nav-bg-color) border-(--nav-bg-color) text-black
+}
