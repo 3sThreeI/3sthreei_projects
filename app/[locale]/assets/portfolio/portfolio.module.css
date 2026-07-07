@@ -4,7 +4,10 @@
     @apply w-full px-5 text-center my-10
 }
 .container .title {
-    @apply mb-5 text-2xl opacity-20 text-(--nav-text-color)
+    @apply mb-5 text-2xl md:text-3xl  text-(--nav-text-color) font-bold
+}
+.container .subtitle{
+    @apply mb-7 text-[1.2rem]  opacity-70
 }
 .cards{
     @apply flex justify-around flex-wrap gap-7
@@ -22,16 +25,16 @@
     @apply absolute hidden w-full h-full bg-transparent z-10 top-0 cursor-pointer rounded-sm content-center
 }
 .card:hover .background{
-    @apply  bg-gray-300/30 block
+    @apply  bg-gray-900/80 block 
 }
 .icon{
     @apply ml-[150px] text-5xl 
 }
 .card:hover .icon{
-    @apply ml-[150px] text-5xl 
+    @apply ml-[150px] text-5xl opacity-80 text-gray-100
 }
 .background .bgText{
-    @apply absolute bottom-5 left-3 right-3
+    @apply absolute bottom-5 left-3 right-3 font-bold
 }
 .skeleton {
   height: 200px;
