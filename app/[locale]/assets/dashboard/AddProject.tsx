@@ -43,7 +43,7 @@ export default function CreatNewProjectComp() {
         formdata.append("name", formValue.name)
         formdata.append("url", formValue.url)
         formdata.append("description", formValue.description)
-        formdata.append("type", formValue.type)
+        formdata.append("type", formValue.type.toLowerCase())
         formdata.append("img_url", formValue.image!)
         console.log("this is form values", formValue)
         try {
@@ -52,7 +52,6 @@ export default function CreatNewProjectComp() {
                 body: formdata
             })
             const data = await resp.json()
-            // console.log("*****DATA", data)
             if (!resp.ok) {
                 console.log("Server Error", data.Error)
                return toast.error(data.errors || data.data.message, {
@@ -68,7 +67,7 @@ export default function CreatNewProjectComp() {
                     },
                 });
             } else {
-                console.log("New Project Sumitted", data)
+                console.log("New Project Sumitted")
                 setFormvalue({ name: "", url: "", description: "", type: "", image: null })
                 toast.success(data.message || data.data.message || "Successfully", {
                     style: {
