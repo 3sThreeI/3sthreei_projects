@@ -1,8 +1,22 @@
 {
-    "sitename": "3SThreeI",
     "signIn": {
+        "sitename": "3SThreeI",
         "title": "Sign-In",
         "description": "Log in to your account to view the latest changes in your project",
+        "keywords": [
+            "3sthreei",
+            "3s3i",
+            "threeSthreeI",
+            "Sign-In",
+            "log-In"
+        ],
+        "ogImage": "https://3sthreei.com/og-image.png",
+        "ogImageAlt": "3SThreeI SaaS Platform"
+    },
+    "signUp": {
+        "sitename": "3SThreeI",
+        "title": "Sign-Up",
+        "description": "Create your account to explore our project and view the latest changes in your project",
         "keywords": [
             "3sthreei",
             "3s3i",
@@ -12,6 +26,7 @@
         ]
     },
     "navbar": {
+        "sitename": "3SThreeI",
         "home": "Home",
         "keyservice": "services",
         "servicesValue": [
@@ -41,6 +56,7 @@
         "about": "About Us"
     },
     "home": {
+        "sitename": "3SThreeI",
         "title": "Top Web, Mobile App, Gaming & Design Services | Ghana  ",
         "description": " Leading web development, mobile apps, gaming & UI/UX design in Ghana . Custom solutions for businesses—fast, affordable, mobile-first. Get a free quote today!",
         "keywords": [
@@ -51,28 +67,36 @@
             "hire web developers in Ghana",
             "eCommerce website development Ghana",
             "startup app development company Ghana"
-        ]
+        ],
+        "ogImage": "https://3sthreei.com/og-image.png",
+        "ogImageAlt": "3SThreeI SaaS Platform"
     },
     "about": {
+        "sitename": "3SThreeI",
         "title": "About 3SThreeI | Web & App Development Experts Ghana",
-        "description1": "Discover 3SThreeI in Accra, a team of developers and designers creating modern websites, web apps, mobile apps, and UI/UX solutions for businesses.",
         "description": "Meet 3SThreeI—Ghana-based web, mobile app, gaming & design agency serving Mali businesses. 5+ years delivering scalable digital solutions. Learn our story!",
-        "keywords": []
+        "keywords": [],
+        "ogImage": "https://3sthreei.com/og-image.png",
+        "ogImageAlt": "3SThreeI SaaS Platform"
     },
     "project": {
-        "title": "About 3SThreeI | Web & Mobile App Development Company in Accra",
-        "description2": "Discover 3SThreeI in Accra, a team of developers and designers creating modern websites, web apps, mobile apps, and UI/UX solutions for businesses.",
-        "description": "View 3SThreeI portfolio: custom websites, mobile apps, games & UI designs for West Africa clients. See case studies, tech stacks, results. New projects welcome!",
-        "keywords": []
+        "sitename": "3SThreeI",
+        "title": "Project | Web & Mobile App Development Company in Accra",
+        "description": "View 3SThreeI project ready for purchase: custom websites, mobile apps, games & UI designs for West Africa clients. See case studies, tech stacks, results. New projects welcome!",
+        "keywords": [],
+        "ogImage": "https://3sthreei.com/og-image.png",
+        "ogImageAlt": "3SThreeI SaaS Platform"
     },
     "faq": {
-        "title1": "Web, Mobile App, Gaming & Design Services Ghana",
+        "sitename": "3SThreeI",
         "title": "3SThreeI FAQ | Web Development Costs, Timelines Ghana",
-        "description1": "Common questions on web development, mobile apps, gaming & design costs, timelines in Ghana and Mali. Get quick answers—free consultations available!",
-        "description": "3SThreeI answers: website/app development costs, timelines, process in Ghana & Mali. Pricing, tech stacks, SEO services explained. Ask us anything!",
-        "keywords": []
+        "description": "FAQ questions on web development, mobile apps, gaming & design costs, timelines in Ghana and Mali. Get quick answers—free consultations available!",
+        "keywords": [],
+        "ogImage": "https://3sthreei.com/og-image.png",
+        "ogImageAlt": "3SThreeI SaaS Platform"
     },
     "courses": {
+        "sitename": "3SThreeI",
         "title": "Courses",
         "description": "Professional courses in app, game, and web development.",
         "keywords": [
@@ -83,6 +107,9 @@
         ]
     },
     "services": {
+        "sitename": "3SThreeI",
+        "ogImage": "https://3sthreei.com/og-image.png",
+        "ogImageAlt": "3SThreeI SaaS Platform",
         "web": {
             "title": "Custom Web Development Ghana & Global Businesses | React, NextJs, Angular, NodeJS, Laravel",
             "description": "Professional web development: React/Next.js, Angular, Laravel. E-commerce, SaaS, portfolios. Ghana-based team serving global clients. From GHS 5,000. Free quote.",
@@ -103,7 +130,7 @@
             ]
         },
         "application": {
-            "title": "Custom desktop and mobile Application Development in Ghana Global Businesses | Flutter, ElectronJS, React Native, FireBase, Node.js",
+            "title": "Custom desktop and mobile Application Development in Ghana | Flutter, ElectronJS, React Native, FireBase, Node.js",
             "description": "Custom application Mobile and Desktop development for startups and businesses using Flutter, Java,  React Native, ElectronJS,  FireBase , and Node.js. Dashboard apps, SaaS platforms, admin panels, and internal tools built for performance, security, and scalability.",
             "keywords": [
                 "web application development",
@@ -138,7 +165,7 @@
             ]
         },
         "design": {
-            "title": "Website & UI/UX Design for Web and  Apps in Ghana and Global Businesses  | Figma, Design XS",
+            "title": "Website & UI/UX Design for Web and  Apps in Ghana and Global Businesses | Figma, Design XS",
             "description": "Modern website and UI/UX design services for web apps, SaaS, and e‑commerce. Figma‑based designs, responsive layouts, and React‑ready interfaces to speed up development and improve user experience.",
             "keywords": [
                 "UI UX design",
@@ -149,20 +176,29 @@
                 "SaaS UI design",
                 "e-commerce website design",
                 "mobile‑first web design",
-                "React‑ready design"
+                "React‑ready design",
+                "3sthreei design"
             ]
         }
     },
     "contactForm": {
-        "title": "Hire a Web, Mobile App & Desktop Developer in Ghana",
-        "description": " Full-stack developer in Ghana specializing in web, mobile app & desktop development. Expert in React, Flutter, Laravel, Next.js. Get a free quote today"
+        "sitename": "3SThreeI",
+        "title": "Contact 3SthreeI| Hire a Web, Mobile App & Desktop Developer in Ghana",
+        "description": "Full-stack developer in Ghana specializing in web, mobile app & desktop development. Expert in React, Flutter, Laravel, Next.js. Get a free quote today",
+        "keywords": [],
+        "ogImage": "https://3sthreei.com/og-image.png",
+        "ogImageAlt": "3SThreeI SaaS Platform"
     },
     "unavailable": {
-        "title": "Unavailable the page is currently under contrustion 3sthreei",
+        "sitename": "3SThreeI",
+        "title": "Unavailable 3SthreeI | Custom Web, mobile, game Development Ghana & Global Businesses",
         "description": "Build custom web, mobile, desktop, game and design start your project ",
-        "keywords": []
+        "keywords": [],
+        "ogImage": "https://3sthreei.com/og-image.png",
+        "ogImageAlt": "3SThreeI SaaS Platform"
     },
     "documentation": {
+        "sitename": "3SThreeI",
         "e-commerce": {
             "title": "E-Commerce Documentation & Project Guide | Next.js Ecommerce Tutorial",
             "description": "Complete e-commerce project documentation by 3sthreei. Learn how to install, configure, and customize your Next.js shopping cart with step-by-step guides and examples",
@@ -174,7 +210,9 @@
                 "ecommerce setup guide",
                 "3sthreei ecommerce project",
                 "ecommerce boilerplate"
-            ]
+            ],
+            "ogImage": "https://3sthreei.com/og-image.png",
+            "ogImageAlt": "3SThreeI SaaS Platform"
         }
     }
 }
