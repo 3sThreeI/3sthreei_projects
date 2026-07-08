@@ -1,8 +1,23 @@
 {
   "sitename": "3SThreeI",
   "signIn": {
+    "sitename": "3SThreeI",
     "title": "Se connecter",
     "description": "Connectez-vous à votre compte pour voir les dernières modifications de votre projet",
+    "keywords": [
+      "3sthreei",
+      "3s3i",
+      "threeSthreeI",
+      "Sign-In",
+      "log-In"
+    ],
+    "ogImage": "https://3sthreei.com/og-image.png",
+    "ogImageAlt": "3SThreeI SaaS Platforme"
+  },
+  "signUp": {
+    "sitename": "3SThreeI",
+    "title": "Se connecter",
+    "description": "Créez votre et commencez à notre services and voir les dernières modifications de votre projet",
     "keywords": [
       "3sthreei",
       "3s3i",
@@ -12,6 +27,7 @@
     ]
   },
   "navbar": {
+    "sitename": "3SThreeI",
     "home": "Accueil",
     "keyservice": "services",
     "servicesValue": [
@@ -41,6 +57,7 @@
     "about": "À propos"
   },
   "home": {
+    "sitename": "3SThreeI",
     "title1": "Entreprise de développement Web & Mobile au Mali | 3SThreeI",
     "title": "Développement Web, Apps, Gaming & Design Mali Ghana",
     "description1": "3SThreeI est une entreprise de développement web et mobile au Mali qui crée des sites web sur mesure, des applications évolutives, des solutions logicielles et un design UI/UX intuitif pour les entreprises.",
@@ -53,9 +70,12 @@
       "agence développement web Mali",
       "création site e-commerce Mali",
       "développement application startup Mali"
-    ]
+    ],
+    "ogImage": "https://3sthreei.com/og-image.png",
+    "ogImageAlt": "3SThreeI SaaS Platforme"
   },
   "about": {
+    "sitename": "3SThreeI",
     "title1": "À propos de 3SThreeI | Entreprise de développement Web & Mobile à Mali",
     "title": "À Propos 3SThreeI | Experts Web & Apps Mali Ghana",
     "description1": "Découvrez 3SThreeI au Mali, une équipe de développeurs et designers qui conçoivent des sites web modernes, des applications web et mobiles, et des solutions UI/UX pour les entreprises.",
@@ -66,27 +86,34 @@
       "agence web Mali",
       "équipe développeurs web Mali",
       "design UI UX Mali"
-    ]
+    ],
+    "ogImage": "https://3sthreei.com/og-image.png",
+    "ogImageAlt": "3SThreeI SaaS Platforme"
   },
   "project": {
-    "title1": "À propos de 3SThreeI | Entreprise de développement Web & Mobile à Mali",
-    "title": "Projets 3SThreeI | Web, Apps, Jeux Mali Ghana",
-    "description1": "Découvrez 3SThreeI au Mali, une équipe de développeurs et designers qui conçoivent des sites web modernes, des applications web et mobiles, et des solutions UI/UX pour les entreprises.",
-    "description": "Découvrez notre portfolio : sites web, apps mobiles, jeux & designs UI pour clients Mali/Ghana. Études de cas, technologies, résultats. Nouveaux projets bienvenus !",
+    "sitename": "3SThreeI",
+    "title": "Projets 3SThreeI | Entreprise de développement Web & Mobile, jeu video, design au Mali ",
+    "description": "Découvrez notre project pour vendre: sites web, apps mobiles, jeux & designs UI pour clients Mali. Études de cas, technologies, résultats. Nouveaux projets bienvenus !",
     "keywords": [
       "à propos 3SThreeI",
       "entreprise informatique Mali",
       "agence web Mali",
       "équipe développeurs web Mali",
       "design UI UX Mali"
-    ]
+    ],
+    "ogImage": "https://3sthreei.com/og-image.png",
+    "ogImageAlt": "3SThreeI SaaS Platforme"
   },
   "faq": {
+    "sitename": "3SThreeI",
     "title": "FAQ 3SThreeI | Coûts Web, Délais Mali Ghana",
     "description": "Réponses 3SThreeI : coûts développement web/apps, délais, processus au Mali & Ghana. Tarifs, technologies, SEO expliqués. Posez-nous votre question !",
-    "keywords": []
+    "keywords": [],
+    "ogImage": "https://3sthreei.com/og-image.png",
+    "ogImageAlt": "3SThreeI SaaS Platforme"
   },
   "courses": {
+    "sitename": "3SThreeI",
     "title": "Cours",
     "description": "Cours professionnels en développement d'applications, jeux et web.",
     "keywords": [
@@ -97,6 +124,9 @@
     ]
   },
   "services": {
+    "sitename": "3SThreeI",
+    "ogImage": "https://3sthreei.com/og-image.png",
+    "ogImageAlt": "3SThreeI SaaS Platforme",
     "web": {
       "title": "Développement web sur mesure pour le Mali & clients internationaux | React, Next.js, Angular, Node.js, Laravel",
       "description": "Développement web professionnel avec React/Next.js, Angular et Laravel. Sites e‑commerce, SaaS, portfolios. Équipe basée au Mali, Ghana, clientèle internationale. Demandez un devis gratuit.",
@@ -167,15 +197,23 @@
     }
   },
   "contactForm": {
-    "title": "Développeur Full-Stack au Mali | Web, Mobile et Desktop",
-    "description": "Développeur full-stack basé au Mali, spécialisé en applications web, mobiles et desktop. Expertise en React, Flutter, Laravel et Next.js. Demandez votre devis gratuit."
+    "sitename": "3SThreeI",
+    "title": "Contactez 3SthreeI | Web, Mobile et Desktop au Mali",
+    "description": "Développeur full-stack basé au Mali, spécialisé en applications web, mobiles et desktop. Expertise en React, Flutter, Laravel et Next.js. Demandez votre devis gratuit.",
+    "keywords": [],
+    "ogImage": "https://3sthreei.com/og-image.png",
+    "ogImageAlt": "3SThreeI SaaS Platforme"
   },
   "unavailable": {
-    "title": "Unavailable the page is currently under contrustion 3sthreei",
-    "description": "Build custom web, mobile, desktop, game and design start your project ",
-    "keywords": []
+    "sitename": "3SThreeI",
+    "title": "Page Non disponible 3SthreeI",
+    "description": "Développement web professionnel avec React/Next.js, Angular et Laravel. Sites e‑commerce, SaaS, portfolios. Équipe basée au Mali, Ghana, clientèle internationale. Demandez un devis gratuit.",
+    "keywords": [],
+    "ogImage": "https://3sthreei.com/og-image.png",
+    "ogImageAlt": "3SThreeI SaaS Platforme"
   },
   "documentation": {
+    "sitename": "3SThreeI",
     "e-commerce": {
       "title": "Documentation E-Commerce & Guide de Projet | Tutoriel Next.js Ecommerce",
       "description": "Documentation complète du projet e-commerce par 3sthreei. Apprenez à installer, configurer et personnaliser votre panier d'achat Next.js avec des guides étape par étape et des exemples.",
@@ -188,7 +226,9 @@
         "projet ecommerce 3sthreei",
         "boilerplate ecommerce",
         "template ecommerce nextjs"
-      ]
+      ],
+      "ogImage": "https://3sthreei.com/og-image.png",
+      "ogImageAlt": "3SThreeI SaaS Platforme"
     }
   }
 }
