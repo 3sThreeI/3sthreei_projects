@@ -6,7 +6,7 @@ export default function ArrowDownFn({ show, contain }: any) {
       const section = document.getElementById(show);
     const container = document.getElementById(contain);
 
-    console.log("current", show)
+    // console.log("current", show)
     if (container && section) {
       const scrollPosition =
         container.offsetTop + section.offsetTop;
