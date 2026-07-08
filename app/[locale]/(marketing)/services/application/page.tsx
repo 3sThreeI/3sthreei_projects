@@ -9,24 +9,47 @@ import { NextIntlClientProvider } from "next-intl";
 export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale: locale, namespace: "services" })
-    const sitename = await getTranslations('sitenames') as any
     return {
         title: t("application.title"),
         description: t("application.description"),
         keywords: t.raw("application.keywords").join(", "),
+        "alternates": {
+            canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/services/application`,
+            languages: {
+                fr: `${process.env.NEXT_PUBLIC_SITE_URL}/fr/services/application`,
+                en: `${process.env.NEXT_PUBLIC_SITE_URL}/en/services/application`
+            }
+
+        },
         openGraph: {
             title: t("application.title"),
             description: t("application.description"),
-            siteName: sitename,
-            url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/services/application`
+            siteName: t('sitename'),
+            type: "website",
+            url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/services/application`,
+            locale: locale === "fr" ? "fr_FR" : "en_US",
+            images: [
+                {
+                    url: t("ogImage"),
+                    width: 1200,
+                    height: 630,
+                    alt: t("ogImageAlt"),
+                },
+            ]
         },
-        "alternates": {
-            canonical: `/${locale}/services/application`
+        twitter: {
+            card: "summary_large_image",
+            title: t("application.title"),
+            description: t("application.description"),
+            images: [t("ogImage")]
         },
         robots: {
             index: true,
             follow: true,
-        }
+        },
+        authors: [{ name: "3sthreei" }],
+        category: "3sthreei",
+        publisher: "3sthreei",
     }
 }
 
@@ -35,16 +58,16 @@ export default async function Application({ params }: ParamsPropsServices) {
     const messages = (await import(`@/messages/${locale}/services/application.json`)).default
     return (
         <>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-            <section>
-                <ServicesHero messages={messages} />
-            </section>
-            <section>
-                <ProblemSolving messages={messages} type="app"/>
-            </section>
-            <section>
-                <WorkingFlow messages={messages}/>
-            </section>
+            <NextIntlClientProvider locale={locale} messages={messages}>
+                <section>
+                    <ServicesHero messages={messages} />
+                </section>
+                <section>
+                    <ProblemSolving messages={messages} type="app" />
+                </section>
+                <section>
+                    <WorkingFlow messages={messages} />
+                </section>
             </NextIntlClientProvider>
         </>
     )
