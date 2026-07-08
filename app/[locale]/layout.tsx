@@ -37,7 +37,6 @@ export const metadata: Metadata = {
       { url: '/favicon1.png', sizes: '32x32', type: 'image/png' },
     ],
   },
-
   openGraph: {
     type: "website",
     url: siteUrl,
@@ -62,7 +61,6 @@ export const metadata: Metadata = {
       "Apps, games, web solutions, creative design, and tech education — powered by 3SThreeI.",
     images: [`${siteUrl}/og-image.png`],
   },
-
   robots: {
     index: true,
     follow: true,
