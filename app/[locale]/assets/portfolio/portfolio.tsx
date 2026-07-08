@@ -20,7 +20,7 @@ async function fetchProject(type?:string|null){
         type: type || ""
     })
     try {
-        const resp = await fetch(`http://localhost:8440/api/projects/getAll?${params}`, {
+        const resp = await fetch(`${process.env.BACKEND_URL}/api/projects/getAll?${params}`, {
             headers: {"Content-Type": "application/json"},
             method: "GET"
         })
