@@ -16,32 +16,46 @@ export async function generateMetadata({ params }: { params: { locale: string, d
     const file = documentation?.at(-1) || documentation?.[documentation.length - 1] || 'e-commerce'
     const message = await getTranslations(`documentation.${file}`)
     const t = message
-
-    const sitename = await getTranslations("sitename") as any
     return {
         title: t("title"),
         description: t("description"),
         keywords: t.raw("keywords").join(", "),
+        alternates: {
+            canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/${documentation.join("/")}`,
+            languages: {
+                fr: `${process.env.NEXT_PUBLIC_SITE_URL}/fr/${documentation.join("/")}`,
+                en: `${process.env.NEXT_PUBLIC_SITE_URL}/en/${documentation.join("/")}`,
+            }
+        },
         openGraph: {
             title: t('title'),
-            description: t("description"),
-            siteName: sitename,
-            url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/projects/`,
+            description: t('description'),
+            siteName: t('sitename'),
             type: "article",
+            locale: locale === "fr" ? "fr_FR" : "en_US",
+            url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/${documentation.join("/")}`,
+            images: [
+                {
+                    url: t('ogImage'),
+                    width: 1200,
+                    height: 630,
+                    alt: t('ogImageAlt'),
+                }
+            ]
         },
-        alternates: {
-            canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/projects/`,
-            languages: {
-                fr: `${process.env.NEXT_PUBLIC_SITE_URL}/fr`,
-                en: `${process.env.NEXT_PUBLIC_SITE_URL}/en`,
-            }
+        twitter: {
+            card: "summary_large_image",
+            title: t("title"),
+            description: t('description'),
+            images: [t("ogImage")]
         },
         robots: {
             index: true,
             follow: true,
         },
         authors: [{ name: "3sthreei" }],
-        creator: "3sthreei",
+        category: "3sthreei",
+        publisher: "3sthreei",
     }
 }
 type ListExpProps = {
