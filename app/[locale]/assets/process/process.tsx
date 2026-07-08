@@ -4,8 +4,18 @@ import style from "./process.module.css"
 import PhoneProgress from "./PhoneProgress";
 import ArrowDownFn from "./ArrowDownBtn";
 
+const iconMap = [
+    FaLightbulb,
+    FaClipboardList,
+    FaPencilRuler,
+    FaCode,
+    FaVial,
+    FaRocket,
+    FaHandshake,
+]
+
 type CardProps = {
-    icon: string,
+    // icon: string,
     title: string,
     content: string
 }
@@ -21,35 +31,34 @@ async function WorkingProcess() {
             {/* --------------------------tablet and laptop--------------------  */}
             <div className={style.cards}>
                 {
-                    cards.map((item, index) => (
-                        <div key={index} className={`${style.card} ${style[`card${index}`]}`}>
-                            <div className={style.cardContainer}>
-                                <div className={style.icons}>
-                                    {index === 0 && <FaLightbulb className={style.icon} />}
-                                    {index === 1 && <FaClipboardList className={style.icon} />}
-                                    {index === 2 && <FaPencilRuler className={style.icon} />}
-                                    {index === 3 && <FaCode className={style.icon} />}
-                                    {index === 4 && <FaVial className={style.icon} />}
-                                    {index === 5 && <FaRocket className={style.icon} />}
-                                    {index === 6 && <FaHandshake className={style.icon} />}
-                                </div>
-                                <h1 className={style.title}> <span className="text-[1.1rem] text-(--nav-text-color) hover:animate-bounce">{index + 1}</span> {item.title}</h1>
-                                <div className={style.content} id={`scroll-container${index}`}>
-                                    {/* <div id={`back-section${index}`}></div> */}
-                                    <div className="" >
-                                        <p>{item.content}</p>
-                                        <ArrowDownFn show={`show-section${index}`} contain={`scroll-container${index}`} />
+                    cards.map((item, index) => {
+                        const Icon = iconMap[index]
+                        return (
+                            <div key={index} className={`${style.card} ${style[`card${index}`]}`}>
+                                <div className={style.cardContainer}>
+                                    <div className={style.icons}>
+                                        {Icon && <Icon className={style.icon} />}
                                     </div>
-                                    <div id={`show-section${index}`}></div>
+                                    <h2 className={style.title}>
+                                        <span className="text-[1.1rem] text-(--nav-text-color) hover:animate-bounce">{index + 1}</span>
+                                        {" "}{item.title}</h2>
+                                    <div className={style.content} id={`scroll-container${index}`}>
+                                        <div className="" >
+                                            <p>{item.content}</p>
+                                            {/* arrow down function is the custom component */}
+                                            <ArrowDownFn show={`show-section${index}`} contain={`scroll-container${index}`} />
+                                        </div>
+                                        <div id={`show-section${index}`}></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))
+                        )
+                    })
                 }
             </div>
             {/* --------------------------Phone-------------------------- */}
             <div className={style.Phonecards}>
-                <PhoneProgress />
+                <PhoneProgress cards={cards} />
             </div>
         </div>
     )
