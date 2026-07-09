@@ -55,7 +55,7 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
         publisher: "3sthreei",
     }
 }
-export default async function OurProjects({params}:ParamProps) {
+export default async function OurProjects({params, searchParams}:ParamProps) {
     const { locale } = await params 
     const message = (await import(`@/messages/${locale}/projects.json`)).default
     console.log("***********__project page rendered")
@@ -65,7 +65,7 @@ export default async function OurProjects({params}:ParamProps) {
                 <ProjectHero message={message}/>
             </section>
             <section>
-                {/* <Projects searchParams={searchParams} message={message} /> */}
+                <Projects searchParams={searchParams} message={message} />
             </section>
         </NextIntlClientProvider>
     )
