@@ -11,11 +11,12 @@ import Link from "next/link";
 // import { useState } from "react";
 
 
-export async function generateMetadata({ params }: { params: { locale: string, documentation: string[] } }): Promise<Metadata> {
-    const { locale, documentation } = params
+export async function generateMetadata({ params }: { params:Promise<{ locale: string, documentation: string[] }> }): Promise<Metadata> {
+    const { locale, documentation } = await params
     const file = documentation?.at(-1) || documentation?.[documentation.length - 1] || 'e-commerce'
     const message = await getTranslations(`documentation.${file}`)
     const t = message
+    console.log(t("description"))
     return {
         title: t("title"),
         description: t("description"),
@@ -85,7 +86,7 @@ export default async function Documentation({ params }: { params: any }) {
                     <h1 className={style.title}>{t.title}</h1>
                 </div>
                 <figure>
-                    <Image src={t.projImgUrl} alt={t.projImgAlt} width={900} height={400} loading="lazy" className={style.image} />
+                    <Image src={t.projImgUrl} alt={t.projImgAlt} width={900} height={400} loading="eager" className={style.image} />
                 </figure>
                 <div className={style.heroText}>
                     <h2 className={style.subtitle}>{t.subtitle}</h2>
