@@ -3,7 +3,7 @@
 @apply mt-14
 }
 .filters{
-    @apply max-w-[750px] flex flex-wrap gap-5 mx-auto justify-around 
+    @apply max-w-[750px] flex flex-wrap space-x-3 mx-auto justify-around 
 }
 .filters .filter{
     @apply  border-2 border-(--nav-bg-color)/20  text-(--nav-text-color)  rounded-full px-5 py-2 hover:border-(--nav-bg-color) transition-all duration-300 ease-in cursor-pointer relative
