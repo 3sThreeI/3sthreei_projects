@@ -1,4 +1,5 @@
 {
+    "sitename": "3SThreeI",
     "title": "E-commerce Documentation",
     "projImgUrl": "/project1.png",
     "projImgAlt": "E-commerce website designed to help customers grow their business",
@@ -189,5 +190,5 @@
             }
         ]
     },
-    "cta": "Get started"
+    "cta": "Start your 3-month free trial"
 }
