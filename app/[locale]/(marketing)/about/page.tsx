@@ -6,7 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 
 export interface ParamProps {
     params: Promise<{ locale: string }>;
-    searchParams: Promise<{type?:string}>
+    searchParams: Promise<{ type?: string }>
 }
 export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
     const { locale } = await params
@@ -26,7 +26,7 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
             title: t("title"),
             description: t('description'),
             siteName: t('sitename'),
-            url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/about`,
+            url: locale === "fr" ? `${process.env.NEXT_PUBLIC_SITE_URL}/fr/about` : `${process.env.NEXT_PUBLIC_SITE_URL}/en/about`,
             type: "website",
             locale: locale === "fr" ? 'fr_FR' : 'en_US',
             images: [
