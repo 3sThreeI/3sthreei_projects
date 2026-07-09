@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 
 export interface ParamProps {
     params: Promise<{ locale: string }>;
+    searchParams: Promise<{type?:string}>
 }
 export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
     const { locale } = await params
