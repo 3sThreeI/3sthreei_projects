@@ -3,6 +3,12 @@
 .nav {
     @apply flex justify-between px-5 py-2 relative font-[open+sans]
 }
+.Icon_large_screen{
+    @apply block text-center
+}
+.Icon_small_screen{
+    @apply hidden 
+}
 
 .navlink {
     @apply flex justify-between gap-5 border border-(--nav-bg-color) text-(--nav-text-color) px-5 py-2 rounded-full
@@ -104,6 +110,15 @@
 @media(max-width:670px) {
     .navlink {
         @apply hidden
+    }
+    .Icon_large_screen{
+        @apply hidden max-w-[50px] overflow-hidden 
+    }
+   .logoIcon{
+        @apply w-auto h-auto
+    }
+    .Icon_small_screen{
+        @apply block
     }
 
     .PhoneNav {

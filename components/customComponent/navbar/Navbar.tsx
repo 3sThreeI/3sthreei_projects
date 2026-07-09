@@ -1,5 +1,6 @@
 
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import Link from "next/link";
 import { getLocale } from "next-intl/server";
 import SwitchButtonLang from "../../ui/customButton/switchLang";
@@ -73,8 +74,13 @@ export default async function Navbar() {
 
     return (
         <nav className={style.nav}>
-            <div className="py-2">
-                <h1>3SThreeI</h1>
+            <div className="py-2 overflow-hidden">
+              <div className={style.Icon_large_screen}>
+                <Image src="/icons/3sthreei_icon_White.png" alt="3Sthreei Icons" width={40} height={30} loading="lazy" className={style.logoIcon}/>
+              </div>
+              <div className={style.Icon_small_screen}>
+                <Image src="/icons/3sthreei_icon_White.png" alt="3Sthreei Icons" width={40} height={30} loading="lazy" className={style.logoIcon} />
+              </div>
             </div>
             {/* -------------------------- huge screee */}
             <div className="">
