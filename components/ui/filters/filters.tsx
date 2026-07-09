@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from "react"
 import style from "./filters.module.css"
-import { FaEye } from "react-icons/fa"
-import Portfolio from "@/app/[locale]/assets/portfolio/portfolio"
 import { useRouter, useSearchParams } from "next/navigation"
 type PortfolioSchema = {
     img: string,
