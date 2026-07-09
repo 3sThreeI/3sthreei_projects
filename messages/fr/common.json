@@ -213,8 +213,8 @@
     "ogImageAlt": "3SThreeI SaaS Platforme"
   },
   "documentation": {
-    "sitename": "3SThreeI",
     "e-commerce": {
+      "sitename": "3SThreeI",
       "title": "Documentation E-Commerce & Guide de Projet | Tutoriel Next.js Ecommerce",
       "description": "Documentation complète du projet e-commerce par 3sthreei. Apprenez à installer, configurer et personnaliser votre panier d'achat Next.js avec des guides étape par étape et des exemples.",
       "keywords": [
