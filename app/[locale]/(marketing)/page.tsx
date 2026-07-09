@@ -32,7 +32,7 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
       title: t('title'),
       description: t('description'),
       siteName: t('sitename'),
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}`,
+      url: locale === "fr" ? `${process.env.NEXT_PUBLIC_SITE_URL}/fr` :  `${process.env.NEXT_PUBLIC_SITE_URL}/en`,
       type: "website",
       locale: locale === "fr" ? 'fr_FR' : 'en_US',
       images: [
