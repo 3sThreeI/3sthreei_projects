@@ -198,8 +198,8 @@
         "ogImageAlt": "3SThreeI SaaS Platform"
     },
     "documentation": {
-        "sitename": "3SThreeI",
         "e-commerce": {
+            "sitename": "3SThreeI",
             "title": "E-Commerce Documentation & Project Guide | Next.js Ecommerce Tutorial",
             "description": "Complete e-commerce project documentation by 3sthreei. Learn how to install, configure, and customize your Next.js shopping cart with step-by-step guides and examples",
             "keywords": [
