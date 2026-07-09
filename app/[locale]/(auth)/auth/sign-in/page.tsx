@@ -30,7 +30,7 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
             locale: locale === "fr" ? 'fr_FR' : 'en_US',
             images: [
                 {
-                    url: t('"ogImage'),
+                    url: t('ogImage'),
                     width: 1200,
                     height: 630,
                     alt: t("ogImageAlt"),

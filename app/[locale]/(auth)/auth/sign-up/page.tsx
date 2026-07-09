@@ -24,7 +24,15 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
             siteName: t('sitename'),
             type: "website",
             locale: locale === "fr" ? "fr_FR" : "en_US",
-            url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/auth/sign-up`
+            url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/auth/sign-up`,
+            images: [
+                {
+                    url: t('ogImage'),
+                    width: 1200,
+                    height: 630,
+                    alt: t("ogImageAlt"),
+                },
+            ],
         },
         twitter: {
             card: "summary_large_image",

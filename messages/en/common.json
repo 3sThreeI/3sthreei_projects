@@ -23,7 +23,9 @@
             "threeSthreeI",
             "Sign-In",
             "log-In"
-        ]
+        ],
+         "ogImage": "https://3sthreei.com/og-image.png",
+        "ogImageAlt": "3SThreeI SaaS Platform"
     },
     "navbar": {
         "sitename": "3SThreeI",
