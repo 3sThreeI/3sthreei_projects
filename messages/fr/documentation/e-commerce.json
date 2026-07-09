@@ -5,62 +5,62 @@
     "subtitle": "Un e-commerce qui évolue avec vous",
     "desc": "Que vous gériez un petit catalogue ou une boutique à grande échelle, cette plateforme s’adapte sans effort à votre activité. Conçue pour absorber les pics de trafic, assurer des mises à jour d’inventaire en temps réel et garantir une fiabilité continue, afin que vos clients bénéficient toujours d’une expérience d’achat fluide.",
     "ProblemStat": {
-    "title": "Problématique",
-    "text1": "Les entreprises sans boutique en ligne au Mali perdent une part importante de leurs clients potentiels au profit de concurrents qui ont adopté le numérique. Les consommateurs urbains, les expatriés et les clients internationaux effectuent de plus en plus leurs achats en ligne. Si votre entreprise n’est pas présente sur Internet, elle reste invisible pour eux.",
-    "text2Special": "Cette plateforme e-commerce répond à ce défi ",
-    "text2": "en permettant à toute entreprise de créer facilement une boutique en ligne professionnelle, sans aucune compétence technique.",
-    "WhoExp": {
-        "title": "Qui est concerné par ce problème ? (Et pourquoi c’est important)",
-        "Exp": [
-            {
-                "contentSubT": "Petites et moyennes entreprises au Mali",
-                "ExpList": [
-                    "Ressources limitées pour gérer simultanément une activité physique et en ligne",
-                    "Manque d’expertise technique pour développer un site e-commerce",
-                    "Peu de temps à consacrer à la transformation digitale",
-                    "Perte d’opportunités de ventes au profit des concurrents connectés"
-                ]
-            },
-            {
-                "contentSubT": "Commerces traditionnels en transition numérique",
-                "ExpList": [
-                    "Difficulté à synchroniser les stocks entre le magasin et la boutique en ligne",
-                    "Incohérences entre les données du point de vente et celles de l’e-commerce",
-                    "Charge supplémentaire pour le personnel chargé des commandes en ligne",
-                    "Erreurs de stock, ruptures ou surventes"
-                ]
-            },
-            {
-                "contentSubT": "Clients recherchant une expérience d’achat moderne",
-                "ExpList": [
-                    "Recherchent les produits en ligne avant de prendre une décision d’achat",
-                    "Souhaitent pouvoir acheter à tout moment, sans se déplacer",
-                    "Privilégient la simplicité et la rapidité des services numériques",
-                    "Se tournent vers les entreprises disposant d’une présence en ligne"
-                ]
-            },
-            {
-                "contentSubT": "Entreprises gérant plusieurs canaux de vente",
-                "ExpList": [
-                    "Difficulté à suivre la disponibilité des produits sur différents canaux",
-                    "Risque de surstockage ou de rupture lorsque les données ne sont pas synchronisées",
-                    "Besoin d’une visibilité en temps réel sur les stocks",
-                    "Manque de visibilité entraînant une perte de clients"
-                ]
-            }
-        ]
+        "title": "Problématique",
+        "text1": "Les entreprises sans boutique en ligne au Mali perdent une part importante de leurs clients potentiels au profit de concurrents qui ont adopté le numérique. Les consommateurs urbains, les expatriés et les clients internationaux effectuent de plus en plus leurs achats en ligne. Si votre entreprise n’est pas présente sur Internet, elle reste invisible pour eux.",
+        "text2Special": "Cette plateforme e-commerce répond à ce défi ",
+        "text2": "en permettant à toute entreprise de créer facilement une boutique en ligne professionnelle, sans aucune compétence technique.",
+        "WhoExp": {
+            "title": "Qui est concerné par ce problème ? (Et pourquoi c’est important)",
+            "Exp": [
+                {
+                    "contentSubT": "Petites et moyennes entreprises au Mali",
+                    "ExpList": [
+                        "Ressources limitées pour gérer simultanément une activité physique et en ligne",
+                        "Manque d’expertise technique pour développer un site e-commerce",
+                        "Peu de temps à consacrer à la transformation digitale",
+                        "Perte d’opportunités de ventes au profit des concurrents connectés"
+                    ]
+                },
+                {
+                    "contentSubT": "Commerces traditionnels en transition numérique",
+                    "ExpList": [
+                        "Difficulté à synchroniser les stocks entre le magasin et la boutique en ligne",
+                        "Incohérences entre les données du point de vente et celles de l’e-commerce",
+                        "Charge supplémentaire pour le personnel chargé des commandes en ligne",
+                        "Erreurs de stock, ruptures ou surventes"
+                    ]
+                },
+                {
+                    "contentSubT": "Clients recherchant une expérience d’achat moderne",
+                    "ExpList": [
+                        "Recherchent les produits en ligne avant de prendre une décision d’achat",
+                        "Souhaitent pouvoir acheter à tout moment, sans se déplacer",
+                        "Privilégient la simplicité et la rapidité des services numériques",
+                        "Se tournent vers les entreprises disposant d’une présence en ligne"
+                    ]
+                },
+                {
+                    "contentSubT": "Entreprises gérant plusieurs canaux de vente",
+                    "ExpList": [
+                        "Difficulté à suivre la disponibilité des produits sur différents canaux",
+                        "Risque de surstockage ou de rupture lorsque les données ne sont pas synchronisées",
+                        "Besoin d’une visibilité en temps réel sur les stocks",
+                        "Manque de visibilité entraînant une perte de clients"
+                    ]
+                }
+            ]
+        },
+        "whyMatter": {
+            "title": "Pourquoi c’est important",
+            "solving": [
+                "Accéder à une clientèle plus large grâce aux canaux numériques",
+                "Réduire les pertes de revenus liées aux opportunités de vente manquées",
+                "Renforcer la confiance des clients grâce à une gestion fiable des stocks",
+                "Faciliter la croissance et l’expansion de l’entreprise",
+                "Rester compétitif dans une économie de plus en plus digitalisée"
+            ]
+        }
     },
-    "whyMatter": {
-        "title": "Pourquoi c’est important",
-        "solving": [
-            "Accéder à une clientèle plus large grâce aux canaux numériques",
-            "Réduire les pertes de revenus liées aux opportunités de vente manquées",
-            "Renforcer la confiance des clients grâce à une gestion fiable des stocks",
-            "Faciliter la croissance et l’expansion de l’entreprise",
-            "Rester compétitif dans une économie de plus en plus digitalisée"
-        ]
-    }
-},
     "features": {
         "title": "Fonctionnalités",
         "featureList": [
@@ -189,5 +189,5 @@
             }
         ]
     },
-    "cta": "Commencer"
+    "cta": "Commencer votre essai gratuit de 3 mois"
 }
