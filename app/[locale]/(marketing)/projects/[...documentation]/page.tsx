@@ -10,13 +10,12 @@ import { FaServer, FaDatabase, FaCreditCard, FaBolt } from "react-icons/fa";
 import Link from "next/link";
 // import { useState } from "react";
 
-
 export async function generateMetadata({ params }: { params:Promise<{ locale: string, documentation: string[] }> }): Promise<Metadata> {
     const { locale, documentation } = await params
     const file = documentation?.at(-1) || documentation?.[documentation.length - 1] || 'e-commerce'
     const message = await getTranslations(`documentation.${file}`)
     const t = message
-    console.log(t("description"))
+    console.log("documentation locale", locale)
     return {
         title: t("title"),
         description: t("description"),

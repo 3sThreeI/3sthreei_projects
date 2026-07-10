@@ -2,8 +2,10 @@ import ServicesHero from "@/components/customComponent/servicesHero/ServicesHero
 import { getLocale, getTranslations } from "next-intl/server";
 import { ParamsPropsServices } from "../web/page";
 import { Metadata } from "next";
-
-export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
+type Props = {
+    params: Promise<{locale:string}>;
+}
+export async function generateMetadata({params}:Props): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale: locale, namespace: "services" })
     return {

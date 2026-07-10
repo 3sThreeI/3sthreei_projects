@@ -4,8 +4,10 @@ import { ParamProps } from "../../(marketing)/about/page";
 import { FaTools } from "react-icons/fa";
 import style from "./unavailable.module.css"
 import Link from "next/link";
-
-export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
+type Props = {
+    params: Promise<{locale:string}>;
+}
+export async function generateMetadata({params}:Props): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale, namespace: "unavailable" })
     return {

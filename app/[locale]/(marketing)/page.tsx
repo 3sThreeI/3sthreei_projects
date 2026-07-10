@@ -13,8 +13,7 @@ import VideoMarketing from '../assets/videoMarketing/videoMarketing';
 type Props = {
   params: { locale: string };
 };
-
-export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
+export async function generateMetadata({params}:Props ): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale: locale, namespace: 'home' })
   return {
@@ -32,7 +31,7 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
       title: t('title'),
       description: t('description'),
       siteName: t('sitename'),
-      url: locale === "fr" ? `${process.env.NEXT_PUBLIC_SITE_URL}/fr` :  `${process.env.NEXT_PUBLIC_SITE_URL}/en`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}`,
       type: "website",
       locale: locale === "fr" ? 'fr_FR' : 'en_US',
       images: [
@@ -54,7 +53,7 @@ export async function generateMetadata(params: Promise<{ locale: string }>): Pro
       index: true,
       follow: true
     },
-     authors: [{ name: "3sthreei" }],
+    authors: [{ name: "3sthreei" }],
     creator: "3sthreei",
     publisher: "3sthreei",
   }

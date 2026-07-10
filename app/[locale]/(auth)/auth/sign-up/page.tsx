@@ -4,7 +4,11 @@ import style from "../sign-in/sign.module.css"
 import { ParamProps } from "@/app/[locale]/(marketing)/about/page";
 import SignUpComp from "@/app/[locale]/assets/auth/signUp";
 import { redirect } from "next/navigation";
-export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
+
+type Props = {
+    params: Promise<{ locale: string }>;
+}
+export async function generateMetadata({params}:Props): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale, namespace: "signUp" })
     return {

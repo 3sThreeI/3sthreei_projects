@@ -9,7 +9,7 @@ type Props = {
     params:Promise<{ locale: string }>;
     searchParams: Promise<{type?:string}>
 }
-export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
+export async function generateMetadata({params}:Props): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "project" })
     return {

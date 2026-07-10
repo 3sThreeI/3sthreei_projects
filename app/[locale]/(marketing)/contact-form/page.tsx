@@ -4,7 +4,10 @@ import { Metadata } from "next"
 import { getTranslations } from "next-intl/server"
 import FormContactCompt from "@/components/customComponent/formContact/formContact"
 import { ParamProps } from "../about/page"
-export async function generateMetadata(params: Promise<{ locale: string }>): Promise<Metadata> {
+type Props = {
+    params: Promise<{locale:string}>;
+}
+export async function generateMetadata({params}:Props): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale, namespace: "contactForm" })
     return {

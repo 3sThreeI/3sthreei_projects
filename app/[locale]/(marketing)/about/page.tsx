@@ -8,7 +8,7 @@ export interface ParamProps {
     params: Promise<{ locale: string }>;
     searchParams: Promise<{ type?: string }>
 }
-export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
+export async function generateMetadata({params}:ParamProps): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale, namespace: "about" })
     return {
@@ -26,7 +26,7 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
             title: t("title"),
             description: t('description'),
             siteName: t('sitename'),
-            url: locale === "fr" ? `${process.env.NEXT_PUBLIC_SITE_URL}/fr/about` : `${process.env.NEXT_PUBLIC_SITE_URL}/en/about`,
+            url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/about`,
             type: "website",
             locale: locale === "fr" ? 'fr_FR' : 'en_US',
             images: [

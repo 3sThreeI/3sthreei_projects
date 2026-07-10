@@ -2,10 +2,10 @@ import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import Faq from "../../assets/faq/faq";
-interface Props {
-    locale: string
+type Props = {
+   params: Promise<{locale:string}>;
 }
-export async function generateMetadata(params: Promise<Props>): Promise<Metadata> {
+export async function generateMetadata({params}:Props): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale, namespace: "faq" })
     return {
