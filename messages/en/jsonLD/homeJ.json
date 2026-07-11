@@ -1,0 +1,16 @@
+{
+"name": "3sthreei",
+    "description": "Full-service web design and development agency specializing in gaming, desktop applications, websites, and custom web applications.",
+    "services": {
+      "webDesign": "Web Design",
+      "webDesignDesc": "Custom, responsive web design tailored to your brand and audience",
+      "gaming": "Gaming Development",
+      "gamingDesc": "Interactive gaming experiences and game development solutions",
+      "desktop": "Desktop Applications",
+      "desktopDesc": "Cross-platform desktop apps built with modern technologies",
+      "website": "Website Development",
+      "websiteDesc": "Full-stack website development from landing pages to complex platforms",
+      "webApp": "Web Applications",
+      "webAppDesc": "Custom web applications using Next.js, React, Node.js, and modern frameworks"
+    }
+}
