@@ -84,126 +84,38 @@ async function fetchTestimonials() {
 export default async function MarketingPage({ params }: Props) {
   const { locale } = await params
   const BaseUrl = process.env.NEXT_PUBLIC_SITE_URL
-
   console.log("BACKEND:", process.env.NEXT_PUBLIC_BACKEND_URL);
   const feedback = await fetchTestimonials()
-  const t = (await import(`@/messages/${locale}/jsonLD/homeJ.json`))
-  console.log("home JSONT", t.description)
-  const jsonLD = {
+  const t = (await import(`@/messages/${locale}/jsonLD/homeJ.json`)).default
+  const homeJSONLD = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": t.name,
-    "@id": `${BaseUrl}#organization`,
+    "@type": "WebPage",
     "url": `${BaseUrl}/${locale}`,
-    "logo": [
-      {
-        "@type": "ImageObject",
-        "url": "https://3sthreei.com/icons/3sthreei_icon_White.png",
-        "caption": "3sthreei Company Logo"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://3sthreei.com/icons/3sthreei_icon_Black.png",
-        "caption": "3sthreei Company Logo"
-      }],
-    "alternateName": ["3s Threei", "3si", "3sthreei", "3s threei", "3SI", "threeSthreeI", "ThreeS3I"],
+    "@id": `${BaseUrl}/${locale}#homepage`,
+    "name": t.name,
     "description": t.description,
-    "telephone": locale === "fr" ? "+22391716839" : "+233592233681",
-    "email": "abzarcamara3@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Accra",
-      "addressRegion": "Greater Accra",
-      "addressCountry": "GH"
+    "isPartOf": {
+      "@id": `${BaseUrl}#website`,
     },
-    "sameAs": [
-
-    ],
-    "founder": {
-      "@type": "company",
-      "name": "3sthreei",
-      "email": "abzarcamara3@gmail.com"
+    "about": {
+      "@id": `${BaseUrl}#organization`,
     },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": locale === "fr" ? "Nos Services" : "Our Services",
-      "itemListElement": [
-        {
-          "@type": "Service",
-          "name": t.services.webDesignDesc,
-          "description": t.services.webDesignDesc
-        },
-        {
-          "@type": "Service",
-          "name": t.services.gaming,
-          "description": t.services.gamingDesc
-        },
-        {
-          "@type": "Service",
-         "name": t.services.desktop,
-          "description": t.services.desktopDesc
-        },
-        {
-          "@type": "Service",
-         "name": t.services.website,
-          "description": t.services.websiteDesc
-        },
-        {
-          "@type": "Service",
-          "name": t.services.webApp,
-          "description": t.services.webAppDesc
-        }
-      ]
+    "mainEntity": {
+    "@id": `${BaseUrl}#organization`
+  },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
     },
-    "contactPoint": [
-      {
-        "@type": "ContactPoint",
-        "telephone": "+22391716839",
-        "contactType": "Customer Service",
-        "availableLanguage": ["English", "French"],
-        "contactOption": "WhatsApp"
-      },
-      {
-        "@type": "ContactPoint",
-        "telephone": "+233592233681",
-        "contactType": "Customer Service",
-        "contactOption": "WhatsApp",
-        "availableLanguage": ["English", "French"]
-      },
-      {
-        "@type": "ContactPoint",
-        "email": "abzarcamara3@gmail.com",
-        "contactType": "Customer Service",
-        "availableLanguage": ["English", "French"]
-      }
-    ],
-    "areaServed": [
-      {
-        "@type": "Country",
-        "name": "Ghana"
-      },
-      {
-        "@type": "Country",
-        "name": "Mali"
-      },
-      {
-        "@type": "Country",
-        "name": "Global"
-      }
-    ],
-    "inLanguage": [
-      { "@type": "Language", "name": "English", "alternateName": "en" },
-      { "@type": "Language", "name": "French", "alternateName": "fr" }
-    ]
-  }
+    "image": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+    "inLanguage": locale === "fr" ? "fr" : "en",
+  };
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLD).replace(/</g, '\\u003c'),
-        }}
-      />
+       <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJSONLD).replace(/</g, '\\u003c'), }}
+        />
       <Hero />
       {/*---------------------------- Services Section ---------------------------- */}
       <section>
