@@ -85,12 +85,140 @@ export default async function RootLayout({
   }
   setRequestLocale(locale)
   const messages = await getMessages({ locale })
+  const t = (await import(`@/messages/${locale}/jsonLD/homeJ.json`)).default
+  // console.log("titel tttt", t)
+  const BaseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://3sthreei.com"
+  const OrgjsonLD = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": t.name,
+    "@id": `${BaseUrl}#organization`,
+    "url": BaseUrl,
+    "image": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+    "logo":  {
+    "@type": "ImageObject",
+    "url": `${BaseUrl}/icons/3sthreei_icon_White.png`,
+    "caption": "3sthreei Company Logo"
+  },
+    "alternateName": ["3s Threei", "3si", "3sthreei", "3s threei", "3SI", "threeSthreeI", "ThreeS3I"],
+    "description": t.description,
+    "telephone": locale === "fr" ? "+22391716839" : "+233592233681",
+    "email": "abzarcamara3@gmail.com",
+    "legalName": "3sthreei",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Accra",
+      "addressRegion": "Greater Accra",
+      "addressCountry": "GH"
+    },
+    "sameAs": [
+
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Abzar Camara",
+      "email": "abzarcamara3@gmail.com"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": locale === "fr" ? "Nos Services" : "Our Services",
+      "itemListElement": [
+        {
+          "@type": "Service",
+          "name": t.services.webDesign,
+          "description": t.services.webDesignDesc
+        },
+        {
+          "@type": "Service",
+          "name": t.services.gaming,
+          "description": t.services.gamingDesc
+        },
+        {
+          "@type": "Service",
+          "name": t.services.desktop,
+          "description": t.services.desktopDesc
+        },
+        {
+          "@type": "Service",
+          "name": t.services.website,
+          "description": t.services.websiteDesc
+        },
+        {
+          "@type": "Service",
+          "name": t.services.webApp,
+          "description": t.services.webAppDesc
+        }
+      ]
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+233592233681",
+        "contactType": "Customer Service",
+        "availableLanguage": ["English", "French"],
+        "description": "Available on WhatsApp"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+233592233681",
+        "contactType": "Customer Service",
+        "description": "Available on WhatsApp",
+        "availableLanguage": ["English", "French"]
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "abzarcamara3@gmail.com",
+        "contactType": "Customer Service",
+        "availableLanguage": ["English", "French"]
+      }
+    ],
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Ghana"
+      },
+      {
+        "@type": "Country",
+        "name": "Mali"
+      },
+      {
+        "@type": "Country",
+        "name": "Global"
+      }
+    ],
+    "inLanguage": [
+      { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
+    ],
+    "foundingDate": "2026-04-12",
+  }
+  const websiteJSONLD = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${BaseUrl}#website`,
+    "url": BaseUrl,
+    "name": t.name,
+    "description": t.description,
+    "publisher": {
+      "@id": `${BaseUrl}#organization`
+    },
+    "inLanguage": locale === "fr" ? "fr" : "en",
+  };
   return (
     <html lang={locale}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(OrgjsonLD).replace(/</g, '\\u003c'), }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJSONLD).replace(/</g, '\\u003c'), }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <Navbar />
+        <Navbar />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
