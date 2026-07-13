@@ -58,9 +58,76 @@ export async function generateMetadata({params}:Props): Promise<Metadata> {
 export default async function OurProjects({params, searchParams}:ParamProps) {
     const { locale } = await params 
     const message = (await import(`@/messages/${locale}/projects.json`)).default
-    console.log("***********__project page rendered")
+     const JsonT = (await import(`@/messages/${locale}/jsonLD/projectJ.json`)).default
+    const BaseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://3sthreei.com"
+    console.log("**********project page is has been rendere************", BaseUrl)
+    const projectJSONLD = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": `${BaseUrl}/${locale}/project#project-page`,
+        "url": `${BaseUrl}/${locale}/project`,
+        "name": JsonT.name,
+        "description": JsonT.description,
+        "isPartOf": {
+            "@id": `${BaseUrl}#website`,
+        },
+        "about": {
+            "@type": "Organization",
+            "@id": `${BaseUrl}#organization`,
+        },
+        "image": [
+            {
+                "@type": "ImageObject",
+                "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+                "caption": "3sthreei Company Logo"
+            },
+            {
+                "@type": "ImageObject",
+                "url": `${BaseUrl}/icons/3sthreei_icon_White.png`,
+                "caption": "3sthreei Company Logo"
+            }
+        ],
+        "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+        },
+        "inLanguage": [
+            { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
+        ],
+        "mainEntity": {
+            "@type": "Organization",
+            "@id": `${BaseUrl}#organization`
+        }
+    }
+    const projectBreadcrumb = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": locale === "fr" ? "Accueil" : "Home",
+                "item": `${BaseUrl}/${locale}`
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": locale === "fr" ? "Projet" : "Project",
+                "item": `${BaseUrl}/${locale}/Project`
+            },
+        ]
+    }
+    // console.log("***********__project page rendered")
     return (
         <NextIntlClientProvider>
+            <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{__html: JSON.stringify(projectJSONLD).replace(/</g, '\\u003c')}}
+            />
+             <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{__html: JSON.stringify(projectBreadcrumb).replace(/</g, '\\u003c')}}
+            />
             <section>
                 <ProjectHero message={message}/>
             </section>
