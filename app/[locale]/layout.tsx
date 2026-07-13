@@ -186,9 +186,6 @@ export default async function RootLayout({
         "name": "Global"
       }
     ],
-    "inLanguage": [
-      { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
-    ],
     "foundingDate": "2026-04-12",
   }
   const websiteJSONLD = {
