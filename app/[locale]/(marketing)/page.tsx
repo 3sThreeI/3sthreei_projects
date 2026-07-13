@@ -90,63 +90,75 @@ export default async function MarketingPage({ params }: Props) {
   const homeJSONLD = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "url": `${BaseUrl}/${locale}`,
     "@id": `${BaseUrl}/${locale}#homepage`,
+    "url": `${BaseUrl}/${locale}`,
     "name": t.name,
     "description": t.description,
     "isPartOf": {
       "@id": `${BaseUrl}#website`,
     },
     "about": {
+      "@type": "Organization",
       "@id": `${BaseUrl}#organization`,
     },
     "mainEntity": {
-    "@id": `${BaseUrl}#organization`
-  },
+      "@type": "Organization",
+      "@id": `${BaseUrl}#organization`
+    },
+    "image": [
+      {
+        "@type": "ImageObject",
+        "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+        "caption": "3sthreei Company Logo"
+      }
+    ],
     "primaryImageOfPage": {
       "@type": "ImageObject",
       "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
     },
-    "image": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
-    "inLanguage": locale === "fr" ? "fr" : "en",
+    "inLanguage": [
+    { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
+  ]
   };
   return (
-    <main>
-       <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJSONLD).replace(/</g, '\\u003c'), }}
-        />
-      <Hero />
-      {/*---------------------------- Services Section ---------------------------- */}
-      <section>
-        <OurService />
-      </section>
-      {/*---------------------------- We work with us Section ---------------------------- */}
-      <section>
-        <WorkingWith />
-      </section>
-      {/*---------------------------- why choose us Section <WhyChooseUs /> ---------------------------- */}
-      {/*---------------------------- Process Section ---------------------------- */}
-      <section>
-        <WorkingProcess />
-      </section>
-      {/*---------------------------- WorkFlow Section ---------------------------- */}
-      <section>
-        {/* working flow is the table and the card of price of website and features */}
-        <WorkingFlow />
-      </section>
-      {/*---------------------------- video Section ---------------------------- */}
-      <section>
-        <VideoMarketing />
-      </section>
-      {/*---------------------------- Portfolio Section ---------------------------- */}
-      <section>
-        <Portfolio />
-      </section>
-      {/*---------------------------- Testimonial Section ---------------------------- */}
-      <section>
-        <Testimonial feedback={feedback} />
-      </section>
-    </main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJSONLD).replace(/</g, '\\u003c'), }}
+      />
+      <main>
+        <Hero />
+        {/*---------------------------- Services Section ---------------------------- */}
+        <section>
+          <OurService />
+        </section>
+        {/*---------------------------- We work with us Section ---------------------------- */}
+        <section>
+          <WorkingWith />
+        </section>
+        {/*---------------------------- why choose us Section <WhyChooseUs /> ---------------------------- */}
+        {/*---------------------------- Process Section ---------------------------- */}
+        <section>
+          <WorkingProcess />
+        </section>
+        {/*---------------------------- WorkFlow Section ---------------------------- */}
+        <section>
+          {/* working flow is the table and the card of price of website and features */}
+          <WorkingFlow />
+        </section>
+        {/*---------------------------- video Section ---------------------------- */}
+        <section>
+          <VideoMarketing />
+        </section>
+        {/*---------------------------- Portfolio Section ---------------------------- */}
+        <section>
+          <Portfolio />
+        </section>
+        {/*---------------------------- Testimonial Section ---------------------------- */}
+        <section>
+          <Testimonial feedback={feedback} />
+        </section>
+      </main>
+    </>
   );
 }
