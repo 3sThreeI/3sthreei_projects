@@ -1,0 +1,19 @@
+{
+    "name": "Contact Us | 3SthreeI",
+    "description": "Get in touch with 3sthreei for web development, web design, desktop applications, and gaming solutions.",
+    "about": {
+        "description": "Full-service web design and development agency specializing in gaming, desktop applications, websites, and custom web applications.",
+        "telephone": "+233952233681"
+    },
+    "services": "Our Services",
+    "webDesign": "Web Design",
+    "webDesignDesc": "Custom, responsive web design tailored to your brand and audience",
+    "webDevelopment": "Web Development",
+    "webDevelopmentDesc": "Full-stack website development from landing pages to complex platforms",
+    "desktopApps": "Desktop Applications",
+    "desktopAppsDesc": "Cross-platform desktop apps built with modern technologies",
+    "gaming": "Gaming Solutions",
+    "gamingDesc": "Interactive gaming experiences and game development solutions",
+    "webApps": "Web Applications",
+    "webAppsDesc": "Custom web applications using Next.js, React, Node.js, and modern frameworks"
+}
