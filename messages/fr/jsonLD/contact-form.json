@@ -1,0 +1,19 @@
+{
+    "name": "Contactez-nous | 3SthreeI",
+    "description": "Contactez 3sthreei pour le développement web, la conception de sites web, les applications desktop et les solutions gaming.",
+    "about": {
+        "description": "Agence de conception et développement web spécialisée dans le gaming, les applications desktop, sites web et applications web personnalisées.",
+        "telephone": "+22391716839"
+    },
+    "services": "Nos Services",
+    "webDesign": "Conception Web",
+    "webDesignDesc": "Design web personnalisé et responsive adapté à votre marque et audience",
+    "webDevelopment": "Développement Web",
+    "webDevelopmentDesc": "Développement web full-stack de landing pages à plateformes complexes",
+    "desktopApps": "Applications Desktop",
+    "desktopAppsDesc": "Applications desktop multiplateformes avec technologies modernes",
+    "gaming": "Solutions Gaming",
+    "gamingDesc": "Expériences de jeu interactives et solutions de développement de jeux",
+    "webApps": "Applications Web",
+    "webAppsDesc": "Applications web personnalisées avec Next.js, React, Node.js et frameworks modernes"
+}
