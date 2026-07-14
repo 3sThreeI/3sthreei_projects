@@ -60,7 +60,7 @@ export default async function OurProjects({params, searchParams}:ParamProps) {
     const message = (await import(`@/messages/${locale}/projects.json`)).default
      const JsonT = (await import(`@/messages/${locale}/jsonLD/projectJ.json`)).default
     const BaseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://3sthreei.com"
-    console.log("**********project page is has been rendere************", BaseUrl)
+    // console.log("**********project page is has been rendere************", BaseUrl)
     const projectJSONLD = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
