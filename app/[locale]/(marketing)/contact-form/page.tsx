@@ -72,53 +72,6 @@ export default async function ProjectContactForm({ params, searchParams }: Searc
         "isPartOf": {
             "@id": `${BaseUrl}#website`,
         },
-        "about": {
-            "@type": "Organization",
-            "@id": `${BaseUrl}#organization`,
-            "name": "3sthreei",
-            "alternateName": ["3s Threei", "3si", "3SthreeI", "threeSthreeI", "3s3i", "threeS3I"],
-            "url": BaseUrl,
-            "description": JsonT.about.description,
-            "telephone": locale === "fr" ? "+22391716839" : "+233592233681",
-            "email": "abzarcamara3@gmail.com",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": locale === "fr" ? "Bamako" : "Accra",
-                "addressRegion": locale === "fr" ? "Bamako" : "Greater Accra",
-                "addressCountry": locale === "fr" ? "ML" : "GH",
-            },
-            "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": JsonT.services,
-                "itemListElement": [
-                    {
-                        "@type": "Service",
-                        "name": JsonT.webDesign,
-                        "description": JsonT.webDesignDesc
-                    },
-                    {
-                        "@type": "Service",
-                        "name": JsonT.webDevelopment,
-                        "description": JsonT.webDevelopmentDesc
-                    },
-                    {
-                        "@type": "Service",
-                        "name": JsonT.desktopApps,
-                        "description": JsonT.desktopAppsDesc
-                    },
-                    {
-                        "@type": "Service",
-                        "name": JsonT.gaming,
-                        "description": JsonT.gamingDesc
-                    },
-                    {
-                        "@type": "Service",
-                        "name": JsonT.webApps,
-                        "description": JsonT.webAppsDesc
-                    }
-                ]
-            },
-        },
         "image": [
             {
                 "@type": "ImageObject",
@@ -131,44 +84,19 @@ export default async function ProjectContactForm({ params, searchParams }: Searc
                 "caption": "3sthreei Company Logo"
             }
         ],
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+22391716839",
-                "contactType": "Customer Service",
-                "availableLanguage": ["English", "French"],
-                "contactOption": "WhatsApp",
-                "areaServed": {
-                    "@type": "Country",
-                    "name": "Mali"
-                }
-            },
-            {
-                "@type": "ContactPoint",
-                "telephone": "+233592233681",
-                "contactType": "Customer Service",
-                "availableLanguage": ["English", "French"],
-                "contactOption": "WhatsApp",
-                "areaServed": {
-                    "@type": "Country",
-                    "name": "Ghana"
-                }
-            },
-            {
-                "@type": "ContactPoint",
-                "email": "abzarcamara3@gmail.com",
-                "contactType": "Customer Service",
-                "availableLanguage": ["English", "French"],
-                "contactOption": "Email"
-            }
-        ],
+        "about": {
+            "@type": "Organization",
+            "@id": `${BaseUrl}#organization`,
+        },
+        "inLanguage": {
+            "@type": "Language",
+            "name": locale === 'fr' ? "French" : "English",
+            "alternateName": locale
+        },
         "primaryImageOfPage": {
             "@type": "ImageObject",
             "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
         },
-        "inLanguage": [
-            { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
-        ],
         "mainEntity": {
             "@type": "Organization",
             "@id": `${BaseUrl}#organization`
