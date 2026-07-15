@@ -107,12 +107,12 @@ export default async function RootLayout({
     "legalName": "3sthreei",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Accra",
-      "addressRegion": "Greater Accra",
-      "addressCountry": "GH"
+      "addressLocality": locale === "fr" ? "Bamako" : "Accra",
+      "addressRegion": locale === "fr" ? "Bamako" : "Greater Accra",
+      "addressCountry": locale === "fr" ? "ML" : "GH"
     },
     "sameAs": [
-
+     "https://www.facebook.com/profile.php?id=61591687297760",
     ],
     "founder": {
       "@type": "Person",
