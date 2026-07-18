@@ -1,0 +1,48 @@
+{
+  "name": "Mobile App Development Services",
+  "description": "Professional mobile application development services for iOS and Android using Flutter, React Native, and native technologies. We build fast, scalable, and user-focused mobile applications for businesses and startups.",
+  "type": "Mobile App Development",
+  "catalogName": "Mobile App Development Services",
+  "android": {
+    "name": "Android App Development",
+    "description": "Modern Android application development using Kotlin, Java, and Flutter. High-performance, secure, and optimized apps for all Android devices.",
+    "type": "Android App Development",
+    "category": "Android",
+    "curency": "GHS"
+  },
+  "ios": {
+    "name": "iOS App Development",
+    "description": "Professional iOS application development using Swift, SwiftUI, and Flutter. Beautiful, high-performance apps built to meet App Store standards.",
+    "type": "iOS App Development",
+    "category": "iOS",
+    "curency": "GHS"
+  },
+  "crossPlatform": {
+    "name": "Cross-Platform App Development",
+    "description": "Build Android and iOS applications from a single codebase using Flutter and React Native, reducing development time and costs.",
+    "type": "Cross-Platform App Development",
+    "category": "Cross-Platform",
+    "curency": "GHS"
+  },
+  "uiux": {
+    "name": "Mobile UI/UX Design",
+    "description": "Design intuitive, engaging, and user-friendly mobile interfaces that deliver exceptional user experiences across all devices.",
+    "type": "Mobile UI/UX Design",
+    "category": "UI/UX Design",
+    "curency": "GHS"
+  },
+  "maintenance": {
+    "name": "App Maintenance & Support",
+    "description": "Ongoing maintenance, bug fixes, feature enhancements, performance optimization, and technical support to keep your mobile app running smoothly.",
+    "type": "Application Maintenance",
+    "category": "Maintenance & Support",
+    "curency": "GHS"
+  },
+  "publishing": {
+    "name": "App Store Deployment",
+    "description": "Publish and deploy your applications to the Google Play Store and Apple App Store, including submission, review assistance, and updates.",
+    "type": "App Deployment",
+    "category": "Deployment",
+    "curency": "GHS"
+  }
+}

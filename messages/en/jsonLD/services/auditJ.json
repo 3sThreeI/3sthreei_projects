@@ -1,0 +1,48 @@
+{
+  "name": "Website Audit Services",
+  "description": "Get a free professional audit of your website. We evaluate performance, SEO, accessibility, security, user experience, and code quality, then provide actionable recommendations to improve your website.",
+  "type": "Website Audit",
+  "catalogName": "Website Audit Services",
+  "performance": {
+    "name": "Performance Audit",
+    "description": "Analyze your website's loading speed, Core Web Vitals, and overall performance to identify bottlenecks and optimization opportunities.",
+    "type": "Performance Audit",
+    "category": "Performance",
+    "curency": "Free"
+  },
+  "seo": {
+    "name": "SEO Audit",
+    "description": "Review your website's search engine optimization, including metadata, structured data, indexing, keyword optimization, and technical SEO issues.",
+    "type": "SEO Audit",
+    "category": "SEO",
+    "curency": "Free"
+  },
+  "accessibility": {
+    "name": "Accessibility Audit",
+    "description": "Evaluate your website against accessibility best practices and WCAG guidelines to ensure it is usable by everyone.",
+    "type": "Accessibility Audit",
+    "category": "Accessibility",
+    "curency": "Free"
+  },
+  "security": {
+    "name": "Security Audit",
+    "description": "Identify common security vulnerabilities, configuration issues, and potential risks that could affect your website or users.",
+    "type": "Security Audit",
+    "category": "Security",
+    "curency": "Free"
+  },
+  "ux": {
+    "name": "UX & Design Audit",
+    "description": "Assess your website's user experience, navigation, responsiveness, and design consistency to improve usability and conversions.",
+    "type": "User Experience Audit",
+    "category": "UI/UX",
+    "curency": "Free"
+  },
+  "technical": {
+    "name": "Technical Website Audit",
+    "description": "Comprehensive review of your website's code quality, architecture, best practices, maintainability, and overall technical health.",
+    "type": "Technical Audit",
+    "category": "Technical",
+    "curency": "Free"
+  }
+}
