@@ -6,9 +6,9 @@ import WorkingFlow from "@/app/[locale]/assets/workFlow/workingPricing";
 import ProblemSolving from "@/app/[locale]/assets/servicesComp/web/ProblemSolving";
 import WebServiceMarketing from "@/app/[locale]/assets/servicesComp/web/WebServiceMarketing";
 type Props = {
-    params: Promise<{locale:string}>;
+    params: Promise<{ locale: string }>;
 }
-export async function generateMetadata({params}:Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale, namespace: "services" })
     return {
@@ -60,10 +60,178 @@ export interface ParamsPropsServices {
 export default async function Web({ params }: ParamsPropsServices) {
     const { locale } = await params
     const messages = (await import(`@/messages/${locale}/services/web.json`)).default
+    const JsonT = (await import(`@/messages/${locale}/jsonLD/services/webJ.json`)).default
+    const BaseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://3sthreei.com"
+    // console.log("**********project page is has been rendere************", BaseUrl)
+    const webJSONLD = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": `${BaseUrl}/${locale}/services/web#web-page`,
+        "url": `${BaseUrl}/${locale}/services/web`,
+        "name": JsonT.name,
+        "description": JsonT.description,
+        "serviceType": JsonT.type,
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": JsonT.catalogName,
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "Service",
+                        "name": JsonT.frontend.name,
+                        "description": JsonT.frontend.description,
+                        "serviceType": JsonT.frontend.type,
+                        "offers": {
+                            "@type": "Offer",
+                            "category": JsonT.frontend.category,
+                            "priceCurrency": JsonT.frontend.curency
+                        }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "Service",
+                        "name": JsonT.backend.name,
+                        "description": JsonT.backend.description,
+                        "serviceType": JsonT.backend.type,
+                        "offers": {
+                            "@type": "Offer",
+                            "category": JsonT.backend.category,
+                            "priceCurrency": JsonT.backend.curency
+                        }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "Service",
+                        "name": JsonT.fullstack.name,
+                        "description": JsonT.fullstack.description,
+                        "serviceType": JsonT.fullstack.type,
+                        "offers": {
+                            "@type": "Offer",
+                            "category": JsonT.fullstack.category,
+                            "priceCurrency": JsonT.fullstack.curency
+                        }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "item": {
+                        "@type": "Service",
+                        "name": JsonT.Ecommerce.name,
+                        "description": JsonT.Ecommerce.description,
+                        "serviceType": JsonT.Ecommerce.type,
+                        "offers": {
+                            "@type": "Offer",
+                            "category": JsonT.Ecommerce.category,
+                            "priceCurrency": JsonT.Ecommerce.curency
+                        }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "item": {
+                        "@type": "Service",
+                        "name": JsonT.api.name,
+                        "description": JsonT.api.description,
+                        "serviceType": JsonT.api.type,
+                        "offers": {
+                            "@type": "Offer",
+                            "category": JsonT.api.category,
+                            "priceCurrency": JsonT.api.curency
+                        }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "item": {
+                        "@type": "Service",
+                        "name": JsonT.website.name,
+                        "description": JsonT.website.description,
+                        "serviceType": JsonT.website.type,
+                        "offers": {
+                            "@type": "Offer",
+                            "category": JsonT.website.category,
+                            "priceCurrency": JsonT.website.curency
+                        }
+                    }
+                }
+            ]
+        },
+        "isPartOf": {
+            "@id": `${BaseUrl}#website`,
+        },
+        "about": {
+            "@type": "Organization",
+            "@id": `${BaseUrl}#organization`,
+        },
+        "image": [
+            {
+                "@type": "ImageObject",
+                "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+                "caption": "3sthreei Company Logo"
+            },
+            {
+                "@type": "ImageObject",
+                "url": `${BaseUrl}/icons/3sthreei_icon_White.png`,
+                "caption": "3sthreei Company Logo"
+            }
+        ],
+        "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+        },
+        "inLanguage": [
+            { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
+        ],
+        "mainEntity": {
+            "@type": "Organization",
+            "@id": `${BaseUrl}#organization`
+        }
+    }
+    const webBreadcrumb = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": locale === "fr" ? "Accueil" : "Home",
+                "item": `${BaseUrl}/${locale}`
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": locale === "fr" ? "Service" : "Services",
+                "item": `${BaseUrl}/${locale}/services`
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": locale === "fr" ? "Web" : "Web",
+                "item": `${BaseUrl}/${locale}/services/web`
+            },
+        ]
+    }
     return (
         <>
             <NextIntlClientProvider messages={messages}>
                 {/* h1 in servicesHero */}
+                <script type="application/json+ld"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(webJSONLD).replace(/</g, '\\u003c') }}
+                />
+                <script type="application/json+ld"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(webBreadcrumb).replace(/</g, '\\u003c') }}
+                />
                 <section>
                     <ServicesHero messages={messages} />
                 </section>
