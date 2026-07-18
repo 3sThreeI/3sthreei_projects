@@ -1,0 +1,52 @@
+{
+  "name": "Complete E-commerce Platform Documentation",
+  "description": "Comprehensive technical documentation for a production-ready full-stack e-commerce platform built with React, Node.js, Express, and MySQL. Explore the architecture, authentication, API, database design, admin dashboard, and deployment process.",
+  "headline": "React, Node.js & MySQL E-commerce Documentation",
+  "type": "Technical Documentation",
+  "articleSection": [
+    "Architecture",
+    "Authentication",
+    "Database Design",
+    "REST API",
+    "Admin Dashboard",
+    "Customer Dashboard",
+    "Product Management",
+    "Categories",
+    "Shopping Cart",
+    "Checkout",
+    "Orders",
+    "Payments",
+    "Inventory Management",
+    "User Management",
+    "Security",
+    "Deployment"
+  ],
+  "keywords": [
+    "React",
+    "Node.js",
+    "Express",
+    "MySQL",
+    "E-commerce",
+    "REST API",
+    "JWT Authentication",
+    "Admin Dashboard",
+    "Shopping Cart",
+    "Full Stack"
+  ],
+  "software": {
+    "name": "React Node.js E-commerce Platform",
+    "description": "A complete, scalable e-commerce platform developed with React, Node.js, Express, and MySQL for modern online businesses.",
+    "applicationCategory": "Business Application",
+    "applicationSubCategory": "E-commerce Platform"
+  },
+  "features": {
+    "authentication": "Secure user authentication and authorization.",
+    "products": "Advanced product and category management.",
+    "cart": "Shopping cart and wishlist functionality.",
+    "orders": "Complete order processing and tracking.",
+    "payments": "Integrated online payment processing.",
+    "dashboard": "Powerful administration dashboard.",
+    "inventory": "Real-time inventory management.",
+    "analytics": "Sales reports and business analytics."
+  }
+}
