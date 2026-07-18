@@ -10,7 +10,7 @@ import { FaServer, FaDatabase, FaCreditCard, FaBolt } from "react-icons/fa";
 import Link from "next/link";
 // import { useState } from "react";
 
-export async function generateMetadata({ params }: { params:Promise<{ locale: string, documentation: string[] }> }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string, documentation: string[] }> }): Promise<Metadata> {
     const { locale, documentation } = await params
     const file = documentation?.at(-1) || documentation?.[documentation.length - 1] || 'e-commerce'
     const message = await getTranslations(`documentation.${file}`)
@@ -74,10 +74,113 @@ export default async function Documentation({ params }: { params: any }) {
     const message = (await import(`@/messages/${locale}/documentation/${file}.json`))
     const t = await message
     const ListExpt = t?.ProblemStat?.WhoExp?.Exp as ListExpProps[]
+    const jsonT = (await import(`@/messages/${locale}/jsonLD/documentation/${file}.json`))
+    const BaseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://3sthreei.com"
     console.log(`documents ${file} page rendered`)
-    const openCard = () => {
-
+    const ProjectJsonLD = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "TechArticle",
+                "@id": `${BaseUrl}/${locale}/${file}/${file}#article`,
+                "url": `${BaseUrl}/${locale}/${documentation}`,
+                "headline": jsonT.headline,
+                "name": jsonT.name,
+                "description": jsonT.description,
+                "articleSection": jsonT.articleSection,
+                "keywords": jsonT.keywords,
+                "author": {
+                    "@id": `${BaseUrl}/#organization`
+                },
+                "publisher": {
+                    "@id": `${BaseUrl}/#organization`
+                },
+                "isPartOf": {
+                    "@id": `${BaseUrl}/#website`
+                },
+                "about": {
+                    "@id": `${BaseUrl}/projects/${file}`
+                },
+                "mainEntity": {
+                    "@id": `${BaseUrl}/projects/${file}#software`
+                },
+                "inLanguage": [
+                    { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
+                ],
+            },
+            {
+                "@type": "SoftwareSourceCode",
+                "@id": `${BaseUrl}/projects/${file}#software`,
+                "name": "React Node.js E-commerce",
+                "description": "A production-ready full-stack e-commerce platform built with React, Node.js, Express, and MySQL.",
+                "programmingLanguage": [
+                    "JavaScript",
+                    "TypeScript"
+                ],
+                "runtimePlatform": [
+                    "Node.js",
+                    "Web Browser"
+                ],
+                "codeRepository": "https://github.com/yourusername/ecommerce",
+                "applicationCategory": "E-commerce",
+                "codeSampleType": "full solution",
+                "creator": {
+                    "@id": "https://example.com/#organization"
+                },
+                "license": "https://opensource.org/licenses/MIT"
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://example.com/projects/ecommerce-react-node#application",
+                "name": "React Node.js E-commerce",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Any",
+                "applicationSubCategory": "E-commerce Platform",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "featureList": [
+                    "Authentication",
+                    "Role-based Access",
+                    "Product Catalog",
+                    "Shopping Cart",
+                    "Wishlist",
+                    "Orders",
+                    "Payments",
+                    "Admin Dashboard",
+                    "Analytics",
+                    "Inventory Management"
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://example.com/projects/ecommerce-react-node#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://example.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Projects",
+                        "item": "https://example.com/projects"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "E-commerce Project",
+                        "item": "https://example.com/projects/ecommerce-react-node"
+                    }
+                ]
+            }
+        ]
     }
+
     return (
         <main className={style.container}>
             <section className={style.hero}>
