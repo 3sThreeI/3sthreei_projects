@@ -8,41 +8,41 @@
     "description": "Développement d'applications Android modernes avec Kotlin, Java et Flutter. Applications performantes, sécurisées et optimisées pour tous les appareils Android.",
     "type": "Développement Android",
     "category": "Android",
-    "curency": "FCFA"
+    "curency": "XOF"
   },
   "ios": {
     "name": "Développement iOS",
     "description": "Développement d'applications iOS avec Swift, SwiftUI et Flutter. Des applications élégantes, performantes et conformes aux normes de l'App Store.",
     "type": "Développement iOS",
     "category": "iOS",
-    "curency": "FCFA"
+    "curency": "XOF"
   },
   "crossPlatform": {
     "name": "Développement multiplateforme",
     "description": "Création d'applications mobiles multiplateformes avec Flutter et React Native. Une base de code unique pour Android et iOS afin de réduire les coûts et le temps de développement.",
     "type": "Développement multiplateforme",
     "category": "Multiplateforme",
-    "curency": "FCFA"
+    "curency": "XOF"
   },
   "uiux": {
     "name": "Conception UI/UX mobile",
     "description": "Conception d'interfaces utilisateur intuitives et d'expériences utilisateur engageantes pour les applications mobiles, avec une approche centrée sur l'utilisateur.",
     "type": "Conception UI/UX mobile",
     "category": "UI/UX",
-    "curency": "FCFA"
+    "curency": "XOF"
   },
   "maintenance": {
     "name": "Maintenance et support des applications",
     "description": "Maintenance continue, correction de bugs, mises à jour, amélioration des performances et support technique pour garantir le bon fonctionnement de vos applications mobiles.",
     "type": "Maintenance d'applications",
     "category": "Maintenance et support",
-    "curency": "FCFA"
+    "curency": "XOF"
   },
   "publishing": {
     "name": "Publication sur les stores",
     "description": "Publication et déploiement d'applications sur le Google Play Store et l'Apple App Store, avec assistance pour les validations et les mises à jour.",
     "type": "Publication d'applications",
     "category": "Déploiement",
-    "curency": "FCFA"
+    "curency": "XOF"
   }
 }
