@@ -98,8 +98,18 @@ export default async function OurFAQ({ params }: { params: any }) {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BaseUrl}/${locale}` },
-            { "@type": "ListItem", "position": 2, "name": "Faq", "item": `${BaseUrl}/${locale}/faq` },
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": locale === "fr"? "Accueil" : "Home",
+                "item": `${BaseUrl}/${locale}`
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name":  locale === "fr"? "FaQ" :"FaQ",
+                "item": `${BaseUrl}/${locale}/faq`
+            },
         ]
     }
     // console.log("***************FAQ rendered **************")
