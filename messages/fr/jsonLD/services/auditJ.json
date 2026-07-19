@@ -1,0 +1,48 @@
+{
+  "name": "Services d'audit de sites web",
+  "description": "Obtenez un audit professionnel gratuit de votre site web. Nous évaluons les performances, le référencement (SEO), l'accessibilité, la sécurité, l'expérience utilisateur et la qualité du code, puis nous vous fournissons des recommandations concrètes pour améliorer votre site.",
+  "type": "Audit de site web",
+  "catalogName": "Services d'audit de sites web",
+  "performance": {
+    "name": "Audit des performances",
+    "description": "Analysez la vitesse de chargement de votre site, les Core Web Vitals et les performances globales afin d'identifier les points de blocage et les possibilités d'optimisation.",
+    "type": "Audit des performances",
+    "category": "Performances",
+    "curency": "Gratuit"
+  },
+  "seo": {
+    "name": "Audit SEO",
+    "description": "Évaluation du référencement de votre site, y compris les métadonnées, les données structurées, l'indexation, l'optimisation des mots-clés et les aspects techniques du SEO.",
+    "type": "Audit SEO",
+    "category": "SEO",
+    "curency": "Gratuit"
+  },
+  "accessibility": {
+    "name": "Audit d'accessibilité",
+    "description": "Évaluez votre site selon les bonnes pratiques d'accessibilité et les recommandations WCAG afin de le rendre utilisable par tous.",
+    "type": "Audit d'accessibilité",
+    "category": "Accessibilité",
+    "curency": "Gratuit"
+  },
+  "security": {
+    "name": "Audit de sécurité",
+    "description": "Identifiez les vulnérabilités de sécurité courantes, les problèmes de configuration et les risques potentiels pouvant affecter votre site ou ses utilisateurs.",
+    "type": "Audit de sécurité",
+    "category": "Sécurité",
+    "curency": "Gratuit"
+  },
+  "ux": {
+    "name": "Audit UX & Design",
+    "description": "Évaluez l'expérience utilisateur, la navigation, l'adaptabilité sur mobile et la cohérence du design afin d'améliorer l'ergonomie et les conversions.",
+    "type": "Audit de l'expérience utilisateur",
+    "category": "UI/UX",
+    "curency": "Gratuit"
+  },
+  "technical": {
+    "name": "Audit technique du site web",
+    "description": "Examen complet de la qualité du code, de l'architecture, des bonnes pratiques, de la maintenabilité et de l'état technique général de votre site.",
+    "type": "Audit technique",
+    "category": "Technique",
+    "curency": "Gratuit"
+  }
+}
