@@ -76,14 +76,15 @@ export default async function Documentation({ params }: { params: any }) {
     const ListExpt = t?.ProblemStat?.WhoExp?.Exp as ListExpProps[]
     const jsonT = (await import(`@/messages/${locale}/jsonLD/documentation/${file}.json`))
     const BaseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://3sthreei.com"
-    console.log(`documents ${file} page rendered`)
+    const Splitdocumentation = documentation.join("/")
+    console.log(`documents ${file} page rendered`, Splitdocumentation)
     const ProjectJsonLD = {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "TechArticle",
                 "@id": `${BaseUrl}/${locale}/${file}/${file}#article`,
-                "url": `${BaseUrl}/${locale}/${documentation}`,
+                "url": `${BaseUrl}/${locale}/${Splitdocumentation}`,
                 "headline": jsonT.headline,
                 "name": jsonT.name,
                 "description": jsonT.description,
@@ -99,10 +100,10 @@ export default async function Documentation({ params }: { params: any }) {
                     "@id": `${BaseUrl}/#website`
                 },
                 "about": {
-                    "@id": `${BaseUrl}/projects/${file}`
+                    "@id": `${BaseUrl}/${locale}/projects/${file}`
                 },
                 "mainEntity": {
-                    "@id": `${BaseUrl}/projects/${file}#software`
+                    "@id": `${BaseUrl}/${locale}/projects/${file}#software`
                 },
                 "inLanguage": [
                     { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
@@ -110,49 +111,30 @@ export default async function Documentation({ params }: { params: any }) {
             },
             {
                 "@type": "SoftwareSourceCode",
-                "@id": `${BaseUrl}/projects/${file}#software`,
-                "name": "React Node.js E-commerce",
-                "description": "A production-ready full-stack e-commerce platform built with React, Node.js, Express, and MySQL.",
-                "programmingLanguage": [
-                    "JavaScript",
-                    "TypeScript"
-                ],
-                "runtimePlatform": [
-                    "Node.js",
-                    "Web Browser"
-                ],
-                "codeRepository": "https://github.com/yourusername/ecommerce",
-                "applicationCategory": "E-commerce",
+                "@id": `${BaseUrl}/${locale}/projects/${file}#software`,
+                "name": jsonT.software.name,
+                "description": jsonT.software.description,
+                "programmingLanguage": jsonT.programmingLanguage,
+                "runtimePlatform": jsonT.runtimePlatform,
                 "codeSampleType": "full solution",
                 "creator": {
-                    "@id": "https://example.com/#organization"
+                    "@id": `${BaseUrl}/#organization`
                 },
-                "license": "https://opensource.org/licenses/MIT"
+                // "license": "https://opensource.org/licenses/MIT"
             },
             {
                 "@type": "SoftwareApplication",
-                "@id": "https://example.com/projects/ecommerce-react-node#application",
-                "name": "React Node.js E-commerce",
-                "applicationCategory": "BusinessApplication",
+                "@id": `${BaseUrl}/${locale}/${file}#application`,
+                "name": jsonT.software.name,
+                "applicationCategory": jsonT.software.applicationSubCategory,
                 "operatingSystem": "Any",
-                "applicationSubCategory": "E-commerce Platform",
+                "applicationSubCategory": jsonT.software.applicationSubCategory,
                 "offers": {
                     "@type": "Offer",
                     "price": "0",
-                    "priceCurrency": "USD"
+                    "priceCurrency": locale === "fr" ? "XOF" : "GHS"
                 },
-                "featureList": [
-                    "Authentication",
-                    "Role-based Access",
-                    "Product Catalog",
-                    "Shopping Cart",
-                    "Wishlist",
-                    "Orders",
-                    "Payments",
-                    "Admin Dashboard",
-                    "Analytics",
-                    "Inventory Management"
-                ]
+                "featureList": jsonT.features
             },
             {
                 "@type": "BreadcrumbList",
@@ -161,20 +143,20 @@ export default async function Documentation({ params }: { params: any }) {
                     {
                         "@type": "ListItem",
                         "position": 1,
-                        "name": "Home",
-                        "item": "https://example.com"
+                        "name": locale === "fr" ?  "Accueil" : "Home",
+                        "item": `${BaseUrl}/${locale}`
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
-                        "name": "Projects",
-                        "item": "https://example.com/projects"
+                        "name": locale === "fr" ?  "Projets" : "Projects",
+                        "item": `${BaseUrl}/${locale}/projects`
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
-                        "name": "E-commerce Project",
-                        "item": "https://example.com/projects/ecommerce-react-node"
+                        "name":  locale === "fr" ?  "Projet E-Commerce" : "E-commerce Project",
+                        "item": `${BaseUrl}/${locale}/projects/${Splitdocumentation}`
                     }
                 ]
             }
@@ -183,6 +165,8 @@ export default async function Documentation({ params }: { params: any }) {
 
     return (
         <main className={style.container}>
+            <script type="application/json" 
+            dangerouslySetInnerHTML={{__html: JSON.stringify(ProjectJsonLD).replace(/</g, '\\u003c')}} />
             <section className={style.hero}>
                 <div className={style.card}>
                     <h1 className={style.title}>{t.title}</h1>
