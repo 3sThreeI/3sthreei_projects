@@ -39,14 +39,23 @@
     "applicationCategory": "Business Application",
     "applicationSubCategory": "E-commerce Platform"
   },
-  "features": {
-    "authentication": "Secure user authentication and authorization.",
-    "products": "Advanced product and category management.",
-    "cart": "Shopping cart and wishlist functionality.",
-    "orders": "Complete order processing and tracking.",
-    "payments": "Integrated online payment processing.",
-    "dashboard": "Powerful administration dashboard.",
-    "inventory": "Real-time inventory management.",
-    "analytics": "Sales reports and business analytics."
-  }
+  "programmingLanguage": [
+    "JavaScript",
+    "SQL"
+  ],
+  "runtimePlatform": [
+    "Node.js",
+    "Web Browser"
+  ],
+  "applicationCartegory": "E-commerce",
+  "features": [
+    "Secure user authentication and authorization.",
+    "Advanced product and category management.",
+    "Shopping cart and wishlist functionality.",
+    "Complete order processing and tracking.",
+    "Integrated online payment processing.",
+    "Powerful administration dashboard.",
+    "Real-time inventory management.",
+    "Sales reports and business analytics."
+  ]
 }
