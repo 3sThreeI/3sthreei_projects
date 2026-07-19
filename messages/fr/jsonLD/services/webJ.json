@@ -8,41 +8,41 @@
     "description": "Développement front-end moderne et responsive avec React, Next.js, TypeScript et Tailwind CSS. Des interfaces au pixel près avec une approche mobile-first.",
     "type": "Développement Front-end",
     "category": "Front-end",
-    "curency": "FCFA"
+    "curency": "XOF"
   },
   "backend": {
     "name": "Développement Back-end",
     "description": "Développement back-end robuste avec Node.js, Express, Python et des bases de données (MongoDB, MySQL, PostgreSQL). APIs RESTful et GraphQL.",
     "type": "Développement Back-end",
     "category": "Back-end",
-    "curency": "FCFA"
+    "curency": "XOF"
   },
   "fullstack": {
     "name": "Développement Full-Stack",
     "description": "Développement web de bout en bout combinant le front-end et le back-end. Des solutions complètes, de la base de données à l'interface utilisateur.",
     "type": "Développement Full-Stack",
     "category": "Full-Stack",
-    "curency": "FCFA"
+    "curency": "XOF"
   },
   "Ecommerce": {
     "name": "Développement e-commerce",
     "description": "Création de plateformes e-commerce sur mesure avec gestion des produits, panier d'achat, intégration des paiements et gestion des stocks.",
     "type": "Développement e-commerce",
     "category": "E-commerce",
-    "curency": "FCFA"
+    "curency": "XOF"
   },
   "api": {
     "name": "Développement d'API",
     "description": "Développement d'APIs RESTful et GraphQL sur mesure avec Express et Node.js. Des APIs sécurisées, évolutives et bien documentées.",
     "type": "Développement d'API",
     "category": "API et intégration",
-    "curency": "FCFA"
+    "curency": "XOF"
   },
   "website": {
     "name": "Optimisation de sites web",
     "description": "Optimisation des performances, mise en œuvre du SEO, amélioration de l'accessibilité et optimisation des Core Web Vitals.",
     "type": "Optimisation de sites web",
     "category": "Optimisation et SEO",
-    "curency": "FCFA"
+    "curency": "XOF"
   }
 }
