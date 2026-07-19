@@ -5,9 +5,9 @@ import { getTranslations } from "next-intl/server"
 import { ParamProps } from "../../about/page"
 import FormAudit from "@/components/customComponent/formContact/formAudit"
 type Props = {
-    params: Promise<{locale:string}>;
+    params: Promise<{ locale: string }>;
 }
-export async function generateMetadata({params}:Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale, namespace: "contactForm" })
     return {
@@ -63,137 +63,148 @@ export default async function ProjectContactForm({ params, searchParams }: Searc
     const message = (await import(`@/messages/${locale}/forms.json`)).default
     const JsonT = (await import(`@/messages/${locale}/jsonLD/services/auditJ.json`)).default
     const BaseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://3sthreei.com"
-         const appJSONLD = {
+    const auditJSONLD = {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "@id": `${BaseUrl}/${locale}/services/app#app-page`,
-        "url": `${BaseUrl}/${locale}/services/audit-web-site`,
-        "name": JsonT.name,
-        "description": JsonT.description,
-        "serviceType": JsonT.type,
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": JsonT.catalogName,
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.performance.name,
-                        "description": JsonT.performance.description,
-                        "serviceType": JsonT.performance.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.performance.category,
-                            "priceCurrency": JsonT.performance.curency
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.seo.name,
-                        "description": JsonT.seo.description,
-                        "serviceType": JsonT.seo.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.seo.category
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.accessibility.name,
-                        "description": JsonT.accessibility.description,
-                        "serviceType": JsonT.accessibility.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.accessibility.category
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.security.name,
-                        "description": JsonT.security.description,
-                        "serviceType": JsonT.security.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.security.category
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 5,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.ux.name,
-                        "description": JsonT.ux.description,
-                        "serviceType": JsonT.ux.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.ux.category
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 6,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.technical.name,
-                        "description": JsonT.technical.description,
-                        "serviceType": JsonT.technical.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.technical.category
-                        }
-                    }
-                }
-            ]
-        },
-        "isPartOf": {
-            "@id": `${BaseUrl}#website`,
-        },
-        "about": {
-            "@type": "Organization",
-            "@id": `${BaseUrl}#organization`,
-        },
-        "image": [
+        "@graph": [
             {
-                "@type": "ImageObject",
-                "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
-                "caption": "3sthreei Company Logo"
+                "@type": "Service",
+                "@id": `${BaseUrl}/${locale}/services/audit#audit-page`,
+                "url": `${BaseUrl}/${locale}/services/audit-web-site`,
+                "name": JsonT.name,
+                "description": JsonT.description,
+                "serviceType": JsonT.type,
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": JsonT.catalogName,
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.performance.name,
+                                "description": JsonT.performance.description,
+                                "serviceType": JsonT.performance.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.performance.category,
+                                    "priceCurrency": JsonT.performance.curency
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.seo.name,
+                                "description": JsonT.seo.description,
+                                "serviceType": JsonT.seo.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.seo.category
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.accessibility.name,
+                                "description": JsonT.accessibility.description,
+                                "serviceType": JsonT.accessibility.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.accessibility.category
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 4,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.security.name,
+                                "description": JsonT.security.description,
+                                "serviceType": JsonT.security.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.security.category
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 5,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.ux.name,
+                                "description": JsonT.ux.description,
+                                "serviceType": JsonT.ux.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.ux.category
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 6,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.technical.name,
+                                "description": JsonT.technical.description,
+                                "serviceType": JsonT.technical.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.technical.category
+                                }
+                            }
+                        }
+                    ]
+                },
             },
             {
-                "@type": "ImageObject",
-                "url": `${BaseUrl}/icons/3sthreei_icon_White.png`,
-                "caption": "3sthreei Company Logo"
+                "@type": "WebPage",
+                "@id": `${BaseUrl}/${locale}/services/audit#audit-page`,
+                "url": `${BaseUrl}/${locale}/services/audit-web-site`,
+                "name": JsonT.name,
+                "description": JsonT.description,
+                "isPartOf": {
+                    "@id": `${BaseUrl}#website`,
+                },
+                "about": {
+                    "@type": "Organization",
+                    "@id": `${BaseUrl}#organization`,
+                },
+                "image": [
+                    {
+                        "@type": "ImageObject",
+                        "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+                        "caption": "3sthreei Company Logo"
+                    },
+                    {
+                        "@type": "ImageObject",
+                        "url": `${BaseUrl}/icons/3sthreei_icon_White.png`,
+                        "caption": "3sthreei Company Logo"
+                    }
+                ],
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+                },
+                "inLanguage": [
+                    { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
+                ],
+                "mainEntity": {
+                    "@type": "Organization",
+                    "@id": `${BaseUrl}#organization`
+                }
             }
-        ],
-        "primaryImageOfPage": {
-            "@type": "ImageObject",
-            "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
-        },
-        "inLanguage": [
-            { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
-        ],
-        "mainEntity": {
-            "@type": "Organization",
-            "@id": `${BaseUrl}#organization`
-        }
+        ]
     }
-    const appBreadcrumb = {
+    const auditBreadcrumb = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -219,6 +230,14 @@ export default async function ProjectContactForm({ params, searchParams }: Searc
     }
     return (
         <div className={style.container}>
+            <script
+                type="application/json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(auditJSONLD).replace(/</g, '\\u003c') }}
+            />
+            <script
+                type="application/json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(auditBreadcrumb).replace(/</g, '\\u003c') }}
+            />
             <FormAudit message={message} searchParams={param.type ?? ""} />
         </div>
     )
