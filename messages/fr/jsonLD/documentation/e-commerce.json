@@ -39,14 +39,23 @@
     "applicationCategory": "Application métier",
     "applicationSubCategory": "Plateforme e-commerce"
   },
-  "features": {
-    "authentication": "Authentification et autorisation sécurisées des utilisateurs.",
-    "products": "Gestion avancée des produits et des catégories.",
-    "cart": "Fonctionnalités de panier et de liste de souhaits.",
-    "orders": "Gestion complète des commandes et de leur suivi.",
-    "payments": "Intégration des paiements en ligne.",
-    "dashboard": "Tableau de bord d'administration complet.",
-    "inventory": "Gestion des stocks en temps réel.",
-    "analytics": "Rapports de ventes et analyses commerciales."
-  }
+  "programmingLanguage": [
+    "JavaScript",
+    "SQL"
+  ],
+  "runtimePlatform": [
+    "Node.js",
+    "Web Browser"
+  ],
+  "applicationCartegory": "E-commerce",
+  "features": [
+    "Authentification et autorisation sécurisées des utilisateurs.",
+    "Gestion avancée des produits et des catégories.",
+    "Fonctionnalités de panier et de liste de souhaits.",
+    "Gestion complète des commandes et de leur suivi.",
+    "Intégration des paiements en ligne.",
+    "Tableau de bord d'administration complet.",
+    "Gestion des stocks en temps réel.",
+    "Rapports de ventes et analyses commerciales."
+  ]
 }
