@@ -1,0 +1,52 @@
+{
+  "name": "Documentation complète d'une plateforme e-commerce",
+  "description": "Documentation technique complète d'une plateforme e-commerce full-stack prête pour la production, développée avec React, Node.js, Express et MySQL. Découvrez son architecture, son système d'authentification, son API, sa base de données, son tableau de bord d'administration et son processus de déploiement.",
+  "headline": "Documentation d'une plateforme e-commerce React, Node.js et MySQL",
+  "type": "Documentation technique",
+  "articleSection": [
+    "Architecture",
+    "Authentification",
+    "Conception de la base de données",
+    "API REST",
+    "Tableau de bord administrateur",
+    "Espace client",
+    "Gestion des produits",
+    "Catégories",
+    "Panier",
+    "Paiement",
+    "Commandes",
+    "Traitement des paiements",
+    "Gestion des stocks",
+    "Gestion des utilisateurs",
+    "Sécurité",
+    "Déploiement"
+  ],
+  "keywords": [
+    "React",
+    "Node.js",
+    "Express",
+    "MySQL",
+    "E-commerce",
+    "API REST",
+    "Authentification JWT",
+    "Tableau de bord administrateur",
+    "Panier",
+    "Full Stack"
+  ],
+  "software": {
+    "name": "Plateforme e-commerce React Node.js",
+    "description": "Une plateforme e-commerce complète et évolutive développée avec React, Node.js, Express et MySQL pour les entreprises modernes.",
+    "applicationCategory": "Application métier",
+    "applicationSubCategory": "Plateforme e-commerce"
+  },
+  "features": {
+    "authentication": "Authentification et autorisation sécurisées des utilisateurs.",
+    "products": "Gestion avancée des produits et des catégories.",
+    "cart": "Fonctionnalités de panier et de liste de souhaits.",
+    "orders": "Gestion complète des commandes et de leur suivi.",
+    "payments": "Intégration des paiements en ligne.",
+    "dashboard": "Tableau de bord d'administration complet.",
+    "inventory": "Gestion des stocks en temps réel.",
+    "analytics": "Rapports de ventes et analyses commerciales."
+  }
+}
