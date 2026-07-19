@@ -6,9 +6,9 @@ import ProblemSolving from "@/app/[locale]/assets/servicesComp/web/ProblemSolvin
 import WorkingFlow from "@/app/[locale]/assets/workFlow/workingPricing";
 import { NextIntlClientProvider } from "next-intl";
 type Props = {
-    params: Promise<{locale:string}>;
+    params: Promise<{ locale: string }>;
 }
-export async function generateMetadata({params}:Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params
     const t = await getTranslations({ locale: locale, namespace: "services" })
     return {
@@ -60,135 +60,145 @@ export default async function Application({ params }: ParamsPropsServices) {
     const messages = (await import(`@/messages/${locale}/services/application.json`)).default
     const JsonT = (await import(`@/messages/${locale}/jsonLD/services/appJ.json`)).default
     const BaseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://3sthreei.com"
-     const appJSONLD = {
+    const appJSONLD = {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "@id": `${BaseUrl}/${locale}/services/app#app-page`,
-        "url": `${BaseUrl}/${locale}/services/app`,
-        "name": JsonT.name,
-        "description": JsonT.description,
-        "serviceType": JsonT.type,
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": JsonT.catalogName,
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.android.name,
-                        "description": JsonT.android.description,
-                        "serviceType": JsonT.android.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.android.category,
-                            "priceCurrency": JsonT.android.curency
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.ios.name,
-                        "description": JsonT.ios.description,
-                        "serviceType": JsonT.ios.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.ios.category
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.crossPlatform.name,
-                        "description": JsonT.crossPlatform.description,
-                        "serviceType": JsonT.crossPlatform.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.crossPlatform.category
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.uiux.name,
-                        "description": JsonT.uiux.description,
-                        "serviceType": JsonT.uiux.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.uiux.category
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 5,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.maintenance.name,
-                        "description": JsonT.maintenance.description,
-                        "serviceType": JsonT.maintenance.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.maintenance.category
-                        }
-                    }
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 6,
-                    "item": {
-                        "@type": "Service",
-                        "name": JsonT.publishing.name,
-                        "description": JsonT.publishing.description,
-                        "serviceType": JsonT.publishing.type,
-                        "offers": {
-                            "@type": "Offer",
-                            "category": JsonT.publishing.category
-                        }
-                    }
-                }
-            ]
-        },
-        "isPartOf": {
-            "@id": `${BaseUrl}#website`,
-        },
-        "about": {
-            "@type": "Organization",
-            "@id": `${BaseUrl}#organization`,
-        },
-        "image": [
+        "@graph": [
             {
-                "@type": "ImageObject",
-                "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
-                "caption": "3sthreei Company Logo"
+                "@type": "Service",
+                "@id": `${BaseUrl}/${locale}/services/application#app-page`,
+                "url": `${BaseUrl}/${locale}/services/application`,
+                "name": JsonT.name,
+                "description": JsonT.description,
+                "serviceType": JsonT.type,
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": JsonT.catalogName,
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.android.name,
+                                "description": JsonT.android.description,
+                                "serviceType": JsonT.android.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.android.category,
+                                    "priceCurrency": JsonT.android.curency
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.ios.name,
+                                "description": JsonT.ios.description,
+                                "serviceType": JsonT.ios.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.ios.category
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.crossPlatform.name,
+                                "description": JsonT.crossPlatform.description,
+                                "serviceType": JsonT.crossPlatform.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.crossPlatform.category
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 4,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.uiux.name,
+                                "description": JsonT.uiux.description,
+                                "serviceType": JsonT.uiux.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.uiux.category
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 5,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.maintenance.name,
+                                "description": JsonT.maintenance.description,
+                                "serviceType": JsonT.maintenance.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.maintenance.category
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 6,
+                            "item": {
+                                "@type": "Service",
+                                "name": JsonT.publishing.name,
+                                "description": JsonT.publishing.description,
+                                "serviceType": JsonT.publishing.type,
+                                "offers": {
+                                    "@type": "Offer",
+                                    "category": JsonT.publishing.category
+                                }
+                            }
+                        }
+                    ]
+                },
             },
             {
-                "@type": "ImageObject",
-                "url": `${BaseUrl}/icons/3sthreei_icon_White.png`,
-                "caption": "3sthreei Company Logo"
+                "@type": "WebPage",
+                "@id": `${BaseUrl}/${locale}/services/application#page`,
+                "url": `${BaseUrl}/${locale}/services/application`,
+                "name": JsonT.name,
+                "isPartOf": {
+                    "@id": `${BaseUrl}#website`,
+                },
+                "about": {
+                    "@type": "Organization",
+                    "@id": `${BaseUrl}#organization`,
+                },
+                "image": [
+                    {
+                        "@type": "ImageObject",
+                        "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+                        "caption": "3sthreei Company Logo"
+                    },
+                    {
+                        "@type": "ImageObject",
+                        "url": `${BaseUrl}/icons/3sthreei_icon_White.png`,
+                        "caption": "3sthreei Company Logo"
+                    }
+                ],
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
+                },
+                "inLanguage": [
+                    { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
+                ],
+                "mainEntity": {
+                    "@type": "Organization",
+                    "@id": `${BaseUrl}#organization`
+                }
             }
-        ],
-        "primaryImageOfPage": {
-            "@type": "ImageObject",
-            "url": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
-        },
-        "inLanguage": [
-            { "@type": "Language", "name": locale === "fr" ? "French" : "English", "alternateName": locale }
-        ],
-        "mainEntity": {
-            "@type": "Organization",
-            "@id": `${BaseUrl}#organization`
-        }
+        ]
     }
     const appBreadcrumb = {
         "@context": "https://schema.org",
@@ -217,7 +227,7 @@ export default async function Application({ params }: ParamsPropsServices) {
     return (
         <>
             <NextIntlClientProvider locale={locale} messages={messages}>
-                 <script type="application/json+ld"
+                <script type="application/json+ld"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(appJSONLD).replace(/</g, '\\u003c') }}
                 />
                 <script type="application/json+ld"
