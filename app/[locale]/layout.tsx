@@ -29,7 +29,13 @@ export const metadata: Metadata = {
     default: "3SThreeI | Build. Design. Learn.",
     template: "%s | 3sthreeI",
   },
-
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/`,
+    languages: {
+      fr: `${process.env.NEXT_PUBLIC_SITE_URL}/fr/`,
+      en: `${process.env.NEXT_PUBLIC_SITE_URL}/en/`
+    }
+  },
   description:
     "3SThreeA is a SaaS platform where we build apps, games, web applications, design solutions, and provide professional tech courses.",
   icons: {
