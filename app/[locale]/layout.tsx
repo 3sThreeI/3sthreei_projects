@@ -4,6 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import Script from "next/script";
 // ---------------end of next-intl
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -95,11 +96,11 @@ export default async function RootLayout({
     "@id": `${BaseUrl}#organization`,
     "url": BaseUrl,
     "image": `${BaseUrl}/icons/3sthreei_icon_Black.png`,
-    "logo":  {
-    "@type": "ImageObject",
-    "url": `${BaseUrl}/icons/3sthreei_icon_White.png`,
-    "caption": "3sthreei Company Logo"
-  },
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${BaseUrl}/icons/3sthreei_icon_White.png`,
+      "caption": "3sthreei Company Logo"
+    },
     "alternateName": ["3s Threei", "3si", "3sthreei", "3s threei", "3SI", "threeSthreeI", "ThreeS3I"],
     "description": t.description,
     "telephone": locale === "fr" ? "+22391716839" : "+233592233681",
@@ -112,7 +113,7 @@ export default async function RootLayout({
       "addressCountry": locale === "fr" ? "ML" : "GH"
     },
     "sameAs": [
-     "https://www.facebook.com/profile.php?id=61591687297760",
+      "https://www.facebook.com/profile.php?id=61591687297760",
     ],
     "founder": {
       "@type": "Person",
@@ -203,15 +204,16 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GGKE9NHJ4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-8GGKE9NHJ4" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-  gtag('config', 'G-8GGKE9NHJ4');
-</script>
+          gtag('config', 'G-8GGKE9NHJ4');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(OrgjsonLD).replace(/</g, '\\u003c'), }}
