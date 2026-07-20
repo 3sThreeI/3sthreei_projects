@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | 3sthreeI",
   },
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/`,
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/en`,
     languages: {
       fr: `${process.env.NEXT_PUBLIC_SITE_URL}/fr/`,
       en: `${process.env.NEXT_PUBLIC_SITE_URL}/en/`
