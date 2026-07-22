@@ -1,0 +1,70 @@
+{
+    "name": "Complete Room Booking Platform Documentation",
+    "description": "Comprehensive technical documentation for a full-stack room booking and sharing platform built with Angular and Django. Explore the architecture, authentication, user management, room listings, search and filtering, bookings, notifications, receipts, and administrator dashboard.",
+    "headline": "Angular & Django Room Booking Platform Documentation",
+    "type": "Technical Documentation",
+    "articleSection": [
+        "Architecture",
+        "Authentication",
+        "User Management",
+        "Role-Based Access Control",
+        "Room Management",
+        "Room Listings",
+        "Room Search",
+        "Search Filters",
+        "Bookings",
+        "Booking Confirmation",
+        "Receipts",
+        "Notifications",
+        "Administrator Dashboard",
+        "Activity Monitoring",
+        "Security",
+        "REST API",
+        "Deployment"
+    ],
+    "keywords": [
+        "Angular",
+        "Django",
+        "Django REST Framework",
+        "Python",
+        "Room Booking",
+        "Room Sharing",
+        "REST API",
+        "JWT Authentication",
+        "User Management",
+        "Online Booking",
+        "Booking Platform",
+        "Room Rental Platform"
+    ],
+    "software": {
+        "name": "Angular Django Room Booking Platform",
+        "description": "A complete room booking and sharing platform built with Angular and Django, allowing guests to discover and book available rooms while homeowners can share and manage their own room listings.",
+        "applicationCategory": "Service Application",
+        "applicationSubCategory": "Room Booking Platform"
+    },
+    "programmingLanguage": [
+        "TypeScript",
+        "Python"
+    ],
+    "runtimePlatform": [
+        "Django",
+        "Web Browser"
+    ],
+    "applicationCartegory": "Room Booking",
+    "features": [
+        "Secure role-based user authentication and authorization.",
+        "Account management for guests, homeowners, and administrators.",
+        "Room listing creation and management for homeowners.",
+        "Restricted access allowing homeowners to manage only their own rooms.",
+        "Room search and discovery for guests.",
+        "Search filters to help guests quickly find suitable rooms.",
+        "Room booking functionality for available rooms.",
+        "Automatic booking confirmation after a successful reservation.",
+        "Booking receipt generation and delivery.",
+        "Notifications related to bookings and room activities.",
+        "Administrator dashboard with visibility into users, rooms, and bookings.",
+        "Activity monitoring across the platform.",
+        "REST API communication between Angular and Django.",
+        "Secure access control and user data management."
+    ]
+}
