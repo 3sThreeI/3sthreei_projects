@@ -5,8 +5,42 @@
         "heroText": "L’équipe derrière votre croissance digitale"
     },
     "about": {
-        "title": "À propos de 3SThreeI ",
-        "description": "Fondée à Accra, 3SThreeI est une équipe de développeurs et de designers passionnés, unis par une vision commune : rendre la technologie simple, utile et accessible. Nous créons des sites web modernes, des applications web et mobiles évolutives, des expériences de jeu engageantes et des interfaces UI/UX intuitives qui répondent à de vrais besoins pour les entreprises et les particuliers. Notre force repose sur la combinaison de l’expertise technique et de la créativité. Nous abordons chaque projet en mettant l’accent sur la performance, l’ergonomie et l’évolutivité afin de fournir des solutions digitales à la fois esthétiques, efficaces et prêtes pour l’avenir. Chez 3SThreeI, nous comprenons que chaque entreprise est unique. C’est pourquoi nous prenons le temps de comprendre les objectifs de nos clients avant de concevoir des solutions flexibles qui évoluent avec eux. Des startups aux entreprises établies, nous concevons des systèmes faciles à utiliser, à gérer et à faire évoluer. Nous nous considérons comme des partenaires à long terme, en accompagnant et en améliorant continuellement les solutions que nous créons afin de permettre à nos clients de se développer dans un monde numérique en constante évolution.",
+        "subtitle": "À propos de 3SThreeI",
+        "title": "Créer des produits digitaux qui font grandir les entreprises",
+        "introduction": "Fondée à Accra, 3SThreeI est une entreprise de produits digitaux et de technologie qui aide les entreprises à transformer leurs idées en expériences numériques fiables, évolutives et porteuses de sens.",
+        "description": "Nous créons et améliorons des produits digitaux sur le web, mobile, desktop, gaming, design et marketing digital. Qu’une entreprise ait besoin d’un site web professionnel, d’une application mobile, d’une solution logicielle sur mesure, d’un jeu engageant, d’une identité visuelle forte ou d’une stratégie marketing digitale, nous construisons des solutions qui soutiennent de réels objectifs commerciaux.",
+        "missionTitle": "Notre mission",
+        "missionText": "Aider les entreprises à grandir grâce à une technologie qui fonctionne.",
+        "standForTitle": "Ce en quoi nous croyons",
+        "standForText": "Notre approche combine technologie, design et stratégie pour créer des expériences numériques qui sont :",
+        "standForItems": [
+            {
+                "title": "Axé sur l’objectif",
+                "description": "construit autour de véritables besoins commerciaux et d’objectifs clairs."
+            },
+            {
+                "title": "Centré sur l’utilisateur",
+                "description": "conçu pour être intuitif, accessible et agréable à utiliser."
+            },
+            {
+                "title": "Évolutif",
+                "description": "créé avec la flexibilité nécessaire pour croître et s’adapter dans le temps."
+            },
+            {
+                "title": "Fiable",
+                "description": "développé avec une attention à la performance, à la qualité et à la maintenabilité."
+            },
+            {
+                "title": "Prêt pour l’avenir",
+                "description": "construit avec une vision qui anticipe là où l’entreprise va, pas seulement là où elle est aujourd’hui."
+            }
+        ],
+        "howWeWorkTitle": "Comment nous travaillons",
+        "howWeWorkText": "Des startups en phase de démarrage aux entreprises établies, nous travaillons pour rendre la transformation digitale plus pratique et accessible. Nous croyons que les entreprises doivent disposer d’une technologie non seulement puissante, mais aussi compréhensible, gérable et alignée sur leurs objectifs. Notre travail ne s’arrête pas au lancement d’un produit. Les produits digitaux évoluent avec les entreprises, et nous construisons en gardant cela à l’esprit.",
+        "whyChooseTitle": "Pourquoi choisir 3SThreeI",
+        "whyChooseText": "Les entreprises travaillent avec 3SThreeI parce que nous nous concentrons sur plus que la livraison. Nous accordons de l’importance à la compréhension, à la clarté et à la valeur à long terme. Nous prenons le temps de comprendre ce qui compte le plus pour chaque client, puis construisons des solutions digitales qui soutiennent la croissance, améliorent l’expérience utilisateur et résolvent de vrais problèmes.",
+        "teamTitle": "Notre équipe dirigeante",
+        "teamText": "Découvrez les personnes qui allient stratégie, design et ingénierie.",
         "founderCard": [
             {
                 "imgUrl": "/founder/abzar.jpg",
