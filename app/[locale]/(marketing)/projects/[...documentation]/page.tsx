@@ -168,7 +168,7 @@ export default async function Documentation({ params }: { params: any }) {
             <script type="application/json" 
             dangerouslySetInnerHTML={{__html: JSON.stringify(ProjectJsonLD).replace(/</g, '\\u003c')}} />
             <section className={style.hero}>
-                <div className={style.card}>
+                <div className={style.cardTitle}>
                     <h1 className={style.title}>{t.title}</h1>
                 </div>
                 <figure>
