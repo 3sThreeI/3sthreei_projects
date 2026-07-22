@@ -5,8 +5,42 @@
         "heroText": "The Team Behind Your Digital Growth"
     },
     "about": {
-        "title": "About 3SThreeI ",
-        "description": "Founded in Accra, 3SThreeI is a team of passionate developers and designers united by a shared vision to make technology simple, useful, and accessible. We build modern websites, scalable web and mobile applications, engaging game experiences, and intuitive UI/UX designs that solve real problems for businesses and individuals. Our strength comes from combining technical expertise with creative thinking. We approach every project with a focus on performance, usability, and scalability to deliver digital solutions that are not only visually appealing but also efficient and future-ready. At 3SThreeI, we understand that every business is unique. That’s why we take time to understand our clients’ goals before crafting flexible solutions that grow with them. From startups to established companies, we design systems that are easy to use, easy to manage, and easy to expand. We see ourselves as long-term partners, supporting and improving the solutions we create so our clients can continue to grow in an ever-evolving digital world.",
+        "subtitle": "About 3SThreeI",
+        "title": "Building Digital Products That Help Businesses Grow",
+        "introduction": "Founded in Accra, 3SThreeI is a digital product and technology company helping businesses turn ideas into reliable, scalable, and meaningful digital experiences.",
+        "description": "We create and improve digital products across the web, mobile, desktop, gaming, design, and digital marketing. Whether a business needs a professional website, a mobile application, a custom software solution, an engaging game, a strong visual identity, or a digital marketing strategy, we focus on building solutions that support real business goals.",
+        "missionTitle": "Our Mission",
+        "missionText": "To help businesses grow through technology that works.",
+        "standForTitle": "What We Stand For",
+        "standForText": "Our approach combines technology, design, and strategy to create digital experiences that are:",
+        "standForItems": [
+            {
+                "title": "Purpose-driven",
+                "description": "built around real business needs and clear objectives."
+            },
+            {
+                "title": "User-focused",
+                "description": "designed to be intuitive, accessible, and enjoyable to use."
+            },
+            {
+                "title": "Scalable",
+                "description": "created with the flexibility to grow and adapt over time."
+            },
+            {
+                "title": "Reliable",
+                "description": "developed with attention to performance, quality, and maintainability."
+            },
+            {
+                "title": "Future-ready",
+                "description": "built with a mindset that considers where the business is going, not only where it is today."
+            }
+        ],
+        "howWeWorkTitle": "How We Work",
+        "howWeWorkText": "From early-stage startups to established businesses, we work to make digital transformation more practical and accessible. We believe businesses should have access to technology that is not only powerful, but also understandable, manageable, and aligned with their goals. Our work does not end when a product is launched. Great digital products evolve as businesses change, and we build with that in mind.",
+        "whyChooseTitle": "Why Choose 3SThreeI",
+        "whyChooseText": "Businesses work with 3SThreeI because we focus on more than delivery. We focus on understanding, clarity, and long-term value. We take time to learn what matters most to each client, then build digital solutions that support growth, improve user experience, and solve real problems.",
+        "teamTitle": "Our Leadership",
+        "teamText": "Meet the people who bring strategy, design, and engineering together.",
         "founderCard": [
             {
                 "imgUrl": "/founder/abzar.jpg",
@@ -26,6 +60,7 @@
                 "name": "Abzar Camara",
                 "description": "Co-Founder"
             }
-        ]
+        ],
+        "ctaButton": "Contact-US"
     }
 }
