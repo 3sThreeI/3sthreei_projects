@@ -120,7 +120,8 @@
                 "T": "describe your project"
             }
         },
-        "btn": "Send Message"
+        "btn": "Send Message",
+        "btnWhatsapp": "Send via WhatsApp"
     },
     "formAudit": {
         "headTitle": "Services",
