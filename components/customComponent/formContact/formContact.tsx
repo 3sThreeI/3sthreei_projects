@@ -12,7 +12,7 @@ type formErrorsProps = {
     url?: string[],
     project_type?: string[]
 }
-export default function FormContactCompt({ message, searchParams }: { message: any, searchParams:any }) {
+export default function FormContactCompt({ message, searchParams }: { message: any, searchParams: any }) {
     const Price: string = searchParams?.price ?? ""
     const type: string = searchParams?.type ?? ""
 
@@ -65,8 +65,8 @@ export default function FormContactCompt({ message, searchParams }: { message: a
                 setErrors(data.details || { description: [data.errors] } || { description: "Back-end failed" })
                 // console.log('❌ Full error details:', data)
                 // console.log('❌ Details object:', data.details)
-                toast.error( data.errors || data.data.message , {
-                     duration: 10000,
+                toast.error(data.errors || data.data.message, {
+                    duration: 10000,
                     style: {
                         border: '1px solid #713200',
                         padding: '16px',
@@ -96,7 +96,7 @@ export default function FormContactCompt({ message, searchParams }: { message: a
                 }
                 )
             }
-        } catch (error:any) {
+        } catch (error: any) {
             setErrors({ description: ['Network error'] })
             // console.log("NETWORK ERROR TRY LATER", error)
             toast.error(error.message, {
@@ -119,9 +119,18 @@ export default function FormContactCompt({ message, searchParams }: { message: a
         const { name, value } = e.target
         SetFormValues({ ...formValues, [name]: value })
     }
+
+    const handleWhatsappSubmit = () => {
+        // Replace this with your actual 3SThreeI WhatsApp number in international format without + or spaces
+        const whatsappNumber = "233592233681"
+        const message = `Hello 3SThreeI,%0A%0AI would like to discuss a project with you.%0A%0A━━━━━━━━━━━━━━━━%0ACONTACT INFORMATION%0A━━━━━━━━━━━━━━━━%0A%0A👤 Full Name: ${formValues.fullname}%0A📧 Email: ${formValues.email}%0A📱 Phone: ${formValues.phone_number}%0A${formValues.url ? `🌐 Website: ${formValues.url}%0A` : ""}%0A━━━━━━━━━━━━━━━━%0APROJECT INFORMATION%0A━━━━━━━━━━━━━━━━%0A%0A💼 Project Type: ${formValues.project_type}%0A%0A📝 Project Details:%0A${formValues.description}%0A%0AThank you. I look forward to hearing from you.`
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
+        window.open(whatsappUrl, "_blank")
+    }
+
     return (
         <div className={style.wrapper}>
-            <div><Toaster position="top-right"/></div>
+            <div><Toaster position="top-right" /></div>
             <div className={style.card}>
                 {/* Header Section */}
                 <div className={style.header}>
@@ -274,18 +283,26 @@ export default function FormContactCompt({ message, searchParams }: { message: a
                     </div>
 
                     {/* Submit Button */}
-                    <button type="submit" disabled={pending} className={style.submitBtn} aria-label="submit contact form">
-                        {pending ?
-                            <span className={style.btnText}>
-                                <svg className={style.spinner} viewBox="0 0 24 24" width={24} height={24}>
-                                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" />
-                                </svg>
-                            </span> :
+                    <div className={style.buttonGroup}>
+                        <button type="submit" disabled={pending} className={style.submitBtn} aria-label="submit contact form">
+                            {pending ?
+                                <span className={style.btnText}>
+                                    <svg className={style.spinner} viewBox="0 0 24 24" width={24} height={24}>
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" fill="none" />
+                                    </svg>
+                                </span> :
+                                <div>
+                                    <span className={style.btnText}>{t.formContact.btn}</span>
+                                    <span className={style.btnIcon}>→</span> </div>
+                            }
+                        </button>
+                        <button type="button" onClick={handleWhatsappSubmit} className={`${style.submitBtn} ${style.whatsappBtn}`} aria-label="send contact form via whatsapp">
                             <div>
-                                <span className={style.btnText}>{t.formContact.btn}</span>
-                                <span className={style.btnIcon}>→</span> </div>
-                        }
-                    </button>
+                                <span className={style.btnText}>{t.formContact.btnWhatsapp}</span>
+                                {/* <span className={style.btnIcon}>💬</span> */}
+                            </div>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
