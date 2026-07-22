@@ -1,72 +1,159 @@
 @reference "tailwindcss";
 
 .container {
-    @apply px-5
+    @apply px-5 py-10 md:px-10 md:py-14 space-y-14 text-white;
+}
+
+.heroBlock {
+    @apply grid gap-8 lg:grid-cols-[1.3fr_0.9fr] items-center;
+}
+
+.textBlock {
+    @apply max-w-3xl space-y-6;
+}
+
+.overline {
+    @apply text-xs uppercase tracking-[0.35em] text-(--nav-text-color) opacity-80;
 }
 
 .title {
-    @apply ml-5 text-xl sm:text-3xl text-(--nav-text-color) relative my-10 font-[lora] transition-all duration-500 ease-in-out
+    @apply text-3xl sm:text-5xl font-[lora] leading-tight text-(--nav-text-color);
 }
 
-.container .desc {
-    @apply mx-auto max-w-190 min-w-[200px] mt-24 border-b border-b-5 md:border-b-0 md:border-l md:border-l-5 rounded-xl border-(--nav-text-color) px-2
+.intro {
+    @apply text-lg sm:text-xl text-white/90 max-w-2xl;
 }
 
-.title::before {
-    position: absolute;
-    content: "";
-    bottom: -10px;
-    background-color: var(--nav-text-color);
-    width: 100px;
-    height: 5px;
-    border-radius: 10px;
+.desc {
+    @apply text-base sm:text-lg text-white/70 max-w-3xl leading-8;
+}
+
+.visualBlock {
+    @apply flex items-center justify-center;
+}
+
+.visualCard {
+    @apply relative rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-[0_30px_90px_rgba(0,0,0,0.25)] backdrop-blur-xl max-w-md;
+}
+
+.visualLabel {
+    @apply inline-flex px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-[0.3em] bg-(--nav-text-color) text-black mb-4;
+}
+
+.visualText {
+    @apply text-white/80 leading-7;
+}
+
+.linkLine {
+    @apply mt-6 text-sm text-white/70 max-w-2xl;
+}
+
+.link {
+    @apply text-(--nav-text-color) underline decoration-(--nav-text-color) decoration-2 underline-offset-4;
+}
+
+.sectionBlock {
+    @apply grid gap-8;
+}
+
+.sectionHeader h2 {
+    @apply text-2xl sm:text-3xl text-(--nav-text-color) font-[lora] mb-3;
+}
+
+.sectionHeader p {
+    @apply text-white/70 max-w-3xl leading-8;
+}
+
+.featuresGrid {
+    @apply grid gap-4 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.featureCard {
+    @apply rounded-[1.5rem] border border-white/10 bg-white/5 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.2)] transition duration-300 ease-in-out hover:-translate-y-1;
+}
+
+.featureIndex {
+    @apply inline-flex items-center justify-center w-12 h-12 rounded-full bg-(--nav-text-color) text-black font-bold mb-4;
+}
+
+.featureCard h3 {
+    @apply text-xl font-semibold text-white mb-3;
+}
+
+.featureCard p {
+    @apply text-sm text-white/70 leading-7;
+}
+
+.splitSection {
+    @apply grid gap-6 lg:grid-cols-2;
+}
+
+.splitCard {
+    @apply rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.16)];
+}
+
+.ctaSection {
+    @apply mt-12 rounded-[2rem] border border-(--nav-text-color)/20 bg-(--nav-text-color)/10 p-8 text-center;
+}
+
+.ctaText {
+    @apply text-lg sm:text-xl text-white/90 mb-6 max-w-3xl mx-auto;
+}
+
+.ctaButton {
+    @apply inline-flex items-center justify-center rounded-full bg-(--nav-text-color) px-8 py-4 text-black font-semibold transition hover:bg-white/90;
+}
+
+.splitCard h2 {
+    @apply text-2xl font-[lora] text-(--nav-text-color) mb-4;
+}
+
+.splitCard p {
+    @apply text-white/75 leading-8;
+}
+
+.teamSection {
+    @apply space-y-8;
+}
+
+.teamHeader h2 {
+    @apply text-3xl sm:text-4xl text-(--nav-text-color) font-[lora];
+}
+
+.teamHeader p {
+    @apply text-white/70 max-w-3xl leading-8;
 }
 
 .cards {
-    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto w-[230px] sm:w-[500px] md:w-[700px] gap-3 sm:gap-5 mt-[100px] sm:mt-[200px]
+    @apply grid gap-5 sm:grid-cols-2 lg:grid-cols-3;
 }
 
-.cards .card {
-    @apply max-w-[250px] min-w-[150px] sm:min-w-[220px] rounded-md overflow-hidden
+.card {
+    @apply rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 shadow-[0_24px_80px_rgba(0,0,0,0.22)];
 }
 
 .card .img {
-    @apply w-full overflow-hidden h-[200px]
+    @apply w-full h-[240px] overflow-hidden bg-white/10;
 }
 
 .cardText {
-    @apply shadow-[0px_02px_3px_white] mx-1 px-3 py-3 space-y-2.5 mb-1 rounded-b-lg cursor-default
+    @apply px-6 py-6 space-y-3;
 }
 
 .cardText .Name {
-    position: relative;
-    transition: all 0.5s ease;
-    font-size: 1.2rem;
-    font-family: poppins;
+    @apply text-xl font-semibold text-white;
 }
 
-.cardText .Name::before {
-    position: absolute;
-    content: "";
-    bottom: -5px;
-    background-color: var(--nav-text-color);
-    width: 0;
-    height: 4px;
-    border-radius: 10px;
-    transition: all 0.3s ease-out;
+.cardText .founder {
+    @apply text-white/70;
 }
 
-.card:hover .Name::before {
-    width: 100%;
-}
-.card .founder{
-    @apply text-white transition duration-300 ease-in text-sm
-}
-.card:hover .founder{
-    @apply text-(--nav-text-color)
-}
-@media(max-width:600px){
-    .card .founder{
-    @apply text-(--nav-text-color)
-}
+@media (max-width: 768px) {
+    .heroBlock {
+        @apply grid-cols-1;
+    }
+
+    .visualCard {
+        @apply w-full;
+    }
 }
