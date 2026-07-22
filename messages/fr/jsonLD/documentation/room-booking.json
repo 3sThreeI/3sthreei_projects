@@ -1,0 +1,70 @@
+{
+    "name": "Documentation complète de la plateforme de réservation de chambres",
+    "description": "Documentation technique complète d'une plateforme de réservation et de partage de chambres développée avec Angular et Django. Découvrez l'architecture, l'authentification, la gestion des utilisateurs, les annonces de chambres, la recherche et les filtres, les réservations, les notifications, les reçus et le tableau de bord administrateur.",
+    "headline": "Documentation Angular & Django - Plateforme de réservation de chambres",
+    "type": "Documentation technique",
+    "articleSection": [
+        "Architecture",
+        "Authentification",
+        "Gestion des utilisateurs",
+        "Gestion des rôles et des autorisations",
+        "Gestion des chambres",
+        "Publication des chambres",
+        "Recherche de chambres",
+        "Filtres de recherche",
+        "Réservations",
+        "Confirmation de réservation",
+        "Reçus",
+        "Notifications",
+        "Tableau de bord administrateur",
+        "Suivi des activités",
+        "Sécurité",
+        "API REST",
+        "Déploiement"
+    ],
+    "keywords": [
+        "Angular",
+        "Django",
+        "Django REST Framework",
+        "Python",
+        "Room Booking",
+        "Réservation de chambres",
+        "Partage de chambres",
+        "REST API",
+        "JWT Authentication",
+        "Gestion des utilisateurs",
+        "Réservation en ligne",
+        "Plateforme de réservation"
+    ],
+    "software": {
+        "name": "Plateforme Angular Django de réservation de chambres",
+        "description": "Une plateforme complète de réservation et de partage de chambres développée avec Angular et Django, permettant aux voyageurs de trouver et réserver des chambres disponibles et aux propriétaires de partager et gérer leurs propres chambres.",
+        "applicationCategory": "Application de services",
+        "applicationSubCategory": "Plateforme de réservation de chambres"
+    },
+    "programmingLanguage": [
+        "TypeScript",
+        "Python"
+    ],
+    "runtimePlatform": [
+        "Django",
+        "Web Browser"
+    ],
+    "applicationCartegory": "Réservation de chambres",
+    "features": [
+        "Authentification et autorisation sécurisées basées sur les rôles.",
+        "Gestion des comptes voyageurs, propriétaires et administrateurs.",
+        "Publication et gestion des chambres par leurs propriétaires.",
+        "Accès limité permettant aux propriétaires de gérer uniquement leurs propres chambres.",
+        "Recherche de chambres disponibles.",
+        "Filtres permettant aux voyageurs de trouver rapidement une chambre adaptée.",
+        "Réservation de chambres disponibles par les voyageurs.",
+        "Confirmation automatique après une réservation réussie.",
+        "Génération et réception de reçus de réservation.",
+        "Notifications liées aux réservations et aux activités des chambres.",
+        "Tableau de bord administrateur avec visibilité sur les utilisateurs, chambres et réservations.",
+        "Suivi des activités effectuées sur la plateforme.",
+        "API REST pour la communication entre Angular et Django.",
+        "Gestion sécurisée des accès et des données utilisateurs."
+    ]
+}
