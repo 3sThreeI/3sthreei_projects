@@ -7,9 +7,11 @@
 .hero {
     @apply w-full space-y-7
 }
-
+.cardTitle{
+    @apply flex
+}
 .title {
-    @apply px-3 py-2 bg-green-300 max-w-[210px] rounded-full text-green-950 text-sm
+    @apply px-3 py-2 bg-green-300 w-auto rounded-full text-green-950 text-sm
 }
 
 .image {
