@@ -1,0 +1,254 @@
+{
+    "sitename": "Plateforme de Réservation de Chambres",
+    "title": "Documentation de la Plateforme de Réservation et de Partage de Chambres",
+    "projImgUrl": "/room-booking.png",
+    "projImgAlt": "Plateforme de réservation de chambres mettant en relation les voyageurs avec des chambres disponibles et leurs propriétaires",
+    "subtitle": "Mettez les voyageurs en relation avec des chambres disponibles",
+    "desc": "Une plateforme de réservation et de partage de chambres qui met en relation les voyageurs à la recherche d'un hébergement avec des propriétaires souhaitant partager leurs chambres disponibles. Les voyageurs peuvent découvrir et réserver des chambres, tandis que les propriétaires peuvent créer et gérer leurs propres annonces. Les administrateurs disposent d'une visibilité complète sur la plateforme, peuvent gérer les utilisateurs et suivre les activités.",
+    "ProblemStat": {
+        "title": "Problématique",
+        "text1": "Les voyageurs ont souvent du mal à trouver des chambres disponibles qui correspondent à leurs besoins, tandis que les propriétaires disposent de peu de moyens pour partager leurs chambres disponibles avec des voyageurs potentiels.",
+        "text2Special": "Cette plateforme de réservation de chambres résout ce problème ",
+        "text2": "en mettant en relation les voyageurs avec des chambres disponibles grâce à une expérience de réservation simple et pratique, tout en permettant aux propriétaires de créer et de gérer leurs propres annonces.",
+        "WhoExp": {
+            "title": "Qui rencontre ce problème ? (Et pourquoi est-ce important ?)",
+            "Exp": [
+                {
+                    "contentSubT": "Voyageurs à la recherche d'une chambre",
+                    "ExpList": [
+                        "Difficulté à trouver des chambres disponibles",
+                        "Accès limité aux informations sur les chambres",
+                        "Recherche et processus de réservation longs et fastidieux",
+                        "Besoin d'une confirmation après avoir effectué une réservation",
+                        "Besoin d'un reçu fiable pour leur réservation"
+                    ]
+                },
+                {
+                    "contentSubT": "Propriétaires souhaitant partager leurs chambres",
+                    "ExpList": [
+                        "Besoin d'un moyen simple de partager leurs chambres disponibles",
+                        "Besoin de gérer leurs propres informations de chambre",
+                        "Souhait de rendre les informations sur leurs chambres accessibles aux voyageurs potentiels",
+                        "Besoin de gérer leurs annonces sans accéder aux chambres des autres propriétaires"
+                    ]
+                },
+                {
+                    "contentSubT": "Administrateurs de la plateforme",
+                    "ExpList": [
+                        "Besoin d'une visibilité sur les activités de la plateforme",
+                        "Besoin de gérer les comptes utilisateurs",
+                        "Besoin de superviser les chambres et les réservations",
+                        "Besoin de suivre les activités effectuées sur la plateforme",
+                        "Besoin d'une gestion centralisée de la plateforme"
+                    ]
+                }
+            ]
+        },
+        "whyMatter": {
+            "title": "Pourquoi est-ce important ?",
+            "solving": [
+                "Facilite la recherche de chambres disponibles pour les voyageurs",
+                "Met en relation les voyageurs avec les propriétaires disposant de chambres disponibles",
+                "Simplifie le processus de réservation des chambres",
+                "Permet aux propriétaires de partager et de gérer leurs propres chambres",
+                "Fournit aux voyageurs des confirmations et des reçus de réservation",
+                "Offre aux administrateurs une visibilité sur les activités de la plateforme"
+            ]
+        }
+    },
+    "userRoles": {
+        "title": "Rôles et autorisations des utilisateurs",
+        "roles": [
+            {
+                "key": "Voyageur",
+                "value": [
+                    "Créer et gérer un compte voyageur",
+                    "Parcourir les chambres disponibles",
+                    "Consulter les informations des chambres",
+                    "Réserver une chambre disponible",
+                    "Recevoir une confirmation de réservation",
+                    "Recevoir un reçu de réservation",
+                    "Accéder aux informations de ses réservations"
+                ]
+            },
+            {
+                "key": "Propriétaire",
+                "value": [
+                    "Créer et gérer un compte propriétaire",
+                    "Créer et partager sa propre annonce de chambre",
+                    "Ajouter et mettre à jour les informations de sa chambre",
+                    "Gérer sa propre annonce",
+                    "Rendre sa chambre disponible à la recherche pour les voyageurs",
+                    "Ne peut pas accéder aux informations des chambres des autres propriétaires ni les gérer"
+                ]
+            },
+            {
+                "key": "Administrateur",
+                "value": [
+                    "Gérer les comptes utilisateurs",
+                    "Consulter tous les utilisateurs",
+                    "Consulter toutes les chambres",
+                    "Consulter toutes les réservations",
+                    "Superviser les activités de la plateforme",
+                    "Consulter les activités effectuées par les utilisateurs",
+                    "Accéder aux informations globales de la plateforme",
+                    "Ne peut pas modifier les informations des chambres des propriétaires"
+                ]
+            }
+        ]
+    },
+    "features": {
+        "title": "Fonctionnalités",
+        "featureList": [
+            {
+                "key": "Découverte et recherche de chambres",
+                "value": [
+                    "Les voyageurs peuvent parcourir les chambres disponibles proposées par les propriétaires",
+                    "Rechercher des chambres selon les informations disponibles",
+                    "Filtrer les chambres afin de trouver rapidement un hébergement adapté",
+                    "Consulter les informations détaillées d'une chambre avant de réserver"
+                ]
+            },
+            {
+                "key": "Gestion des chambres",
+                "value": [
+                    "Les propriétaires peuvent créer et partager leurs propres annonces de chambres",
+                    "Les propriétaires peuvent ajouter les détails et informations de leurs chambres",
+                    "Les propriétaires peuvent mettre à jour et gérer les informations de leurs propres chambres",
+                    "Les propriétaires ne peuvent pas accéder aux chambres appartenant à d'autres propriétaires ni les gérer"
+                ]
+            },
+            {
+                "key": "Réservation de chambres",
+                "value": [
+                    "Les voyageurs peuvent réserver les chambres disponibles",
+                    "La plateforme enregistre chaque réservation",
+                    "Les voyageurs reçoivent une confirmation après avoir effectué une réservation avec succès",
+                    "Les voyageurs reçoivent un reçu de réservation",
+                    "Les voyageurs peuvent accéder aux informations de leurs réservations"
+                ]
+            },
+            {
+                "key": "Notifications",
+                "value": [
+                    "Les voyageurs reçoivent des notifications concernant leurs réservations",
+                    "Les voyageurs reçoivent une notification de confirmation de réservation",
+                    "Les propriétaires reçoivent des notifications concernant les activités liées à leurs chambres",
+                    "Les administrateurs peuvent suivre les activités importantes de la plateforme"
+                ]
+            },
+            {
+                "key": "Confirmation et reçu de réservation",
+                "value": [
+                    "Confirmation automatique après une réservation réussie",
+                    "Les informations de réservation sont enregistrées de manière sécurisée dans le système",
+                    "Les voyageurs reçoivent un reçu pour leur réservation",
+                    "Les voyageurs peuvent consulter les informations relatives à leurs réservations"
+                ]
+            },
+            {
+                "key": "Authentification des utilisateurs",
+                "value": [
+                    "Création de compte et connexion sécurisées",
+                    "Accès distinct selon le rôle de chaque utilisateur",
+                    "Accès voyageur pour rechercher et réserver des chambres",
+                    "Accès propriétaire pour gérer ses propres annonces de chambres",
+                    "Accès administrateur pour gérer la plateforme"
+                ]
+            },
+            {
+                "key": "Contrôle d'accès basé sur les rôles",
+                "value": [
+                    "Les voyageurs peuvent gérer leurs propres activités de réservation",
+                    "Les propriétaires peuvent gérer uniquement leurs propres chambres",
+                    "Les propriétaires ne peuvent pas accéder aux chambres des autres propriétaires ni les gérer",
+                    "Les administrateurs peuvent gérer les utilisateurs et superviser les activités de la plateforme",
+                    "Les administrateurs peuvent consulter les informations de la plateforme sans modifier les informations des chambres des propriétaires"
+                ]
+            },
+            {
+                "key": "Tableau de bord administrateur",
+                "value": [
+                    "Consulter et gérer les comptes utilisateurs",
+                    "Consulter tous les utilisateurs enregistrés",
+                    "Consulter toutes les chambres partagées sur la plateforme",
+                    "Consulter toutes les réservations",
+                    "Superviser les activités effectuées sur la plateforme",
+                    "Avoir une visibilité centralisée sur les activités de la plateforme"
+                ]
+            }
+        ]
+    },
+    "tech": {
+        "title": "Technologies utilisées",
+        "list": [
+            {
+                "key": "Frontend",
+                "value": [
+                    {
+                        "key": "Angular",
+                        "value": "Framework frontend moderne permettant de créer une interface de réservation de chambres interactive et responsive"
+                    }
+                ]
+            },
+            {
+                "key": "Backend",
+                "value": [
+                    {
+                        "key": "Django",
+                        "value": "Framework web Python utilisé pour développer le backend de l'application et gérer la logique métier"
+                    },
+                    {
+                        "key": "Django REST Framework",
+                        "value": "Développement d'API REST permettant la communication entre Angular et Django"
+                    }
+                ]
+            },
+            {
+                "key": "Base de données",
+                "value": [
+                    {
+                        "key": "Base de données relationnelle",
+                        "value": "Stockage des utilisateurs, des chambres, des réservations et des données liées à la plateforme"
+                    }
+                ]
+            },
+            {
+                "key": "Authentification",
+                "value": [
+                    {
+                        "key": "Authentification basée sur les rôles",
+                        "value": "Contrôle des accès pour les voyageurs, les propriétaires et les administrateurs"
+                    },
+                    {
+                        "key": "Authentification JWT",
+                        "value": "Authentification et autorisation sécurisées pour les requêtes API"
+                    }
+                ]
+            },
+            {
+                "key": "API",
+                "value": [
+                    {
+                        "key": "API REST",
+                        "value": "Communication entre le frontend Angular et le backend Django"
+                    }
+                ]
+            },
+            {
+                "key": "Outils supplémentaires",
+                "value": [
+                    {
+                        "key": "Git",
+                        "value": "Gestion des versions et du code source"
+                    },
+                    {
+                        "key": "CORS",
+                        "value": "Communication sécurisée entre le frontend et le backend sur des origines différentes"
+                    }
+                ]
+            }
+        ]
+    },
+    "cta": "Trouvez votre chambre idéale"
+}
