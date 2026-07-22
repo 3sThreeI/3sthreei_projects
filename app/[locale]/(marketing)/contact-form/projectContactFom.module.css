@@ -183,6 +183,13 @@
 }
 
 /* Submit Button */
+.buttonGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+}
+
 .submitBtn {
     padding: 14px 32px;
     font-size: 16px;
@@ -202,6 +209,10 @@
     letter-spacing: 0.5px;
     position: relative;
     overflow: hidden;
+}
+
+.whatsappBtn {
+    background: linear-gradient(135deg, #25d366 0%, #16a34a 100%);
 }
 
 .submitBtn::before {
