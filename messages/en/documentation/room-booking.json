@@ -1,0 +1,254 @@
+{
+    "sitename": "Room Booking Platform",
+    "title": "Room Booking & Sharing Documentation",
+    "projImgUrl": "/room-booking.png",
+    "projImgAlt": "Room booking platform connecting guests with available rooms and homeowners",
+    "subtitle": "Connect Guests With Available Rooms",
+    "desc": "A room booking and sharing platform that connects guests looking for accommodation with homeowners who want to share their available rooms. Guests can discover and book available rooms, while homeowners can create and manage their own room listings. Administrators have full visibility across the platform and can manage users and monitor platform activities.",
+    "ProblemStat": {
+        "title": "Problem Statement",
+        "text1": "Guests often struggle to find available rooms that match their needs, while homeowners have limited ways to share their available rooms with potential guests.",
+        "text2Special": "This room booking platform solves that problem ",
+        "text2": "by connecting guests with available rooms through a simple and convenient booking experience, while allowing homeowners to create and manage their own room listings.",
+        "WhoExp": {
+            "title": "Who Experiences This Problem? (And Why It Matters)",
+            "Exp": [
+                {
+                    "contentSubT": "Guests Looking for Rooms",
+                    "ExpList": [
+                        "Difficulty finding available rooms",
+                        "Limited access to room information",
+                        "Time-consuming room search and booking process",
+                        "Need confirmation after completing a booking",
+                        "Need a reliable receipt for their booking"
+                    ]
+                },
+                {
+                    "contentSubT": "Homeowners Sharing Rooms",
+                    "ExpList": [
+                        "Need an easy way to share available rooms",
+                        "Need to manage their own room information",
+                        "Want to make room details available to potential guests",
+                        "Need to manage their listings without accessing other homeowners' rooms"
+                    ]
+                },
+                {
+                    "contentSubT": "Platform Administrators",
+                    "ExpList": [
+                        "Need visibility across platform activities",
+                        "Need to manage user accounts",
+                        "Need to monitor rooms and bookings",
+                        "Need to track activities performed across the platform",
+                        "Need centralized platform management"
+                    ]
+                }
+            ]
+        },
+        "whyMatter": {
+            "title": "Why This Matters",
+            "solving": [
+                "Makes it easier for guests to find available rooms",
+                "Connects guests with homeowners who have available rooms",
+                "Simplifies the room booking process",
+                "Allows homeowners to share and manage their own rooms",
+                "Provides guests with booking confirmation and receipts",
+                "Gives administrators visibility into platform activities"
+            ]
+        }
+    },
+    "userRoles": {
+        "title": "User Roles & Permissions",
+        "roles": [
+            {
+                "key": "Guest",
+                "value": [
+                    "Create and manage a guest account",
+                    "Browse available rooms",
+                    "View room information",
+                    "Book an available room",
+                    "Receive booking confirmation",
+                    "Receive a booking receipt",
+                    "Access their booking information"
+                ]
+            },
+            {
+                "key": "Homeowner",
+                "value": [
+                    "Create and manage a homeowner account",
+                    "Create and share their own room listing",
+                    "Add and update their room information",
+                    "Manage their own room listing",
+                    "Make their room available for guests to discover",
+                    "Cannot access or manage other homeowners' room information"
+                ]
+            },
+            {
+                "key": "Administrator",
+                "value": [
+                    "Manage user accounts",
+                    "View all users",
+                    "View all rooms",
+                    "View all bookings",
+                    "Monitor platform activities",
+                    "View activities performed by users",
+                    "Access platform-wide information",
+                    "Cannot edit or modify homeowners' room information"
+                ]
+            }
+        ]
+    },
+    "features": {
+        "title": "Features",
+        "featureList": [
+            {
+                "key": "Room Discovery & Search",
+                "value": [
+                    "Guests can browse available rooms shared by homeowners",
+                    "Search for rooms based on relevant information",
+                    "Filter rooms to quickly find suitable accommodation",
+                    "View detailed room information before making a booking"
+                ]
+            },
+            {
+                "key": "Room Management",
+                "value": [
+                    "Homeowners can create and share their own room listings",
+                    "Homeowners can add room details and information",
+                    "Homeowners can update and manage their own room information",
+                    "Homeowners cannot access or manage rooms belonging to other homeowners"
+                ]
+            },
+            {
+                "key": "Room Booking",
+                "value": [
+                    "Guests can book available rooms",
+                    "The platform records each booking",
+                    "Guests receive confirmation after successfully booking a room",
+                    "Guests receive a booking receipt",
+                    "Guests can access their booking information"
+                ]
+            },
+            {
+                "key": "Notifications",
+                "value": [
+                    "Guests receive notifications related to their bookings",
+                    "Guests receive booking confirmation notifications",
+                    "Homeowners receive notifications about activities related to their rooms",
+                    "Administrators can monitor important platform activities"
+                ]
+            },
+            {
+                "key": "Booking Confirmation & Receipt",
+                "value": [
+                    "Automatic booking confirmation after a successful reservation",
+                    "Booking information is securely recorded in the system",
+                    "Guests receive a receipt for their booking",
+                    "Guests can review their booking information"
+                ]
+            },
+            {
+                "key": "User Authentication",
+                "value": [
+                    "Secure account creation and login",
+                    "Separate access based on user roles",
+                    "Guest access for room discovery and booking",
+                    "Homeowner access for managing personal room listings",
+                    "Administrator access for platform management"
+                ]
+            },
+            {
+                "key": "Role-Based Access Control",
+                "value": [
+                    "Guests can manage their own booking activities",
+                    "Homeowners can manage only their own rooms",
+                    "Homeowners cannot access or manage other homeowners' rooms",
+                    "Administrators can manage users and monitor platform activities",
+                    "Administrators can view platform information without editing homeowner room information"
+                ]
+            },
+            {
+                "key": "Administrator Dashboard",
+                "value": [
+                    "View and manage user accounts",
+                    "View all registered users",
+                    "View all rooms shared on the platform",
+                    "View all bookings",
+                    "Monitor activities performed across the platform",
+                    "Maintain centralized visibility of platform activities"
+                ]
+            }
+        ]
+    },
+    "tech": {
+        "title": "Tech Stack",
+        "list": [
+            {
+                "key": "Frontend",
+                "value": [
+                    {
+                        "key": "Angular",
+                        "value": "Modern frontend framework for building a responsive and interactive room booking interface"
+                    }
+                ]
+            },
+            {
+                "key": "Backend",
+                "value": [
+                    {
+                        "key": "Django",
+                        "value": "Python web framework for building the backend application and business logic"
+                    },
+                    {
+                        "key": "Django REST Framework",
+                        "value": "RESTful API development for communication between Angular and Django"
+                    }
+                ]
+            },
+            {
+                "key": "Database",
+                "value": [
+                    {
+                        "key": "Relational Database",
+                        "value": "Stores users, rooms, bookings, and platform-related data"
+                    }
+                ]
+            },
+            {
+                "key": "Authentication",
+                "value": [
+                    {
+                        "key": "Role-Based Authentication",
+                        "value": "Controls access for guests, homeowners, and administrators"
+                    },
+                    {
+                        "key": "JWT Authentication",
+                        "value": "Secure authentication and authorization for API requests"
+                    }
+                ]
+            },
+            {
+                "key": "API",
+                "value": [
+                    {
+                        "key": "REST API",
+                        "value": "Communication between the Angular frontend and Django backend"
+                    }
+                ]
+            },
+            {
+                "key": "Additional Tools",
+                "value": [
+                    {
+                        "key": "Git",
+                        "value": "Version control and source code management"
+                    },
+                    {
+                        "key": "CORS",
+                        "value": "Secure cross-origin communication between frontend and backend"
+                    }
+                ]
+            }
+        ]
+    },
+    "cta": "Find Your Perfect Room"
+}
