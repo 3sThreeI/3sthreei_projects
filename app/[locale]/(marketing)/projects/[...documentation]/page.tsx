@@ -162,7 +162,6 @@ export default async function Documentation({ params }: { params: any }) {
             }
         ]
     }
-
     return (
         <main className={style.container}>
             <script type="application/json" 
