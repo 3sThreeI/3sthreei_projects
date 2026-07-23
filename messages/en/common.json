@@ -24,7 +24,7 @@
             "Sign-In",
             "log-In"
         ],
-         "ogImage": "https://3sthreei.com/og-image.png",
+        "ogImage": "https://3sthreei.com/og-image.png",
         "ogImageAlt": "3SThreeI SaaS Platform"
     },
     "navbar": {
@@ -215,6 +215,16 @@
             ],
             "ogImage": "https://3sthreei.com/og-image.png",
             "ogImageAlt": "3SThreeI SaaS Platform"
+        }
+    },
+    "blog": {
+        "why-website-not-ranking-on-google": {
+            "sitename": "3SThreeI",
+            "title": "Why Your Website Is Not Ranking on Google",
+            "description": "Is your website not ranking on Google? Learn why websites stay invisible and how 3sthreei helps businesses improve SEO, visibility, and qualified traffic.",
+            "keywords": [],
+            "ogImage": "https://3sthreei.com/og-image.png",
+            "ogImageAlt": "3SThreeI SaaS Platforme"
         }
     }
 }
