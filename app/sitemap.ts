@@ -15,7 +15,9 @@ const routes = [
     "/services/web",
     "/unavailable",
     //   for documentation 
-    "/projects/view/docs/e-commerce"
+    "/projects/view/docs/e-commerce",
+    // for Blog
+    "/blog/why-website-not-ranking-on-google"
 ];
 
 const locales = ["en", "fr"] as const;
