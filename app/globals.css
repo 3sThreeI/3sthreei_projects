@@ -9,8 +9,9 @@
     margin: 0;
     padding: 0;
 }
-.roote3{
+roote {
   --nav-bg-color: rgb(126, 34, 206);
+  --nav-bg-color-opacity: rgba(126, 34, 206, 0.19);
   --nav-text-color: rgb(126, 34, 206);
   --nav-text-color-hover: rgb(255, 255, 255);
   --nav-shadow-color: rgba(126, 34, 206, 0.396);
@@ -25,16 +26,17 @@
   --bg-color: rgb(17, 24, 39);
   /* background color*/
   --card-bg-color: rgb(30, 41, 59);
-  --card-bg-color-deep: rgb(8, 47, 73);
+  --card-bg-color-deep: rgba(255, 255, 255, 0.188);
   --transparent-black:rgb(0,0,0,0.5);
   /* card color*/
 }
 
 :root {
-  --nav-bg-color: rgb(97, 218, 251);
+  --nav-bg-color: rgba(97, 218, 251, 0.167);
+  --nav-bg-color-opacity: rgba(97, 218, 251, 0.19);
   --nav-text-color: rgb(97, 218, 251);
   --nav-text-color-hover: rgb(255, 255, 255);
-  --nav-shadow-color: rgb(97, 218, 251);
+  --nav-shadow-color: rgba(97, 218, 251, 0.144);
   --bg-hero-color1: rgb(17, 24, 39);
   --bg-hero-color2: rgb(15, 23, 42);
   --text-color: rgb(255, 255, 255);
@@ -49,5 +51,6 @@
 }
 
 body {
-  @apply bg-(--bg-color) text-(--text-color)
+  @apply bg-(--bg-color) text-(--text-color);
+  /* background-color: rgba(34,211,238,0.08); */
 }
