@@ -1,0 +1,116 @@
+@reference"tailwindcss";
+
+.page {
+    @apply min-h-screen text-slate-100;
+}
+
+.hero {
+    @apply relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_bottom_left,_var(--nav-shadow-color),_transparent_38%),linear-gradient(135deg,_rgba(15,23,42,0.98),_rgba(2,6,23,1))] px-6 py-20 sm:px-8 lg:px-12;
+}
+
+.hero::before {
+    content: "";
+    @apply absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.04),transparent_50%,rgba(34,211,238,0.08))];
+    pointer-events: none;
+}
+
+.heroContent {
+    @apply relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center;
+}
+
+.eyebrow {
+    @apply mb-4 inline-flex rounded-full border bg-(--nav-bg-color-opacity) px-3 py-1 text-sm font-semibold uppercase tracking-[0.24em] text-(--nav-text-color);
+}
+
+.title {
+    @apply text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl;
+}
+
+.subtitle {
+    @apply mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl;
+}
+
+.heroActions {
+    @apply mt-8 flex flex-wrap justify-center gap-4;
+}
+
+.primaryButton {
+    @apply inline-flex items-center justify-center rounded-full bg-(--nav-text-color) px-2 md:px-4 py-3 text-[0.7rem] md:text-[1rem] font-semibold text-slate-950 transition duration-200 hover:-translate-y-0.5 hover:bg-(--nav-bg-color)/80;
+}
+
+.secondaryButton {
+    @apply inline-flex items-center justify-center rounded-full border border-white/15 bg-(--nav-shadow-color) px-2 md:px-4 py-3 font-semibold text-white text-[0.7rem] md:text-[1rem] transition duration-200 hover:-translate-y-0.5 hover:bg-(--nav-text-color)/60;
+}
+
+.heroCard {
+    @apply rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl shadow-cyan-950/30 backdrop-blur-xl;
+}
+
+.heroCardLabel {
+    @apply text-sm font-semibold uppercase tracking-[0.24em] text-(--nav-text-color);
+}
+
+.heroCardTitle {
+    @apply mt-3 text-2xl font-semibold text-white;
+}
+
+.heroCardList {
+    @apply mt-5 space-y-3 text-sm leading-7 text-slate-300;
+}
+
+.heroCardList li {
+    @apply flex gap-3 rounded-2xl border border-white/10 bg-white/5 px-3 py-3;
+}
+
+.heroCardList li::before {
+    content: "•";
+    @apply text-(--nav-text-color);
+}
+
+.main {
+    @apply px-6 py-16 sm:px-8 lg:px-12;
+}
+
+.article {
+    @apply mx-auto flex max-w-5xl flex-col gap-8;
+}
+
+.intro {
+    @apply rounded-3xl border border-slate-800 bg-slate-900/80 p-8 text-lg leading-8 text-slate-300 shadow-lg shadow-slate-950/30;
+}
+
+.contentWrap {
+    @apply flex flex-col gap-6;
+}
+
+.section {
+    @apply rounded-3xl border border-slate-800 bg-white/5 p-8 shadow-lg shadow-slate-950/20 backdrop-blur;
+}
+
+.sectionTitle {
+    @apply mb-4 text-2xl font-semibold text-white;
+}
+
+.paragraph {
+    @apply mb-4 text-base leading-8 text-slate-300;
+}
+
+.list {
+    @apply ml-5 list-disc space-y-3 text-base leading-7 text-slate-300;
+}
+
+.cta {
+    @apply flex flex-col gap-6 rounded-3xl border border-cyan-400/20 bg-cyan-400/10 p-8 shadow-lg shadow-cyan-950/20 md:flex-row md:items-center md:justify-between;
+}
+
+.ctaEyebrow {
+    @apply text-sm font-semibold uppercase tracking-[0.24em] text-(--nav-bg-color);
+}
+
+.ctaTitle {
+    @apply mt-2 text-2xl font-semibold text-white;
+}
+
+.ctaText {
+    @apply mt-3 max-w-2xl text-base leading-8 text-slate-300;
+}
