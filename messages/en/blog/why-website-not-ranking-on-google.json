@@ -1,3 +1,104 @@
 {
-    
+    "title": "Why Most Websites Stay Invisible in Search — and How 3sthreei Helps Businesses Stand Out",
+    "description": "Discover why many websites fail to rank, what search engines and AI search experiences now reward, and how 3sthreei helps businesses become visible and win qualified leads.",
+    "keywords": [
+        "SEO",
+        "search visibility",
+        "website ranking",
+        "3sthreei",
+        "organic traffic"
+    ],
+    "sitename": "3sthreei",
+    "ogImage": "https://3sthreei.com/images/og/seo-blog.jpg",
+    "ogImageAlt": "Modern SEO strategy illustration for 3sthreei",
+    "heroTag": "SEO strategy",
+    "subtitle": "Most websites fail to rank because they look complete on the surface while missing the deeper signals that search engines and AI search experiences truly reward.",
+    "primaryButtonText": "Request a free audit",
+    "secondaryButtonText": "Explore our services",
+    "heroCardLabel": "Why visibility drops",
+    "heroCardTitle": "Search engines reward clarity, trust, and technical strength.",
+    "intro": "Many business owners assume a site is optimized simply because it has a title tag, a meta description, and a few keywords. In reality, visibility depends on structure, speed, trust, usefulness, and long-term authority.",
+    "highlights": [
+        "Search engines evaluate technical performance, content quality, accessibility, and authority.",
+        "AI search experiences increasingly prioritize relevance, clarity, and trustworthiness.",
+        "The strongest SEO strategies are built around customer intent and business goals."
+    ],
+    "sections": [
+        {
+            "title": "Why many websites stay invisible",
+            "body": [
+                "A lot of websites include the basic SEO elements such as page titles, meta descriptions, canonical URLs, and XML sitemaps. These are important, but they are only the foundation of a successful SEO strategy.",
+                "If your website does not meet the expectations of modern search, it can become nearly invisible online, no matter how strong your products or services are."
+            ],
+            "bullets": [
+                "Poor website structure makes content harder to understand.",
+                "Slow performance and poor mobile usability increase bounce rates.",
+                "Missing structured data reduces how clearly search engines interpret the page."
+            ]
+        },
+        {
+            "title": "1. Poor website structure",
+            "body": [
+                "Search engines rely on well-structured HTML to understand your content. When a website is poorly structured, it becomes harder for both users and search engines to navigate and interpret."
+            ],
+            "bullets": [
+                "Multiple H1 tags used incorrectly.",
+                "Overusing generic div elements instead of semantic HTML.",
+                "Missing alt text, weak headings, and inaccessible buttons or links."
+            ]
+        },
+        {
+            "title": "2. Slow performance and poor user experience",
+            "body": [
+                "Website speed is a critical part of SEO. If your website loads slowly, is not mobile-friendly, or gives visitors a frustrating experience, people leave quickly and search engines notice."
+            ]
+        },
+        {
+            "title": "3. Authority matters",
+            "body": [
+                "At 3sthreei, we believe that what others say about your business is often more powerful than what you say about yourself. That is why earning high-quality backlinks from reputable websites remains an important part of SEO."
+            ]
+        },
+        {
+            "title": "4. Missing structured data",
+            "body": [
+                "Structured data, also known as JSON-LD schema markup, helps search engines understand your content more accurately. It can also make your pages eligible for enhanced results such as review stars, FAQs, and business details."
+            ]
+        },
+        {
+            "title": "5. Outdated technical SEO",
+            "body": [
+                "Modern SEO goes beyond keywords. Technical improvements such as fast loading pages, secure HTTPS, mobile optimization, internal linking, and crawlable architecture all contribute to better search performance."
+            ]
+        },
+        {
+            "title": "6. Preparing content for AI search",
+            "body": [
+                "AI-powered search experiences are changing how people discover information. Clear structure, authoritative content, structured data, and emerging standards such as llms.txt may help AI systems understand your content more effectively."
+            ]
+        },
+        {
+            "title": "7. You are targeting the wrong keywords",
+            "body": [
+                "Many businesses optimize pages using language that customers never actually search for. Successful SEO begins with understanding your audience, their questions, and the words they use in real life."
+            ]
+        },
+        {
+            "title": "How SEO drives real business growth",
+            "body": [
+                "People search online when they need answers, products, or services. Today, they may search through Google, Bing, or AI-powered search experiences that summarize information from across the web.",
+                "These systems aim to recommend pages that are relevant, trustworthy, technically sound, and genuinely useful. When your website meets those standards, you increase your chances of being discovered by potential customers."
+            ]
+        },
+        {
+            "title": "What 3sthreei does differently",
+            "body": [
+                "Many SEO agencies focus only on rankings. At 3sthreei, we focus on business growth. Our strategies combine technical SEO, content marketing, performance optimization, structured data, and authority building to help businesses attract customers, not just clicks."
+            ]
+        }
+    ],
+    "ctaEyebrow": "Growth-focused SEO",
+    "ctaTitle": "Turn search visibility into a steady stream of qualified leads.",
+    "ctaText": "We help businesses improve technical performance, build authority, and create content that earns trust with both search engines and customers.",
+    "ctaButtonText": "Get your free SEO audit"
 }
