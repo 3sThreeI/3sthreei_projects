@@ -1,3 +1,174 @@
 {
-    
+    "title": "Pourquoi la plupart des sites web restent invisibles dans les résultats de recherche — et comment 3sthreei aide les entreprises à se démarquer",
+    "description": "Découvrez pourquoi de nombreux sites web peinent à se positionner, ce que récompensent aujourd'hui les moteurs de recherche et les expériences de recherche pilotées par l'IA, et comment 3sthreei aide les entreprises à gagner en visibilité.",
+    "keywords": [
+        "SEO",
+        "visibilité en recherche",
+        "classement web",
+        "3sthreei",
+        "trafic organique"
+    ],
+    "sitename": "3sthreei",
+    "ogImage": "https://3sthreei.com/images/og/seo-blog.jpg",
+    "ogImageAlt": "Illustration d'une stratégie SEO moderne pour 3sthreei",
+    "heroTag": "Stratégie SEO",
+    "subtitle": "La plupart des sites web ne se positionnent pas correctement parce qu'ils paraissent complets en surface, mais manquent des signaux profonds que les moteurs de recherche et les expériences de recherche basées sur l'IA récompensent réellement.",
+    "primaryButtonText": "Demandez un audit gratuit",
+    "secondaryButtonText": "Découvrez nos services",
+    "heroCardLabel": "Pourquoi la visibilité baisse",
+    "heroCardTitle": "Les moteurs de recherche récompensent la clarté, la confiance et la solidité technique.",
+    "intro": "Beaucoup de propriétaires d'entreprise pensent qu'un site est optimisé simplement parce qu'il contient une balise de titre, une meta description et quelques mots-clés. Pourtant, la visibilité dépend aujourd'hui de bien plus que cela : de la structure du site, de la rapidité, de l'expérience utilisateur, de la qualité du contenu, de l'autorité et de la confiance.",
+    "highlights": [
+        "Les moteurs de recherche évaluent la performance technique, la qualité du contenu, l'accessibilité et l'autorité.",
+        "Les expériences de recherche pilotées par l'IA privilégient de plus en plus la pertinence, la clarté et la fiabilité.",
+        "Les stratégies SEO les plus efficaces sont construites autour de l'intention de recherche et des objectifs de croissance de l'entreprise."
+    ],
+    "sections": [
+        {
+            "title": "Pourquoi beaucoup de sites web restent invisibles",
+            "body": [
+                "Un grand nombre de sites web intègrent bien les éléments SEO de base, comme les titres de page, les descriptions métas, les URL canoniques et les sitemaps XML. Ces éléments sont importants, mais ils ne représentent qu'une base. Ils ne suffisent pas à garantir une vraie visibilité dans les résultats de recherche.",
+                "Aujourd'hui, les moteurs de recherche et les assistants de recherche basés sur l'IA analysent bien plus que des balises. Ils évaluent la qualité du contenu, la structure technique, la facilité d'utilisation, la fiabilité du site et la crédibilité de l'entreprise derrière la page."
+            ],
+            "bullets": [
+                "Une structure du site mal pensée rend le contenu plus difficile à comprendre.",
+                "Une performance lente et une mauvaise expérience mobile provoquent un fort taux de rebond.",
+                "Le manque de données structurées limite la compréhension du contenu par les moteurs de recherche."
+            ]
+        },
+        {
+            "title": "1. Une structure de site insuffisante",
+            "body": [
+                "Les moteurs de recherche s'appuient sur une structure HTML claire pour comprendre les pages. Lorsqu'un site est mal structuré, il devient plus difficile pour les robots comme pour les visiteurs de parcourir et d'interpréter les contenus.",
+                "Les erreurs courantes incluent l'utilisation excessive de balises div génériques, une hiérarchie de titres incohérente, l'absence de texte alternatif sur les images, des boutons peu accessibles et une architecture de navigation confuse."
+            ],
+            "bullets": [
+                "Plusieurs balises H1 utilisées de manière incorrecte.",
+                "Utilisation excessive d'éléments génériques au lieu de balises HTML sémantiques comme article, section, nav, aside et footer.",
+                "Titres de section mal hiérarchisés, liens peu explicites et contenus difficiles à parcourir."
+            ]
+        },
+        {
+            "title": "2. Des performances lentes et une mauvaise expérience utilisateur",
+            "body": [
+                "La vitesse de chargement d'un site est aujourd'hui un facteur essentiel de référencement. Si une page met trop de temps à s'afficher, si elle n'est pas adaptée au mobile ou si elle offre une expérience frustrante, les visiteurs partent vite et les moteurs de recherche le remarquent.",
+                "Un site rapide, fluide et responsive améliore l'engagement, les conversions et la visibilité dans les résultats de recherche."
+            ]
+        },
+        {
+            "title": "3. L'autorité compte",
+            "body": [
+                "Chez 3sthreei, nous croyons que ce que les autres disent de votre entreprise est souvent plus puissant que ce que vous dites vous-même. C'est pourquoi l'acquisition de backlinks de qualité provenant de sites crédibles demeure un pilier important du SEO.",
+                "Les liens entrants agissent comme des signaux de confiance et d'autorité lorsqu'ils proviennent de sources pertinentes et reconnues."
+            ]
+        },
+        {
+            "title": "4. Données structurées manquantes",
+            "body": [
+                "Les données structurées, également appelées balisage schema en JSON-LD, aident les moteurs de recherche à comprendre plus précisément le contenu d'une page. Elles peuvent également permettre l'affichage de résultats enrichis, comme des étoiles de notation, des FAQ, des informations sur une entreprise ou des détails produits."
+            ]
+        },
+        {
+            "title": "5. Un SEO technique dépassé",
+            "body": [
+                "Le référencement moderne ne se limite plus aux mots-clés. Il repose aussi sur des améliorations techniques concrètes, comme des pages rapides, des connexions HTTPS sécurisées, une optimisation mobile, un maillage interne propre, une architecture de site crawlable et une bonne gestion du rendu, qu'il soit statique, côté serveur ou bien implémenté côté client."
+            ]
+        },
+        {
+            "title": "6. Se préparer à la recherche pilotée par l'IA",
+            "body": [
+                "Les expériences de recherche assistées par l'intelligence artificielle transforment la façon dont les internautes découvrent l'information. Des éléments comme une structure claire, un contenu fiable, des données structurées et des standards émergents, tels que llms.txt, peuvent contribuer à une meilleure compréhension de votre contenu par les systèmes d'IA."
+            ]
+        },
+        {
+            "title": "7. Vous ciblez les mauvais mots-clés",
+            "body": [
+                "Beaucoup d'entreprises optimisent leurs pages avec des termes que leurs clients ne recherchent jamais réellement. Un SEO performant commence par une vraie compréhension de l'audience : quelles questions pose-t-elle, quels problèmes essaie-t-elle de résoudre, et quels mots utilise-t-elle vraiment ?"
+            ],
+            "bullets": [
+                "Identifier les intentions de recherche réelles des clients.",
+                "Aligner le contenu sur les besoin concrets du marché.",
+                "Créer des pages qui répondent précisément aux attentes de l'utilisateur."
+            ]
+        },
+        {
+            "title": "Comment le SEO génère de vrais résultats commerciaux",
+            "body": [
+                "Les internautes recherchent en ligne lorsqu'ils ont besoin de réponses, de produits ou de services. Aujourd'hui, ils peuvent utiliser Google, Bing ou des expériences de recherche assistées par l'IA qui synthétisent des informations provenant de nombreuses sources.",
+                "Ces systèmes ont pour objectif de recommander des pages pertinentes, utiles, techniquement solides et dignes de confiance. Quand votre site répond à ces standards, vous augmentez vos chances d'être découvert par des prospects qualifiés."
+            ]
+        },
+        {
+            "title": "Pourquoi Google et l'IA récompensent les contenus utiles",
+            "body": [
+                "Les moteurs de recherche et les systèmes d'IA sont conçus pour offrir les meilleures réponses possibles. Ils récompensent les sites qui répondent réellement aux questions des utilisateurs, démontrent leur expertise, chargent rapidement, fonctionnent bien sur tous les appareils, sont faciles à naviguer, inspirent confiance et maintiennent des informations exactes et à jour."
+            ]
+        },
+        {
+            "title": "Ce que 3sthreei fait différemment",
+            "body": [
+                "Beaucoup d'agences SEO se concentrent uniquement sur le classement. Chez 3sthreei, nous nous concentrons sur la croissance de votre entreprise. Nos stratégies combinent SEO technique, marketing de contenu, optimisation des performances, données structurées et renforcement de l'autorité pour attirer des clients, et pas seulement des clics."
+            ]
+        },
+        {
+            "title": "Nous commençons par vos objectifs commerciaux",
+            "body": [
+                "Chaque entreprise est unique. Au lieu d'appliquer la même checklist à tous les clients, nous construisons une stratégie adaptée à votre secteur d'activité, à vos concurrents, à votre audience et à vos priorités de croissance."
+            ]
+        },
+        {
+            "title": "Nous nous concentrons sur un trafic à forte intention",
+            "body": [
+                "Plutôt que de viser un volume de trafic élevé mais peu pertinent, nous privilégions les visiteurs qui sont déjà en train de rechercher vos produits ou services. Ces prospects qualifiés ont beaucoup plus de chances de devenir des clients."
+            ]
+        },
+        {
+            "title": "Nous créons du contenu qui inspire confiance",
+            "body": [
+                "Notre contenu répond aux questions des clients, démontre notre expertise et apporte une vraie valeur. Cela améliore à la fois la visibilité dans les moteurs de recherche et la confiance des prospects."
+            ]
+        },
+        {
+            "title": "Nous optimisons l'ensemble du site web",
+            "body": [
+                "Notre travail couvre le SEO technique, la performance du site, le maillage interne, l'optimisation mobile, les données structurées, l'accessibilité et l'expérience utilisateur. Chaque amélioration contribue à renforcer la performance à long terme."
+            ]
+        },
+        {
+            "title": "Nous prenons des décisions grâce aux données",
+            "body": [
+                "Le SEO ne repose jamais sur des suppositions. Nous suivons les classements, le trafic, les conversions et le comportement des utilisateurs afin d'affiner continuellement la stratégie et d'améliorer les résultats."
+            ]
+        },
+        {
+            "title": "Nous construisons une croissance durable",
+            "body": [
+                "Le SEO est un investissement à long terme. Au lieu de compter sur des tactiques éphémères, nous créons une visibilité durable qui continue à générer du trafic et des leads au fil du temps."
+            ]
+        },
+        {
+            "title": "Résultats concrets",
+            "body": [
+                "Un client nous a contactés avec un site web professionnel, mais très peu de trafic organique. Notre équipe a mené une recherche de mots-clés à forte intention, amélioré le SEO technique, accéléré la vitesse des pages, optimisé les pages de services, ajouté des données structurées, publié du contenu répondant aux questions des clients et renforcé le maillage interne.",
+                "En quelques mois, l'entreprise a constaté une hausse significative du trafic organique, de meilleures positions sur des mots-clés, un engagement plus fort des visiteurs et davantage de demandes qualifiées issues de la recherche."
+            ]
+        },
+        {
+            "title": "Pourquoi cela compte",
+            "body": [
+                "Chaque recommandation que nous formulons répond à trois questions essentielles : cette action attirera-t-elle le bon public, améliorera-t-elle l'expérience utilisateur, et contribuera-t-elle à générer davantage de business ? Si la réponse est non, nous ne la recommandons pas."
+            ]
+        },
+        {
+            "title": "Obtenez un audit SEO gratuit",
+            "body": [
+                "Votre site atteint-il tout son potentiel ? Notre équipe examinera la performance technique, la qualité du contenu, la visibilité dans les résultats de recherche et l'expérience utilisateur afin d'identifier les leviers d'amélioration. Que vous lanciez un nouveau site ou cherchiez à augmenter votre trafic organique, nous vous montrerons ce qui fonctionne déjà, ce qui freine votre visibilité et comment progresser.",
+                "Demandez votre audit SEO gratuit aujourd'hui et découvrez comment 3sthreei peut aider votre entreprise à devenir plus visible, à attirer des clients qualifiés et à se développer en ligne."
+            ]
+        }
+    ],
+    "ctaEyebrow": "SEO orienté croissance",
+    "ctaTitle": "Transformez la visibilité dans les moteurs de recherche en un flux constant de prospects qualifiés.",
+    "ctaText": "Nous aidons les entreprises à améliorer leurs performances techniques, à renforcer leur autorité et à créer du contenu qui inspire la confiance auprès des moteurs de recherche et des clients.",
+    "ctaButtonText": "Obtenez votre audit SEO gratuit"
 }
