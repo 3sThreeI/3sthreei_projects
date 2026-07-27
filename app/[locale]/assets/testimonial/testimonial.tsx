@@ -18,8 +18,8 @@ export default function Testimonial(feedback: any) {
         <>
             <div className={style.container}>
                 <div className={style.logoContainer}>
-                    <h1 className={style.logo}>3SThreeI</h1>
-                    <h2 className={style.subtitle}>{t('testimonialTitle')}</h2>
+                    <h2 className={style.logo}>3SThreeI</h2>
+                    <h3 className={style.subtitle}>{t('testimonialTitle')}</h3>
                 </div>
                 {items && items.length > 0 &&
                     <Carousel className={style.carousel} opts={{
