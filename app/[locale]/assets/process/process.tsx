@@ -27,7 +27,7 @@ async function WorkingProcess() {
 
     return (
         <div className={style.container}>
-            <h1 className={style.title}>Our Process</h1>
+            <h2 className={style.title}>Our Process</h2>
             {/* --------------------------tablet and laptop--------------------  */}
             <div className={style.cards}>
                 {
@@ -39,9 +39,9 @@ async function WorkingProcess() {
                                     <div className={style.icons}>
                                         {Icon && <Icon className={style.icon} />}
                                     </div>
-                                    <h2 className={style.title}>
+                                    <h3 className={style.title}>
                                         <span className="text-[1.1rem] text-(--nav-text-color) hover:animate-bounce">{index + 1}</span>
-                                        {" "}{item.title}</h2>
+                                        {" "}{item.title}</h3>
                                     <div className={style.content} id={`scroll-container${index}`}>
                                         <div className="" >
                                             <p>{item.content}</p>
