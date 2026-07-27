@@ -59,9 +59,9 @@ function PhoneProgress({ cards }: Props) {
                                     {index === 6 && <FaHandshake className={style.icon} />} */}
                                         {Icon && <Icon className={style.icon} />}
                                     </div>
-                                    <h2 className={style.title}>
+                                    <h3 className={style.title}>
                                         <span className="text-[1.1rem] text-(--nav-text-color) hover:animate-bounce">{index + 1}</span>
-                                       {" "} {item.title}</h2>
+                                       {" "} {item.title}</h3>
                                     <div className={`${style.content} ${style.phone}`} id={`scroll-container${index}`}>
                                         {/* <div id={`back-section${index}`}></div> */}
                                         <div>
