@@ -46,7 +46,7 @@ export default async function Portfolio({ type }: { type?: string }) {
     return (
         <>
             <div className={style.container}>
-                <h1 className={style.title}>{t("porfolio.title")}</h1>
+                <h2 className={style.title}>{t("porfolio.title")}</h2>
                 <p className={style.subtitle}>{t("porfolio.subtitle")}</p>
                 <div className={style.cards}>
                     {
