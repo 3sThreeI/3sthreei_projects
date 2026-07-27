@@ -76,10 +76,10 @@ export default async function Navbar() {
         <nav className={style.nav}>
             <div className="py-2 overflow-hidden">
               <div className={style.Icon_large_screen}>
-                <Image src="/icons/3sthreei_icon_White.png" alt="3Sthreei Icons" width={40} height={30} loading="lazy" className={style.logoIcon}/>
+                <Image src="/icons/3sthreei_icon_White.png" title="3sthreei" alt="3Sthreei logo Icons" width={40} height={30} loading="lazy" className={style.logoIcon}/>
               </div>
               <div className={style.Icon_small_screen}>
-                <Image src="/icons/3sthreei_icon_White.png" alt="3Sthreei Icons" width={40} height={30} loading="lazy" className={style.logoIcon} />
+                <Image src="/icons/3sthreei_icon_White.png" title="3sthreei" alt="3Sthreei logo Icons" width={30} height={20} loading="lazy" className={style.logoIcon} />
               </div>
             </div>
             {/* -------------------------- huge screee */}
