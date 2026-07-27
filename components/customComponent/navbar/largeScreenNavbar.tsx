@@ -15,7 +15,7 @@ export default function LargeScreenNavbar({ home, keyService, servicesValue, pro
         <>
             <ul className={style.navlink}>
                 <li> <Link href='/'>{home}</Link></li>
-                <div className={style.li} onMouseEnter={serviceFn} onMouseLeave={()=>setOpenServices(false)}>
+                <li className={style.li} onMouseEnter={serviceFn} onMouseLeave={()=>setOpenServices(false)}>
                     {/* <Link href='/service' > */}
                     {keyService} <TiArrowSortedDown className={`${style.icon} ${openServices ? style.open : ''}`} />
                     {
@@ -25,11 +25,11 @@ export default function LargeScreenNavbar({ home, keyService, servicesValue, pro
                                     servicesValue.map((service, index) => {
                                         const icons = [<FaCode />, <FaMobileAlt />, <FaGamepad />, <FaPalette />];
                                         return (
-                                            <li key={index} className={style.serviceItem}>
+                                            <div key={index} className={style.serviceItem}>
                                                 <Link href={service.url} className={style.serviceLink}>
                                                     {icons[index]} {service.name}
                                                 </Link>
-                                            </li>
+                                            </div>
                                         );
                                     })
                                 }
@@ -37,7 +37,7 @@ export default function LargeScreenNavbar({ home, keyService, servicesValue, pro
                         )
                     }
                     {/* </Link> */}
-                </div>
+                </li>
                 <li> <Link href='/projects'>{project}</Link></li>
                 <li> <Link href='/about'>{about}</Link></li>
                 <li> <Link href='/faq'>{faq}</Link></li>
