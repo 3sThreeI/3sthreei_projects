@@ -135,7 +135,7 @@ export default function TestimonialForm() {
         <div className={style.formTest}>
             <div><Toaster position="top-right" /></div>
             <form action="" onSubmit={HandleSubmit} className={style.formContainer}>
-                <h1 className={style.title}>{t("headTitle")}</h1>
+                <h2 className={style.title}>{t("headTitle")}</h2>
                 <div className={style.formGroup}>
                     <label htmlFor="fullname" className={style.lable}>{t("formInput.labelInput1.L")}</label>
                     <input type="text"
