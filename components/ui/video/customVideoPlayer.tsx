@@ -2,7 +2,7 @@
 import { useRef, useState } from 'react'
 import styles from './videoPlayer.module.css'
 
-export default function CustomVideoPlayer(Url:any) {
+export default function CustomVideoPlayer(Url: any) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [isMuted, setIsMuted] = useState(false)
@@ -64,7 +64,7 @@ export default function CustomVideoPlayer(Url:any) {
         />
         <div className={styles.playButtonOverlay} onClick={togglePlay}>
           {!isPlaying && (
-            <button className={styles.playButton}>
+            <button aria-label={isPlaying ? "Pause video" : "Play video"} className={styles.playButton}>
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z" />
               </svg>
@@ -76,6 +76,7 @@ export default function CustomVideoPlayer(Url:any) {
       <div className={styles.controls}>
         <div className={styles.progressContainer}>
           <input
+            aria-label="range video"
             type="range"
             min="0"
             max="100"
@@ -84,7 +85,7 @@ export default function CustomVideoPlayer(Url:any) {
             className={styles.progressBar}
           />
         </div>
-        
+
         <div className={styles.controlButtons}>
           <div className={styles.leftControls}>
             <button onClick={togglePlay} className={styles.button} title={isPlaying ? 'Pause' : 'Play'}>
@@ -98,7 +99,7 @@ export default function CustomVideoPlayer(Url:any) {
                 </svg>
               )}
             </button>
-            
+
             <button onClick={toggleMute} className={styles.button} title={isMuted ? 'Unmute' : 'Mute'}>
               {isMuted ? (
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -115,7 +116,7 @@ export default function CustomVideoPlayer(Url:any) {
               {currentTime} / {duration}
             </span>
           </div>
-          
+
           <button className={styles.button} title="Fullscreen">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" />
