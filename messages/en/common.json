@@ -215,6 +215,23 @@
             ],
             "ogImage": "https://3sthreei.com/og-image.png",
             "ogImageAlt": "3SThreeI SaaS Platform"
+        },
+        "room-booking": {
+            "sitename": "3SThreeI",
+            "title": "Room Booking Documentation | Angular & Django",
+            "description": "Official documentation for the Room Booking project. Learn how to install, configure, and customize your Angular and Django booking system.",
+            "keywords": [
+                "room booking",
+                "room booking documentation",
+                "Angular",
+                "Django",
+                "booking system",
+                "project documentation",
+                "user management",
+                "authentication"
+            ],
+            "ogImage": "https://3sthreei.com/og-image.png",
+            "ogImageAlt": "3SThreeI SaaS Platform icon"
         }
     },
     "blog": {
