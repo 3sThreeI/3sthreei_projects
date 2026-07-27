@@ -12,6 +12,7 @@ import "../globals.css"
 import React from "react";
 import Navbar from "@/components/customComponent/navbar/Navbar";
 import Footer from "@/components/customComponent/footer/Footer";
+import PreNavBar from "../../components/customComponent/preNavBar/preNavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -232,6 +233,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* <PreNavBar/> */}
         <Navbar />
         <NextIntlClientProvider messages={messages}>
           {children}
