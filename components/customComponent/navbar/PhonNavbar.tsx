@@ -36,7 +36,7 @@ export default function PhoneNavbar({ home, keyService, servicesValue, project, 
                 <div className={`${style.PhonenavCard} ${is_active && style.active}`}>
                     <ul className={`${style.PhoneNavlink}`} ref={ControleExpand}>
                         <li > <Link href='/'>{home}</Link></li>
-                        <div className={style.li} onClick={serviceFn}>
+                        <li className={style.li} onClick={serviceFn}>
                             {/* <Link href='/service' > */}
                             {keyService} <TiArrowSortedDown className={`${style.icon} ${openServices ? style.open : ''}`} />
                             {
@@ -46,12 +46,12 @@ export default function PhoneNavbar({ home, keyService, servicesValue, project, 
                                         servicesValue.map((service, index) => {
                                             const icons = [<FaCode />, <FaMobileAlt />, <FaGamepad />, <FaPalette />];
                                             return (
-                                                <li key={index} className={style.PhoneserviceItem}>
+                                                <div key={index} className={style.PhoneserviceItem}>
                                                         {icons[index]}
                                                     <Link href={service.url} className={style.PhoneServiceLink}>
                                                          {service.name}
                                                     </Link>
-                                                </li>
+                                                </div>
                                             );
                                         })
                                     }
@@ -59,7 +59,7 @@ export default function PhoneNavbar({ home, keyService, servicesValue, project, 
                                 // )
                             }
                             {/* </Link> */}
-                        </div>
+                        </li>
                         <li> <Link href='/projects'>{project}</Link></li>
                         <li> <Link href='/about'>{about}</Link></li>
                         <li> <Link href='/faq'>{faq}</Link></li>
