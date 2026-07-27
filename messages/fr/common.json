@@ -231,16 +231,29 @@
       ],
       "ogImage": "https://3sthreei.com/og-image.png",
       "ogImageAlt": "3SThreeI SaaS Platforme"
+    },
+    "room-booking": {
+      "sitename": "3SThreeI",
+      "title": "Guide Réservation de Salle | Angular & Django",
+      "description": "Documentation officielle du projet de réservation de salle avec Angular et Django. Installation, configuration, authentification et gestion des salles.",
+      "keywords": [
+        "réservation salle",
+        "Angular",
+        "Django",
+        "documentation",
+        "gestion des salles",
+        "authentification"
+      ],
+      "ogImage": "https://3sthreei.com/og-image.png",
+      "ogImageAlt": "3SThreeI SaaS Platforme"
     }
   },
   "blog": {
     "why-website-not-ranking-on-google": {
       "sitename": "3SThreeI",
       "title": "Why Your Website Is Not Ranking on Google",
-      "description":"Is your website not ranking on Google? Learn why websites stay invisible and how 3sthreei helps businesses improve SEO, visibility, and qualified traffic.",
-      "keywords": [
-        
-      ],
+      "description": "Is your website not ranking on Google? Learn why websites stay invisible and how 3sthreei helps businesses improve SEO, visibility, and qualified traffic.",
+      "keywords": [],
       "ogImage": "https://3sthreei.com/og-image.png",
       "ogImageAlt": "3SThreeI SaaS Platforme"
     }
