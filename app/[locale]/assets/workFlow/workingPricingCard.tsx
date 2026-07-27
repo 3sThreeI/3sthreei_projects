@@ -16,24 +16,24 @@ export default function WorkingFlowCard() {
             <div className={style.cardContainer}>
                 <div className={style.card_header}>
                     <div onClick={() => SwitchCard(t('workFlow2.launch.headText'))} className={`${style.headText} ${cardActive === t('workFlow2.launch.headText') && style.active}`}>
-                        <h1>{t('workFlow2.launch.headText')}</h1>
+                        <h2>{t('workFlow2.launch.headText')}</h2>
                     </div>
                     <div onClick={() => SwitchCard(t('workFlow2.business.headText'))} className={`${style.headText} ${cardActive === t('workFlow2.business.headText') && style.active}`}>
-                        <h1>{t('workFlow2.business.headText')}</h1>
+                        <h2>{t('workFlow2.business.headText')}</h2>
                     </div>
                     <div onClick={() => SwitchCard(t('workFlow2.interactive.headText'))} className={`${style.headText} ${cardActive === t('workFlow2.interactive.headText') && style.active}`}>
-                        <h1>{t('workFlow2.interactive.headText')}</h1>
+                        <h2>{t('workFlow2.interactive.headText')}</h2>
                     </div>
                     <div onClick={() => SwitchCard(t('workFlow2.custom.headText'))} className={`${style.headText} ${cardActive === t('workFlow2.custom.headText') && style.active}`}>
-                        <h1>{t('workFlow2.custom.headText')}</h1>
+                        <h2>{t('workFlow2.custom.headText')}</h2>
                     </div>
                 </div>
                 <div className={style.cards}>
                     {/* ------------------------Launch-------------- */}
                     <div className={`${style.card} ${cardActive === t('workFlow2.launch.headText') && style.cardActive}`}>
-                        <h1 className={style.cardHeader} > {t('workFlow2.launch.headText')} </h1>
+                        <h3 className={style.cardHeader} > {t('workFlow2.launch.headText')} </h3>
                         <div className={style.headContent}>
-                            <h1>{t('workFlow2.launch.title')}</h1>
+                            <h4>{t('workFlow2.launch.title')}</h4>
                             <p className={style.cardPrice}>{t('workFlow2.launch.price')}</p>
                             <div className={style.headButton}>
                                 {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
@@ -53,9 +53,9 @@ export default function WorkingFlowCard() {
                     </div>
                     {/* ------------------------business-------------- */}
                     <div className={`${style.card} ${cardActive === t('workFlow2.business.headText') && style.cardActive}`}>
-                        <h1 className={style.cardHeader} > {t('workFlow2.business.headText')} </h1>
+                        <h3 className={style.cardHeader} > {t('workFlow2.business.headText')} </h3>
                         <div className={style.headContent}>
-                            <h2>{t('workFlow2.business.title')}</h2>
+                            <h4>{t('workFlow2.business.title')}</h4>
                             <p className={style.cardPrice}>{t('workFlow2.business.price')}</p>
                             <div className={style.headButton}>
                                 {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
@@ -76,9 +76,9 @@ export default function WorkingFlowCard() {
                     {/* ------------------------Interactive-------------- */}
                     <div className={`${style.card} ${cardActive === t('workFlow2.interactive.headText') && style.cardActive}`}>
                         <div className={style.recommended}>Recommended</div>
-                        <h1 className={style.cardHeader} > {t('workFlow2.interactive.headText')} </h1>
+                        <h3 className={style.cardHeader} > {t('workFlow2.interactive.headText')} </h3>
                         <div className={style.headContent}>
-                            <h2>{t('workFlow2.interactive.title')}</h2>
+                            <h4>{t('workFlow2.interactive.title')}</h4>
                             < p className={style.cardPrice}>{t('workFlow2.interactive.price')}</p>
                             <div className={style.headButton}>
                               {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
@@ -98,9 +98,9 @@ export default function WorkingFlowCard() {
                     </div>
                     {/* ------------------------Custom-------------- */}
                     <div className={`${style.card} ${cardActive === t('workFlow2.custom.headText') && style.cardActive}`}>
-                        <h1 className={style.cardHeader} > {t('workFlow2.custom.headText')} </h1>
+                        <h3 className={style.cardHeader} > {t('workFlow2.custom.headText')} </h3>
                         <div className={style.headContent}>
-                            <h2>{t('workFlow2.custom.title')}</h2>
+                            <h4>{t('workFlow2.custom.title')}</h4>
                             <p className={style.cardPrice}>{t('workFlow2.custom.price')}</p>
                             <div className={style.headButton}>
                                 {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
