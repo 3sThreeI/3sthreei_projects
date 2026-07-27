@@ -8,11 +8,11 @@ export default async function WorkingWith() {
     return (
         <>
             <div className={style.container}>
-                <h1 className={style.title}>We Work with</h1>
+                <h2 className={style.title}>We Work with</h2>
                 <div className={style.cards}>
                     {/* website */}
                     <div className={`${style.card} `}>
-                        <h1 className={style.card_title}>{t('individual.title')}</h1>
+                        <h3 className={style.card_title}>{t('individual.title')}</h3>
                         {/* <h2 className={style.card_subtitle}>{t('website.subtitle')}</h2> */}
                         <ul className={style.content}>
                             {t.raw('individual.contents').map((item: string, index: number) => (
@@ -27,7 +27,7 @@ export default async function WorkingWith() {
                     </div>
                     {/* mobile app */}
                     <div className={`${style.card}`}>
-                        <h1 className={style.card_title}>{t('entreprise.title')}</h1>
+                        <h4 className={style.card_title}>{t('entreprise.title')}</h4>
                         {/* <h2 className={style.card_subtitle}>{t('mobile.subtitle')} </h2> */}
                         <ul className={style.content}>
                             {t.raw('entreprise.contents').map((item: string, index: number) => (
