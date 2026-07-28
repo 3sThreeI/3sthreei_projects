@@ -171,5 +171,41 @@
             }
         },
         "btn": "Envoyer"
+    },
+    "formProject": {
+        "headTitle": "Nouveau projet",
+        "subTitle": "Obtenez un audit SEO complet GRATUIT de votre site web et découvrez comment améliorer vos performances et votre classement sur Google",
+        "formInput": {
+            "labelInput1": {
+                "L": "Nom du projet :",
+                "P": "saisissez le nom du projet...",
+                "T": "nom du projet"
+            },
+            "labelInput2": {
+                "L": "URL :",
+                "P": "https://votresiteweb.com",
+                "T": "veuillez saisir l'URL de votre site web"
+            },
+            "labelInput3": {
+                "L": "Type :",
+                "P": "type de projet...",
+                "T": "type de projet"
+            }
+        },
+        "formTextarea": {
+            "labelTextarea1": {
+                "L": "Description",
+                "P": "décrivez le projet",
+                "T": "description du projet"
+            }
+        },
+        "formFile": {
+            "file1": {
+                "L": "Image",
+                "P": "téléversez une image du projet",
+                "T": "image du projet"
+            }
+        },
+        "btn": "Soumettre"
     }
 }
