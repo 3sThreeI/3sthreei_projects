@@ -5,7 +5,8 @@ import Image from "next/image"
 import { MdLabelImportant } from "react-icons/md";
 import { SiOrigin } from "react-icons/si";
 import { VscError } from "react-icons/vsc";
-import FeatureCarousel from "@/app/[locale]/assets/docs/e-commerceCarousel";
+// import FeatureCarousel from "@/app/[locale]/assets/docs/e-commerceCarousel";
+import dynamic from "next/dynamic";
 import { FaServer, FaDatabase, FaCreditCard, FaBolt } from "react-icons/fa";
 import Link from "next/link";
 // import { useState } from "react";
@@ -143,35 +144,42 @@ export default async function Documentation({ params }: { params: any }) {
                     {
                         "@type": "ListItem",
                         "position": 1,
-                        "name": locale === "fr" ?  "Accueil" : "Home",
+                        "name": locale === "fr" ? "Accueil" : "Home",
                         "item": `${BaseUrl}/${locale}`
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
-                        "name": locale === "fr" ?  "Projets" : "Projects",
+                        "name": locale === "fr" ? "Projets" : "Projects",
                         "item": `${BaseUrl}/${locale}/projects`
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
-                        "name":  locale === "fr" ?  "Projet E-Commerce" : "E-commerce Project",
+                        "name": locale === "fr" ? "Projet E-Commerce" : "E-commerce Project",
                         "item": `${BaseUrl}/${locale}/projects/${Splitdocumentation}`
                     }
                 ]
             }
         ]
     }
+    const FeatureCarousel:any = dynamic(
+        () => import("@/app/[locale]/assets/docs/e-commerceCarousel"),
+        {
+            // ssr: true,
+            loading: () => <div>Loading...</div>,
+        }
+    );
     return (
         <main className={style.container}>
-            <script type="application/json" 
-            dangerouslySetInnerHTML={{__html: JSON.stringify(ProjectJsonLD).replace(/</g, '\\u003c')}} />
+            <script type="application/json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(ProjectJsonLD).replace(/</g, '\\u003c') }} />
             <section className={style.hero}>
                 <div className={style.cardTitle}>
                     <h1 className={style.title}>{t.title}</h1>
                 </div>
                 <figure>
-                    <Image src={t.projImgUrl} alt={t.projImgAlt} width={900} height={400} loading="eager" className={style.image} />
+                    <Image src={t.projImgUrl} preload={true} alt={t.projImgAlt} width={900} height={400} className={style.image} />
                 </figure>
                 <div className={style.heroText}>
                     <h2 className={style.subtitle}>{t.subtitle}</h2>
