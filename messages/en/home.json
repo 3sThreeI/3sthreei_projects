@@ -241,6 +241,8 @@
             "headText": "Basic",
             "title": "Price",
             "priceKey":"$270",
+            "badge": "Beta Exclusive",
+            "Betaprice": "FREE",
             "price": "$144 – $270",
             "btn": "Start Project",
             "content": [
@@ -256,6 +258,8 @@
             "headText": "Standard",
             "title": "Price",
             "priceKey":"$540",
+            "badge": "50% OFF",
+            "Betaprice": "$135 – $270",
             "price": "$270 – $540",
             "btn": "Start Project",
             "content": [
@@ -275,6 +279,8 @@
             "headText": "Premium",
             "title": "Price",
             "btn": "Start Project",
+            "badge": "50% OFF",
+            "Betaprice": "$225 – $630",
             "priceKey":"$1 260",
             "price": "$450 - $1 260",
             "content": [
@@ -296,6 +302,8 @@
             "headText": "Custom Platform",
             "title": "Starting Price",
             "priceKey":"$1 620+",
+            "Betaprice": "$810+",
+            "badge": "50% OFF",
             "price": "$1 620+",
             "btn": "Start Project",
             "content": [
