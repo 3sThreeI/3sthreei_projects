@@ -1,7 +1,6 @@
 
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import Link from "next/link";
 import { getLocale } from "next-intl/server";
 import SwitchButtonLang from "../../ui/customButton/switchLang";
 import PhoneNavbar from "./PhonNavbar";
@@ -73,7 +72,7 @@ export default async function Navbar() {
   };
 
     return (
-        <nav className={style.nav}>
+      <nav className={style.nav}>
             <div className="py-2 overflow-hidden">
               <div className={style.Icon_large_screen}>
                 <Image src="/icons/3sthreei_icon_White.png" title="3sthreei" alt="3Sthreei logo Icons" width={40} height={30} loading="lazy" className={style.logoIcon}/>
