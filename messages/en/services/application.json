@@ -1,36 +1,36 @@
 {
-    "servicesHero": {
-        "title": "Mobile and Desktop App Development for Businesses in Ghana",
-        "headtitle": "We create custom mobile and desktop applications for startups, SMEs, and enterprises in Ghana",
-        "cta": "Start for free"
-    },
-    "problemSolving": {
-        "subtitle": "Why it matters",
-        "text": "We care about user feedback, application security, and long-term performance. We help businesses build reliable applications that can support thousands of users without lagging, while ensuring stability, scalability, and a smooth user experience. Every project also includes 6 months of free maintenance to keep your application updated, secure, and performing at its best",
-        "problemCards": [
-            {
-                "title": "Slow Workflows",
-                "text": "We build applications that automate tasks and improve workflow efficiency."
-            },
-            {
-                "title": "Poor User Experience",
-                "text": "We design intuitive applications that are easy to use and keep users engaged."
-            },
-            {
-                "title": "Limited Accessibility",
-                "text": "We create mobile and desktop applications that work smoothly across devices and platforms."
-            },
-            {
-                "title": "Hard to Manage Operations",
-                "text": "We build tools that simplify tasks, customer management, and daily workflows."
-            }
-        ]
-    },
-    "marketing": {
-        "title": "We Manage Growth, Not Just Websites",
-        "text": "Your website and app should do more than exist — they should work for your business. We manage the technology, marketing, and growth side so you can focus on results."
-    },
-    "workFlow": [
+  "servicesHero": {
+    "title": "Mobile and Desktop App Development for Businesses in Ghana",
+    "headtitle": "We create custom mobile and desktop applications for startups, SMEs, and enterprises in Ghana",
+    "cta": "Start for free"
+  },
+  "problemSolving": {
+    "subtitle": "Why it matters",
+    "text": "We care about user feedback, application security, and long-term performance. We help businesses build reliable applications that can support thousands of users without lagging, while ensuring stability, scalability, and a smooth user experience. Every project also includes 6 months of free maintenance to keep your application updated, secure, and performing at its best",
+    "problemCards": [
+      {
+        "title": "Slow Workflows",
+        "text": "We build applications that automate tasks and improve workflow efficiency."
+      },
+      {
+        "title": "Poor User Experience",
+        "text": "We design intuitive applications that are easy to use and keep users engaged."
+      },
+      {
+        "title": "Limited Accessibility",
+        "text": "We create mobile and desktop applications that work smoothly across devices and platforms."
+      },
+      {
+        "title": "Hard to Manage Operations",
+        "text": "We build tools that simplify tasks, customer management, and daily workflows."
+      }
+    ]
+  },
+  "marketing": {
+    "title": "We Manage Growth, Not Just Websites",
+    "text": "Your website and app should do more than exist — they should work for your business. We manage the technology, marketing, and growth side so you can focus on results."
+  },
+  "workFlow": [
     {
       "header": "Feature",
       "content": [
@@ -97,13 +97,15 @@
       ]
     }
   ],
-    "workFlow2": {
-      "type":"app",
+  "workFlow2": {
+    "type": "app",
     "launch": {
       "headText": "Basic Plan",
       "title": "Price",
-      "priceKey":"$270",
+      "priceKey": "$270",
       "price": "$85 - $170",
+      "badge": "Beta Exclusive",
+      "Betaprice": "FREE",
       "btn": "Start Project",
       "content": [
         "Limited Pages (5–10)",
@@ -117,7 +119,9 @@
     "business": {
       "headText": "Standard",
       "title": "Price",
-      "priceKey":"$680",
+      "priceKey": "$680",
+      "badge": "50% OFF",
+      "Betaprice": "$127.50 – $340",
       "price": "$255 - $680",
       "btn": "Start Project",
       "content": [
@@ -134,7 +138,9 @@
     "interactive": {
       "headText": "Premium",
       "title": "Price",
-      "priceKey":"$1 700",
+      "priceKey": "$1 700",
+      "badge": "50% OFF",
+      "Betaprice": "$340 – $850",
       "price": "$680 - $1 700",
       "btn": "Start Project",
       "content": [
@@ -151,7 +157,9 @@
     "custom": {
       "headText": "Enterprise (Custom)",
       "title": "Price",
-      "priceKey":"$1 700+",
+      "priceKey": "$1 700+",
+      "badge": "50% OFF",
+      "Betaprice": "$850+",
       "price": "$1,700+",
       "btn": "Start Project",
       "content": [
