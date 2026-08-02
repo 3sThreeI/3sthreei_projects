@@ -8,6 +8,7 @@ import WorkingFlow from '@/app/[locale]/assets/workFlow/workingPricing';
 import Portfolio from '@/app/[locale]/assets/portfolio/portfolio';
 import WorkingProcess from '@/app/[locale]/assets/process/process';
 import Testimonial from '../assets/testimonial/testimonial';
+// @/app/[locale]/assets/whyChoose/chooseUs.
 import VideoMarketing from '../assets/videoMarketing/videoMarketing';
 import dynamic from 'next/dynamic';
 type Props = {
@@ -84,7 +85,7 @@ async function fetchTestimonials() {
 export default async function MarketingPage({ params }: Props) {
   const { locale } = await params
   const Testimonial:any = dynamic(
-    ()=> import ("@/app/[locale]/assets/whyChoose/chooseUs")
+    ()=> import ("../assets/testimonial/testimonial")
   )
   const BaseUrl = process.env.NEXT_PUBLIC_SITE_URL
   console.log("BACKEND:", process.env.NEXT_PUBLIC_BACKEND_URL);
