@@ -1,4 +1,12 @@
 {
+  "sitename": "3SThreeI",
+    "beta":{
+        "beta": "beta",
+        "text1":"Early Access Beta is Live",
+        "month": "month",
+        "text2": "Core services are now available. Enjoy exclusive pricing during our",
+        "text3": "beta program."
+    },
     "signIn": {
         "sitename": "3SThreeI",
         "title": "Sign-In",
