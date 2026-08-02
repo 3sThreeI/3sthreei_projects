@@ -239,6 +239,8 @@
             "headText": "Basique",
             "title": "Prix",
             "priceKey": "150 000F",
+            "Betaprice": "GRATUIT",
+            "badge": "Offre exclusive Beta",
             "price": "80 000 - 150 000 FCFA",
             "btn": "Démarrer le projet",
             "content": [
@@ -254,6 +256,8 @@
             "headText": "Standard",
             "title": "Prix",
             "priceKey": "300 000F",
+            "Betaprice": "75 000 – 150 000 FCFA",
+            "badge": "50 % de réduction",
             "price": "150 000 – 300 000 FCFA",
             "btn": "Démarrer le projet",
             "content": [
@@ -274,6 +278,8 @@
             "title": "Prix",
             "priceKey": "700 000F",
             "btn": "Démarrer le projet",
+            "Betaprice": "125 000 – 350 000 FCFA",
+            "badge": "50 % de réduction",
             "price": "250 000 - 700 000 FCFA",
             "content": [
                 "10 à 15 Pages",
@@ -294,6 +300,8 @@
             "headText": "Plateforme Personnalisée",
             "title": "Prix",
             "priceKey": "900 000F+",
+            "Betaprice": "450 000 FCFA et plus",
+            "badge": "50 % de réduction",
             "price": "900 000 FCFA et plus ",
             "btn": "Démarrer le projet",
             "content": [
