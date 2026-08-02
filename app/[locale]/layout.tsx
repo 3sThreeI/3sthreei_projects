@@ -89,7 +89,7 @@ const GetBetaVersionInfo =  async ()=>{
   const resp = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/beta/test-3si`, {
     method: "GET",
     cache: "no-store"
-  },)
+  })
   const data = await resp.json()
   if(!resp.ok){
     return false
