@@ -13,6 +13,8 @@ import React from "react";
 import Navbar from "@/components/customComponent/navbar/Navbar";
 import Footer from "@/components/customComponent/footer/Footer";
 import PreNavBar from "../../components/customComponent/preNavBar/preNavBar";
+import {BetaProvider} from "./context/betaContext";
+import BetaNavbar from "@/components/customComponent/navbar/PreNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -82,7 +84,19 @@ type Props = {
   children: React.ReactNode,
   params: Promise<{ locale: string }>
 }
-
+// function to call BetaVersion Date
+const GetBetaVersionInfo =  async ()=>{
+  const resp = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/beta/test-3si`, {
+    method: "GET",
+    cache: "no-store"
+  },)
+  const data = await resp.json()
+  if(!resp.ok){
+    return false
+  }
+  return data
+  
+}
 export default async function RootLayout({
   children,
   params
@@ -208,6 +222,8 @@ export default async function RootLayout({
     },
     "inLanguage": locale === "fr" ? "fr" : "en",
   };
+  const beta = await GetBetaVersionInfo()
+  // console.log("beta-------", beta)
   return (
     <html lang={locale}>
       <head>
@@ -234,11 +250,14 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* <PreNavBar/> */}
-        <Navbar />
+        <BetaProvider values={beta}>
         <NextIntlClientProvider messages={messages}>
+          <BetaNavbar/>
+        <Navbar/>
           {children}
         </NextIntlClientProvider>
         <Footer />
+        </BetaProvider>
       </body>
     </html>
   );
