@@ -1,5 +1,12 @@
 {
   "sitename": "3SThreeI",
+  "beta":{
+        "beta": "bêta",
+        "text1":"Accès anticipé à la version Bêta",
+        "month": "mois",
+        "text2": "Les services principaux sont désormais disponibles. Profitez de tarifs exclusifs pendant notre programme bêta de",
+        "text3": "."
+    },
   "signIn": {
     "sitename": "3SThreeI",
     "title": "Se connecter",
