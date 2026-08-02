@@ -31,71 +31,71 @@
         "text": "Your website and app should do more than exist — they should work for your business. We manage the technology, marketing, and growth side so you can focus on results."
     },
     "workFlow": [
-    {
-      "header": "Fonctionnalité",
-      "content": [
-        "Pages",
-        "Design Responsive",
-        "SEO",
-        "Animations",
-        "CMS / Tableau de Bord",
-        "Authentification",
-        "Intégration API",
-        "Intégration IA / LLM"
-      ]
-    },
-    {
-      "header": "Plan Basique",
-      "content": [
-        "1 à 5 Pages",
-        "Oui",
-        "Configuration SEO de Base",
-        "Non",
-        "Non",
-        "Non",
-        "Non",
-        "Non"
-      ]
-    },
-    {
-      "header": "Standard",
-      "content": [
-        "5 à 10 Pages",
-        "Oui",
-        "Optimisation SEO Avancée",
-        "Oui",
-        "CMS / Tableau de Bord Basique",
-        "Authentification Basique",
-        "Intégration API Basique",
-        "Non"
-      ]
-    },
-    {
-      "header": "Premium",
-      "content": [
-        "Plus de 15 Pages",
-        "Oui",
-        "SEO Avancé",
-        "Oui",
-        "CMS / Tableau de Bord Complet",
-        "Authentification JWT",
-        "Intégration API Avancée",
-        "Fonctionnalités IA de Base"
-      ]
-    },
-    {
-      "header": "Entreprise",
-      "content": [
-        "Pages Illimitées",
-        "Oui",
-        "SEO Avancé + Données Structurées (Schema)",
-        "Oui",
-        "CMS Personnalisé + Tableau de Bord Administrateur",
-        "JWT, OAuth et 2FA",
-        "Intégrations Entreprise",
-        "RAG, Agents IA et Solutions LLM"
-      ]
-    }
+        {
+            "header": "Fonctionnalité",
+            "content": [
+                "Pages",
+                "Design Responsive",
+                "SEO",
+                "Animations",
+                "CMS / Tableau de Bord",
+                "Authentification",
+                "Intégration API",
+                "Intégration IA / LLM"
+            ]
+        },
+        {
+            "header": "Plan Basique",
+            "content": [
+                "1 à 5 Pages",
+                "Oui",
+                "Configuration SEO de Base",
+                "Non",
+                "Non",
+                "Non",
+                "Non",
+                "Non"
+            ]
+        },
+        {
+            "header": "Standard",
+            "content": [
+                "5 à 10 Pages",
+                "Oui",
+                "Optimisation SEO Avancée",
+                "Oui",
+                "CMS / Tableau de Bord Basique",
+                "Authentification Basique",
+                "Intégration API Basique",
+                "Non"
+            ]
+        },
+        {
+            "header": "Premium",
+            "content": [
+                "Plus de 15 Pages",
+                "Oui",
+                "SEO Avancé",
+                "Oui",
+                "CMS / Tableau de Bord Complet",
+                "Authentification JWT",
+                "Intégration API Avancée",
+                "Fonctionnalités IA de Base"
+            ]
+        },
+        {
+            "header": "Entreprise",
+            "content": [
+                "Pages Illimitées",
+                "Oui",
+                "SEO Avancé + Données Structurées (Schema)",
+                "Oui",
+                "CMS Personnalisé + Tableau de Bord Administrateur",
+                "JWT, OAuth et 2FA",
+                "Intégrations Entreprise",
+                "RAG, Agents IA et Solutions LLM"
+            ]
+        }
     ],
     "workFlow2": {
         "type": "app",
@@ -103,6 +103,8 @@
             "headText": "Basique Plan",
             "title": "Prix",
             "priceKey": "100 000F",
+            "badge": "50 % de réduction",
+            "Betaprice":"GRATUIT",
             "price": "50 000 - 100 000 FCFA",
             "btn": "Commencez le Project",
             "content": [
@@ -118,6 +120,8 @@
             "headText": "Standard",
             "title": " Prix",
             "priceKey": "400 000F",
+            "badge": "50 % de réduction",
+            "Betaprice":"75 000 – 200 000 FCFA",
             "price": "150 000 – 400 000 FCFA",
             "btn": "Commencez le Project",
             "content": [
@@ -136,6 +140,8 @@
             "title": "Prix",
             "btn": "Commencez le Project",
             "priceKey": "1 000 000F",
+            "badge": "50 % de réduction",
+            "Betaprice":"200 000 – 500 000 FCFA",
             "price": "400 000 – 1 000 000 FCFA",
             "content": [
                 "Backend + base de données avancée",
@@ -152,6 +158,8 @@
             "headText": "Entreprise (sur Mesure)",
             "title": "Prix",
             "priceKey": "1 000 000F+",
+            "Betaprice":"500 000 FCFA et plus",
+            "badge": "50 % de réduction",
             "price": "1 000 000 FCFA et plus ",
             "btn": "Start Project",
             "content": [
