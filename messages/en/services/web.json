@@ -6,123 +6,125 @@
     },
     "workFlow": [
         {
-        "header": "Feature###",
-        "content": [
-            "Pages",
-            "Responsive Design",
-            "SEO",
-            "GEO + AEO Optimization",
-            "Animations",
-            "CMS",
-            "Authentication / Login System",
-            "Dashboard",
-            "AI Agent / Chatbot",
-            "API Integration",
-            "Payment Integration",
-            "Analytics & Reporting",
-            "Email / SMS / WhatsApp Integration",
-            "Security Configuration",
-            "Performance Optimization",
-            "Deployment & Hosting",
-            "Multi-Currency Support"
-        ]
-    },
-    {
-        "header": "Basic",
-        "content": [
-            "1–5",
-            "Yes",
-            "Basic",
-            "No",
-            "No",
-            "No",
-            "No",
-            "No",
-            "No",
-            "No",
-            "No",
-            "Basic (Setup Only)",
-            "No",
-            "Basic",
-            "Yes",
-            "Basic Deployment",
-            "No"
-        ]
-    },
-    {
-        "header": "Standard",
-        "content": [
-            "5–10",
-            "Yes",
-            "Advanced",
-            "Basic GEO",
-            "Yes",
-            "Basic CMS",
-            "No",
-            "Basic Dashboard",
-            "Yes (Basic AI Agent)",
-            "No",
-            "Basic (Stripe/Paystack)",
-            "Basic Analytics",
-            "Basic Email",
-            "Basic Security",
-            "Yes",
-            "Standard Deployment",
-            "No"
-        ]
-    },
-    {
-        "header": "Premium",
-        "content": [
-            "10–15",
-            "Yes",
-            "Advanced",
-            "Advanced GEO + AEO",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Advanced Dashboard",
-            "Yes",
-            "Basic–Mid API",
-            "Yes",
-            "Advanced Analytics",
-            "Email + WhatsApp + SMS",
-            "Strong Security",
-            "Yes",
-            "Optimized Deployment",
-            "Basic Multi-Currency"
-        ]
-    },
-    {
-        "header": "Custom Platform",
-        "content": [
-            "Unlimited",
-            "Yes",
-            "Advanced",
-            "Full GEO + AEO",
-            "Yes (Advanced)",
-            "Yes (Full CMS)",
-            "Yes (Advanced Auth)",
-            "Real-Time Dashboard",
-            "Advanced AI System",
-            "Full API Integrations",
-            "Advanced Payment System",
-            "Real-Time Analytics",
-            "Full Omnichannel (Email/SMS/WhatsApp/Newsletter)",
-            "Enterprise Security",
-            "Yes (Max Optimized)",
-            "Cloud + Scalable Infra",
-            "Crypto + Fiat Multi-Currency"
-        ]
-    }
+            "header": "Feature###",
+            "content": [
+                "Pages",
+                "Responsive Design",
+                "SEO",
+                "GEO + AEO Optimization",
+                "Animations",
+                "CMS",
+                "Authentication / Login System",
+                "Dashboard",
+                "AI Agent / Chatbot",
+                "API Integration",
+                "Payment Integration",
+                "Analytics & Reporting",
+                "Email / SMS / WhatsApp Integration",
+                "Security Configuration",
+                "Performance Optimization",
+                "Deployment & Hosting",
+                "Multi-Currency Support"
+            ]
+        },
+        {
+            "header": "Basic",
+            "content": [
+                "1–5",
+                "Yes",
+                "Basic",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Basic (Setup Only)",
+                "No",
+                "Basic",
+                "Yes",
+                "Basic Deployment",
+                "No"
+            ]
+        },
+        {
+            "header": "Standard",
+            "content": [
+                "5–10",
+                "Yes",
+                "Advanced",
+                "Basic GEO",
+                "Yes",
+                "Basic CMS",
+                "No",
+                "Basic Dashboard",
+                "Yes (Basic AI Agent)",
+                "No",
+                "Basic (Stripe/Paystack)",
+                "Basic Analytics",
+                "Basic Email",
+                "Basic Security",
+                "Yes",
+                "Standard Deployment",
+                "No"
+            ]
+        },
+        {
+            "header": "Premium",
+            "content": [
+                "10–15",
+                "Yes",
+                "Advanced",
+                "Advanced GEO + AEO",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Advanced Dashboard",
+                "Yes",
+                "Basic–Mid API",
+                "Yes",
+                "Advanced Analytics",
+                "Email + WhatsApp + SMS",
+                "Strong Security",
+                "Yes",
+                "Optimized Deployment",
+                "Basic Multi-Currency"
+            ]
+        },
+        {
+            "header": "Custom Platform",
+            "content": [
+                "Unlimited",
+                "Yes",
+                "Advanced",
+                "Full GEO + AEO",
+                "Yes (Advanced)",
+                "Yes (Full CMS)",
+                "Yes (Advanced Auth)",
+                "Real-Time Dashboard",
+                "Advanced AI System",
+                "Full API Integrations",
+                "Advanced Payment System",
+                "Real-Time Analytics",
+                "Full Omnichannel (Email/SMS/WhatsApp/Newsletter)",
+                "Enterprise Security",
+                "Yes (Max Optimized)",
+                "Cloud + Scalable Infra",
+                "Crypto + Fiat Multi-Currency"
+            ]
+        }
     ],
     "workFlow2": {
         "type": "web",
         "launch": {
             "headText": "Basic",
             "title": "Price",
-            "priceKey":"$270",
+            "priceKey": "$270",
             "price": "$144 – $270",
+            "badge": "Beta Exclusive",
+            "Betaprice": "FREE",
             "btn": "Start Project",
             "content": [
                 "1 to 5 pages",
@@ -136,8 +138,10 @@
         "business": {
             "headText": "Standard",
             "title": "Price",
-            "priceKey":"$540",
+            "priceKey": "$540",
             "price": "$270 – $540",
+            "badge": "50% OFF",
+            "Betaprice": "$135 – $270",
             "btn": "Start Project",
             "content": [
                 "5 to 10 Pages",
@@ -156,8 +160,10 @@
             "headText": "Premium",
             "title": "Price",
             "btn": "Start Project",
-            "priceKey":"$1 260",
-            "price": "$450 – $1,260",
+            "priceKey": "$1 260",
+            "price": "$450 – $1,260", 
+            "badge": "50% OFF",
+            "Betaprice": "$225 – $630",
             "content": [
                 "10 to 15 Pages",
                 "Custom UI/UX Design",
@@ -176,8 +182,10 @@
         "custom": {
             "headText": "Custom Platform",
             "title": "Starting Price",
-            "priceKey":"$1 620+",
+            "priceKey": "$1 620+",
             "price": "$1,620+",
+            "Betaprice": "$810+",
+            "badge": "50% OFF",
             "btn": "Start Project",
             "content": [
                 "Unlimited Pages",
