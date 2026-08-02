@@ -1,8 +1,9 @@
 import { getTranslations } from "next-intl/server"
 import { FaLightbulb, FaCode, FaRocket, FaHandshake, FaPencilRuler, FaClipboardList, FaVial } from "react-icons/fa";
 import style from "./process.module.css"
-import PhoneProgress from "./PhoneProgress";
+// import PhoneProgress from "./PhoneProgress";
 import ArrowDownFn from "./ArrowDownBtn";
+import dynamic from "next/dynamic";
 
 const iconMap = [
     FaLightbulb,
@@ -23,8 +24,12 @@ type CardProps = {
 async function WorkingProcess() {
     const t = await getTranslations()
     const cards = t.raw("process") as CardProps[]
-
-
+    const PhoneProgress:any = dynamic(
+        () => import("./PhoneProgress"),
+        {
+            loading: () => <div>Loading...</div>
+        }
+    )
     return (
         <div className={style.container}>
             <h2 className={style.title}>Our Process</h2>
