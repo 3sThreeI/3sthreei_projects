@@ -95,7 +95,6 @@ const GetBetaVersionInfo =  async ()=>{
     return false
   }
   return data
-  
 }
 export default async function RootLayout({
   children,
