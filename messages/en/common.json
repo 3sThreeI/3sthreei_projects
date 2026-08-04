@@ -1,8 +1,8 @@
 {
-  "sitename": "3SThreeI",
-    "beta":{
+    "sitename": "3SThreeI",
+    "beta": {
         "beta": "beta",
-        "text1":"Early Access Beta is Live",
+        "text1": "Early Access Beta is Live",
         "month": "month",
         "text2": "Core services are now available. Enjoy exclusive pricing during our",
         "text3": "beta program."
@@ -247,7 +247,27 @@
             "sitename": "3SThreeI",
             "title": "Why Your Website Is Not Ranking on Google",
             "description": "Is your website not ranking on Google? Learn why websites stay invisible and how 3sthreei helps businesses improve SEO, visibility, and qualified traffic.",
-            "keywords": [],
+            "keywords": [
+                "SEO",
+                "Search Engine Optimization",
+                "On-page SEO",
+                "How to rank my website",
+                "Best way to use SEO"
+            ],
+            "ogImage": "https://3sthreei.com/og-image.png",
+            "ogImageAlt": "3SThreeI SaaS Platforme"
+        },
+        "ranking-your-website": {
+            "sitename": "3SThreeI",
+            "title": "What is SEO | Search Engine Optimization ? | Ranking better",
+            "description": "Get started learning the basics of search engine optimization – how search engine optimization works, and practical ways to rank your website higher in search results.",
+            "keywords": [
+                "SEO",
+                "Search Engine Optimization",
+                "On-page SEO",
+                "How to rank my website",
+                "Best way to use SEO"
+            ],
             "ogImage": "https://3sthreei.com/og-image.png",
             "ogImageAlt": "3SThreeI SaaS Platforme"
         }
