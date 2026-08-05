@@ -1,12 +1,12 @@
 {
   "sitename": "3SThreeI",
-  "beta":{
-        "beta": "bêta",
-        "text1":"Accès anticipé à la version Bêta",
-        "month": "mois",
-        "text2": "Les services principaux sont désormais disponibles. Profitez de tarifs exclusifs pendant notre programme bêta de",
-        "text3": "."
-    },
+  "beta": {
+    "beta": "bêta",
+    "text1": "Accès anticipé à la version Bêta",
+    "month": "mois",
+    "text2": "Les services principaux sont désormais disponibles. Profitez de tarifs exclusifs pendant notre programme bêta de",
+    "text3": "."
+  },
   "signIn": {
     "sitename": "3SThreeI",
     "title": "Se connecter",
@@ -260,9 +260,35 @@
       "sitename": "3SThreeI",
       "title": "Why Your Website Is Not Ranking on Google",
       "description": "Is your website not ranking on Google? Learn why websites stay invisible and how 3sthreei helps businesses improve SEO, visibility, and qualified traffic.",
-      "keywords": [],
+      "keywords": [
+        "SEO",
+        "Référencement naturel",
+        "Optimisation pour les moteurs de recherche",
+        "Comment classer mon site web",
+        "Améliorer le référencement",
+        "SEO on-page",
+        "Positionnement Google",
+        "Meilleures pratiques SEO"
+      ],
       "ogImage": "https://3sthreei.com/og-image.png",
       "ogImageAlt": "3SThreeI SaaS Platforme"
+    },
+    "ranking-your-website": {
+      "sitename": "3SThreeI",
+      "title": "Qu'est-ce que le SEO (Référencement naturel) ? | Mieux classer votre site web",
+      "description": "Découvrez les bases du référencement naturel (SEO), comprenez le fonctionnement des moteurs de recherche et apprenez les meilleures pratiques pour améliorer le classement de votre site dans les résultats de recherche.",
+      "keywords": [
+        "SEO",
+        "Référencement naturel",
+        "Optimisation pour les moteurs de recherche",
+        "Comment classer mon site web",
+        "Améliorer le référencement",
+        "SEO on-page",
+        "Positionnement Google",
+        "Meilleures pratiques SEO"
+      ],
+      "ogImage": "https://3sthreei.com/og-image.png",
+      "ogImageAlt": "Plateforme SaaS 3SThreeI"
     }
   }
 }
