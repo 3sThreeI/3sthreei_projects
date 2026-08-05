@@ -1,15 +1,16 @@
 import { Metadata } from "next"
 import { getTranslations } from "next-intl/server"
-
+import style from "./ranking.module.css"
+import Image from "next/image"
 
 type Props = {
-    params: Promise<{locale:string}>
+    params: Promise<{ locale: string }>
 }
-export async function generateMetadata({params}:Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params
     const path = "ranking-your-website"
     const t = await getTranslations({ locale, namespace: `blog.${path}` })
-    
+
     return {
         title: t("title"),
         description: t("description"),
@@ -53,9 +54,24 @@ export async function generateMetadata({params}:Props): Promise<Metadata> {
     }
 }
 
-export default function RankingWebSite({params}:Props){
+export default async function RankingWebSite({ params }: Props) {
+    const { locale } = await params
+    const t = (await import(`@/messages/${locale}/blog/ranking-your-website.json`)).default
+
     return (
-        <>
-        </>
+        <main>
+            <section className={style.hero}>
+                <div className="">
+                    <h1 className={style.title}>{t.title}</h1>
+                    <div className="">
+                        <p>Published by Abzar Camara <time dateTime="2026-08-04">—August 4, 2026</time></p>
+                    </div>
+                    <p className={style.description}>{t.description}</p>
+                </div>
+                <div className="">
+                    <Image src={t.HeroImageUrl} alt={t.HeroImageAlt} height={100} width={100} loading="lazy" />
+                </div>
+            </section>
+        </main>
     )
 }
