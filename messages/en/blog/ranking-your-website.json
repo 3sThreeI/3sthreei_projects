@@ -1,6 +1,19 @@
 {
     "title":"What Is SEO ? Search Engine Optimization Best Practices from Beginner to Advanced",
     "description": "SEO stands for Search Engine Optimization. It Is about how you can improve your content visibility, structure, and how users can easily find your content through search engines like Google, Bing and Other search engines ",
-    "HeroImageUrl": "",
-    "HeroImageAlt": ""
+    "HeroImageUrl": "/",
+    "HeroImageAlt": "search engine optimization visual ",
+    "body": {
+        "header": "Following these rules and structures of Search Engine Optimization your page is going to rank at the top of Search Engine. What I learnt during 3 years of SEO I will break them down one by one and give you a real example of each of them",
+        "metaTitle": {
+            "code1": "<head> ",
+            "label": "1",
+            "title": "Title tags",
+            "descritpion": "Is headline of your page and must be under 60 charaters including space other, over with 60 will not affect your SEO but the rest of title will be hidden ",
+            "code2" : "<title>Your Page Title Here | Brand Name</title>",
+            "code3":"</head>",
+            "imgUrl": "/",
+            "imgAlt":"image that descript meta title tag"
+        }
+    }
 }
