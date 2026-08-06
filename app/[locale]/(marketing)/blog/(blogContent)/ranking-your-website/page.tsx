@@ -72,6 +72,32 @@ export default async function RankingWebSite({ params }: Props) {
                     <Image src={t.HeroImageUrl} alt={t.HeroImageAlt} height={100} width={100} loading="lazy" />
                 </div>
             </section>
+            <section className={style.body}>
+                <div className={style.header}>
+                    <p>{t.body.header}</p>
+                </div>
+                <div className={style.Metadata}>
+                    <h2>What is MetaData ?</h2>
+                    <p> Metadata mean data to data, is one of the hidden part of your code that will descript your webpage and uselful on SEO </p>
+                    <div className={style.titleContainer}>
+                        <h3 className={style.metaTitle}>
+                            <label htmlFor="" className={style.metaList}>{t.body.metaTitle.label}</label>
+                            {" "}{t.body.metaTitle.title}
+                            </h3>
+                        <p className={style.metaDescription}>{t.body.metaTitle.descriptio}</p>
+                        <pre className={style.codeBlock}>
+                            <code>
+                                {t.body.metaTitle.code1} <br />
+                                {t.body.metaTitle.code2} <br />
+                                {t.body.metaTitle.code3} 
+                            </code>
+                        </pre>
+                        <div className={style.metaImg_box}>
+                            <Image src={t.body.metaTitle.imgUrl} alt={t.body.metaTitle.imgAlt} width={500} height={350} loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }
