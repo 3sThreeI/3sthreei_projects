@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         alternates: {
             canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/blog/${path}`,
             languages: {
-                fr: `${process.env.NEXT_PUBLIC_SITE_URL}/fr/blog/${path}`,
-                en: `${process.env.NEXT_PUBLIC_SITE_URL}/en/blog/${path}`,
+                "fr": `${process.env.NEXT_PUBLIC_SITE_URL}/fr/blog/${path}`,
+                "en": `${process.env.NEXT_PUBLIC_SITE_URL}/en/blog/${path}`,
             },
         },
         openGraph: {
@@ -69,7 +69,9 @@ export default async function RankingWebSite({ params }: Props) {
                     <p className={style.description}>{t.description}</p>
                 </div>
                 <div className="">
-                    <Image src={t.HeroImageUrl} alt={t.HeroImageAlt} height={100} width={100} loading="lazy" />
+                     <figure>
+                        <Image decoding="async" src={t.HeroImageUrl} alt={t.HeroImageAlt} height={100} width={100} loading="lazy" />
+                    </figure>
                 </div>
             </section>
             <section className={style.body}>
@@ -77,14 +79,14 @@ export default async function RankingWebSite({ params }: Props) {
                     <p>{t.body.header}</p>
                 </div>
                 <div className={style.Metadata}>
-                    <h2>What is MetaData ?</h2>
-                    <p> Metadata mean data to data, is one of the hidden part of your code that will descript your webpage and uselful on SEO </p>
+                    <h2>{t.body.metadataTitle}</h2>
+                    <p>{t.body.metadataDescription}</p>
+                    {/* for title */}
                     <div className={style.titleContainer}>
                         <h3 className={style.metaTitle}>
                             <label htmlFor="" className={style.metaList}>{t.body.metaTitle.label}</label>
                             {" "}{t.body.metaTitle.title}
                             </h3>
-                        <p className={style.metaDescription}>{t.body.metaTitle.descriptio}</p>
                         <pre className={style.codeBlock}>
                             <code>
                                 {t.body.metaTitle.code1} <br />
@@ -92,9 +94,178 @@ export default async function RankingWebSite({ params }: Props) {
                                 {t.body.metaTitle.code3} 
                             </code>
                         </pre>
+                        <p className={style.metaDescription}>{t.body.metaTitle.description}</p>
+                        <p className={style.metaDescription}>{t.body.metaTitle.description1}</p>
+                        <p className={style.metaDescription}>{t.body.metaTitle.description2}</p>
                         <div className={style.metaImg_box}>
-                            <Image src={t.body.metaTitle.imgUrl} alt={t.body.metaTitle.imgAlt} width={500} height={350} loading="lazy"/>
+                            <figure>
+                                <Image decoding="async" src={t.body.metaTitle.imgUrl} alt={t.body.metaTitle.imgAlt} width={500} height={350} loading="lazy"/>
+                            </figure> 
                         </div>
+                        <div className={style.reasoning}>
+                            <p>{t.body.metaTitle.reasoning}</p>
+                            <p>{t.body.metaTitle.reasoning1}</p>
+                            <p>{t.body.metaTitle.reasoning2}</p>
+                            <div className={style.reasoningImg_box}>
+                               <figure>
+                                <Image decoding="async" src={t.body.metaTitle.reasoningImgUrl} alt={t.body.metaTitle.reasoningImgAlt} width={300} height={250} loading="lazy"/>
+                                </figure> 
+                            </div>
+                        </div>
+                    </div>
+                     {/* for description  */}
+                    <div className={style.metaDescriptionContainer}>
+                        <h3 className={style.metaDescriptionTitle}>
+                            <label htmlFor="" className={style.metaList}>{t.body.metaDescription.label}</label>
+                            {" "}{t.body.metaDescription.title}
+                        </h3>
+                        <pre className={style.codeBlock}>
+                            <code>
+                                {t.body.metaDescription.code1} <br />
+                                {t.body.metaDescription.code2} <br />
+                                {t.body.metaDescription.code3} 
+                            </code>
+                        </pre>
+                        <p className={style.metaDescription}>{t.body.metaDescription.description}</p>
+                        <p className={style.metaDescription}>{t.body.metaDescription.description1}</p>
+                        <p className={style.metaDescription}>{t.body.metaDescription.description2}</p>
+                        <div className={style.metaImg_box}>
+                             <figure> 
+                                <Image decoding="async" src={t.body.metaDescription.imgUrl} alt={t.body.metaDescription.imgAlt} width={500} height={350} loading="lazy"/>
+                            </figure>
+                        </div>
+                    </div>
+                     {/* for alternante  */}
+                    <div className={style.metaAlternanteContainer}>
+                        <h3 className={style.metaDescriptionTitle}>
+                            <label htmlFor="" className={style.metaList}>{t.body.metaAlternante.label}</label>
+                            {" "}{t.body.metaAlternante.title}
+                        </h3>
+                        <pre className={style.codeBlock}>
+                            <code>
+                                {t.body.metaAlternante.code1} <br />
+                                {t.body.metaAlternante.code2} <br />
+                                {t.body.metaAlternante.code3} <br />
+                                {t.body.metaAlternante.code4} 
+                            </code>
+                        </pre>
+                        <p className={style.metaDescription}>{t.body.metaAlternante.description}</p>
+                        <p className={style.metaDescription}>{t.body.metaAlternante.description1}</p>
+                        <p className={style.metaDescription}>{t.body.metaAlternante.description2}</p>
+                    </div>
+                     {/* for canonical */}
+                    <div className={style.metaCanonical}>
+                         <h3 className={style.metaDescriptionTitle}>
+                            <label htmlFor="" className={style.metaList}>{t.body.metaCanonical.label}</label>
+                            {" "}{t.body.metaCanonical.title}
+                        </h3>
+                        
+                        <p className={style.metaDescription}>{t.body.metaCanonical.description}</p>
+                        <p className={style.metaDescription}>{t.body.metaCanonical.description1}</p>
+                        <p className={style.metaDescription}>{t.body.metaCanonical.description2}</p>
+                        <p className={style.metaDescription}>{t.body.metaCanonical.description3}</p>
+                        <pre className={style.codeBlock}>
+                            <code>
+                                {t.body.metaCanonical.code1} <br />
+                                {t.body.metaCanonical.code2} <br />
+                                {t.body.metaCanonical.code3} <br />
+                                {t.body.metaCanonical.code4} 
+                            </code>
+                        </pre>
+                    </div>
+                     {/* for open Graph  */}
+                    <div className={style.metaGraph}>
+                         <h3 className={style.metaDescriptionTitle}>
+                            <label htmlFor="" className={style.metaList}>{t.body.metaGraph.label}</label>
+                            {" "}{t.body.metaGraph.title}
+                        </h3>
+                        <pre className={style.codeBlock}>
+                            <code>
+                                {t.body.metaGraph.code1} <br />
+                                {t.body.metaGraph.code2} <br />
+                                {t.body.metaGraph.code3} <br />
+                                {t.body.metaGraph.code4} <br />
+                                {t.body.metaGraph.code5} <br />
+                                {t.body.metaGraph.code6} <br />
+                                {t.body.metaGraph.code7} <br />
+                                {t.body.metaGraph.code8} <br />
+                                {t.body.metaGraph.code9} <br />
+                                {t.body.metaGraph.code10} 
+                            </code>
+                        </pre>
+                        <p className={style.metaDescription}>{t.body.metaGraph.description}</p>
+                        <p className={style.metaDescription}>{t.body.metaGraph.description1}</p>
+                        <p className={style.metaDescription}>{t.body.metaGraph.description2}</p>
+                        <div className={style.metaImg_box}>
+                            <figure>
+                            <Image decoding="async"  src={t.body.metaGraph.imgUrl} alt={t.body.metaGraph.imgAlt} width={300} height={250} loading="lazy"/>
+                            </figure>
+                        </div>
+                        <p className={style.metaDescription}>{t.body.metaGraph.description3}</p>
+
+                    </div>
+                     {/* for twitter graph  */}
+                    <div className={style.metaCanonical}>
+                         <h3 className={style.metaDescriptionTitle}>
+                            <label htmlFor="" className={style.metaList}>{t.body.metaTwitter.label}</label>
+                            {" "}{t.body.metaTwitter.title}
+                        </h3>
+                        
+                        <p className={style.metaDescription}>{t.body.metaTwitter.description}</p>
+                        <p className={style.metaDescription}>{t.body.metaTwitter.description1}</p>
+                        <pre className={style.codeBlock}>
+                            <code>
+                                {t.body.metaTwitter.code1} <br />
+                                {t.body.metaTwitter.code2} <br />
+                                {t.body.metaTwitter.code3} <br />
+                                {t.body.metaTwitter.code4} <br />
+                                {t.body.metaTwitter.code5} <br />
+                                {t.body.metaTwitter.code6} 
+                            </code>
+                        </pre>
+                    </div>
+                    {/* for meta AUthor and Publisher */}
+                     <div className={style.metaCanonical}>
+                         <h3 className={style.metaDescriptionTitle}>
+                            <label htmlFor="" className={style.metaList}>{t.body.metaRobots.label}</label>
+                            {" "}{t.body.metaRobots.title}
+                        </h3>
+                        <p className={style.metaDescription}>{t.body.metaRobots.description}</p>
+                        <pre className={style.codeBlock}>
+                            <code>
+                                {t.body.metaRobots.code1} <br />
+                                {t.body.metaRobots.code2} <br />
+                                {t.body.metaRobots.code3}
+                            </code>
+                        </pre>
+                    </div>
+                    <div className={style.metaCanonical}>
+                         <h3 className={style.metaDescriptionTitle}>
+                            <label htmlFor="" className={style.metaList}>{t.body.metaAuthors.label}</label>
+                            {" "}{t.body.metaAuthors.title}
+                        </h3>
+                        <p className={style.metaDescription}>{t.body.metaAuthors.description}</p>
+                         <pre className={style.codeBlock}>
+                            <code>
+                                {t.body.metaAuthors.code1} <br />
+                                {t.body.metaAuthors.code2} <br />
+                                {t.body.metaAuthors.code3}
+                            </code>
+                        </pre>
+                    </div>
+                    <div className={style.metaCanonical}>
+                         <h3 className={style.metaDescriptionTitle}>
+                            <label htmlFor="" className={style.metaList}>{t.body.metaKeywords.label}</label>
+                            {" "}{t.body.metaKeywords.title}
+                        </h3>
+                        <p className={style.metaDescription}>{t.body.metaKeywords.description}</p>
+                        <pre className={style.codeBlock}>
+                            <code>
+                                {t.body.metaKeywords.code1} <br />
+                                {t.body.metaKeywords.code2} <br />
+                                {t.body.metaKeywords.code3}
+                            </code>
+                        </pre>
                     </div>
                 </div>
             </section>
