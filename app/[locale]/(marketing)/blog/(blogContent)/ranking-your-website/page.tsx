@@ -198,7 +198,7 @@ export default async function RankingWebSite({ params }: Props) {
                         <p className={style.metaDescription}>{t.body.metaGraph.description2}</p>
                         <div className={style.metaImg_box}>
                             <figure>
-                            <Image decoding="async"  src={t.body.metaGraph.imgUrl} alt={t.body.metaGraph.imgAlt} width={300} height={250} loading="lazy"/>
+                            <Image decoding="async"  src={t.body.metaGraph.imgUrl} alt={t.body.metaGraph.imgAlt} width={500} height={450} loading="lazy"/>
                             </figure>
                         </div>
                         <p className={style.metaDescription}>{t.body.metaGraph.description3}</p>
