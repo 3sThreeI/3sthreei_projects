@@ -40,7 +40,7 @@ export default function WorkingFlowCard() {
                             <h4>{t('workFlow2.launch.title')}</h4>
                             <p className={`${style.cardPrice} ${isBetaActive ? "line-through opacity-50" : "" }`}>{t('workFlow2.launch.price')}</p>
                             {isBetaActive && <p className={`${style.cardPrice} `}>{t('workFlow2.launch.Betaprice')}</p>}
-                            <p className="text-center text-red-400 font-bold">{t('workFlow2.launch.badge')}</p>
+                           { isBetaActive?.beta && <p className="text-center text-red-400 font-bold">{t('workFlow2.launch.badge')}</p> }
                             <div className={style.headButton}>
                                 {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
                                 application the type=app
@@ -64,7 +64,7 @@ export default function WorkingFlowCard() {
                             <h4>{t('workFlow2.business.title')}</h4>
                             <p className={`${style.cardPrice} ${isBetaActive ? "line-through opacity-50" : "" }`}>{t('workFlow2.business.price')}</p>
                             {isBetaActive && <p className={style.cardPrice}>{t('workFlow2.business.Betaprice')}</p>}
-                            <p className="text-center text-red-400 font-bold">{t('workFlow2.business.badge')}</p>
+                            { isBetaActive?.beta &&<p className="text-center text-red-400 font-bold">{t('workFlow2.business.badge')}</p> }
                             <div className={style.headButton}>
                                 {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
                                 application the type=app
@@ -89,7 +89,7 @@ export default function WorkingFlowCard() {
                             <h4>{t('workFlow2.interactive.title')}</h4>
                             < p className={`${style.cardPrice} ${isBetaActive ? "line-through opacity-50" : "" }`}>{t('workFlow2.interactive.price')}</p>
                             {isBetaActive && <p className={style.cardPrice}>{t('workFlow2.interactive.Betaprice')}</p>}
-                            <p className="text-center text-red-400 font-bold">{t('workFlow2.interactive.badge')}</p>
+                           { isBetaActive?.beta && <p className="text-center text-red-400 font-bold">{t('workFlow2.interactive.badge')}</p> }
                             <div className={style.headButton}>
                               {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
                                 application the type=app
@@ -112,8 +112,8 @@ export default function WorkingFlowCard() {
                         <div className={style.headContent}>
                             <h4>{t('workFlow2.custom.title')}</h4>
                             <p className={`${style.cardPrice} ${isBetaActive ? "line-through opacity-50" : "" }`}>{t('workFlow2.custom.price')}</p>
-                            <p className={style.cardPrice}>{t('workFlow2.custom.Betaprice')}</p>
-                            <p className="text-center text-red-400 sm:font-bold">{t('workFlow2.custom.badge')}</p>
+                             { isBetaActive && <p className={style.cardPrice}>{t('workFlow2.custom.Betaprice')}</p> }
+                            { isBetaActive &&<p className="text-center text-red-400 font-bold">{t('workFlow2.custom.badge')}</p> }
                             <div className={style.headButton}>
                                 {/* the type is getting by json (workingFlow2.type) file each component will send is type like for web the type=web and for 
                                 application the type=app
