@@ -1,5 +1,5 @@
 {
-    "title":"What Is SEO ? Search Engine Optimization Best Practices from Beginner to Advanced",
+    "title": "What Is SEO ? Search Engine Optimization Best Practices from Beginner to Advanced",
     "description": "SEO stands for Search Engine Optimization. It Is about how you can improve your content visibility, structure, and how users can easily find your content through search engines like Google, Bing and Other search engines ",
     "HeroImageUrl": "/",
     "HeroImageAlt": "search engine optimization visual ",
@@ -14,41 +14,41 @@
             "description": "A headline is the title of your page and should be under 60 characters. Titles longer than 60 characters will not affect your SEO, but search engines may truncate your title tag with an ellipsis […]",
             "description1": "Don't use only your brand name or a title that sounds good to you. Instead, you should find the user's search intent and use it for your meta title. When the user's query matches your title, your page is more likely to be fetched and displayed.",
             "description2": "Let's say a user is looking for kitchen utensils. They may type keywords such as \"kitchen utensils.\" The search engine will display webpages that include keywords like \"kitchen utensils,\" \"utensils,\" and \"kitchen\" because search engines split the query into individual terms, as shown in the example below.",
-            "code2" : "<title>Your Page Title Here | Brand Name</title>",
-            "code3":"</head>",
+            "code2": "<title>Your Page Title Here | Brand Name</title>",
+            "code3": "</head>",
             "imgUrl": "/blog/ranking-your-website/meta-title-example.png",
-            "imgAlt":"image that describes meta title tag example of kitchen utensils",
+            "imgAlt": "image that describes meta title tag example of kitchen utensils",
             "reasoning": "Two reasons why meta title is important",
             "reasoning1": " First, if you have meta title that relevant to your page, humans, search engine, AI will understand what your page is about and will be more likely to rank it higher in search results.",
             "reasoning2": "Why title are important is that they appear on browser tabs, and are use in social media sharing, and are also used by search engines to display your page in search results. A well-crafted title can attract more clicks and improve your page's visibility.",
             "reasoningImgUrl": "/blog/ranking-your-website/browser-tag-example.png",
-            "reasoningImgAlt": "image that describes the reasoning behind meta title importance" 
+            "reasoningImgAlt": "image that describes the reasoning behind meta title importance"
         },
         "metaDescription": {
             "title": "Meta Description",
             "label": "2",
             "code1": "<head> ",
-            "code2" : "<meta name=\"description\" content=\"Your page description here\">",
-            "code3":"</head>",
+            "code2": "<meta name=\"description\" content=\"Your page description here\">",
+            "code3": "</head>",
             "description": "A meta description is a brief description of your webpage that appears below the meta title in search engine results.",
             "description1": "It should be under 160 characters and include relevant keywords. A well-written meta description can improve your click-through rate (CTR) from search engine results pages (SERPs) and give users a clear understanding of what they can expect on your page. Make sure to include keywords that users may search for when looking for that specific content.",
-            "description2":"Google may bold the keywords in your meta description when they match the user's search query. Make sure to include keywords that users are likely to search for so your description matches their query and stands out in the search results. it looks something like this in the example below. ",
+            "description2": "Google may bold the keywords in your meta description when they match the user's search query. Make sure to include keywords that users are likely to search for so your description matches their query and stands out in the search results. it looks something like this in the example below. ",
             "imgUrl": "/blog/ranking-your-website/meta-description-example.png",
-            "imgAlt":"image that describes meta description tag example of kitchen utensils"
-            },
+            "imgAlt": "image that describes meta description tag example of kitchen utensils"
+        },
         "metaAlternante": {
-            "title":" Alternante",
-            "label" : "3",
-            "code1":"<head> ",
+            "title": " Alternante",
+            "label": "3",
+            "code1": "<head> ",
             "code2": "<link rel=\"alternate\" hreflang=\"en\" href=\"https://3sthreei.com/en/blog/ranking-your-website\" />",
             "code3": "<link rel=\"alternate\" hreflang=\"fr\" href=\"https://3sthreei.com/fr/blog/ranking-your-website\" />",
             "code4": "</head>",
-            "description":"The Meta Alternate tag is often ignored by many people, but it is very helpful for SEO. It tells search engines that an alternative language, region, or format of the current page exists. ",
+            "description": "The Meta Alternate tag is often ignored by many people, but it is very helpful for SEO. It tells search engines that an alternative language, region, or format of the current page exists. ",
             "description1": "If your webpage is available in multiple languages, add all available language versions using the alternate (hreflang) tag. Also, make sure each translated page includes a canonical URL."
         },
         "metaCanonical": {
-            "title":" Canonical",
-            "label" : "4",
+            "title": " Canonical",
+            "label": "4",
             "code1": "<head>",
             "code2": "<link rel=\"canonical\" href=\"https://3sthreei.com/en/blog/ranking-your-website\" />",
             "code3": "<link rel=\"canonical\" href=\"https://3sthreei.com/fr/blog/ranking-your-website\" />",
@@ -60,7 +60,7 @@
         },
         "metaGraph": {
             "title": "Open Graph",
-            "label" : "5",
+            "label": "5",
             "code1": "<head>",
             "code2": "<meta name=\"og:title\" content=\"your title \"> ",
             "code3": "<meta property=\"og:site_name\" content=\"your site name\"> ",
@@ -76,11 +76,11 @@
             "description2": "The following example shows the difference between a webpage without an Open Graph tag and one with an Open Graph tag. The first example is a webpage without an Open Graph tag, while the second example shows a webpage with an Open Graph tag configured.",
             "description3": "As you can see, the webpage with an Open Graph tag displays a title, description, and image, making it more attractive and easier for users to understand before clicking the link.",
             "imgUrl": "/blog/ranking-your-website/Open-graph-example.png",
-            "imgAlt":"image that describes open graph example of 3sthreei "
+            "imgAlt": "image that describes open graph example of 3sthreei "
         },
-        "metaTwitter":{
+        "metaTwitter": {
             "title": "Twitter ",
-            "label" : "6",
+            "label": "6",
             "code1": "<head>",
             "code2": "<meta name=\"twitter:card\" content=\"summary_large_image\">",
             "code3": "<meta name=\"twitter:title\" content=\"twitter tag title\">",
@@ -93,7 +93,7 @@
         "metaRobots": {
             "title": "Meta Robots",
             "label": "7",
-            "code1" :"<head>",
+            "code1": "<head>",
             "code2": "<meta name=\"robots\" content=\"index, follow\">",
             "code3": "</head>",
             "description": "The Robots meta tag tells search engines whether a page should be indexed or not. Public pages that you want to appear in search results should use \"index\", while private pages, such as dashboards, admin panels, or account pages, should use \"noindex\" so they are not included in search engine results."
@@ -101,21 +101,28 @@
         "metaAuthors": {
             "title": "Meta Author and Publisher",
             "label": "8",
-            "code1" :"<head>",
+            "code1": "<head>",
             "code2": "<meta name=\"author\" content=\"the author\">",
             "code3": "<meta name=\"publisher\" content=\"the person who published \">",
             "code4": "</head>",
             "description": "The Author and Publisher meta tags are no longer important ranking factors for SEO, but you can still use them to provide additional information about your content. They help search engines identify the author and publisher of the webpage, which can add context and improve the organization of your metadata."
         },
-        "metaKeywords":{
+        "metaKeywords": {
             "title": "Meta Keywords",
             "label": "9",
-            "code1" :"<head>",
+            "code1": "<head>",
             "code2": "<meta name=\"keywords\" content=\" keyword 1, keyword 2, keyword 3, ...\">",
             "code3": "</head>",
             "description": "The Meta Keywords tag is no longer used by Google as a ranking factor, but it may still be recognized by some other search engines like bing. If you choose to use it, add keywords that match the content of your webpage so it is easier for supported search engines to understand what your page is about."
-        
+        },
+        "formSubscribe": {
+            "eyebrow": "Stay updated",
+            "title": "Get practical SEO tips in your inbox",
+            "description": "Join our list for simple advice on ranking, content, and website growth.",
+            "label": "Email address",
+            "placeholder": "you@example.com",
+            "button": "Subscribe",
+            "note": "No spam. Just useful updates."
         }
-    
     }
 }
