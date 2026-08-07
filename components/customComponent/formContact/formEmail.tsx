@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react"
 import styles from "./formEmail.module.css"
+import toast, { Toaster } from "react-hot-toast"
 
 type EmailFormProps = {
     eyebrow: string
@@ -50,9 +51,21 @@ export default function EmailForm({
             if (!response.ok) {
                 throw new Error("Unable to submit your email right now.")
             }
-
             setStatus("Thanks for subscribing!")
             setEmail("")
+            toast.success(status || "Thanks for subscribing", {
+                    duration: 15000,
+                    style: {
+                        border: '1px solid green',
+                        padding: '16px',
+                        color: 'green',
+                    },
+                    iconTheme: {
+                        primary: 'green',
+                        secondary: 'white',
+                    },
+                }
+                )
         } catch (error) {
             setStatus(error instanceof Error ? error.message : "Something went wrong.")
         } finally {
@@ -62,6 +75,7 @@ export default function EmailForm({
 
     return (
         <div className={styles.card}>
+             <div><Toaster position="top-right" /></div>
             <div className={styles.content}>
                 <p className={styles.eyebrow}>{eyebrow}</p>
                 <h3 className={styles.title}>{title}</h3>
