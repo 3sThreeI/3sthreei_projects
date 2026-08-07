@@ -1,7 +1,9 @@
 import { Metadata } from "next"
 import { getTranslations } from "next-intl/server"
+import Link from "next/link"
 import style from "./ranking.module.css"
 import Image from "next/image"
+import { FaFacebookF, FaLinkedin } from "react-icons/fa"
 
 type Props = {
     params: Promise<{ locale: string }>
@@ -59,12 +61,13 @@ export default async function RankingWebSite({ params }: Props) {
     const t = (await import(`@/messages/${locale}/blog/ranking-your-website.json`)).default
 
     return (
-        <main>
+        <main className={style.container}>
+            <div className={style.section}>
             <section className={style.hero}>
                 <div className="">
                     <h1 className={style.title}>{t.title}</h1>
                     <div className="">
-                        <p>Published by Abzar Camara <time dateTime="2026-08-04">—August 4, 2026</time></p>
+                        <p>Published by Abzar Camara <time dateTime="2026-08-04">—August 7, 2026</time></p>
                     </div>
                     <p className={style.description}>{t.description}</p>
                 </div>
@@ -78,15 +81,17 @@ export default async function RankingWebSite({ params }: Props) {
                 <div className={style.header}>
                     <p>{t.body.header}</p>
                 </div>
-                <div className={style.Metadata}>
-                    <h2>{t.body.metadataTitle}</h2>
-                    <p>{t.body.metadataDescription}</p>
-                    {/* for title */}
-                    <div className={style.titleContainer}>
-                        <h3 className={style.metaTitle}>
-                            <label htmlFor="" className={style.metaList}>{t.body.metaTitle.label}</label>
-                            {" "}{t.body.metaTitle.title}
-                            </h3>
+                <div className={style.bodyGrid}>
+                    <div className={style.mainContent}>
+                        <div className={style.Metadata}>
+                            <h2>{t.body.metadataTitle}</h2>
+                            <p>{t.body.metadataDescription}</p>
+                            {/* for title */}
+                            <div id="meta-title" className={style.titleContainer}>
+                                <h3 className={style.metaTitle}>
+                                    <label htmlFor="" className={style.metaList}>{t.body.metaTitle.label}</label>
+                                    {" "}{t.body.metaTitle.title}
+                                    </h3>
                         <pre className={style.codeBlock}>
                             <code>
                                 {t.body.metaTitle.code1} <br />
@@ -114,7 +119,7 @@ export default async function RankingWebSite({ params }: Props) {
                         </div>
                     </div>
                      {/* for description  */}
-                    <div className={style.metaDescriptionContainer}>
+                    <div id="meta-description" className={style.metaDescriptionContainer}>
                         <h3 className={style.metaDescriptionTitle}>
                             <label htmlFor="" className={style.metaList}>{t.body.metaDescription.label}</label>
                             {" "}{t.body.metaDescription.title}
@@ -136,7 +141,7 @@ export default async function RankingWebSite({ params }: Props) {
                         </div>
                     </div>
                      {/* for alternante  */}
-                    <div className={style.metaAlternanteContainer}>
+                    <div id="meta-alternate" className={style.metaAlternanteContainer}>
                         <h3 className={style.metaDescriptionTitle}>
                             <label htmlFor="" className={style.metaList}>{t.body.metaAlternante.label}</label>
                             {" "}{t.body.metaAlternante.title}
@@ -154,7 +159,7 @@ export default async function RankingWebSite({ params }: Props) {
                         <p className={style.metaDescription}>{t.body.metaAlternante.description2}</p>
                     </div>
                      {/* for canonical */}
-                    <div className={style.metaCanonical}>
+                    <div id="meta-canonical" className={style.metaCanonical}>
                          <h3 className={style.metaDescriptionTitle}>
                             <label htmlFor="" className={style.metaList}>{t.body.metaCanonical.label}</label>
                             {" "}{t.body.metaCanonical.title}
@@ -174,7 +179,7 @@ export default async function RankingWebSite({ params }: Props) {
                         </pre>
                     </div>
                      {/* for open Graph  */}
-                    <div className={style.metaGraph}>
+                    <div id="open-graph" className={style.metaGraph}>
                          <h3 className={style.metaDescriptionTitle}>
                             <label htmlFor="" className={style.metaList}>{t.body.metaGraph.label}</label>
                             {" "}{t.body.metaGraph.title}
@@ -205,7 +210,7 @@ export default async function RankingWebSite({ params }: Props) {
 
                     </div>
                      {/* for twitter graph  */}
-                    <div className={style.metaCanonical}>
+                    <div id="twitter" className={style.metaCanonical}>
                          <h3 className={style.metaDescriptionTitle}>
                             <label htmlFor="" className={style.metaList}>{t.body.metaTwitter.label}</label>
                             {" "}{t.body.metaTwitter.title}
@@ -225,7 +230,7 @@ export default async function RankingWebSite({ params }: Props) {
                         </pre>
                     </div>
                     {/* for meta AUthor and Publisher */}
-                     <div className={style.metaCanonical}>
+                     <div id="robots" className={style.metaCanonical}>
                          <h3 className={style.metaDescriptionTitle}>
                             <label htmlFor="" className={style.metaList}>{t.body.metaRobots.label}</label>
                             {" "}{t.body.metaRobots.title}
@@ -239,7 +244,7 @@ export default async function RankingWebSite({ params }: Props) {
                             </code>
                         </pre>
                     </div>
-                    <div className={style.metaCanonical}>
+                    <div id="authors" className={style.metaCanonical}>
                          <h3 className={style.metaDescriptionTitle}>
                             <label htmlFor="" className={style.metaList}>{t.body.metaAuthors.label}</label>
                             {" "}{t.body.metaAuthors.title}
@@ -253,7 +258,7 @@ export default async function RankingWebSite({ params }: Props) {
                             </code>
                         </pre>
                     </div>
-                    <div className={style.metaCanonical}>
+                    <div id="keywords" className={style.metaCanonical}>
                          <h3 className={style.metaDescriptionTitle}>
                             <label htmlFor="" className={style.metaList}>{t.body.metaKeywords.label}</label>
                             {" "}{t.body.metaKeywords.title}
@@ -268,7 +273,44 @@ export default async function RankingWebSite({ params }: Props) {
                         </pre>
                     </div>
                 </div>
+                    </div>
+                    <aside className={style.toc}>
+                        <div className={style.tocBox}>
+                            <div className={style.tocSocial}>
+                                <a href="https://www.facebook.com/profile.php?id=61591687297760" target="_blank" rel="noopener noreferrer" title="Facebook">
+                                    <FaFacebookF />
+                                </a>
+                                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                    <FaLinkedin />
+                                </a>
+                            </div>
+                            <p className={style.tocTitle}>Table of Contents</p>
+                            <nav>
+                                <ol className={style.tocList}>
+                                    <li><a href="#meta-title">Title</a></li>
+                                    <li><a href="#meta-description">Description</a></li>
+                                    <li><a href="#meta-alternate">Alternate</a></li>
+                                    <li><a href="#meta-canonical">Canonical</a></li>
+                                    <li><a href="#open-graph">Open Graph</a></li>
+                                    <li><a href="#twitter">Twitter</a></li>
+                                    <li><a href="#robots">Robots</a></li>
+                                    <li><a href="#authors">Authors</a></li>
+                                    <li><a href="#keywords">Keywords</a></li>
+                                </ol>
+                            </nav>
+                            <div className={style.tocSection}>
+                                <p className={style.tocSectionTitle}>Important pages</p>
+                                <ul className={style.tocList}>
+                                    <li><Link href={`/${locale}/services/web`}>Services</Link></li>
+                                    <li><Link href={`/${locale}/blog/why-website-not-ranking-on-google`}>Why website not ranking</Link></li>
+                                    <li><Link href={`/${locale}/contact-form`}>Contact</Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </section>
+            </div>
         </main>
     )
 }
