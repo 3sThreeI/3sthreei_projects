@@ -148,8 +148,60 @@
   @apply text-slate-600;
 }
 
+.formCard {
+  @apply mt-8 rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8;
+}
+
+.formContent {
+  @apply space-y-4;
+}
+
+.formEyebrow {
+  @apply text-sm font-semibold uppercase tracking-[0.2em] text-slate-500;
+}
+
+.formTitle {
+  @apply text-xl font-semibold text-slate-900;
+}
+
+.formText {
+  @apply text-sm leading-7 text-slate-600;
+}
+
+.form {
+  @apply flex flex-col gap-3 sm:flex-row;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.input {
+  @apply w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-slate-400 focus:bg-white;
+}
+
+.button {
+  @apply inline-flex items-center justify-center rounded-2xl bg-slate-900 px-4 py-3 text-sm font-medium text-white transition hover:bg-slate-700;
+}
+
+.formNote {
+  @apply text-sm text-slate-500;
+}
+
 @media (max-width: 767px) {
   .hero {
     @apply grid-cols-1;
+  }
+
+  .form {
+    @apply flex-col;
   }
 }
