@@ -1,12 +1,155 @@
+@reference "tailwindcss";
 
+.container {
+  @apply px-2 py-10 bg-slate-50 text-slate-900 min-h-screen;
+}
 
+.section {
+  @apply max-w-4xl mx-auto space-y-10;
+}
+
+.hero {
+  @apply grid gap-6 lg:grid-cols-[1.4fr_0.9fr] items-start;
+}
+
+.title {
+  @apply text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl;
+}
+
+.description {
+  @apply mt-4 text-base leading-8 text-slate-700;
+}
+
+.header {
+  @apply text-slate-700 leading-8;
+}
+
+.body {
+  @apply space-y-10;
+}
+
+.bodyGrid {
+  @apply grid gap-8 lg:grid-cols-[1.4fr_0.6fr] items-start;
+}
+
+.mainContent {
+  @apply space-y-10;
+}
+
+.toc {
+  @apply sticky top-28 hidden max-w-[260px] lg:block;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  padding: 1rem;
+  border-radius: 1.25rem;
+}
+
+.tocBox {
+  @apply space-y-5;
+}
+
+.tocSocial {
+  @apply flex justify-end items-center gap-2;
+}
+
+.tocSocial a {
+  @apply inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-slate-700 transition-colors duration-200 hover:bg-slate-200;
+}
+
+.tocTitle {
+  @apply text-sm font-semibold uppercase tracking-[0.18em];
+  color: var(--nav-text-color);
+}
+
+.tocSection {
+  @apply space-y-3 pt-4 border-t border-slate-200;
+}
+
+.tocSectionTitle {
+  @apply text-xs font-semibold uppercase tracking-[0.18em];
+  color: var(--nav-text-color);
+}
+
+.tocList {
+  @apply space-y-3 text-sm leading-7 text-slate-700 pl-0;
+  list-style: none;
+}
+
+.tocList li {
+  @apply relative pl-4;
+}
+
+.tocList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8rem;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 9999px;
+  background: var(--nav-text-color);
+}
+
+.tocList a {
+  @apply text-slate-700 transition-colors duration-200 hover:text-slate-900;
+}
+
+.tocList a:hover {
+  text-decoration: underline;
+}
+
+.Metadata {
+  @apply space-y-10;
+}
+
+.titleContainer,
+.metaDescriptionContainer,
+.metaAlternanteContainer,
+.metaCanonical,
+.metaGraph {
+  @apply space-y-5;
+}
+
+.metaTitle,
+.metaDescriptionTitle {
+  @apply text-2xl font-semibold text-slate-900;
+}
+
+.metaList {
+  @apply text-sm font-semibold uppercase tracking-[0.18em] text-slate-500;
+}
+
+.metaDescription {
+  @apply mt-3 text-base leading-8 text-slate-700;
+}
+
+.metaImg_box,
+.reasoningImg_box {
+  @apply mt-5 overflow-hidden rounded-3xl;
+}
+
+.reasoning {
+  @apply mt-5 text-slate-700 leading-8;
+}
 
 .codeBlock {
-    background: #1e1e1e;
-    color: #f8f8f2;
-    padding: 1rem;
-    border-radius: 8px;
-    overflow-x: auto;
-    font-family: Consolas, monospace;
-    white-space: pre-wrap;
+  @apply mt-4 overflow-x-auto rounded-3xl bg-slate-950 px-5 py-5 text-sm text-slate-100;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  line-height: 1.85;
+  white-space: pre-wrap;
+}
+
+.hero p,
+.hero time,
+.metaDescription,
+.header p,
+.metaCanonical p,
+.metaGraph p {
+  @apply text-slate-600;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    @apply grid-cols-1;
+  }
 }
