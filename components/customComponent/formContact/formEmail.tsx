@@ -43,6 +43,7 @@ export default function EmailForm({
                 headers: {
                     "Content-Type": "application/json",
                 },
+                credentials: "include",
                 body: JSON.stringify({ email }),
             })
 
