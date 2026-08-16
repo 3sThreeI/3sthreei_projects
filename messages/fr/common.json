@@ -68,9 +68,9 @@
   "home": {
     "sitename": "3SThreeI",
     "title1": "Entreprise de développement Web & Mobile au Mali | 3SThreeI",
-    "title": "Développement Web, Apps, Gaming & Design Mali Ghana",
     "description1": "3SThreeI est une entreprise de développement web et mobile au Mali qui crée des sites web sur mesure, des applications évolutives, des solutions logicielles et un design UI/UX intuitif pour les entreprises.",
-    "description": "Leader en développement web, applications mobiles, jeux & design UI/UX au Mali et Ghana. Solutions sur mesure pour entreprises — rapides, abordables, mobile-first. Devis gratuit !",
+    "title": "Entreprise de développement de produits numériques sur mesure au Mali",
+    "description": "Créez votre site web, plateforme SaaS, boutique e-commerce, design web et applications mobiles et desktop sur mesure avec une équipe de développement basée au Mali. Lancez votre projet avec notre programme bêta et obtenez un devis gratuit.",
     "keywords": [
       "entreprise développement web Mali",
       "développeurs application mobile Mali",
@@ -137,8 +137,10 @@
     "ogImage": "https://3sthreei.com/og-image.png",
     "ogImageAlt": "3SThreeI SaaS Platforme",
     "web": {
-      "title": "Développement web sur mesure pour le Mali & clients internationaux | React, Next.js, Angular, Node.js, Laravel",
-      "description": "Développement web professionnel avec React/Next.js, Angular et Laravel. Sites e‑commerce, SaaS, portfolios. Équipe basée au Mali, Ghana, clientèle internationale. Demandez un devis gratuit.",
+      "title1": "Développement web sur mesure pour le Mali & clients internationaux | React, Next.js, Angular, Node.js, Laravel",
+      "description1": "Développement web professionnel avec React/Next.js, Angular et Laravel. Sites e‑commerce, SaaS, portfolios. Équipe basée au Mali, Ghana, clientèle internationale. Demandez un devis gratuit.",
+      "title": "Entreprise de développement web sur mesure au Mali",
+      "description": "Développement de sites web sur mesure pour entreprises, e-commerce, SaaS, portfolios, web design et landing pages. Une équipe basée au Mali au service de clients au Mali et à l’international. Demandez votre devis gratuit.",
       "keywords": [
         "développement web Mali",
         "développement web sur mesure Mali",
@@ -156,8 +158,10 @@
       ]
     },
     "application": {
-      "title": "Développement d’applications mobiles et de bureau au Mali | Flutter, ElectronJS, React Native, Firebase, Node.js",
-      "description": "Développement d’applications sur mesure pour startups et entreprises, compatibles mobile et desktop. Utilisation de Flutter, Java, React Native, ElectronJS, Firebase et Node.js pour tableaux de bord, plateformes SaaS, panneaux d’administration et outils internes, avec performance, sécurité et évolutivité.",
+      "title1": "Développement d’applications mobiles et de bureau au Mali | Flutter, ElectronJS, React Native, Firebase, Node.js",
+      "description1": "Développement d’applications sur mesure pour startups et entreprises, compatibles mobile et desktop. Utilisation de Flutter, Java, React Native, ElectronJS, Firebase et Node.js pour tableaux de bord, plateformes SaaS, panneaux d’administration et outils internes, avec performance, sécurité et évolutivité.",
+      "title": "Développement d'applications mobiles et desktop sur mesure au Mali",
+      "description": "Créez des applications mobiles et desktop sécurisées et sur mesure pour les startups et entreprises au Mali. Rejoignez notre programme bêta pour lancer votre projet avec une tarification flexible et bénéficier de réductions. Commencez maintenant !",
       "keywords": [
         "développement d'applications Mali",
         "application mobile Mali",
