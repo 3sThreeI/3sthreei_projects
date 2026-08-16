@@ -67,8 +67,10 @@
     },
     "home": {
         "sitename": "3SThreeI",
-        "title": "Top Web, Mobile App, Gaming & Design Services | Ghana  ",
-        "description": " Leading web development, mobile apps, gaming & UI/UX design in Ghana . Custom solutions for businesses—fast, affordable, mobile-first. Get a free quote today!",
+        "title1": "Top Web, Mobile App, Gaming & Design Services | Ghana  ",
+        "description1": "Leading web development, mobile apps, gaming & UI/UX design in Ghana . Custom solutions for businesses—fast, affordable, mobile-first. Get a free quote today!",
+        "title": "Custom Digital Product Development Company in Ghana ",
+        "description": "Build custom website, SaaS Plateform, ecommerce website , web design,  mobile and desktop apps with a Ghana-based development team. Start your project with our beta program and get a free quote..",
         "keywords": [
             "affordable web development company in Ghana",
             "best mobile app developers in Ghana Ghana",
@@ -121,8 +123,8 @@
         "ogImage": "https://3sthreei.com/og-image.png",
         "ogImageAlt": "3SThreeI SaaS Platform",
         "web": {
-            "title": "Custom Web Development Ghana & Global Businesses | React, NextJs, Angular, NodeJS, Laravel",
-            "description": "Professional web development: React/Next.js, Angular, Laravel. E-commerce, SaaS, portfolios. Ghana-based team serving global clients. From GHS 5,000. Free quote.",
+            "title": "Custom Website Development company in Ghana ",
+            "description": "Build custom websites development agency for businesses, E-commerce, SaaS platform, portfolios, web design , landing page . Ghana-based team serving global clients. Get a Free quote.",
             "keywords": [
                 "web development Ghana",
                 "custom web development Ghana",
@@ -140,8 +142,9 @@
             ]
         },
         "application": {
-            "title": "Custom desktop and mobile Application Development in Ghana | Flutter, ElectronJS, React Native, FireBase, Node.js",
-            "description": "Custom application Mobile and Desktop development for startups and businesses using Flutter, Java,  React Native, ElectronJS,  FireBase , and Node.js. Dashboard apps, SaaS platforms, admin panels, and internal tools built for performance, security, and scalability.",
+            "title": "Custom Mobile and Desktop Application Development in Ghana ",
+            "description": "Build secure custom mobile and desktop applications for startups and businesses in Ghana. Join our beta program to start your project with flexible pricing and getting discount. start now!",
+            "description1": "Custom application Mobile and Desktop development for startups and businesses using Flutter, Java,  React Native, ElectronJS,  FireBase , and Node.js. Dashboard apps, SaaS platforms, admin panels, and internal tools built for performance, security, and scalability.",
             "keywords": [
                 "web application development",
                 "custom web application",
