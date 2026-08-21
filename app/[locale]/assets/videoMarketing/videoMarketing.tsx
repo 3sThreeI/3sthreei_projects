@@ -19,7 +19,7 @@ export default async function VideoMarketing(){
                     </div>
                     <div className={style.videoWrapper}>
                         <div className={style.videoContainer}>
-                            <CustomVideoPlayer Url="/e-commerce.mov"/>
+                            <CustomVideoPlayer Url="https://res.cloudinary.com/gibpyguc/video/upload/v1787285786/3SthreeI_English_version_jbpfna.mp4"/>
                         </div>
                     </div>
                 </div>
