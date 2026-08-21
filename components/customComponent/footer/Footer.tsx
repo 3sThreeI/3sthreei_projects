@@ -49,7 +49,7 @@ export default async function Footer() {
                             <h4 className={styles.columnTitle}>{t('contact_title')}</h4>
                             <ul className={styles.contactLinks}>
                                 <li>
-                                    <a href="mailto:contact@3sthreei.com" className={styles.contactLink}>
+                                    <a href="mailto:contacts@3sthreei.com" className={styles.contactLink}>
                                         <FaEnvelope className={styles.icon} />
                                         {t('email')}
                                     </a>
