@@ -68,7 +68,7 @@ export default async function Unavailable({ params }: ParamProps) {
                 <p>{t.text2}</p>
             </div>
             <div className={style.btnBox}>
-                <Link href="auth/login" className={style.btn}>Sign In</Link>
+                <Link href="auth/sign-in" className={style.btn}>Sign In</Link>
             </div>
         </div>
     )
