@@ -1,8 +1,27 @@
 {
     "servicesHero": {
-        "title": "Custom Web Development for SaaS, Startups & E‑commerce in Ghana and Beyond",
-        "headtitle": "Custom Web Development for Africa & Global –React • Next.js • Angular • Laravel websites • NodeJS",
-        "cta": "Start for Free"
+        "title": "Professional Website Development That Gets You Found, Trusted & Chosen",
+        "headtitle": "In 2026, your website is often the first (and sometimes only) place potential customers decide if you’re worth their time and money. Without a fast, trustworthy, and search‑optimized site, you’re leaving revenue on the table.",
+        "cta": "Start for Free",
+        "image": {
+            "url": "https://res.cloudinary.com/gibpyguc/image/upload/v1787476464/visua_website_y7qdfc.svg",
+            "alt": "Bar Chart that showing website statistics 47% no website, 81% of customer search before buying and 76% leave due to poor UX ",
+            "title": "website user behavior"
+        },
+        "listBox": [
+            {
+                "number": "47%",
+                "text": " — Businesses without a website are missing opportunities to be discovered online."
+            },
+            {
+                "number": "81%",
+                "text": " — Customers increasingly turn to the internet before making a purchase decision."
+            },
+            {
+                "number": "76%",
+                "text": " — A slow or frustrating mobile experience can cost you potential customers."
+            }
+        ]
     },
     "workFlow": [
         {
@@ -161,7 +180,7 @@
             "title": "Price",
             "btn": "Start Project",
             "priceKey": "$1 260",
-            "price": "$450 – $1,260", 
+            "price": "$450 – $1,260",
             "badge": "50% OFF",
             "Betaprice": "$225 – $630",
             "content": [
@@ -208,7 +227,7 @@
     },
     "problemSolving": {
         "subtitle": "What this service solves",
-        "text": "Many businesses struggle to look professional online, get leads, and convert visitors into customers.Our web development service is designed to fix that with a fast, modern, and user-friendly website",
+        "text": "Many businesses struggle to look professional online, get leads, and convert visitors into customers. Our web development service is designed to fix that with a fast, modern, and user-friendly website",
         "problemCards": [
             {
                 "title": "Outdated Online Presence",
