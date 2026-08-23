@@ -1,8 +1,31 @@
 {
   "servicesHero": {
-    "title": "Mobile and Desktop App Development for Businesses in Ghana",
-    "headtitle": "We create custom mobile and desktop applications for startups, SMEs, and enterprises in Ghana",
-    "cta": "Start for free"
+    "title": "Mobile and Desktop App Development for Businesses",
+    "headtitle": "Your Business needs more than just a website. An Application that keeps it connected, competitive, secure, and productive. From real time data and devices capability to offline access.",
+    "cta": "Start for free",
+    "image":{
+            "url":"https://res.cloudinary.com/gibpyguc/image/upload/v1787494235/mobile_app_visual_uddwij.svg",
+            "alt":"Bar Chart that showing your company need an app",
+            "title":"mobile/desktop Application"
+        },
+        "listBox": [
+            {
+                "number": "Mobile/Desktop App",
+                "text": " — Give easy access to customers and employees"
+            },
+            {
+                "number": "Competitive Advance",
+                "text": " — If your competitors have a mobile/desktop app you must have for staying stand up."
+            },
+            {
+                "number": "Device Features",
+                "text": " — If your business need to access Camera , GPS, Bluetooth, push notification, biometric auth etc... having an application might be great for your business "
+            },
+            {
+                "number": "Offline Capability",
+                "text": " — Websites required internet. If users need to access information, company data etc... Application is required for your business  "
+            }
+        ]
   },
   "problemSolving": {
     "subtitle": "Why it matters",
