@@ -1,8 +1,27 @@
 {
     "servicesHero": {
-        "title": "Développement web sur mesure pour entreprises au Mali et en Afrique de l'Ouest",
-        "headtitle": "Développement web sur mesure – Angular • React • Next.js • Laravel • Node.js",
-        "cta": "Commencez gratuitement"
+        "title": "Création de sites web professionnels qui vous rendent visible, inspirent confiance et convertissent",
+        "headtitle": "En 2026, votre site web est souvent le premier — et parfois le seul — endroit où vos clients potentiels décident si votre entreprise mérite leur temps et leur argent. Sans un site rapide, fiable et optimisé pour les moteurs de recherche, vous passez à côté d'opportunités de revenus.",
+        "cta": "Commencer gratuitement",
+        "image": {
+            "url": "https://res.cloudinary.com/gibpyguc/image/upload/v1787476464/visua_website_y7qdfc.svg",
+            "alt": "Graphique présentant des statistiques sur les sites web : 47 % sans site web, 81 % des clients effectuent des recherches en ligne avant d'acheter et 76 % quittent un site en raison d'une mauvaise expérience utilisateur",
+            "title": "Statistiques sur le comportement des utilisateurs sur les sites web"
+        },
+        "listBox": [
+            {
+                "number": "47 %",
+                "text": " — Les entreprises sans site web passent à côté d’opportunités d’être découvertes en ligne."
+            },
+            {
+                "number": "81 %",
+                "text": " — Les clients se tournent de plus en plus vers Internet avant de prendre une décision d’achat."
+            },
+            {
+                "number": "76 %",
+                "text": " — Une expérience mobile lente ou frustrante peut vous faire perdre des clients potentiels."
+            }
+        ]
     },
     "workFlow": [
         {
@@ -117,12 +136,12 @@
         }
     ],
     "workFlow2": {
-        "type":"web",
+        "type": "web",
         "launch": {
             "headText": "Basique",
             "title": "Prix",
             "priceKey": "150 000F",
-            "price": "80 000 - 150 000 FCFA", 
+            "price": "80 000 - 150 000 FCFA",
             "Betaprice": "GRATUIT",
             "badge": "Offre exclusive Beta",
             "btn": "Démarrer le projet",
@@ -139,7 +158,7 @@
             "headText": "Standard",
             "title": "Prix",
             "priceKey": "300 000F",
-            "price": "150 000 – 300 000 FCFA", 
+            "price": "150 000 – 300 000 FCFA",
             "Betaprice": "75 000 – 150 000 FCFA",
             "badge": "50 % de réduction",
             "btn": "Démarrer le projet",
