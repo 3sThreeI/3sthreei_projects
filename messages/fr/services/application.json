@@ -1,8 +1,31 @@
 {
     "servicesHero": {
-        "title": "Solutions d’applications mobiles et desktop au Ghana",
-        "headtitle": "Nous concevons des applications sur mesure pour les startups, les PME et les entreprises au Ghana",
-        "cta": "Commencer gratuitement"
+        "title": "Développement d’applications mobiles et d'ordinateur pour les entreprises",
+        "headtitle": "Votre entreprise a besoin de plus qu’un simple site web. Une application qui la maintient connectée, compétitive, sécurisée et productive. Des données en temps réel aux fonctionnalités des appareils, en passant par l’accès hors ligne.",
+        "cta": "Commencer gratuitement",
+        "image": {
+            "url": "https://res.cloudinary.com/gibpyguc/image/upload/v1787494235/mobile_app_visual_uddwij.svg",
+            "alt": "Graphique à barres montrant pourquoi votre entreprise a besoin d’une application",
+            "title": "Application mobile/de bureau"
+        },
+        "listBox": [
+            {
+                "number": "Application mobile/de bureau",
+                "text": " — Offrez un accès facile à vos clients et à vos employés"
+            },
+            {
+                "number": "Avantage concurrentiel",
+                "text": " — Si vos concurrents disposent d’une application mobile/de bureau, vous en avez également besoin pour rester compétitif."
+            },
+            {
+                "number": "Fonctionnalités des appareils",
+                "text": " — Si votre entreprise a besoin d’accéder à la caméra, au GPS, au Bluetooth, aux notifications push, à l’authentification biométrique, etc., une application peut être un véritable atout pour votre activité."
+            },
+            {
+                "number": "Fonctionnement hors ligne",
+                "text": " — Les sites web nécessitent une connexion Internet. Si vos utilisateurs doivent accéder à des informations ou aux données de l’entreprise sans connexion, une application peut être indispensable."
+            }
+        ]
     },
     "problemSolving": {
         "subtitle": "Pourquoi c’est important",
@@ -104,7 +127,7 @@
             "title": "Prix",
             "priceKey": "100 000F",
             "badge": "50 % de réduction",
-            "Betaprice":"GRATUIT",
+            "Betaprice": "GRATUIT",
             "price": "50 000 - 100 000 FCFA",
             "btn": "Commencez le Project",
             "content": [
@@ -121,7 +144,7 @@
             "title": " Prix",
             "priceKey": "400 000F",
             "badge": "50 % de réduction",
-            "Betaprice":"75 000 – 200 000 FCFA",
+            "Betaprice": "75 000 – 200 000 FCFA",
             "price": "150 000 – 400 000 FCFA",
             "btn": "Commencez le Project",
             "content": [
@@ -141,7 +164,7 @@
             "btn": "Commencez le Project",
             "priceKey": "1 000 000F",
             "badge": "50 % de réduction",
-            "Betaprice":"200 000 – 500 000 FCFA",
+            "Betaprice": "200 000 – 500 000 FCFA",
             "price": "400 000 – 1 000 000 FCFA",
             "content": [
                 "Backend + base de données avancée",
@@ -158,7 +181,7 @@
             "headText": "Entreprise (sur Mesure)",
             "title": "Prix",
             "priceKey": "1 000 000F+",
-            "Betaprice":"500 000 FCFA et plus",
+            "Betaprice": "500 000 FCFA et plus",
             "badge": "50 % de réduction",
             "price": "1 000 000 FCFA et plus ",
             "btn": "Start Project",
