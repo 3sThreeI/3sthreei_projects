@@ -56,7 +56,7 @@ export default async function Design({ params }: ParamsPropsServices) {
     return (
         <>
             <section>
-                <ServicesHero messages={messages} />
+                {/* <ServicesHero messages={messages} /> */}
             </section>
         </>
     )

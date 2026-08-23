@@ -58,7 +58,7 @@ export default async function Game({ params }: ParamsPropsServices) {
     return (
         <>
             <section>
-                <ServicesHero messages={messages} />
+                {/* <ServicesHero messages={messages} /> */}
             </section>
         </>
     )
