@@ -1,20 +1,37 @@
-
 @reference "tailwindcss";
-.Hero_Container{
-    @apply my-5 pt-14
+.Hero_Container {
+    @apply my-5 pt-14 grid grid-cols-1 sm:grid-cols-[1fr_1fr] w-full px-3 mx-auto gap-3
 }
-.Hero_Container .title{
-    @apply text-[1.5rem] text-center font-light text-[poppins]
+.Hero_Container .title {
+    @apply text-[1.5rem] text-left font-light font-[poppins] text-(--nav-text-color) mb-7
 }
-.title .small{
+.title .small {
     @apply text-[0.8rem] sm:text-[0.9rem] mb-14
 }
-.Hero_Container .subtitle{
-    @apply text-[1rem] sm:text-[1.1rem] mt-5 mb-7 text-center text-(--nav-text-color) font-extrabold font-[lora]
+
+.Hero_Container .subtitle {
+    @apply text-[0.9rem]  sm:text-[1rem] mt-2 mb-7 text-left
 }
-.Hero_Container .cta{
+.Hero_Container .cta {
     @apply text-center mx-auto my-7
 }
-.cta .btn{
-    @apply  border-r-2 border-l-2 px-5 py-2 rounded-md border-(--nav-text-color) hover:px-10 text-[1.2rem] hover:border-1  hover:text-(--nav-text-color) transition-all duration-300 ease-in-out
+
+.Hero_Container .heroImage {
+    @apply w-full object-contain
+}
+.heroImage .img{
+    @apply  w-full bg-cover
+}
+.cta .btn {
+    @apply border-1 px-5 py-2 rounded-[50px] border-(--nav-text-color) hover:px-10 text-[1.2rem] text-(--nav-text-color) transition-all duration-300 ease-in-out
+}
+/* Styles specifically for the hero list items */
+.listBox{
+    @apply space-y-3
+}
+.listBox .list{
+    @apply text-[0.8rem] sm:text-[0.9rem] text-gray-200/70  
+}
+.listBox .list .strong{
+    @apply font-bold text-(--nav-text-color)
 }
