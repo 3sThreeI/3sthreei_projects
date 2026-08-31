@@ -1,0 +1,24 @@
+@reference"tailwindcss";
+
+.globalContainer{
+    @apply bg-gray-900 box-content
+}
+.navbar{
+    @apply min-h-[50px] w-full m-0 p-0 
+}
+.body{
+    @apply relative m-0 p-0 relative
+}
+.aside{
+    @apply h-full w-[200px] bg-amber-400
+}
+.aside.extend{
+    @apply w-[100px]
+}
+.main{
+    @apply absolute top-0 left-55 right-0
+}
+/* ---------Nab section */
+.NavbarContainer {
+@apply bg-white h-[50px] flex items-center px-3
+}
