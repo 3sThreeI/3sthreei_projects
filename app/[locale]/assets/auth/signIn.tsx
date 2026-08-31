@@ -56,11 +56,9 @@ export default function SignInComp(messages: any) {
             }
             setSuccess(data.data.message)
             console.log("response", data)
-            if(data?.data?.response.role == "admin"){
+            if(data?.data?.response?.role || data?.data?.response?.role == "admin"){
                 route.replace('/')
-            }else{
-                 route.replace('/')
-            }
+            } 
             return toast.success(data.data.message || data.message, {
                 style: {
                     border: '1px solid green',
@@ -75,7 +73,7 @@ export default function SignInComp(messages: any) {
         } catch (err: any) {
             // console.log("NETWORK ERROR TRY LATER", err)
             setError(err.message)
-            toast.error(error || err.message, {
+            toast.error(error || err.message || "Error Invalid Password or Email" , {
                 style: {
                     border: '1px solid red',
                     padding: '7px',
@@ -135,7 +133,7 @@ export default function SignInComp(messages: any) {
                             </div>
                         </div>
                         <div className={style.formBtn}>
-                            <button type="submit" className={style.btn}>Sign In</button>
+                            <button type="submit"  className={`${style.btn} ${ pending && "cursor-not-allowed pointer-events-none"}`} disabled={pending}>{ pending ? "Loading..." : "Sign In"}</button>
                         </div>
                     </div>
                 </form>
