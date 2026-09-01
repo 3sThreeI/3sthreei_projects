@@ -1,0 +1,10 @@
+@reference"tailwindcss";
+
+:root {
+    --bg-color-primary: rgb(229, 231, 235);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
