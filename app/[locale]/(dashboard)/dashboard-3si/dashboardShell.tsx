@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import Dash_Navbar from "../../assets/dashboard/navbar/dashnavb"
-import style from "./dasboard.module.css"
+import style from "./dashboard.module.css"
 interface Props {
     children: React.ReactNode
 }
@@ -12,13 +12,13 @@ export default function DashboardShell({ children }: Props) {
         setDashboardExtend(prev => !prev)
     }
     return (
-        <div className={style.globalContainer}>
+        <div className={style.container}>
             <div className={style.body}>
                 <aside className={`${style.aside} ${dashboardExtend ? style.extend : ""}`}>
                 </aside>
-                <main className={style.main}>
+                <main className={`${style.main} ${dashboardExtend ? style.extend : ""}`}>
                     <Dash_Navbar onExtend={onExtendClick} extendValue={dashboardExtend} />
-                    {children}
+                    {children} 
                 </main>
                 <footer>
                 </footer>
