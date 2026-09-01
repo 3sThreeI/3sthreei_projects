@@ -1,4 +1,4 @@
-import "./globalDash.module.css"
+import "./globalDash.css"
 interface props {
     children: React.ReactNode,
     params: Promise<{ locale: string }>
