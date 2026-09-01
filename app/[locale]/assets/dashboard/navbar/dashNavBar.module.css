@@ -1,0 +1,17 @@
+@reference "tailwindcss";
+
+.NavbarContainer{
+    @apply h-14 bg-white px-5 flex items-center mb-2
+}
+.Nav_Content{
+    @apply flex justify-between w-full items-center
+}
+.bar_icon{
+    @apply text-[19px] text-gray-700
+}
+.searchContainer{
+    @apply border w-[270px] pl-3 pr-3 rounded-[5px] border-gray-300 focus-within:border-gray-600 transition-all duration-300 ease-in-out
+}
+.searchContainer .searchInput{
+    @apply border-0 w-full h-full py-2 outline-0
+}
