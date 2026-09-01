@@ -1,0 +1,17 @@
+@reference"tailwindcss";
+
+.container{
+    @apply bg-gray-200 m-0 p-0 relative
+}
+.aside{
+    @apply min-h-screen bg-white w-[220px] transition-all duration-500 ease-in
+}
+.aside.extend{
+    @apply w-[50px]
+}
+.main{
+    @apply absolute top-0 right-0 left-[220px] transition-all duration-500 ease-in
+}
+.main.extend{
+    @apply left-[50px]
+}
