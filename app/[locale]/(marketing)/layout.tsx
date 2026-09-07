@@ -85,21 +85,21 @@ type Props = {
   params: Promise<{ locale: string }>
 }
 // function to call BetaVersion Date
-const GetBetaVersionInfo =  async ()=>{
+const GetBetaVersionInfo = async () => {
   try {
     const resp = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/beta/test-3si`, {
-    method: "GET",
-    cache: "force-cache"
-  })
-  const data = await resp.json()
-  if(!resp.ok){
-    return []
-  }
-  return data
+      method: "GET",
+      cache: "force-cache"
+    })
+    const data = await resp.json()
+    if (!resp.ok) {
+      return []
+    }
+    return data
   } catch (error) {
     return false
   }
-  
+
 }
 export default async function RootLayout({
   children,
@@ -241,6 +241,16 @@ export default async function RootLayout({
           gtag('config', 'G-8GGKE9NHJ4');
           `}
         </Script>
+        <script type="text/javascript">
+          {`
+          (function(c,l,a,r,i,t,y){
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yeekntn12z");
+`
+          }
+        </script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(OrgjsonLD).replace(/</g, '\\u003c'), }}
@@ -255,12 +265,12 @@ export default async function RootLayout({
       >
         {/* <PreNavBar/> */}
         <BetaProvider values={beta}>
-        <NextIntlClientProvider messages={messages}>
-          <BetaNavbar/>
-        <Navbar/>
-          {children}
-        </NextIntlClientProvider>
-        <Footer />
+          <NextIntlClientProvider messages={messages}>
+            <BetaNavbar />
+            <Navbar />
+            {children}
+          </NextIntlClientProvider>
+          <Footer />
         </BetaProvider>
       </body>
     </html>
