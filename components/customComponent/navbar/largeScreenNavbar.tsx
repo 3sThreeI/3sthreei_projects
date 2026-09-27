@@ -5,9 +5,25 @@ import { TiArrowSortedDown } from "react-icons/ti";
 import { FaCode, FaMobileAlt, FaGamepad, FaPalette } from "react-icons/fa";
 import Link from "next/link"
 import { NavbarProps } from "./Navbar";
-import { useState } from "react";
-export default function LargeScreenNavbar({ home, keyService, servicesValue, project, about, faq, blog, signin, user }: NavbarProps) {
+import { useEffect, useState } from "react";
+import { fetchUser } from "@/app/[locale]/(auth)/auth/fetchUser";
+interface currentUserProps {
+    firstname: string,
+    lastname: string,
+    email: string,
+    role: string,
+    admin: boolean
+}
+export default function LargeScreenNavbar({ home, keyService, servicesValue, project, about, faq, blog, signin }: NavbarProps) {
     const [openServices, setOpenServices] = useState(false)
+    const [user, setUser] = useState<currentUserProps | null>(null)
+    useEffect(() => {
+        const loadUser = async () => {
+            const user = await fetchUser()
+            setUser(user)
+        }
+        loadUser()
+    }, [])
     const serviceFn = () => {
         setOpenServices(true)
     }
@@ -15,7 +31,7 @@ export default function LargeScreenNavbar({ home, keyService, servicesValue, pro
         <>
             <ul className={style.navlink}>
                 <li> <Link href='/'>{home}</Link></li>
-                <li className={style.li} onMouseEnter={serviceFn} onMouseLeave={()=>setOpenServices(false)}>
+                <li className={style.li} onMouseEnter={serviceFn} onMouseLeave={() => setOpenServices(false)}>
                     {/* <Link href='/service' > */}
                     {keyService} <TiArrowSortedDown className={`${style.icon} ${openServices ? style.open : ''}`} />
                     {
@@ -43,8 +59,10 @@ export default function LargeScreenNavbar({ home, keyService, servicesValue, pro
                 <li> <Link href='/faq'>{faq}</Link></li>
                 {/* <li> <Link href='/blog'>{blog}</Link></li> */}
                 {
-                    !user &&
-                    <li> <Link href='/auth/sign-in'>{signin}</Link></li>
+                    !user ?
+                        <li> <Link href='/auth/sign-in'>{signin}</Link></li>
+                        :
+                        <li>{user.lastname}</li>
                 }
             </ul>
         </>
