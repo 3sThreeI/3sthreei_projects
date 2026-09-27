@@ -193,7 +193,7 @@ export default async function RootLayout({
       },
       {
         "@type": "ContactPoint",
-        "email": "abzarcamara3@gmail.com",
+        "email": "abouzari@3sthreei.com",
         "contactType": "Customer Service",
         "availableLanguage": ["English", "French"]
       }
