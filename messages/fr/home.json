@@ -1,7 +1,8 @@
 {
     "hero": {
         "headline": "De l’idée au lancement — Nous créons et enseignons l’excellence digitale",
-        "subheadline": "Sites web d’entreprise, applications mobiles, jeux, design UI/UX — tout en formant votre équipe à les développer et les faire évoluer.",
+        "subheadline1": "Sites web d’entreprise, applications mobiles, jeux, design UI/UX — tout en formant votre équipe à les développer et les faire évoluer.",
+        "subheadline": "3SthreeI accompagne les entreprises, startups et entrepreneurs au Mali dans la création de sites web professionnels, applications mobiles, plateformes SaaS et solutions digitales sur mesure. Basée à Bamako, notre équipe conçoit des produits rapides, sécurisés et adaptés aux besoins du marché malien.",
         "herobtn1": "Lancer votre projet",
         "herobtn1Url": "/contact-form",
         "herobtn2": "Découvrir nos formations",
